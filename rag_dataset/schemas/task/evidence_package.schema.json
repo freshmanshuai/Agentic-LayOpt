@@ -1,0 +1,445 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task/evidence_package.schema.json",
+  "title": "Evidence Package Schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "evidence_package_id": {
+      "type": "string"
+    },
+    "intent_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "matched_assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "surface_text": {
+            "type": "string"
+          },
+          "candidate_model_asset_ids": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "model_asset_id": {
+                  "type": "string"
+                },
+                "library_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "site_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "score": {
+                  "type": "number"
+                },
+                "match_type": {
+                  "type": "string",
+                  "enum": [
+                    "id_exact",
+                    "alias_exact",
+                    "semantic",
+                    "category",
+                    "user_selected",
+                    "rule_based"
+                  ]
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "model_asset_id",
+                "library_id",
+                "site_id",
+                "score",
+                "match_type"
+              ]
+            }
+          },
+          "selected_model_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "selected_library_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "selected_site_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ambiguity_status": {
+            "type": "string",
+            "enum": [
+              "resolved",
+              "ambiguous",
+              "unresolved"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "surface_text",
+          "candidate_model_asset_ids",
+          "selected_model_asset_id",
+          "selected_library_id",
+          "selected_site_id",
+          "ambiguity_status"
+        ]
+      }
+    },
+    "asset_facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "model_asset_id": {
+            "type": "string"
+          },
+          "asset_scope": {
+            "type": "string",
+            "enum": [
+              "equipment",
+              "site",
+              "production_line",
+              "composite_scene"
+            ]
+          },
+          "library_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "site_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "category": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "geometry": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/Geometry"
+          },
+          "planning_fields": {
+            "type": "object",
+            "properties": {
+              "allowed_orientations_deg": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              },
+              "maintenance_clearance_m": {
+                "$ref": "../common/common_engineering.schema.json#/$defs/ClearanceM"
+              },
+              "safety_clearance_m": {
+                "$ref": "../common/common_engineering.schema.json#/$defs/ClearanceM"
+              },
+              "ports": {
+                "type": "array",
+                "items": {
+                  "$ref": "../common/common_engineering.schema.json#/$defs/Port"
+                }
+              },
+              "compatible_upstream_categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "compatible_downstream_categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "allowed_zone_types": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "forbidden_zone_types": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "process_capabilities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "allowed_orientations_deg",
+              "maintenance_clearance_m",
+              "safety_clearance_m",
+              "ports",
+              "compatible_upstream_categories",
+              "compatible_downstream_categories",
+              "allowed_zone_types",
+              "forbidden_zone_types",
+              "process_capabilities"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "model_asset_id",
+          "asset_scope",
+          "library_id",
+          "site_id",
+          "category",
+          "geometry",
+          "planning_fields"
+        ]
+      }
+    },
+    "matched_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rule_id": {
+            "type": "string"
+          },
+          "rule_type": {
+            "type": "string",
+            "enum": [
+              "asset_rule",
+              "layout_rule",
+              "constraint_rule",
+              "objective_rule",
+              "site_rule",
+              "editing_rule"
+            ]
+          },
+          "related_constraint_types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "related_objective_types": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "hard",
+              "soft",
+              "warning",
+              "info"
+            ]
+          },
+          "priority": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "rule_id",
+          "rule_type",
+          "related_constraint_types",
+          "related_objective_types",
+          "severity",
+          "priority"
+        ]
+      }
+    },
+    "matched_constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "constraint_type": {
+            "type": "string"
+          },
+          "default_severity": {
+            "type": "string",
+            "enum": [
+              "hard",
+              "soft"
+            ]
+          },
+          "parameters_schema": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "constraint_type",
+          "default_severity",
+          "parameters_schema"
+        ]
+      }
+    },
+    "matched_objectives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "objective_type": {
+            "type": "string"
+          },
+          "sense": {
+            "type": "string",
+            "enum": [
+              "minimize",
+              "maximize"
+            ]
+          },
+          "parameters_schema": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "objective_type",
+          "sense",
+          "parameters_schema"
+        ]
+      }
+    },
+    "site_facts_from_user": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fact_id": {
+            "type": "string"
+          },
+          "fact_type": {
+            "type": "string",
+            "enum": [
+              "rectangular_site"
+            ]
+          },
+          "value": {
+            "type": "object",
+            "properties": {
+              "width_m": {
+                "type": "number"
+              },
+              "depth_m": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "width_m",
+              "depth_m"
+            ]
+          },
+          "source_text": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "fact_id",
+          "fact_type",
+          "value",
+          "source_text",
+          "confidence"
+        ]
+      }
+    },
+    "ambiguities": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/UnresolvedItem"
+      }
+    },
+    "retrieval_trace": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "retrieval_step": {
+            "type": "string"
+          },
+          "input_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "matched_source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "retrieval_step",
+          "input_text",
+          "matched_source_ids",
+          "confidence"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "evidence_package_id",
+    "intent_id",
+    "project_id",
+    "matched_assets",
+    "asset_facts",
+    "matched_rules",
+    "matched_constraints",
+    "matched_objectives",
+    "site_facts_from_user",
+    "ambiguities",
+    "retrieval_trace"
+  ],
+  "additionalProperties": false
+}

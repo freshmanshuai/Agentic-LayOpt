@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "knowledge/constraint_vocabulary.schema.json",
+  "title": "Constraint Vocabulary Schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "constraint_type": {
+      "type": "string",
+      "enum": [
+        "inside_boundary",
+        "no_overlap",
+        "minimum_clearance",
+        "safety_clearance",
+        "forbidden_zone_avoidance",
+        "fixed_pose",
+        "region_membership",
+        "spatial_order",
+        "near",
+        "far_from",
+        "adjacency",
+        "alignment",
+        "port_compatibility",
+        "corridor_preservation",
+        "entrance_exit_unblocked"
+      ]
+    },
+    "canonical_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "default_severity": {
+      "type": "string",
+      "enum": [
+        "hard",
+        "soft"
+      ]
+    },
+    "target_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "all_equipment",
+          "equipment_instance",
+          "asset",
+          "model_asset",
+          "site",
+          "zone",
+          "site_feature",
+          "flow",
+          "constraint",
+          "objective",
+          "layout",
+          "operation"
+        ]
+      }
+    },
+    "parameters_schema": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "applicable_task_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "generate_feasible_layout",
+          "optimize_layout_from_scratch",
+          "optimize_existing_layout",
+          "edit_layout",
+          "validate_layout",
+          "explain_layout",
+          "compare_layouts",
+          "export_layout",
+          "unknown_or_unsupported"
+        ]
+      }
+    },
+    "applicable_asset_scopes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "equipment",
+          "site",
+          "production_line",
+          "composite_scene"
+        ]
+      }
+    },
+    "validator_required": {
+      "type": "boolean"
+    },
+    "solver_required": {
+      "type": "boolean"
+    },
+    "natural_language_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/ProvenanceItem"
+      }
+    },
+    "metadata": {
+      "$ref": "../common/common_engineering.schema.json#/$defs/Metadata"
+    }
+  },
+  "required": [
+    "schema_version",
+    "constraint_type",
+    "canonical_name",
+    "description",
+    "default_severity",
+    "target_types",
+    "parameters_schema",
+    "applicable_task_types",
+    "applicable_asset_scopes",
+    "validator_required",
+    "solver_required",
+    "natural_language_triggers",
+    "provenance",
+    "metadata"
+  ],
+  "additionalProperties": false
+}

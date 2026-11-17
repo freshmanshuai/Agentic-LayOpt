@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "knowledge/rule.schema.json",
+  "title": "Rule Schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "rule_id": {
+      "type": "string"
+    },
+    "rule_name": {
+      "type": "string"
+    },
+    "rule_type": {
+      "type": "string",
+      "enum": [
+        "asset_rule",
+        "layout_rule",
+        "constraint_rule",
+        "objective_rule",
+        "site_rule",
+        "editing_rule"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "applies_to": {
+      "type": "object",
+      "properties": {
+        "asset_scopes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "equipment",
+              "site",
+              "production_line",
+              "composite_scene"
+            ]
+          }
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "task_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "generate_feasible_layout",
+              "optimize_layout_from_scratch",
+              "optimize_existing_layout",
+              "edit_layout",
+              "validate_layout",
+              "explain_layout",
+              "compare_layouts",
+              "export_layout",
+              "unknown_or_unsupported"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "asset_scopes",
+        "categories",
+        "task_types"
+      ]
+    },
+    "condition": {
+      "type": "object",
+      "properties": {
+        "expression_type": {
+          "type": "string",
+          "enum": [
+            "json_logic",
+            "python_expression",
+            "natural_language",
+            "manual"
+          ]
+        },
+        "expression": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "expression_type",
+        "expression"
+      ]
+    },
+    "action": {
+      "type": "object",
+      "properties": {
+        "action_type": {
+          "type": "string",
+          "enum": [
+            "set_field",
+            "derive_field",
+            "add_constraint",
+            "add_objective",
+            "raise_unresolved_item",
+            "reject"
+          ]
+        },
+        "target_field_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value_schema": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "action_type",
+        "target_field_path",
+        "value_schema"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "hard",
+        "soft",
+        "warning",
+        "info"
+      ]
+    },
+    "priority": {
+      "type": "integer"
+    },
+    "related_constraint_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_objective_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/ProvenanceItem"
+      }
+    },
+    "metadata": {
+      "$ref": "../common/common_engineering.schema.json#/$defs/Metadata"
+    }
+  },
+  "required": [
+    "schema_version",
+    "rule_id",
+    "rule_name",
+    "rule_type",
+    "description",
+    "applies_to",
+    "condition",
+    "action",
+    "severity",
+    "priority",
+    "related_constraint_types",
+    "related_objective_types",
+    "provenance",
+    "metadata"
+  ],
+  "additionalProperties": false
+}

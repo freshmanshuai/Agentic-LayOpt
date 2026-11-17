@@ -1,0 +1,960 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "asset/model_engineering_asset.schema.json",
+  "title": "Model Engineering Asset Schema",
+  "description": "Stores model files and engineering fields needed for layout planning. It supports equipment assets, site assets, production-line assets, and composite-scene assets.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "model_asset_id": {
+      "type": "string"
+    },
+    "asset_scope": {
+      "type": "string",
+      "enum": [
+        "equipment",
+        "site",
+        "production_line",
+        "composite_scene"
+      ]
+    },
+    "asset_name": {
+      "type": "string"
+    },
+    "asset_description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "library_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "site_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "category": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "equipment_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "model_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_file_id": {
+            "type": "string"
+          },
+          "file_uri": {
+            "type": "string"
+          },
+          "asset_format": {
+            "type": "string",
+            "enum": [
+              "solidworks_part",
+              "solidworks_assembly",
+              "fbx",
+              "three_ds_max",
+              "c4d",
+              "step",
+              "iges",
+              "obj",
+              "stl",
+              "gltf",
+              "glb",
+              "unity_prefab",
+              "thumbnail",
+              "unknown"
+            ]
+          },
+          "native_extension": {
+            "type": "string"
+          },
+          "file_role": {
+            "type": "string",
+            "enum": [
+              "source_model",
+              "visual_model",
+              "collision_model",
+              "simplified_model",
+              "thumbnail",
+              "metadata_file",
+              "runtime_mesh",
+              "three_viewport_runtime_model"
+            ]
+          },
+          "checksum": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_unit": {
+            "type": "string",
+            "enum": [
+              "m",
+              "mm",
+              "cm",
+              "inch",
+              "unknown"
+            ]
+          },
+          "file_status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "missing",
+              "corrupted",
+              "deprecated",
+              "pending_conversion"
+            ]
+          },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "author": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_system": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "created_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "updated_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "author",
+              "source_system",
+              "created_at",
+              "updated_at"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "source_file_id",
+          "file_uri",
+          "asset_format",
+          "native_extension",
+          "file_role",
+          "checksum",
+          "source_unit",
+          "file_status",
+          "metadata"
+        ]
+      }
+    },
+    "derived_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "derived_file_id": {
+            "type": "string"
+          },
+          "file_uri": {
+            "type": "string"
+          },
+          "asset_format": {
+            "type": "string",
+            "enum": [
+              "solidworks_part",
+              "solidworks_assembly",
+              "fbx",
+              "three_ds_max",
+              "c4d",
+              "step",
+              "iges",
+              "obj",
+              "stl",
+              "gltf",
+              "glb",
+              "unity_prefab",
+              "thumbnail",
+              "unknown"
+            ]
+          },
+          "file_role": {
+            "type": "string",
+            "enum": [
+              "source_model",
+              "visual_model",
+              "collision_model",
+              "simplified_model",
+              "thumbnail",
+              "metadata_file",
+              "runtime_mesh",
+              "three_viewport_runtime_model"
+            ]
+          },
+          "derived_from_source_file_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "checksum": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "file_status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "missing",
+              "corrupted",
+              "deprecated",
+              "pending_conversion"
+            ]
+          },
+          "file_size_bytes": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "compression": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "file_uri",
+          "asset_format",
+          "file_role",
+          "file_status"
+        ]
+      }
+    },
+    "extraction": {
+      "type": "object",
+      "properties": {
+        "extraction_status": {
+          "type": "string",
+          "enum": [
+            "not_extracted",
+            "extracted",
+            "partially_extracted",
+            "failed",
+            "requires_manual_review"
+          ]
+        },
+        "extractor_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "extractor_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "extraction_method": {
+          "type": "string",
+          "enum": [
+            "cad_api",
+            "mesh_parser",
+            "scene_parser",
+            "manual_input",
+            "hybrid",
+            "three_fbx_to_obj_runtime_export",
+            "unknown"
+          ]
+        },
+        "extracted_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_format": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "solidworks_part",
+            "solidworks_assembly",
+            "fbx",
+            "three_ds_max",
+            "c4d",
+            "step",
+            "iges",
+            "obj",
+            "stl",
+            "gltf",
+            "glb",
+            "unity_prefab",
+            "thumbnail",
+            "unknown",
+            null
+          ]
+        },
+        "source_unit": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "m",
+            "mm",
+            "cm",
+            "inch",
+            "unknown",
+            null
+          ]
+        },
+        "unit_scale_to_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "axis_mapping": {
+          "type": "object",
+          "properties": {
+            "source_up_axis": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "x",
+                "y",
+                "z",
+                "negative_x",
+                "negative_y",
+                "negative_z",
+                "unknown",
+                null
+              ]
+            },
+            "target_up_axis": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "x",
+                "y",
+                "z",
+                "negative_x",
+                "negative_y",
+                "negative_z",
+                "unknown",
+                null
+              ]
+            },
+            "layout_x_from_source_axis": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "x",
+                "y",
+                "z",
+                "negative_x",
+                "negative_y",
+                "negative_z",
+                "unknown",
+                null
+              ]
+            },
+            "layout_y_from_source_axis": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "x",
+                "y",
+                "z",
+                "negative_x",
+                "negative_y",
+                "negative_z",
+                "unknown",
+                null
+              ]
+            },
+            "layout_z_from_source_axis": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "x",
+                "y",
+                "z",
+                "negative_x",
+                "negative_y",
+                "negative_z",
+                "unknown",
+                null
+              ]
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "source_up_axis",
+            "target_up_axis",
+            "layout_x_from_source_axis",
+            "layout_y_from_source_axis",
+            "layout_z_from_source_axis"
+          ]
+        },
+        "extraction_quality": {
+          "type": "object",
+          "properties": {
+            "geometry_confidence": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "scale_confidence": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "origin_confidence": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "port_confidence": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "site_feature_confidence": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "requires_manual_review": {
+              "type": "boolean"
+            },
+            "warnings": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "geometry_confidence",
+            "scale_confidence",
+            "origin_confidence",
+            "port_confidence",
+            "site_feature_confidence",
+            "requires_manual_review",
+            "warnings"
+          ]
+        },
+        "raw_metadata": {
+          "type": "object",
+          "properties": {
+            "solidworks": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "fbx": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "three_ds_max": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "c4d": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "other": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "solidworks",
+            "fbx",
+            "three_ds_max",
+            "c4d",
+            "other"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "extraction_status",
+        "extractor_name",
+        "extractor_version",
+        "extraction_method",
+        "extracted_at",
+        "source_format",
+        "source_unit",
+        "unit_scale_to_m",
+        "axis_mapping",
+        "extraction_quality",
+        "raw_metadata"
+      ]
+    },
+    "coordinate_frames": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/CoordinateFrame"
+      }
+    },
+    "geometry": {
+      "$ref": "../common/common_engineering.schema.json#/$defs/Geometry"
+    },
+    "planning_fields": {
+      "type": "object",
+      "properties": {
+        "allowed_orientations_deg": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "maintenance_clearance_m": {
+          "$ref": "../common/common_engineering.schema.json#/$defs/ClearanceM"
+        },
+        "safety_clearance_m": {
+          "$ref": "../common/common_engineering.schema.json#/$defs/ClearanceM"
+        },
+        "ports": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/Port"
+          }
+        },
+        "compatible_upstream_categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "compatible_downstream_categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allowed_zone_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forbidden_zone_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "process_capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "allowed_orientations_deg",
+        "maintenance_clearance_m",
+        "safety_clearance_m",
+        "ports",
+        "compatible_upstream_categories",
+        "compatible_downstream_categories",
+        "allowed_zone_types",
+        "forbidden_zone_types",
+        "process_capabilities"
+      ]
+    },
+    "site_asset_fields": {
+      "type": "object",
+      "properties": {
+        "boundary": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "shape_type": {
+                  "type": "string",
+                  "enum": [
+                    "rectangle"
+                  ]
+                },
+                "pose": {
+                  "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+                },
+                "dimensions_m": {
+                  "$ref": "../common/common_engineering.schema.json#/$defs/DimensionsM"
+                },
+                "source": {
+                  "type": "string",
+                  "enum": [
+                    "model_extraction",
+                    "manual_input",
+                    "user_input",
+                    "rule_library",
+                    "computed",
+                    "runtime_obj_bounds"
+                  ]
+                },
+                "confidence": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "shape_type",
+                "pose",
+                "dimensions_m",
+                "source",
+                "confidence"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "extracted_site_features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "site_feature_id": {
+                "type": "string"
+              },
+              "feature_type": {
+                "type": "string",
+                "enum": [
+                  "entrance",
+                  "exit",
+                  "obstacle",
+                  "forbidden_zone",
+                  "corridor",
+                  "wall",
+                  "column",
+                  "loading_area",
+                  "unloading_area",
+                  "utility_area",
+                  "unknown",
+                  "other"
+                ]
+              },
+              "pose": {
+                "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+              },
+              "dimensions_m": {
+                "$ref": "../common/common_engineering.schema.json#/$defs/DimensionsM"
+              },
+              "source_node_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "site_feature_id",
+              "feature_type",
+              "pose",
+              "dimensions_m",
+              "source_node_ref",
+              "confidence"
+            ]
+          }
+        },
+        "extracted_zones": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "zone_id": {
+                "type": "string"
+              },
+              "zone_type": {
+                "type": "string"
+              },
+              "pose": {
+                "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+              },
+              "dimensions_m": {
+                "$ref": "../common/common_engineering.schema.json#/$defs/DimensionsM"
+              },
+              "allowed_categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "source_node_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "zone_id",
+              "zone_type",
+              "pose",
+              "dimensions_m",
+              "allowed_categories",
+              "source_node_ref",
+              "confidence"
+            ]
+          }
+        },
+        "embedded_equipment_instances": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "instance_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "library_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "model_asset_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_node_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "pose": {
+                "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+              },
+              "geometry": {
+                "$ref": "../common/common_engineering.schema.json#/$defs/Geometry"
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "instance_id",
+              "library_id",
+              "model_asset_id",
+              "source_node_ref",
+              "pose",
+              "geometry",
+              "confidence"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "boundary",
+        "extracted_site_features",
+        "extracted_zones",
+        "embedded_equipment_instances"
+      ]
+    },
+    "manual_overrides": {
+      "type": "object",
+      "properties": {
+        "has_override": {
+          "type": "boolean"
+        },
+        "override_fields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "field_path": {
+                "type": "string"
+              },
+              "override_reason": {
+                "type": "string"
+              },
+              "overridden_by": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "overridden_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "field_path",
+              "override_reason",
+              "overridden_by",
+              "overridden_at"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "has_override",
+        "override_fields"
+      ]
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/ProvenanceItem"
+      }
+    },
+    "metadata": {
+      "$ref": "../common/common_engineering.schema.json#/$defs/Metadata"
+    }
+  },
+  "required": [
+    "schema_version",
+    "model_asset_id",
+    "asset_scope",
+    "asset_name",
+    "asset_description",
+    "library_id",
+    "site_id",
+    "category",
+    "equipment_type",
+    "aliases",
+    "model_files",
+    "derived_files",
+    "extraction",
+    "coordinate_frames",
+    "geometry",
+    "planning_fields",
+    "site_asset_fields",
+    "manual_overrides",
+    "provenance",
+    "metadata"
+  ],
+  "additionalProperties": false
+}

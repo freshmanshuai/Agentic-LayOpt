@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "knowledge/objective_vocabulary.schema.json",
+  "title": "Objective Vocabulary Schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "objective_type": {
+      "type": "string",
+      "enum": [
+        "minimize_material_handling_distance",
+        "minimize_weighted_flow_distance",
+        "minimize_agv_transport_cost",
+        "minimize_high_flow_distance_excess",
+        "minimize_relocation_effort",
+        "maximize_space_utilization",
+        "maximize_adjacency_satisfaction",
+        "minimize_layout_change",
+        "minimize_cross_flow",
+        "minimize_total_movement",
+        "maximize_process_order_consistency",
+        "minimize_distance_to_exit",
+        "minimize_distance_to_entrance"
+      ]
+    },
+    "canonical_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "sense": {
+      "type": "string",
+      "enum": [
+        "minimize",
+        "maximize"
+      ]
+    },
+    "parameters_schema": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "applicable_task_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "generate_feasible_layout",
+          "optimize_layout_from_scratch",
+          "optimize_existing_layout",
+          "edit_layout",
+          "validate_layout",
+          "explain_layout",
+          "compare_layouts",
+          "export_layout",
+          "unknown_or_unsupported"
+        ]
+      }
+    },
+    "natural_language_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_data_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/ProvenanceItem"
+      }
+    },
+    "metadata": {
+      "$ref": "../common/common_engineering.schema.json#/$defs/Metadata"
+    }
+  },
+  "required": [
+    "schema_version",
+    "objective_type",
+    "canonical_name",
+    "description",
+    "sense",
+    "parameters_schema",
+    "applicable_task_types",
+    "natural_language_triggers",
+    "required_data_fields",
+    "provenance",
+    "metadata"
+  ],
+  "additionalProperties": false
+}

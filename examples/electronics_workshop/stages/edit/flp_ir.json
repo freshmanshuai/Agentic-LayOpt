@@ -1,0 +1,4065 @@
+{
+  "schema_version": "0.1.0",
+  "task_meta": {
+    "task_id": "TASK_001",
+    "task_type": "optimize_existing_layout",
+    "project_id": "PROJECT_001",
+    "domain": "facility_layout",
+    "created_from_intent_id": "INTENT_001",
+    "equipment_library_version": null,
+    "rule_library_version": null
+  },
+  "unit_system": {
+    "length_unit": "m",
+    "angle_unit": "deg",
+    "mass_unit": "unknown",
+    "time_unit": "unknown",
+    "coordinate_system": "right_handed",
+    "canonical_storage": "meter_degree"
+  },
+  "site_ref": {
+    "site_id": "SITE_INLINE_001",
+    "site_source": "user_defined",
+    "bound_model_asset_id": null,
+    "default_dimensions_m": {
+      "width_m": 48,
+      "depth_m": 30
+    },
+    "site_snapshot": {
+      "schema_version": "inline-site-v1",
+      "site_id": "SITE_INLINE_001",
+      "site_definition_mode": "user_defined",
+      "boundary": {
+        "boundary_id": "SITE_INLINE_001/boundary",
+        "dimensions_m": {
+          "width_m": 48,
+          "depth_m": 30
+        },
+        "pose": {
+          "x_m": 0,
+          "y_m": 0,
+          "z_m": 0
+        }
+      },
+      "site_features": [
+        {
+          "site_feature_id": "natural_site/central_east_west_aisle",
+          "feature_type": "corridor",
+          "feature_name": "central east-west aisle",
+          "pose": {
+            "x_m": 0,
+            "y_m": 0,
+            "z_m": 0,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": null
+          },
+          "dimensions_m": {
+            "width_m": 48,
+            "depth_m": 4,
+            "height_m": 0.1
+          },
+          "must_remain_clear": true,
+          "source": "user_input",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "site_feature_id": "natural_site/receiving_door",
+          "feature_type": "entrance",
+          "feature_name": "receiving",
+          "pose": {
+            "x_m": -24,
+            "y_m": 0,
+            "z_m": 0,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_frame"
+          },
+          "dimensions_m": {
+            "width_m": 0.2,
+            "depth_m": 4,
+            "height_m": 3.6
+          },
+          "must_remain_clear": true,
+          "source": "computed",
+          "confidence": 1
+        },
+        {
+          "site_feature_id": "natural_site/dispatch_door",
+          "feature_type": "exit",
+          "feature_name": "dispatch",
+          "pose": {
+            "x_m": 24,
+            "y_m": 0,
+            "z_m": 0,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_frame"
+          },
+          "dimensions_m": {
+            "width_m": 0.2,
+            "depth_m": 4,
+            "height_m": 3.6
+          },
+          "must_remain_clear": true,
+          "source": "computed",
+          "confidence": 1
+        },
+        {
+          "site_feature_id": "natural_site/buffer_inbound",
+          "feature_type": "forbidden_zone",
+          "feature_name": "inbound buffer",
+          "pose": {
+            "x_m": -22.5,
+            "y_m": 0,
+            "z_m": -3.5,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": null
+          },
+          "dimensions_m": {
+            "width_m": 3,
+            "depth_m": 3,
+            "height_m": 0.1
+          },
+          "must_remain_clear": true,
+          "source": "user_input",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "site_feature_id": "natural_site/buffer_outbound",
+          "feature_type": "forbidden_zone",
+          "feature_name": "outbound buffer",
+          "pose": {
+            "x_m": 22.5,
+            "y_m": 0,
+            "z_m": 3.5,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": null
+          },
+          "dimensions_m": {
+            "width_m": 3,
+            "depth_m": 3,
+            "height_m": 0.1
+          },
+          "must_remain_clear": true,
+          "source": "user_input",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        }
+      ],
+      "zones": [
+        {
+          "zone_id": "natural_site/placement_north_of_east_west_aisle",
+          "zone_type": "placement_region",
+          "zone_name": "placement region north",
+          "pose": {
+            "x_m": 0,
+            "y_m": 0,
+            "z_m": 8.5,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": null
+          },
+          "dimensions_m": {
+            "width_m": 48,
+            "depth_m": 13,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/placement_south_of_east_west_aisle",
+          "zone_type": "placement_region",
+          "zone_name": "placement region south",
+          "pose": {
+            "x_m": 0,
+            "y_m": 0,
+            "z_m": -8.5,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": null
+          },
+          "dimensions_m": {
+            "width_m": 48,
+            "depth_m": 13,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_1_column_1",
+          "zone_type": "workstation_bay",
+          "zone_name": "CNC A",
+          "pose": {
+            "x_m": -15.375,
+            "y_m": 0,
+            "z_m": -5.151180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.302361865821969,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_1_column_1/placement",
+          "zone_type": "placement_region",
+          "zone_name": "placement region for CNC A",
+          "pose": {
+            "x_m": -15.375,
+            "y_m": 0,
+            "z_m": -5.151180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.302361865821969,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_1_column_2",
+          "zone_type": "workstation_bay",
+          "zone_name": "vertical machining center A",
+          "pose": {
+            "x_m": -4.125,
+            "y_m": 0,
+            "z_m": -5.151180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.302361865821969,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_1_column_2/placement",
+          "zone_type": "placement_region",
+          "zone_name": "placement region for vertical machining center A",
+          "pose": {
+            "x_m": -4.125,
+            "y_m": 0,
+            "z_m": -5.151180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.302361865821969,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_1_column_3",
+          "zone_type": "workstation_bay",
+          "zone_name": "CNC B",
+          "pose": {
+            "x_m": 7.125,
+            "y_m": 0,
+            "z_m": -5.151180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.302361865821969,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_1_column_3/placement",
+          "zone_type": "placement_region",
+          "zone_name": "placement region for CNC B",
+          "pose": {
+            "x_m": 7.125,
+            "y_m": 0,
+            "z_m": -5.151180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.302361865821969,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_1_column_4",
+          "zone_type": "workstation_bay",
+          "zone_name": "vertical machining center B",
+          "pose": {
+            "x_m": 18.375,
+            "y_m": 0,
+            "z_m": -5.151180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.302361865821969,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_1_column_4/placement",
+          "zone_type": "placement_region",
+          "zone_name": "placement region for vertical machining center B",
+          "pose": {
+            "x_m": 18.375,
+            "y_m": 0,
+            "z_m": -5.151180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.302361865821969,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_2_column_1",
+          "zone_type": "workstation_bay",
+          "zone_name": "turn-mill center",
+          "pose": {
+            "x_m": -15.375,
+            "y_m": 0,
+            "z_m": -11.651180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.697638134178032,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_2_column_1/placement",
+          "zone_type": "placement_region",
+          "zone_name": "placement region for turn-mill center",
+          "pose": {
+            "x_m": -15.375,
+            "y_m": 0,
+            "z_m": -11.651180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.697638134178032,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_2_column_2",
+          "zone_type": "workstation_bay",
+          "zone_name": "radial drilling machine",
+          "pose": {
+            "x_m": -4.125,
+            "y_m": 0,
+            "z_m": -11.651180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.697638134178032,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_2_column_2/placement",
+          "zone_type": "placement_region",
+          "zone_name": "placement region for radial drilling machine",
+          "pose": {
+            "x_m": -4.125,
+            "y_m": 0,
+            "z_m": -11.651180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.697638134178032,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_2_column_3",
+          "zone_type": "workstation_bay",
+          "zone_name": "EDM drilling machine",
+          "pose": {
+            "x_m": 7.125,
+            "y_m": 0,
+            "z_m": -11.651180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.697638134178032,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_2_column_3/placement",
+          "zone_type": "placement_region",
+          "zone_name": "placement region for EDM drilling machine",
+          "pose": {
+            "x_m": 7.125,
+            "y_m": 0,
+            "z_m": -11.651180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.697638134178032,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "natural_site/workstation_bay_row_2_column_4",
+          "zone_type": "forbidden_zone",
+          "zone_name": "reserved bay",
+          "pose": {
+            "x_m": 18.375,
+            "y_m": 0,
+            "z_m": -11.651180932910984,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": "site_layout_frame"
+          },
+          "dimensions_m": {
+            "width_m": 11.25,
+            "depth_m": 6.697638134178032,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "functional/northwest",
+          "zone_type": "placement_region",
+          "zone_name": "Assembly and transfer",
+          "pose": {
+            "x_m": -12,
+            "y_m": 0,
+            "z_m": 8.5,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": null
+          },
+          "dimensions_m": {
+            "width_m": 24,
+            "depth_m": 13,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        },
+        {
+          "zone_id": "functional/northeast",
+          "zone_type": "placement_region",
+          "zone_name": "Test and finishing",
+          "pose": {
+            "x_m": 12,
+            "y_m": 0,
+            "z_m": 8.5,
+            "roll_deg": 0,
+            "pitch_deg": 0,
+            "yaw_deg": 0,
+            "coordinate_frame_id": null
+          },
+          "dimensions_m": {
+            "width_m": 24,
+            "depth_m": 13,
+            "height_m": 0.1
+          },
+          "allowed_categories": [],
+          "forbidden_categories": [],
+          "source": "computed",
+          "source_model_asset_id": null,
+          "source_node_ref": null,
+          "confidence": 1
+        }
+      ],
+      "embedded_equipment_instances": []
+    }
+  },
+  "equipment_instances": [
+    {
+      "instance_id": "equipment_001",
+      "model_asset_id": "asset/fbx/fbx_84d31057",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "CNC A",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "natural_site/workstation_bay_row_1_column_1/placement"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 2.5036846923828127,
+          "depth_m": 2.2783805056760564,
+          "height_m": 2.324585332132708
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 2.5036846923828127,
+          "depth_m": 2.2783805056760564,
+          "source": "manual_input",
+          "confidence": 0.55
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -1.2518423461914066,
+            "y_m": 0,
+            "z_m": -1.1391902528380282
+          },
+          "max": {
+            "x_m": 1.251842346191406,
+            "y_m": 2.324585332132708,
+            "z_m": 1.1391902528380282
+          },
+          "coordinate_frame_id": "asset/fbx/fbx_84d31057/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.55
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_002",
+      "model_asset_id": "asset/fbx/fbx_84d31057",
+      "library_id": "library/production_model_library",
+      "quantity_index": 2,
+      "role": "CNC B",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "natural_site/workstation_bay_row_1_column_3/placement"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 2.5036846923828127,
+          "depth_m": 2.2783805056760564,
+          "height_m": 2.324585332132708
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 2.5036846923828127,
+          "depth_m": 2.2783805056760564,
+          "source": "manual_input",
+          "confidence": 0.55
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -1.2518423461914066,
+            "y_m": 0,
+            "z_m": -1.1391902528380282
+          },
+          "max": {
+            "x_m": 1.251842346191406,
+            "y_m": 2.324585332132708,
+            "z_m": 1.1391902528380282
+          },
+          "coordinate_frame_id": "asset/fbx/fbx_84d31057/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.55
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_003",
+      "model_asset_id": "asset/fbx/fbx_fb04a2ee",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "vertical machining center A",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "natural_site/workstation_bay_row_1_column_2/placement"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 2.3917410392761234,
+          "depth_m": 2.660300395485487,
+          "height_m": 2.853616152259388
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 2.3917410392761234,
+          "depth_m": 2.660300395485487,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -1.1958705196380615,
+            "y_m": 0,
+            "z_m": -1.3301501977427435
+          },
+          "max": {
+            "x_m": 1.1958705196380617,
+            "y_m": 2.853616152259388,
+            "z_m": 1.3301501977427435
+          },
+          "coordinate_frame_id": "asset/fbx/fbx_fb04a2ee/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_004",
+      "model_asset_id": "asset/fbx/fbx_fb04a2ee",
+      "library_id": "library/production_model_library",
+      "quantity_index": 2,
+      "role": "vertical machining center B",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "natural_site/workstation_bay_row_1_column_4/placement"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 2.3917410392761234,
+          "depth_m": 2.660300395485487,
+          "height_m": 2.853616152259388
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 2.3917410392761234,
+          "depth_m": 2.660300395485487,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -1.1958705196380615,
+            "y_m": 0,
+            "z_m": -1.3301501977427435
+          },
+          "max": {
+            "x_m": 1.1958705196380617,
+            "y_m": 2.853616152259388,
+            "z_m": 1.3301501977427435
+          },
+          "coordinate_frame_id": "asset/fbx/fbx_fb04a2ee/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_005",
+      "model_asset_id": "asset/fbx/fbx_6901bdd8",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "turn-mill center",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "natural_site/workstation_bay_row_2_column_1/placement"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 7.035520992279054,
+          "depth_m": 4.197638134178032,
+          "height_m": 3.4430006823322
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 7.035520992279054,
+          "depth_m": 4.197638134178032,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -3.517760496139527,
+            "y_m": 0,
+            "z_m": -2.098819067089016
+          },
+          "max": {
+            "x_m": 3.5177604961395263,
+            "y_m": 3.4430006823322,
+            "z_m": 2.098819067089016
+          },
+          "coordinate_frame_id": "asset/fbx/fbx_6901bdd8/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1.5,
+        "rear_m": 1,
+        "left_m": 1,
+        "right_m": 1,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1.5,
+        "rear_m": 1,
+        "left_m": 1,
+        "right_m": 1,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_006",
+      "model_asset_id": "asset/fbx/fbx_a3e1a9c2",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "radial drilling",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "natural_site/workstation_bay_row_2_column_2/placement"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 1.2340026855468764,
+          "depth_m": 0.683431950955397,
+          "height_m": 1.998452339652842
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 1.2340026855468764,
+          "depth_m": 0.683431950955397,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.6170013427734382,
+            "y_m": 0,
+            "z_m": -0.3417159754776986
+          },
+          "max": {
+            "x_m": 0.6170013427734382,
+            "y_m": 1.998452339652842,
+            "z_m": 0.3417159754776984
+          },
+          "coordinate_frame_id": "asset/fbx/fbx_a3e1a9c2/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_007",
+      "model_asset_id": "asset/fbx/fbx_313d8039",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "EDM drilling",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "natural_site/workstation_bay_row_2_column_3/placement"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 1.706553268432617,
+          "depth_m": 0.9772502588380529,
+          "height_m": 2.1506835618567983
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 1.706553268432617,
+          "depth_m": 0.9772502588380529,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.853276634216309,
+            "y_m": 0,
+            "z_m": -0.48862512941902647
+          },
+          "max": {
+            "x_m": 0.8532766342163081,
+            "y_m": 2.1506835618567983,
+            "z_m": 0.48862512941902647
+          },
+          "coordinate_frame_id": "asset/fbx/fbx_313d8039/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1.2,
+        "rear_m": 0.8,
+        "left_m": 0.8,
+        "right_m": 0.8,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_008",
+      "model_asset_id": "asset/glb/m093_fixture_workstation",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "fixture A",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "functional/northwest"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 1.220852255821228,
+          "depth_m": 1.173736578964467,
+          "height_m": 2.360962557788489
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 1.220852255821228,
+          "depth_m": 1.173736578964467,
+          "source": "manual_input",
+          "confidence": 0.9
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.610426127910614,
+            "y_m": 0,
+            "z_m": -0.5868682894822335
+          },
+          "max": {
+            "x_m": 0.610426127910614,
+            "y_m": 2.360962557788489,
+            "z_m": 0.5868682894822335
+          },
+          "coordinate_frame_id": "asset/glb/m093_fixture_workstation/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.9
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_009",
+      "model_asset_id": "asset/glb/m093_fixture_workstation",
+      "library_id": "library/production_model_library",
+      "quantity_index": 2,
+      "role": "fixture B",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "functional/northwest"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 1.220852255821228,
+          "depth_m": 1.173736578964467,
+          "height_m": 2.360962557788489
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 1.220852255821228,
+          "depth_m": 1.173736578964467,
+          "source": "manual_input",
+          "confidence": 0.9
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.610426127910614,
+            "y_m": 0,
+            "z_m": -0.5868682894822335
+          },
+          "max": {
+            "x_m": 0.610426127910614,
+            "y_m": 2.360962557788489,
+            "z_m": 0.5868682894822335
+          },
+          "coordinate_frame_id": "asset/glb/m093_fixture_workstation/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.9
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_010",
+      "model_asset_id": "asset/glb/m086_flexible_test_workstation",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "test A",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "functional/northeast"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 1.20114585,
+          "depth_m": 0.8020732073060617,
+          "height_m": 1.9359914127116213
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 1.20114585,
+          "depth_m": 0.8020732073060617,
+          "source": "manual_input",
+          "confidence": 0.9
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.6005729249999999,
+            "y_m": 0,
+            "z_m": -0.40103660365303084
+          },
+          "max": {
+            "x_m": 0.600572925,
+            "y_m": 1.9359914127116213,
+            "z_m": 0.40103660365303084
+          },
+          "coordinate_frame_id": "asset/glb/m086_flexible_test_workstation/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.9
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_011",
+      "model_asset_id": "asset/glb/m086_flexible_test_workstation",
+      "library_id": "library/production_model_library",
+      "quantity_index": 2,
+      "role": "test B",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "functional/northeast"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 1.20114585,
+          "depth_m": 0.8020732073060617,
+          "height_m": 1.9359914127116213
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 1.20114585,
+          "depth_m": 0.8020732073060617,
+          "source": "manual_input",
+          "confidence": 0.9
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.6005729249999999,
+            "y_m": 0,
+            "z_m": -0.40103660365303084
+          },
+          "max": {
+            "x_m": 0.600572925,
+            "y_m": 1.9359914127116213,
+            "z_m": 0.40103660365303084
+          },
+          "coordinate_frame_id": "asset/glb/m086_flexible_test_workstation/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.9
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_012",
+      "model_asset_id": "asset/glb/m088_small_temperature_chamber",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "temperature chamber",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "functional/northeast"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 1.30038307,
+          "depth_m": 1.469817859,
+          "height_m": 1.8426775137060565
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 1.30038307,
+          "depth_m": 1.469817859,
+          "source": "manual_input",
+          "confidence": 0.75
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.650191535,
+            "y_m": 0,
+            "z_m": -0.7349089295
+          },
+          "max": {
+            "x_m": 0.650191535,
+            "y_m": 1.8426775137060565,
+            "z_m": 0.7349089295
+          },
+          "coordinate_frame_id": "asset/glb/m088_small_temperature_chamber/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.75
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_013",
+      "model_asset_id": "asset/glb/m089_laser_marking_station",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "laser marking",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "functional/northeast"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 1.1544784097117535,
+          "depth_m": 0.9999999776482588,
+          "height_m": 2.65199601921448
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 1.1544784097117535,
+          "depth_m": 0.9999999776482588,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.5772392048558768,
+            "y_m": 0,
+            "z_m": -0.4999999888241293
+          },
+          "max": {
+            "x_m": 0.5772392048558768,
+            "y_m": 2.65199601921448,
+            "z_m": 0.49999998882412944
+          },
+          "coordinate_frame_id": "asset/glb/m089_laser_marking_station/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 1,
+        "rear_m": 0.6,
+        "left_m": 0.6,
+        "right_m": 0.6,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_014",
+      "model_asset_id": "asset/fbx/fbx_1a80889c",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "tool cabinet A",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "natural_site/placement_south_of_east_west_aisle"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 1.7742980957031254,
+          "depth_m": 0.9007441466966404,
+          "height_m": 1.7231077126892063
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 1.7742980957031254,
+          "depth_m": 0.9007441466966404,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.8871490478515627,
+            "y_m": 0,
+            "z_m": -0.4503720733483203
+          },
+          "max": {
+            "x_m": 0.8871490478515627,
+            "y_m": 1.7231077126892063,
+            "z_m": 0.4503720733483201
+          },
+          "coordinate_frame_id": "asset/fbx/fbx_1a80889c/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": 0.8,
+        "rear_m": 0.4,
+        "left_m": 0.4,
+        "right_m": 0.4,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 0.8,
+        "rear_m": 0.4,
+        "left_m": 0.4,
+        "right_m": 0.4,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_016",
+      "model_asset_id": "asset/glb/m092_line_side_storage_unit",
+      "library_id": "library/production_model_library",
+      "quantity_index": 2,
+      "role": "raw-material rack",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "natural_site/placement_south_of_east_west_aisle"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 4.119999528000006,
+          "depth_m": 1.3024159661051384,
+          "height_m": 1.9150001708873843
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 4.119999528000006,
+          "depth_m": 1.3024159661051384,
+          "source": "manual_input",
+          "confidence": 0.75
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -2.059999764000003,
+            "y_m": 2.7755575615628914e-17,
+            "z_m": -0.6512079830525693
+          },
+          "max": {
+            "x_m": 2.059999764000003,
+            "y_m": 1.9150001708873843,
+            "z_m": 0.6512079830525692
+          },
+          "coordinate_frame_id": "asset/glb/m092_line_side_storage_unit/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.75
+      },
+      "maintenance_clearance_m": {
+        "front_m": 0.8,
+        "rear_m": 0.4,
+        "left_m": 0.4,
+        "right_m": 0.4,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 0.8,
+        "rear_m": 0.4,
+        "left_m": 0.4,
+        "right_m": 0.4,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_017",
+      "model_asset_id": "asset/stl/m104_storage_rack",
+      "library_id": "library/production_model_library",
+      "quantity_index": 2,
+      "role": "finished-goods rack",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "functional/northeast"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 1.0000000076293947,
+          "depth_m": 0.6099956970214844,
+          "height_m": 1.7999999561309814
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 1.0000000076293947,
+          "depth_m": 0.6099956970214844,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.5000000038146973,
+            "y_m": 0,
+            "z_m": -0.3049978485107422
+          },
+          "max": {
+            "x_m": 0.5000000038146973,
+            "y_m": 1.7999999561309814,
+            "z_m": 0.3049978485107422
+          },
+          "coordinate_frame_id": "asset/stl/m104_storage_rack/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": 0.8,
+        "rear_m": 0.4,
+        "left_m": 0.4,
+        "right_m": 0.4,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 0.8,
+        "rear_m": 0.4,
+        "left_m": 0.4,
+        "right_m": 0.4,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_018",
+      "model_asset_id": "asset/glb/m092_line_side_storage_unit",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "line-side storage",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "functional/northwest"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 4.119999528000006,
+          "depth_m": 1.3024159661051384,
+          "height_m": 1.9150001708873843
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 4.119999528000006,
+          "depth_m": 1.3024159661051384,
+          "source": "manual_input",
+          "confidence": 0.75
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -2.059999764000003,
+            "y_m": 2.7755575615628914e-17,
+            "z_m": -0.6512079830525693
+          },
+          "max": {
+            "x_m": 2.059999764000003,
+            "y_m": 1.9150001708873843,
+            "z_m": 0.6512079830525692
+          },
+          "coordinate_frame_id": "asset/glb/m092_line_side_storage_unit/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.75
+      },
+      "maintenance_clearance_m": {
+        "front_m": 0.8,
+        "rear_m": 0.4,
+        "left_m": 0.4,
+        "right_m": 0.4,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 0.8,
+        "rear_m": 0.4,
+        "left_m": 0.4,
+        "right_m": 0.4,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_019",
+      "model_asset_id": "asset/stl/m103_work_table",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "loading table",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "functional/northwest"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 0.9999999718666076,
+          "depth_m": 1.6000000433921815,
+          "height_m": 0.784999978542328
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 0.9999999718666076,
+          "depth_m": 1.6000000433921815,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.49999998593330375,
+            "y_m": 0,
+            "z_m": -0.8000000216960907
+          },
+          "max": {
+            "x_m": 0.49999998593330386,
+            "y_m": 0.784999978542328,
+            "z_m": 0.8000000216960907
+          },
+          "coordinate_frame_id": "asset/stl/m103_work_table/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": null,
+        "rear_m": null,
+        "left_m": null,
+        "right_m": null,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "computed",
+        "confidence": null
+      },
+      "safety_clearance_m": {
+        "front_m": null,
+        "rear_m": null,
+        "left_m": null,
+        "right_m": null,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "computed",
+        "confidence": null
+      },
+      "allowed_orientations_deg": [
+        0
+      ]
+    },
+    {
+      "instance_id": "equipment_020",
+      "model_asset_id": "asset/stl/m103_work_table",
+      "library_id": "library/production_model_library",
+      "quantity_index": 2,
+      "role": "unloading table",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "functional/northwest"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 0.9999999718666076,
+          "depth_m": 1.6000000433921815,
+          "height_m": 0.784999978542328
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 0.9999999718666076,
+          "depth_m": 1.6000000433921815,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.49999998593330375,
+            "y_m": 0,
+            "z_m": -0.8000000216960907
+          },
+          "max": {
+            "x_m": 0.49999998593330386,
+            "y_m": 0.784999978542328,
+            "z_m": 0.8000000216960907
+          },
+          "coordinate_frame_id": "asset/stl/m103_work_table/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": null,
+        "rear_m": null,
+        "left_m": null,
+        "right_m": null,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "computed",
+        "confidence": null
+      },
+      "safety_clearance_m": {
+        "front_m": null,
+        "rear_m": null,
+        "left_m": null,
+        "right_m": null,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "computed",
+        "confidence": null
+      },
+      "allowed_orientations_deg": [
+        0
+      ]
+    },
+    {
+      "instance_id": "equipment_021",
+      "model_asset_id": "asset/glb/m098_conveyor_line",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "conveyor",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "functional/northwest"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 7.519754886627197,
+          "depth_m": 1.039599984884262,
+          "height_m": 0.7176001071929932
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 7.519754886627197,
+          "depth_m": 1.039599984884262,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -3.7598774433135986,
+            "y_m": 0,
+            "z_m": -0.519799992442131
+          },
+          "max": {
+            "x_m": 3.7598774433135986,
+            "y_m": 0.7176001071929932,
+            "z_m": 0.519799992442131
+          },
+          "coordinate_frame_id": "asset/glb/m098_conveyor_line/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": null,
+        "rear_m": null,
+        "left_m": null,
+        "right_m": null,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "computed",
+        "confidence": null
+      },
+      "safety_clearance_m": {
+        "front_m": null,
+        "rear_m": null,
+        "left_m": null,
+        "right_m": null,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "computed",
+        "confidence": null
+      },
+      "allowed_orientations_deg": [
+        0
+      ]
+    },
+    {
+      "instance_id": "equipment_022",
+      "model_asset_id": "asset/glb/m072_agv",
+      "library_id": "library/production_model_library",
+      "quantity_index": 1,
+      "role": "AGV A",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 0.536000022,
+          "depth_m": 0.736000054,
+          "height_m": 0.907000025
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 0.536000022,
+          "depth_m": 0.736000054,
+          "source": "manual_input",
+          "confidence": 0.9
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.268000011,
+            "y_m": 0,
+            "z_m": -0.368000027
+          },
+          "max": {
+            "x_m": 0.268000011,
+            "y_m": 0.907000025,
+            "z_m": 0.368000027
+          },
+          "coordinate_frame_id": "asset/glb/m072_agv/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.9
+      },
+      "maintenance_clearance_m": {
+        "front_m": null,
+        "rear_m": null,
+        "left_m": null,
+        "right_m": null,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "computed",
+        "confidence": null
+      },
+      "safety_clearance_m": {
+        "front_m": null,
+        "rear_m": null,
+        "left_m": null,
+        "right_m": null,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "computed",
+        "confidence": null
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_023",
+      "model_asset_id": "asset/glb/m072_agv",
+      "library_id": "library/production_model_library",
+      "quantity_index": 2,
+      "role": "AGV B",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 0.536000022,
+          "depth_m": 0.736000054,
+          "height_m": 0.907000025
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 0.536000022,
+          "depth_m": 0.736000054,
+          "source": "manual_input",
+          "confidence": 0.9
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.268000011,
+            "y_m": 0,
+            "z_m": -0.368000027
+          },
+          "max": {
+            "x_m": 0.268000011,
+            "y_m": 0.907000025,
+            "z_m": 0.368000027
+          },
+          "coordinate_frame_id": "asset/glb/m072_agv/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.9
+      },
+      "maintenance_clearance_m": {
+        "front_m": null,
+        "rear_m": null,
+        "left_m": null,
+        "right_m": null,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "computed",
+        "confidence": null
+      },
+      "safety_clearance_m": {
+        "front_m": null,
+        "rear_m": null,
+        "left_m": null,
+        "right_m": null,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "computed",
+        "confidence": null
+      },
+      "allowed_orientations_deg": []
+    },
+    {
+      "instance_id": "equipment_024",
+      "model_asset_id": "asset/fbx/fbx_1a80889c",
+      "library_id": "library/production_model_library",
+      "quantity_index": 3,
+      "role": "tool cabinet C",
+      "locked": false,
+      "initial_pose": null,
+      "fixed_pose": null,
+      "allowed_regions": [
+        "natural_site/placement_south_of_east_west_aisle"
+      ],
+      "required_ports": [],
+      "geometry": {
+        "shape_type": "rectangle",
+        "dimensions_m": {
+          "width_m": 1.7742980957031254,
+          "depth_m": 0.9007441466966404,
+          "height_m": 1.7231077126892063
+        },
+        "footprint": {
+          "shape_type": "rectangle",
+          "width_m": 1.7742980957031254,
+          "depth_m": 0.9007441466966404,
+          "source": "manual_input",
+          "confidence": 0.6
+        },
+        "bounding_box_m": {
+          "min": {
+            "x_m": -0.8871490478515627,
+            "y_m": 0,
+            "z_m": -0.4503720733483203
+          },
+          "max": {
+            "x_m": 0.8871490478515627,
+            "y_m": 1.7231077126892063,
+            "z_m": 0.4503720733483201
+          },
+          "coordinate_frame_id": "asset/fbx/fbx_1a80889c/case_calibration_20261015_frame"
+        },
+        "origin_policy": "center_floor",
+        "geometry_source": "manual_input",
+        "confidence": 0.6
+      },
+      "maintenance_clearance_m": {
+        "front_m": 0.8,
+        "rear_m": 0.4,
+        "left_m": 0.4,
+        "right_m": 0.4,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "safety_clearance_m": {
+        "front_m": 0.8,
+        "rear_m": 0.4,
+        "left_m": 0.4,
+        "right_m": 0.4,
+        "top_m": null,
+        "bottom_m": null,
+        "source": "user_input",
+        "confidence": 1
+      },
+      "allowed_orientations_deg": []
+    }
+  ],
+  "flow_relations": [
+    {
+      "flow_id": "flow_001",
+      "from_instance_id": "natural_site/receiving_door",
+      "to_instance_id": "natural_site/buffer_inbound",
+      "flow_type": "material",
+      "flow_weight": 90,
+      "sequence_order": 1,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking."
+    },
+    {
+      "flow_id": "flow_002",
+      "from_instance_id": "natural_site/buffer_inbound",
+      "to_instance_id": "equipment_016",
+      "flow_type": "material",
+      "flow_weight": 90,
+      "sequence_order": 2,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_022",
+      "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+    },
+    {
+      "flow_id": "flow_003",
+      "from_instance_id": "equipment_016",
+      "to_instance_id": "equipment_001",
+      "flow_type": "material",
+      "flow_weight": 20,
+      "sequence_order": 3,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_022",
+      "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+    },
+    {
+      "flow_id": "flow_004",
+      "from_instance_id": "equipment_001",
+      "to_instance_id": "equipment_003",
+      "flow_type": "material",
+      "flow_weight": 20,
+      "sequence_order": 4,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_022",
+      "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+    },
+    {
+      "flow_id": "flow_005",
+      "from_instance_id": "equipment_003",
+      "to_instance_id": "equipment_018",
+      "flow_type": "material",
+      "flow_weight": 20,
+      "sequence_order": 5,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_022",
+      "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+    },
+    {
+      "flow_id": "flow_006",
+      "from_instance_id": "equipment_018",
+      "to_instance_id": "equipment_008",
+      "flow_type": "material",
+      "flow_weight": 70,
+      "sequence_order": 6,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_023",
+      "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer."
+    },
+    {
+      "flow_id": "flow_007",
+      "from_instance_id": "equipment_008",
+      "to_instance_id": "equipment_019",
+      "flow_type": "material",
+      "flow_weight": 70,
+      "sequence_order": 7,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking."
+    },
+    {
+      "flow_id": "flow_008",
+      "from_instance_id": "equipment_019",
+      "to_instance_id": "equipment_021",
+      "flow_type": "material",
+      "flow_weight": 90,
+      "sequence_order": 8,
+      "required_connection": true,
+      "transport_mode": "conveyor",
+      "carrier_instance_id": "equipment_021",
+      "carrier_source_text": "The conveyor carries containers between the loading and unloading ends of its cell."
+    },
+    {
+      "flow_id": "flow_009",
+      "from_instance_id": "equipment_021",
+      "to_instance_id": "equipment_020",
+      "flow_type": "material",
+      "flow_weight": 90,
+      "sequence_order": 9,
+      "required_connection": true,
+      "transport_mode": "conveyor",
+      "carrier_instance_id": "equipment_021",
+      "carrier_source_text": "The conveyor carries containers between the loading and unloading ends of its cell."
+    },
+    {
+      "flow_id": "flow_010",
+      "from_instance_id": "equipment_020",
+      "to_instance_id": "equipment_010",
+      "flow_type": "material",
+      "flow_weight": 20,
+      "sequence_order": 10,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking."
+    },
+    {
+      "flow_id": "flow_011",
+      "from_instance_id": "equipment_010",
+      "to_instance_id": "equipment_012",
+      "flow_type": "material",
+      "flow_weight": 20,
+      "sequence_order": 11,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_023",
+      "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer."
+    },
+    {
+      "flow_id": "flow_012",
+      "from_instance_id": "equipment_012",
+      "to_instance_id": "equipment_013",
+      "flow_type": "material",
+      "flow_weight": 90,
+      "sequence_order": 12,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking."
+    },
+    {
+      "flow_id": "flow_013",
+      "from_instance_id": "equipment_013",
+      "to_instance_id": "equipment_017",
+      "flow_type": "material",
+      "flow_weight": 90,
+      "sequence_order": 13,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_023",
+      "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer."
+    },
+    {
+      "flow_id": "flow_014",
+      "from_instance_id": "equipment_017",
+      "to_instance_id": "natural_site/buffer_outbound",
+      "flow_type": "material",
+      "flow_weight": 90,
+      "sequence_order": 14,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_023",
+      "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer."
+    },
+    {
+      "flow_id": "flow_015",
+      "from_instance_id": "natural_site/buffer_outbound",
+      "to_instance_id": "natural_site/dispatch_door",
+      "flow_type": "material",
+      "flow_weight": 90,
+      "sequence_order": 15,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking."
+    },
+    {
+      "flow_id": "flow_016",
+      "from_instance_id": "equipment_016",
+      "to_instance_id": "equipment_002",
+      "flow_type": "material",
+      "flow_weight": 20,
+      "sequence_order": 3,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_022",
+      "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+    },
+    {
+      "flow_id": "flow_017",
+      "from_instance_id": "equipment_002",
+      "to_instance_id": "equipment_004",
+      "flow_type": "material",
+      "flow_weight": 20,
+      "sequence_order": 4,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_022",
+      "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+    },
+    {
+      "flow_id": "flow_018",
+      "from_instance_id": "equipment_004",
+      "to_instance_id": "equipment_007",
+      "flow_type": "material",
+      "flow_weight": 20,
+      "sequence_order": 5,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_022",
+      "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+    },
+    {
+      "flow_id": "flow_019",
+      "from_instance_id": "equipment_007",
+      "to_instance_id": "equipment_018",
+      "flow_type": "material",
+      "flow_weight": 70,
+      "sequence_order": 6,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_022",
+      "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+    },
+    {
+      "flow_id": "flow_020",
+      "from_instance_id": "equipment_018",
+      "to_instance_id": "equipment_009",
+      "flow_type": "material",
+      "flow_weight": 20,
+      "sequence_order": 7,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_023",
+      "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer."
+    },
+    {
+      "flow_id": "flow_021",
+      "from_instance_id": "equipment_009",
+      "to_instance_id": "equipment_019",
+      "flow_type": "material",
+      "flow_weight": 20,
+      "sequence_order": 8,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking."
+    },
+    {
+      "flow_id": "flow_022",
+      "from_instance_id": "equipment_020",
+      "to_instance_id": "equipment_011",
+      "flow_type": "material",
+      "flow_weight": 70,
+      "sequence_order": 11,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking."
+    },
+    {
+      "flow_id": "flow_023",
+      "from_instance_id": "equipment_011",
+      "to_instance_id": "equipment_012",
+      "flow_type": "material",
+      "flow_weight": 70,
+      "sequence_order": 12,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_023",
+      "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer."
+    },
+    {
+      "flow_id": "flow_024",
+      "from_instance_id": "equipment_016",
+      "to_instance_id": "equipment_005",
+      "flow_type": "material",
+      "flow_weight": 50,
+      "sequence_order": 3,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_022",
+      "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+    },
+    {
+      "flow_id": "flow_025",
+      "from_instance_id": "equipment_005",
+      "to_instance_id": "equipment_006",
+      "flow_type": "material",
+      "flow_weight": 50,
+      "sequence_order": 4,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_022",
+      "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+    },
+    {
+      "flow_id": "flow_026",
+      "from_instance_id": "equipment_006",
+      "to_instance_id": "equipment_007",
+      "flow_type": "material",
+      "flow_weight": 50,
+      "sequence_order": 5,
+      "required_connection": true,
+      "transport_mode": "agv",
+      "carrier_instance_id": "equipment_022",
+      "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+    },
+    {
+      "flow_id": "flow_027",
+      "from_instance_id": "equipment_014",
+      "to_instance_id": "equipment_001",
+      "flow_type": "tool_service",
+      "flow_weight": 2,
+      "sequence_order": 1,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators perform these daily tool-service round trips:"
+    },
+    {
+      "flow_id": "flow_028",
+      "from_instance_id": "equipment_001",
+      "to_instance_id": "equipment_014",
+      "flow_type": "tool_service",
+      "flow_weight": 2,
+      "sequence_order": 2,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators perform these daily tool-service round trips:"
+    },
+    {
+      "flow_id": "flow_029",
+      "from_instance_id": "equipment_014",
+      "to_instance_id": "equipment_003",
+      "flow_type": "tool_service",
+      "flow_weight": 2,
+      "sequence_order": 1,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators perform these daily tool-service round trips:"
+    },
+    {
+      "flow_id": "flow_030",
+      "from_instance_id": "equipment_003",
+      "to_instance_id": "equipment_014",
+      "flow_type": "tool_service",
+      "flow_weight": 2,
+      "sequence_order": 2,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators perform these daily tool-service round trips:"
+    },
+    {
+      "flow_id": "flow_031",
+      "from_instance_id": "equipment_024",
+      "to_instance_id": "equipment_002",
+      "flow_type": "tool_service",
+      "flow_weight": 2,
+      "sequence_order": 1,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators perform these daily tool-service round trips:"
+    },
+    {
+      "flow_id": "flow_032",
+      "from_instance_id": "equipment_002",
+      "to_instance_id": "equipment_024",
+      "flow_type": "tool_service",
+      "flow_weight": 2,
+      "sequence_order": 2,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators perform these daily tool-service round trips:"
+    },
+    {
+      "flow_id": "flow_033",
+      "from_instance_id": "equipment_024",
+      "to_instance_id": "equipment_004",
+      "flow_type": "tool_service",
+      "flow_weight": 2,
+      "sequence_order": 1,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators perform these daily tool-service round trips:"
+    },
+    {
+      "flow_id": "flow_034",
+      "from_instance_id": "equipment_004",
+      "to_instance_id": "equipment_024",
+      "flow_type": "tool_service",
+      "flow_weight": 2,
+      "sequence_order": 2,
+      "required_connection": true,
+      "transport_mode": "operator",
+      "carrier_instance_id": null,
+      "carrier_source_text": "Operators perform these daily tool-service round trips:"
+    }
+  ],
+  "constraints": {
+    "hard": [
+      {
+        "constraint_id": "constraint_001",
+        "constraint_type": "no_overlap",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {},
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_002",
+        "constraint_type": "inside_boundary",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {},
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_003",
+        "constraint_type": "corridor_preservation",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {},
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_004",
+        "constraint_type": "region_membership",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {},
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_005",
+        "constraint_type": "spatial_order",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {},
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_006",
+        "constraint_type": "alignment",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {},
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_007",
+        "constraint_type": "forbidden_zone_avoidance",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {},
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_008",
+        "constraint_type": "minimum_clearance",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {},
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_009",
+        "constraint_type": "adjacency",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {},
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_010",
+        "constraint_type": "entrance_exit_unblocked",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {},
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_011",
+        "constraint_type": "minimum_clearance",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {
+          "clearance_by_instance": {
+            "equipment_001": 1.2,
+            "equipment_002": 1.2,
+            "equipment_003": 1.2,
+            "equipment_004": 1.2,
+            "equipment_005": 1.5,
+            "equipment_006": 1.2,
+            "equipment_007": 1.2,
+            "equipment_008": 1,
+            "equipment_009": 1,
+            "equipment_010": 1,
+            "equipment_011": 1,
+            "equipment_012": 1,
+            "equipment_013": 1,
+            "equipment_014": 0.8,
+            "equipment_015": 0.8,
+            "equipment_016": 0.8,
+            "equipment_017": 0.8,
+            "equipment_018": 0.8,
+            "equipment_024": 0.8
+          }
+        },
+        "source": "computed",
+        "evidence_refs": [
+          "equipment_instances.clearance"
+        ]
+      },
+      {
+        "constraint_id": "constraint_012",
+        "constraint_type": "alignment",
+        "target_refs": [
+          {
+            "target_type": "equipment_instance",
+            "target_id": "equipment_021"
+          },
+          {
+            "target_type": "equipment_instance",
+            "target_id": "equipment_019"
+          },
+          {
+            "target_type": "equipment_instance",
+            "target_id": "equipment_020"
+          }
+        ],
+        "parameters": {
+          "planning_kind": "manual_conveyor_cell",
+          "conveyor_instance_id": "equipment_021",
+          "input_table_instance_id": "equipment_019",
+          "output_table_instance_id": "equipment_020",
+          "end_gap_m": 0.2,
+          "operator_strip_m": 1,
+          "basis": "Agent planning proposal accepted in the user clarification; manual lifting, no OEM docking claim",
+          "source_text": "ENGINEERING CONTEXT — FLEXIBLE MANUFACTURING OF ELECTRONIC CONTROL EQUIPMENT\n\nFACILITY AND WORK AREAS\n\nThe floor is 48 m east to west and 30 m north to south. Enclose it with black perimeter walls. Keep a central 4 m-wide logistics aisle running east to west through the center. Center the receiving door in the west wall and the dispatch door in the east wall, aligned with the aisle. Both openings are initially 4 m wide, with usable approaches.\n\nMachining belongs south of the aisle. Assembly and manual conveyor transfer belong in the northwest; testing and finishing belong in the northeast. Mark these work areas with light floor boundaries and readable labels. Provide a 3 m by 3 m inbound buffer near the receiving door, south of the aisle, and an equally sized outbound buffer near dispatch, north of the aisle. Hatch both buffers diagonally. No surveyed interior columns or other fixed obstacles are supplied for this case. Keep equipment and parking bays outside the aisle, door approaches, buffers, and reserved operating areas. Prevent overlap and keep the required access and maintenance space usable.\n\nEQUIPMENT INVENTORY AND ORGANIZATION\n\nUse 13 main process units:\nSouth: two general CNC machining centers A and B; two compact vertical machining centers A and B; one turn-mill center; one radial drilling machine; one EDM drilling machine.\nNorth: two fixture assembly workstations A and B; two flexible test workstations A and B; one small temperature chamber; one laser marking station.\n\nAdd ten auxiliary objects: two tool cabinets A and B; a raw-material storage rack; a finished-goods storage rack; a line-side storage unit; a loading work table; an unloading work table; a pallet-track conveyor; two AGVs A and B. Use freestanding racks and work tables rather than composite scenes containing several unrelated objects.\n\nOrganize the south machining area as two east-west rows of four bays each.\nAlign the stations in each row along a common east-west line.\nRow 1 is closest to the central aisle; row 2 is behind it, toward the south wall.\nRow 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B.\nRow 2, west to east: turn-mill center; radial drilling machine; EDM drilling machine; reserved bay.\nLeave the eighth bay empty for future expansion or maintenance.\n\nUse the following operation and maintenance spaces as case requirements:\n- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.\n- Turn-mill center: 1.5 m at the service front, 1.0 m at the rear, and 1.0 m on each side.\n- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.\n- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.\nThe work tables and conveyor use the connected handoff-cell requirements below. Preserve boundary, overlap, aisle, access, and maintenance-space checks.\n\nAuxiliary placement:\nSouth: raw-material rack; tool cabinet A; tool cabinet B.\nKeep the raw-material rack near receiving and each tool cabinet near the machines it serves. Put line-side storage near the assembly workstations. Give each AGV a parking bay outside the aisle.\nNorthwest: fixture A; fixture B; loading table; conveyor; unloading table; line-side storage.\nNortheast: test A; test B; temperature chamber; laser marking; finished-goods rack.\n\nThe two work tables stand at opposite short ends of the conveyor, centered on its ends. Keep the cell parallel to the central aisle. Allow a 0.20 m gap at each end and a continuous 1.0 m operator strip on the aisle side. Operators lift containers across these gaps; equal table and conveyor heights and automatic docking are not assumed. These handoff dimensions are accepted case planning assumptions.\n\nPRODUCTION AND LOGISTICS\n\nDaily demand and routes remain the same throughout this case:\n- Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.\n- Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.\n- Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.\n\nAGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage. AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.\n\nOperators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking. They also load and unload the AGVs and conveyor. The conveyor carries containers between the loading and unloading ends of its cell. Handoffs at process machines are external manual transfers; automatic machine docking is not required.\n\nOperators perform these daily tool-service round trips:\n- Tool service for CNC A, 2 trips per day: tool cabinet A -> CNC A -> tool cabinet A.\n- Tool service for vertical machining center A, 2 trips per day: tool cabinet A -> vertical machining center A -> tool cabinet A.\n- Tool service for CNC B, 2 trips per day: tool cabinet B -> CNC B -> tool cabinet B.\n- Tool service for vertical machining center B, 2 trips per day: tool cabinet B -> vertical machining center B -> tool cabinet B.\n\nEVALUATION ASSUMPTIONS\n\nAGV transport cost is an index based on usable travel paths: loaded travel costs 1 index unit per meter and empty travel costs 0.8. Use one batch per trip. After each delivery, the empty AGV returns to its pickup point. Group shuttle jobs by pickup location in their first occurrence in the product routes. Include empty travel between groups and the daily departure from and return to the parking bay. These are planning assumptions, not measured charges, energy use, or a fleet scheduling simulation.\n\nRelocation effort is measured from the accepted Generate positions. A moved object incurs a fixed effort plus its horizontal Manhattan displacement multiplied by a per-meter coefficient. Rotation alone has no charge. For an AGV, this refers to moving its parking bay. The following fixed and per-meter coefficients are planning indices, not actual moving fees:\n- CNC machining center: fixed effort 8; distance effort 0.6 per meter.\n- Vertical machining center: fixed effort 10; distance effort 0.8 per meter.\n- Turn-mill machining center: fixed effort 16; distance effort 1.2 per meter.\n- Radial drilling machine: fixed effort 5; distance effort 0.4 per meter.\n- EDM drilling machine: fixed effort 6; distance effort 0.5 per meter.\n- Fixture workstation: fixed effort 3; distance effort 0.2 per meter.\n- Flexible test workstation: fixed effort 4; distance effort 0.25 per meter.\n- Laser marking station: fixed effort 3; distance effort 0.2 per meter.\n- Temperature chamber: fixed effort 6; distance effort 0.4 per meter.\n- Tool cabinet: fixed effort 1; distance effort 0.1 per meter.\n- Work table: fixed effort 1; distance effort 0.08 per meter.\n- Storage rack: fixed effort 2; distance effort 0.1 per meter.\n- Line-side storage: fixed effort 2; distance effort 0.1 per meter.\n- Conveyor: fixed effort 8; distance effort 0.35 per meter.\n- AGV: fixed effort 0.5; distance effort 0.02 per meter.\n\nWhen optimization is requested, give AGV transport cost and relocation effort equal importance. Among the returned feasible Pareto candidates, normalize each objective by its observed range and select the point closest to the component-wise ideal. This is the case selection policy, not a claim of global optimality. No purchase or disposal costs are supplied for inventory changes.\nPrevious request requiring clarification:\nCreate an initial layout for this workshop. Keep the machining stations in their two-row arrangement and leave the reserved bay clear. Clarify any unresolved equipment or handoff choice. Hard constraint: no overlap.\n\nUser clarification:\nUse the compact Vertical machining center 1100 x 900, approximately 2.39 m by 2.66 m, for both vertical machining stations. For the turn-mill center, use Turn-mill machining center, approximately 7.04 m by 4.20 m. Use the Fixture workstation, approximately 1.22 m by 1.17 m, for both assembly stations. Use the freestanding Work table, approximately 1.00 m by 1.60 m, for both loading and unloading. Choose Conveyor line, the approximately 7.52 m by 1.04 m pallet-track conveyor. Hard constraint: no overlap."
+        },
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_hard_013",
+        "constraint_type": "corridor_preservation",
+        "target_refs": [
+          {
+            "target_type": "all_equipment",
+            "target_id": "all"
+          }
+        ],
+        "parameters": {
+          "planning_kind": "agv_external_access",
+          "basis": "Declared continuous AGV access, conservative calibrated body envelope"
+        },
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      },
+      {
+        "constraint_id": "constraint_014",
+        "constraint_type": "near",
+        "target_refs": [
+          {
+            "target_type": "equipment_instance",
+            "target_id": "equipment_024"
+          },
+          {
+            "target_type": "equipment_instance",
+            "target_id": "equipment_002"
+          }
+        ],
+        "parameters": {
+          "placement_policy": "nearest_feasible_candidate",
+          "basis": "Qualitative near request; no manufacturer distance limit asserted"
+        },
+        "source": "user_input",
+        "evidence_refs": [
+          "source_request.raw_user_message"
+        ]
+      }
+    ],
+    "soft": []
+  },
+  "objectives": [
+    {
+      "objective_id": "objective_001",
+      "objective_type": "minimize_agv_transport_cost",
+      "sense": "minimize",
+      "weight": 1,
+      "parameters": {
+        "loaded_cost_per_meter": 1,
+        "empty_cost_per_meter": 0.8,
+        "mission_policy": "loaded_then_empty_return",
+        "batches_per_trip": 1,
+        "include_daily_home_trip": true,
+        "units": "planning_transport_cost_index_per_day",
+        "basis": "Declared case assumptions, not monetary charges or measured energy consumption",
+        "body_model": "circumscribed_square",
+        "stop_policy": "aisle_facing_external_manual_handoff"
+      },
+      "source": "user_input",
+      "evidence_refs": [
+        "source_request.raw_user_message"
+      ]
+    }
+  ],
+  "optimization_scope": {
+    "base_layout_id": "layout_v2_edit",
+    "locked_instances": [],
+    "movable_instances": [
+      "equipment_001",
+      "equipment_002",
+      "equipment_003",
+      "equipment_004",
+      "equipment_005",
+      "equipment_006",
+      "equipment_007",
+      "equipment_008",
+      "equipment_009",
+      "equipment_010",
+      "equipment_011",
+      "equipment_012",
+      "equipment_013",
+      "equipment_014",
+      "equipment_016",
+      "equipment_017",
+      "equipment_018",
+      "equipment_019",
+      "equipment_020",
+      "equipment_021",
+      "equipment_022",
+      "equipment_023",
+      "equipment_024"
+    ],
+    "editable_zones": []
+  },
+  "delta_policy": {
+    "use_current_layout_as_reference": false,
+    "penalize_large_movements": false,
+    "max_movement_distance_m": null,
+    "movement_cost_weight": null
+  },
+  "planning_preferences": {
+    "generation_policy": "asset_based",
+    "max_runtime_s": null,
+    "return_top_k": null
+  },
+  "provenance": [
+    {
+      "field_path": "source_request.raw_user_message",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "user_message",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "site_ref",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "user_message",
+      "confidence": 0.95,
+      "note": null
+    },
+    {
+      "field_path": "site_ref.site_snapshot.site_features[natural_site/central_east_west_aisle]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Keep a central 4 m-wide logistics aisle running east to west through the center",
+      "confidence": 1,
+      "note": "Centered aisle rectangle derived from its stated axis and width."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.site_features[natural_site/buffer_inbound]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Provide a 3 m by 3 m inbound buffer near the receiving door, south of the aisle, and an equally sized outbound buffer near dispatch, north of the aisle Provide a 3 m by 3 m inbound buffer near the receiving door, south of the aisle, and an equally sized outbound buffer near dispatch, north of the aisle",
+      "confidence": 1,
+      "note": "Initial design placement adjacent to the named door and outside the aisle; not a measured or user-specified center."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.site_features[natural_site/buffer_outbound]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Provide a 3 m by 3 m inbound buffer near the receiving door, south of the aisle, and an equally sized outbound buffer near dispatch, north of the aisle Provide a 3 m by 3 m inbound buffer near the receiving door, south of the aisle, and an equally sized outbound buffer near dispatch, north of the aisle",
+      "confidence": 1,
+      "note": "Initial design placement adjacent to the named door and outside the aisle; not a measured or user-specified center."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.zones[natural_site/placement_north_of_east_west_aisle]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "South: two general CNC machining centers A and B; two compact vertical machining centers A and B; one turn-mill center; one radial drilling machine; one EDM drilling machine.\nNorth: two fixture assembly workstations A and B; two flexible test workstations A and B; one small temperature chamber; one laser marking station.\n\nAdd ten auxiliary objects: two tool cabinets A and B; a raw-material storage rack; a finished-goods storage rack; a line-side storage unit; a loading work table; an unloading work table; a pallet-track conveyor; two AGVs A and B. Use freestanding racks and work tables rather than composite scenes containing several unrelated objects.\n\nOrganize the south machining area as two east-west rows of four bays each.\nAlign the stations in each row along a common east-west line.\nRow 1 is closest to the central aisle; row 2 is behind it, toward the south wall.\nRow 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B.\nRow 2, west to east: turn-mill center; radial drilling machine; EDM drilling machine; reserved bay.\nLeave the eighth bay empty for future expansion or maintenance.\n\nUse the following operation and maintenance spaces as case requirements:\n- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.\n- Turn-mill center: 1.5 m at the service front, 1.0 m at the rear, and 1.0 m on each side.\n- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.\n- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.\nThe work tables and conveyor use the connected handoff-cell requirements below. Preserve boundary, overlap, aisle, access, and maintenance-space checks.\n\nAuxiliary placement:\nSouth: raw-material rack; tool cabinet A; tool cabinet B.",
+      "confidence": 1,
+      "note": "Placement-region bounds derived from the central aisle and wall margin."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.zones[natural_site/placement_south_of_east_west_aisle]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "South: two general CNC machining centers A and B; two compact vertical machining centers A and B; one turn-mill center; one radial drilling machine; one EDM drilling machine.\nNorth: two fixture assembly workstations A and B; two flexible test workstations A and B; one small temperature chamber; one laser marking station.\n\nAdd ten auxiliary objects: two tool cabinets A and B; a raw-material storage rack; a finished-goods storage rack; a line-side storage unit; a loading work table; an unloading work table; a pallet-track conveyor; two AGVs A and B. Use freestanding racks and work tables rather than composite scenes containing several unrelated objects.\n\nOrganize the south machining area as two east-west rows of four bays each.\nAlign the stations in each row along a common east-west line.\nRow 1 is closest to the central aisle; row 2 is behind it, toward the south wall.\nRow 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B.\nRow 2, west to east: turn-mill center; radial drilling machine; EDM drilling machine; reserved bay.\nLeave the eighth bay empty for future expansion or maintenance.\n\nUse the following operation and maintenance spaces as case requirements:\n- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.\n- Turn-mill center: 1.5 m at the service front, 1.0 m at the rear, and 1.0 m on each side.\n- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.\n- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.\nThe work tables and conveyor use the connected handoff-cell requirements below. Preserve boundary, overlap, aisle, access, and maintenance-space checks.\n\nAuxiliary placement:\nSouth: raw-material rack; tool cabinet A; tool cabinet B.",
+      "confidence": 1,
+      "note": "Placement-region bounds derived from the central aisle and wall margin."
+    },
+    {
+      "field_path": "equipment_instances[equipment_001].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_001].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_002].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_002].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_003].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_003].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_004].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_004].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_006].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_006].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_007].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_007].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_005].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Turn-mill center: 1.5 m at the service front, 1.0 m at the rear, and 1.0 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_005].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Turn-mill center: 1.5 m at the service front, 1.0 m at the rear, and 1.0 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_008].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_008].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_009].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_009].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_010].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_010].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_011].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_011].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_012].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_012].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_013].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_013].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_014].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_014].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_016].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_016].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_017].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_017].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_018].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "equipment_instances[equipment_018].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.",
+      "confidence": 1,
+      "note": "User-confirmed case requirement; not manufacturer clearance data. It supersedes legacy experimental estimates on this working instance only."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.zones[natural_site/workstation_bay_row_1_column_1]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Row 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B.",
+      "confidence": 1,
+      "note": "Bay bounds derived from the source row order and resolved south placement region."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.zones[natural_site/workstation_bay_row_1_column_2]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Row 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B.",
+      "confidence": 1,
+      "note": "Bay bounds derived from the source row order and resolved south placement region."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.zones[natural_site/workstation_bay_row_1_column_3]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Row 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B.",
+      "confidence": 1,
+      "note": "Bay bounds derived from the source row order and resolved south placement region."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.zones[natural_site/workstation_bay_row_1_column_4]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Row 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B.",
+      "confidence": 1,
+      "note": "Bay bounds derived from the source row order and resolved south placement region."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.zones[natural_site/workstation_bay_row_2_column_1]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Row 2, west to east: turn-mill center; radial drilling machine; EDM drilling machine; reserved bay.",
+      "confidence": 1,
+      "note": "Bay bounds derived from the source row order and resolved south placement region."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.zones[natural_site/workstation_bay_row_2_column_2]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Row 2, west to east: turn-mill center; radial drilling machine; EDM drilling machine; reserved bay.",
+      "confidence": 1,
+      "note": "Bay bounds derived from the source row order and resolved south placement region."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.zones[natural_site/workstation_bay_row_2_column_3]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Row 2, west to east: turn-mill center; radial drilling machine; EDM drilling machine; reserved bay.",
+      "confidence": 1,
+      "note": "Bay bounds derived from the source row order and resolved south placement region."
+    },
+    {
+      "field_path": "site_ref.site_snapshot.zones[natural_site/workstation_bay_row_2_column_4]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Row 2, west to east: turn-mill center; radial drilling machine; EDM drilling machine; reserved bay.",
+      "confidence": 1,
+      "note": "Bay bounds derived from the source row order and resolved south placement region."
+    },
+    {
+      "field_path": "constraints.hard[0]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "user_message",
+      "confidence": 0.9,
+      "note": null
+    },
+    {
+      "field_path": "constraints.hard[1]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "user_message",
+      "confidence": 0.9,
+      "note": null
+    },
+    {
+      "field_path": "constraints",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Hard constraint: no overlap.",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "constraints.hard[2]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Keep a central 4 m-wide logistics aisle running east to west through the center.",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "constraints.hard[3]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Machining belongs south of the aisle. Assembly and manual conveyor transfer belong in the northwest; testing and finishing belong in the northeast.",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "constraints.hard[4]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Row 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B.",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "constraints.hard[5]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Align the stations in each row along a common east-west line.",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "constraints.hard[6]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Keep equipment and parking bays outside the aisle, door approaches, buffers, and reserved operating areas.",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "constraints.hard[7]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "constraints.hard[8]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "The two work tables stand at opposite short ends of the conveyor, centered on its ends.",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "constraints.hard[9]",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "Center the receiving door in the west wall and the dispatch door in the east wall, aligned with the aisle.",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "constraints.hard[10]",
+      "source_type": "computed",
+      "source_id": "INTENT_001",
+      "source_field": "equipment_clearance",
+      "confidence": 0.8,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[0]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[1]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[2]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[3]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[4]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[5]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[6]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[7]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[8]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[9]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[10]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[11]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[12]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[13]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[14]",
+      "source_type": "user_input",
+      "source_id": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[0]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[1]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[15]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[16]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[17]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[18]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[19]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[20]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[7]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[8]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[21]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[22]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[11]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[12]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[13]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[14]",
+      "source_type": "user_input",
+      "source_id": "Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[0]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[1]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[23]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[24]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[25]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[18]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[5]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[6]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[7]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[8]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[21]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[22]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[11]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[12]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[13]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[14]",
+      "source_type": "user_input",
+      "source_id": "Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[26]",
+      "source_type": "user_input",
+      "source_id": "Tool service for CNC A, 2 trips per day: tool cabinet A -> CNC A -> tool cabinet A.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[27]",
+      "source_type": "user_input",
+      "source_id": "Tool service for CNC A, 2 trips per day: tool cabinet A -> CNC A -> tool cabinet A.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[28]",
+      "source_type": "user_input",
+      "source_id": "Tool service for vertical machining center A, 2 trips per day: tool cabinet A -> vertical machining center A -> tool cabinet A.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[29]",
+      "source_type": "user_input",
+      "source_id": "Tool service for vertical machining center A, 2 trips per day: tool cabinet A -> vertical machining center A -> tool cabinet A.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[30]",
+      "source_type": "user_input",
+      "source_id": "Tool service for CNC B, 2 trips per day: tool cabinet B -> CNC B -> tool cabinet B.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[31]",
+      "source_type": "user_input",
+      "source_id": "Tool service for CNC B, 2 trips per day: tool cabinet B -> CNC B -> tool cabinet B.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[32]",
+      "source_type": "user_input",
+      "source_id": "Tool service for vertical machining center B, 2 trips per day: tool cabinet B -> vertical machining center B -> tool cabinet B.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "flow_relations[33]",
+      "source_type": "user_input",
+      "source_id": "Tool service for vertical machining center B, 2 trips per day: tool cabinet B -> vertical machining center B -> tool cabinet B.",
+      "source_field": "reviewed_process_relations",
+      "confidence": 1,
+      "note": null
+    },
+    {
+      "field_path": "revision_history",
+      "source_type": "computed",
+      "source_id": "evaluation_v1",
+      "source_field": "global_resolve",
+      "confidence": 1,
+      "note": "Designer revision 2 applied structured feedback without changing user hard constraints."
+    },
+    {
+      "field_path": "equipment_instances[equipment_024].maintenance_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.",
+      "confidence": 1,
+      "note": "Propagated an accepted case service requirement to an Edit asset of the same source-defined equipment group; not manufacturer clearance data."
+    },
+    {
+      "field_path": "equipment_instances[equipment_024].safety_clearance_m",
+      "source_type": "user_input",
+      "source_id": "INTENT_001",
+      "source_field": "- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.",
+      "confidence": 1,
+      "note": "Propagated an accepted case service requirement to an Edit asset of the same source-defined equipment group; not manufacturer clearance data."
+    },
+    {
+      "field_path": "objectives",
+      "source_type": "user_input",
+      "source_id": "EDIT_001",
+      "source_field": "operations",
+      "confidence": 1,
+      "note": "Relocation-only J2 is no longer comparable after inventory changes; acquisition/disposal/replacement costs were not provided. The accepted Optimize result retains its original J2."
+    },
+    {
+      "field_path": "equipment_instances[0].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/fbx/fbx_84d31057",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[1].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/fbx/fbx_84d31057",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[2].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/fbx/fbx_fb04a2ee",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[3].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/fbx/fbx_fb04a2ee",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[4].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/fbx/fbx_6901bdd8",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[5].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/fbx/fbx_a3e1a9c2",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[6].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/fbx/fbx_313d8039",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[7].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/glb/m093_fixture_workstation",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[8].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/glb/m093_fixture_workstation",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[9].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/glb/m086_flexible_test_workstation",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[10].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/glb/m086_flexible_test_workstation",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[11].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/glb/m088_small_temperature_chamber",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[12].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/glb/m089_laser_marking_station",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[13].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/fbx/fbx_1a80889c",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[14].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/glb/m092_line_side_storage_unit",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[15].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/stl/m104_storage_rack",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[16].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/glb/m092_line_side_storage_unit",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[17].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/stl/m103_work_table",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[18].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/stl/m103_work_table",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[19].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/glb/m098_conveyor_line",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[20].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/glb/m072_agv",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[21].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/glb/m072_agv",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "equipment_instances[22].geometry",
+      "source_type": "model_extraction",
+      "source_id": "asset/fbx/fbx_1a80889c",
+      "source_field": "geometry",
+      "confidence": 0.75,
+      "note": null
+    },
+    {
+      "field_path": "layout_edit_ir",
+      "source_type": "user_input",
+      "source_id": "EDIT_001",
+      "source_field": "operations",
+      "confidence": 1,
+      "note": "Applied Layout Edit IR to the active layout."
+    },
+    {
+      "field_path": "revision_history",
+      "source_type": "computed",
+      "source_id": "evaluation_v1",
+      "source_field": "local_feasibility_search",
+      "confidence": 1,
+      "note": "Designer revision 2 applied structured feedback without changing user hard constraints."
+    }
+  ],
+  "unresolved_items": []
+}

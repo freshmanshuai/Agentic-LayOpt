@@ -1,0 +1,18 @@
+{
+  "package_format": "case_study_runtime_package_v1",
+  "manifest_compatibility": "agentic_layopt_glb_manifest_v1",
+  "required_asset_fields": [
+    "model_asset_id",
+    "glb_url",
+    "runtime_relative_path",
+    "geometry_status"
+  ],
+  "calibrated_asset_fields": [
+    "effective_dimensions_m",
+    "unit_scale_to_m",
+    "coordinate_normalization",
+    "calibration_provenance",
+    "dimension_claim_scope"
+  ],
+  "raw_asset_policy": "Raw source entries carry null planning_dimensions_m and no meter claim until catalog geometry is reviewed."
+}

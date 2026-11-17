@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "knowledge/operation_vocabulary.schema.json",
+  "title": "Operation Vocabulary Schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "op_type": {
+      "type": "string",
+      "enum": [
+        "move",
+        "rotate",
+        "replace",
+        "add",
+        "remove",
+        "swap",
+        "lock",
+        "unlock",
+        "set_constraint",
+        "remove_constraint",
+        "update_objective"
+      ]
+    },
+    "canonical_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "required_parameters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "optional_parameters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "applicable_target_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "all_equipment",
+          "equipment_instance",
+          "asset",
+          "model_asset",
+          "site",
+          "zone",
+          "site_feature",
+          "flow",
+          "constraint",
+          "objective",
+          "layout",
+          "operation"
+        ]
+      }
+    },
+    "requires_existing_layout": {
+      "type": "boolean"
+    },
+    "changes_layout_state": {
+      "type": "boolean"
+    },
+    "requires_confirmation": {
+      "type": "boolean"
+    },
+    "natural_language_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/ProvenanceItem"
+      }
+    },
+    "metadata": {
+      "$ref": "../common/common_engineering.schema.json#/$defs/Metadata"
+    }
+  },
+  "required": [
+    "schema_version",
+    "op_type",
+    "canonical_name",
+    "description",
+    "required_parameters",
+    "optional_parameters",
+    "applicable_target_types",
+    "requires_existing_layout",
+    "changes_layout_state",
+    "requires_confirmation",
+    "natural_language_triggers",
+    "provenance",
+    "metadata"
+  ],
+  "additionalProperties": false
+}

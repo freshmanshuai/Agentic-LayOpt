@@ -1,0 +1,3393 @@
+[
+  {
+    "id": "M001",
+    "relative_path": "0.5米接驳台/0.5M接驳台.STL",
+    "name": "0.5M接驳台",
+    "group": "0.5米接驳台",
+    "format": ".stl",
+    "bytes": 7197984,
+    "path": "source-models/产线模型库/0.5米接驳台/0.5M接驳台.STL",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": true
+  },
+  {
+    "id": "M002",
+    "relative_path": "0.5米接驳台/0.5M接驳台.fbx",
+    "name": "0.5M接驳台",
+    "group": "0.5米接驳台",
+    "format": ".fbx",
+    "bytes": 2941004,
+    "path": "source-models/产线模型库/0.5米接驳台/0.5M接驳台.fbx",
+    "rag_id": "asset/fbx/0_5m",
+    "rag_name": "0.5M接驳台",
+    "rag_dims": {
+      "width_m": 6.799553,
+      "depth_m": 5.0,
+      "height_m": 9.089728
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.020411,
+        "y_m": 0.060247,
+        "z_m": 0.077532
+      },
+      "max": {
+        "x_m": 6.819964,
+        "y_m": 5.060247,
+        "z_m": 9.16726
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/0_5m.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M003",
+    "relative_path": "Factory_Units/Factory_Unit_00.fbx",
+    "name": "Factory_Unit_00",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 2176976,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_00.fbx",
+    "rag_id": "asset/fbx/factory_unit_00",
+    "rag_name": "卧式离心泵机组",
+    "rag_dims": {
+      "width_m": 3.980317,
+      "depth_m": 3.250133,
+      "height_m": 2.428749
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -2.42941,
+        "y_m": -1.625066,
+        "z_m": -1e-06
+      },
+      "max": {
+        "x_m": 1.550907,
+        "y_m": 1.625067,
+        "z_m": 2.428748
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_00.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M004",
+    "relative_path": "Factory_Units/Factory_Unit_01.fbx",
+    "name": "Factory_Unit_01",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 636304,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_01.fbx",
+    "rag_id": "asset/fbx/factory_unit_01",
+    "rag_name": "防爆接线盒",
+    "rag_dims": {
+      "width_m": 0.610114,
+      "depth_m": 0.70979,
+      "height_m": 1.392332
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.305057,
+        "y_m": -0.365336,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 0.305057,
+        "y_m": 0.344454,
+        "z_m": 1.392332
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_01.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M005",
+    "relative_path": "Factory_Units/Factory_Unit_02.fbx",
+    "name": "Factory_Unit_02",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 913360,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_02.fbx",
+    "rag_id": "asset/fbx/factory_unit_02",
+    "rag_name": "油浸式电力变压器",
+    "rag_dims": {
+      "width_m": 0.852548,
+      "depth_m": 1.627591,
+      "height_m": 1.488084
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.426274,
+        "y_m": -0.813796,
+        "z_m": -0.0
+      },
+      "max": {
+        "x_m": 0.426274,
+        "y_m": 0.813796,
+        "z_m": 1.488084
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_02.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M006",
+    "relative_path": "Factory_Units/Factory_Unit_03.fbx",
+    "name": "Factory_Unit_03",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 2613472,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_03.fbx",
+    "rag_id": "asset/fbx/factory_unit_03",
+    "rag_name": "高压电气机组",
+    "rag_dims": {
+      "width_m": 8.045646,
+      "depth_m": 6.13901,
+      "height_m": 3.505434
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -3.651087,
+        "y_m": -3.326488,
+        "z_m": -0.000825
+      },
+      "max": {
+        "x_m": 4.394559,
+        "y_m": 2.812522,
+        "z_m": 3.504609
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_03.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M007",
+    "relative_path": "Factory_Units/Factory_Unit_04.fbx",
+    "name": "Factory_Unit_04",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 200960,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_04.fbx",
+    "rag_id": "asset/fbx/factory_unit_04",
+    "rag_name": "电气控制柜",
+    "rag_dims": {
+      "width_m": 0.423,
+      "depth_m": 0.342042,
+      "height_m": 0.98469
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.2115,
+        "y_m": -0.170881,
+        "z_m": 0.468624
+      },
+      "max": {
+        "x_m": 0.2115,
+        "y_m": 0.171161,
+        "z_m": 1.453314
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_04.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M008",
+    "relative_path": "Factory_Units/Factory_Unit_05.fbx",
+    "name": "Factory_Unit_05",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 1244944,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_05.fbx",
+    "rag_id": "asset/fbx/factory_unit_05",
+    "rag_name": "离心鼓风机机组",
+    "rag_dims": {
+      "width_m": 5.163741,
+      "depth_m": 2.620931,
+      "height_m": 2.982761
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -3.255114,
+        "y_m": -1.246445,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 1.908627,
+        "y_m": 1.374486,
+        "z_m": 2.982761
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_05.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M009",
+    "relative_path": "Factory_Units/Factory_Unit_06.fbx",
+    "name": "Factory_Unit_06",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 1007520,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_06.fbx",
+    "rag_id": "asset/fbx/factory_unit_06",
+    "rag_name": "立式感应炉",
+    "rag_dims": {
+      "width_m": 1.363841,
+      "depth_m": 1.363841,
+      "height_m": 1.440185
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.681921,
+        "y_m": -0.681921,
+        "z_m": -0.0
+      },
+      "max": {
+        "x_m": 0.681921,
+        "y_m": 0.681921,
+        "z_m": 1.440185
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_06.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M010",
+    "relative_path": "Factory_Units/Factory_Unit_07.fbx",
+    "name": "Factory_Unit_07",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 2756640,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_07.fbx",
+    "rag_id": "asset/fbx/factory_unit_07",
+    "rag_name": "带平台立式分离塔",
+    "rag_dims": {
+      "width_m": 7.203302,
+      "depth_m": 8.230464,
+      "height_m": 9.932938
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -4.897012,
+        "y_m": -3.550964,
+        "z_m": -0.021437
+      },
+      "max": {
+        "x_m": 2.30629,
+        "y_m": 4.6795,
+        "z_m": 9.911501
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_07.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M011",
+    "relative_path": "Factory_Units/Factory_Unit_08.fbx",
+    "name": "Factory_Unit_08",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 4150432,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_08.fbx",
+    "rag_id": "asset/fbx/factory_unit_08",
+    "rag_name": "工业卷扬机",
+    "rag_dims": {
+      "width_m": 3.819036,
+      "depth_m": 1.911271,
+      "height_m": 2.165074
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -1.890933,
+        "y_m": -0.910652,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 2.145028,
+        "y_m": 1.000619,
+        "z_m": 2.165074
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_08.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M012",
+    "relative_path": "Factory_Units/Factory_Unit_09.fbx",
+    "name": "Factory_Unit_09",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 3303056,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_09.fbx",
+    "rag_id": "asset/fbx/factory_unit_09",
+    "rag_name": "移动式料斗泵",
+    "rag_dims": {
+      "width_m": 1.641789,
+      "depth_m": 0.903519,
+      "height_m": 1.271852
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.951626,
+        "y_m": -0.45176,
+        "z_m": -0.000321
+      },
+      "max": {
+        "x_m": 0.690163,
+        "y_m": 0.451759,
+        "z_m": 1.611223
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_09.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M013",
+    "relative_path": "Factory_Units/Factory_Unit_10.fbx",
+    "name": "Factory_Unit_10",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 3537664,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_10.fbx",
+    "rag_id": "asset/fbx/factory_unit_10",
+    "rag_name": "双料斗螺旋给料机",
+    "rag_dims": {
+      "width_m": 4.494342,
+      "depth_m": 2.125185,
+      "height_m": 4.778951
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -2.247171,
+        "y_m": -1.062592,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 2.247171,
+        "y_m": 1.062593,
+        "z_m": 4.778951
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_10.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M014",
+    "relative_path": "Factory_Units/Factory_Unit_11.fbx",
+    "name": "Factory_Unit_11",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 2365184,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_11.fbx",
+    "rag_id": "asset/fbx/factory_unit_11",
+    "rag_name": "双联压缩机撬装机组",
+    "rag_dims": {
+      "width_m": 7.741043,
+      "depth_m": 2.203508,
+      "height_m": 2.041809
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -3.875041,
+        "y_m": -1.101753,
+        "z_m": -0.0
+      },
+      "max": {
+        "x_m": 3.866002,
+        "y_m": 1.101755,
+        "z_m": 2.041809
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_11.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M015",
+    "relative_path": "Factory_Units/Factory_Unit_12.fbx",
+    "name": "Factory_Unit_12",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 5230720,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_12.fbx",
+    "rag_id": "asset/fbx/factory_unit_12",
+    "rag_name": "工业设备门架",
+    "rag_dims": {
+      "width_m": 6.349714,
+      "depth_m": 2.610606,
+      "height_m": 5.053968
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -3.174856,
+        "y_m": -1.776554,
+        "z_m": -0.0
+      },
+      "max": {
+        "x_m": 3.174858,
+        "y_m": 0.834052,
+        "z_m": 5.053968
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_12.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M016",
+    "relative_path": "Factory_Units/Factory_Unit_13.fbx",
+    "name": "Factory_Unit_13",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 1552352,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_13.fbx",
+    "rag_id": "asset/fbx/factory_unit_13",
+    "rag_name": "普通车床",
+    "rag_dims": {
+      "width_m": 3.535591,
+      "depth_m": 1.388538,
+      "height_m": 2.088506
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -1.914237,
+        "y_m": -0.861032,
+        "z_m": -0.0
+      },
+      "max": {
+        "x_m": 1.621354,
+        "y_m": 0.527506,
+        "z_m": 2.088506
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_13.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M017",
+    "relative_path": "Factory_Units/Factory_Unit_14.fbx",
+    "name": "Factory_Unit_14",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 1194288,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_14.fbx",
+    "rag_id": "asset/fbx/factory_unit_14",
+    "rag_name": "大型电动执行机构",
+    "rag_dims": {
+      "width_m": 2.299456,
+      "depth_m": 2.686896,
+      "height_m": 3.396912
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -1.311709,
+        "y_m": -1.105906,
+        "z_m": 0.001418
+      },
+      "max": {
+        "x_m": 0.987746,
+        "y_m": 1.580989,
+        "z_m": 3.398329
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_14.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M018",
+    "relative_path": "Factory_Units/Factory_Unit_15.fbx",
+    "name": "Factory_Unit_15",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 2427232,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_15.fbx",
+    "rag_id": "asset/fbx/factory_unit_15",
+    "rag_name": "双层卧式压力罐",
+    "rag_dims": {
+      "width_m": 3.901664,
+      "depth_m": 3.214925,
+      "height_m": 4.637262
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -2.001457,
+        "y_m": -1.601927,
+        "z_m": 0.000243
+      },
+      "max": {
+        "x_m": 1.900208,
+        "y_m": 1.612998,
+        "z_m": 4.637505
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_15.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M019",
+    "relative_path": "Factory_Units/Factory_Unit_16.fbx",
+    "name": "Factory_Unit_16",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 550016,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_16.fbx",
+    "rag_id": "asset/fbx/factory_unit_16",
+    "rag_name": "框架式卧式储罐",
+    "rag_dims": {
+      "width_m": 6.816206,
+      "depth_m": 3.176892,
+      "height_m": 4.235549
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -3.59267,
+        "y_m": -1.588446,
+        "z_m": 0.000388
+      },
+      "max": {
+        "x_m": 3.223536,
+        "y_m": 1.588445,
+        "z_m": 4.235937
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_16.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M020",
+    "relative_path": "Factory_Units/Factory_Unit_17.fbx",
+    "name": "Factory_Unit_17",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 331984,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_17.fbx",
+    "rag_id": "asset/fbx/factory_unit_17",
+    "rag_name": "箱式设备控制台",
+    "rag_dims": {
+      "width_m": 1.2,
+      "depth_m": 0.518354,
+      "height_m": 1.92597
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.6,
+        "y_m": -0.642896,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 0.6,
+        "y_m": 0.6,
+        "z_m": 1.92597
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_17.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M021",
+    "relative_path": "Factory_Units/Factory_Unit_18.fbx",
+    "name": "Factory_Unit_18",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 1262672,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_18.fbx",
+    "rag_id": "asset/fbx/factory_unit_18",
+    "rag_name": "C型压力测试机",
+    "rag_dims": {
+      "width_m": 2.843533,
+      "depth_m": 2.768405,
+      "height_m": 5.470852
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.984708,
+        "y_m": -1.638685,
+        "z_m": 1e-06
+      },
+      "max": {
+        "x_m": 1.858825,
+        "y_m": 1.12972,
+        "z_m": 5.470853
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_18.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M022",
+    "relative_path": "Factory_Units/Factory_Unit_19.fbx",
+    "name": "Factory_Unit_19",
+    "group": "Factory_Units",
+    "format": ".fbx",
+    "bytes": 2476336,
+    "path": "source-models/产线模型库/Factory_Units/Factory_Unit_19.fbx",
+    "rag_id": "asset/fbx/factory_unit_19",
+    "rag_name": "塔式起重机",
+    "rag_dims": {
+      "width_m": 18.314236,
+      "depth_m": 2.737798,
+      "height_m": 24.732209
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -2.777709,
+        "y_m": -2.758605,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 15.536527,
+        "y_m": 2.758605,
+        "z_m": 24.732209
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/factory_unit_19.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M023",
+    "relative_path": "Fbx-Industrial Kitbash/Industrial Kitbash(.fbx).fbx",
+    "name": "Industrial Kitbash(.fbx)",
+    "group": "Fbx-Industrial Kitbash",
+    "format": ".fbx",
+    "bytes": 38547532,
+    "path": "source-models/产线模型库/Fbx-Industrial Kitbash/Industrial Kitbash(.fbx).fbx",
+    "rag_id": "asset/fbx/industrial_kitbash",
+    "rag_name": "Industrial Kitbash(.fbx)",
+    "rag_dims": {
+      "width_m": 21.200731,
+      "depth_m": 31.345624,
+      "height_m": 4.024254
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "percentile_1_99",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -10.172436,
+        "y_m": -16.539501,
+        "z_m": -67.727788
+      },
+      "max": {
+        "x_m": 11.028295,
+        "y_m": 14.806123,
+        "z_m": 46.98229
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M024",
+    "relative_path": "H5链式自动流水线/H5链式自动流水线.STL",
+    "name": "H5链式自动流水线",
+    "group": "H5链式自动流水线",
+    "format": ".stl",
+    "bytes": 16535584,
+    "path": "source-models/产线模型库/H5链式自动流水线/H5链式自动流水线.STL",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": true
+  },
+  {
+    "id": "M025",
+    "relative_path": "H5链式自动流水线/H5链式自动流水线.fbx",
+    "name": "H5链式自动流水线",
+    "group": "H5链式自动流水线",
+    "format": ".fbx",
+    "bytes": 7022220,
+    "path": "source-models/产线模型库/H5链式自动流水线/H5链式自动流水线.fbx",
+    "rag_id": "asset/fbx/h5",
+    "rag_name": "H5链式自动流水线",
+    "rag_dims": {
+      "width_m": 7.965893,
+      "depth_m": 7.622303,
+      "height_m": 10.0
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 1.148933,
+        "y_m": 0.064343,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 9.114826,
+        "y_m": 7.686646,
+        "z_m": 10.0
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M026",
+    "relative_path": "mixmaster.fbx",
+    "name": "mixmaster",
+    "group": "root",
+    "format": ".fbx",
+    "bytes": 158968320,
+    "path": "source-models/产线模型库/mixmaster.fbx",
+    "rag_id": "asset/fbx/mixmaster",
+    "rag_name": "mixmaster",
+    "rag_dims": {
+      "width_m": 0.206726,
+      "depth_m": 0.2911,
+      "height_m": 0.411158
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.082717,
+        "y_m": -0.001108,
+        "z_m": -0.205579
+      },
+      "max": {
+        "x_m": 0.124009,
+        "y_m": 0.289992,
+        "z_m": 0.205579
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M027",
+    "relative_path": "半导体工厂/SMD元件测试分选一体机.fbx",
+    "name": "SMD元件测试分选一体机",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 66956188,
+    "path": "source-models/产线模型库/半导体工厂/SMD元件测试分选一体机.fbx",
+    "rag_id": "asset/fbx/smd",
+    "rag_name": "SMD元件测试分选一体机",
+    "rag_dims": {
+      "width_m": 6.65,
+      "depth_m": 8.179727,
+      "height_m": 9.933417
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 7.734354,
+        "y_m": 0.053697,
+        "z_m": 0.03079
+      },
+      "max": {
+        "x_m": 14.384354,
+        "y_m": 8.233424,
+        "z_m": 9.964207
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M028",
+    "relative_path": "半导体工厂/半导体全自动编带机.fbx",
+    "name": "半导体全自动编带机",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 20593596,
+    "path": "source-models/产线模型库/半导体工厂/半导体全自动编带机.fbx",
+    "rag_id": "asset/fbx/fbx_37ff826e",
+    "rag_name": "半导体全自动编带机",
+    "rag_dims": {
+      "width_m": 25.114433,
+      "depth_m": 16.681485,
+      "height_m": 10.601577
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.099339,
+        "y_m": 0.089782,
+        "z_m": 0.073266
+      },
+      "max": {
+        "x_m": 25.213772,
+        "y_m": 16.771267,
+        "z_m": 10.674843
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_37ff826e.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M029",
+    "relative_path": "半导体工厂/半导体制冷／热平台.fbx",
+    "name": "半导体制冷／热平台",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 2847708,
+    "path": "source-models/产线模型库/半导体工厂/半导体制冷／热平台.fbx",
+    "rag_id": "asset/fbx/fbx_b90dd1f1",
+    "rag_name": "半导体制冷／热平台",
+    "rag_dims": {
+      "width_m": 5.553421,
+      "depth_m": 3.18335,
+      "height_m": 1.65
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.028034,
+        "y_m": 0.000126,
+        "z_m": 0.008
+      },
+      "max": {
+        "x_m": 5.581455,
+        "y_m": 3.183476,
+        "z_m": 1.658
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M030",
+    "relative_path": "半导体工厂/半导体器件移印包装机.fbx",
+    "name": "半导体器件移印包装机",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 22573804,
+    "path": "source-models/产线模型库/半导体工厂/半导体器件移印包装机.fbx",
+    "rag_id": "asset/fbx/fbx_db886347",
+    "rag_name": "半导体器件移印包装机",
+    "rag_dims": {
+      "width_m": 6.0,
+      "depth_m": 4.62975,
+      "height_m": 20.299903
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.018789,
+        "y_m": 0.071106,
+        "z_m": 0.586635
+      },
+      "max": {
+        "x_m": 6.018789,
+        "y_m": 12.071106,
+        "z_m": 20.886538
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M031",
+    "relative_path": "半导体工厂/半导体晶体锁散热片机.fbx",
+    "name": "半导体晶体锁散热片机",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 42619340,
+    "path": "source-models/产线模型库/半导体工厂/半导体晶体锁散热片机.fbx",
+    "rag_id": "asset/fbx/fbx_f179523c",
+    "rag_name": "半导体晶体锁散热片机",
+    "rag_dims": {
+      "width_m": 15.085848,
+      "depth_m": 13.6045,
+      "height_m": 9.010437
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.506694,
+        "y_m": 0.067628,
+        "z_m": 1.282684
+      },
+      "max": {
+        "x_m": 15.592542,
+        "y_m": 17.371627,
+        "z_m": 10.293121
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M032",
+    "relative_path": "半导体工厂/半导体晶圆自动贴标机.fbx",
+    "name": "半导体晶圆自动贴标机",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 16008220,
+    "path": "source-models/产线模型库/半导体工厂/半导体晶圆自动贴标机.fbx",
+    "rag_id": "asset/fbx/fbx_8811b0b9",
+    "rag_name": "半导体晶圆自动贴标机",
+    "rag_dims": {
+      "width_m": 15.080001,
+      "depth_m": 17.69,
+      "height_m": 9.024957
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.067742,
+        "y_m": 0.081652,
+        "z_m": 0.0809
+      },
+      "max": {
+        "x_m": 15.147743,
+        "y_m": 17.771652,
+        "z_m": 9.12087
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M033",
+    "relative_path": "半导体工厂/半导体检测设备.fbx",
+    "name": "半导体检测设备",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 16398108,
+    "path": "source-models/产线模型库/半导体工厂/半导体检测设备.fbx",
+    "rag_id": "asset/fbx/fbx_f60888d2",
+    "rag_name": "半导体检测设备",
+    "rag_dims": {
+      "width_m": 12.322503,
+      "depth_m": 23.704202,
+      "height_m": 7.856212
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.083363,
+        "y_m": 0.177233,
+        "z_m": 0.06332
+      },
+      "max": {
+        "x_m": 12.405865,
+        "y_m": 23.881436,
+        "z_m": 13.39532
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M034",
+    "relative_path": "半导体工厂/半导体的全自动电感检测喷码编带分选一体机.fbx",
+    "name": "半导体的全自动电感检测喷码编带分选一体机",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 218134972,
+    "path": "source-models/产线模型库/半导体工厂/半导体的全自动电感检测喷码编带分选一体机.fbx",
+    "rag_id": "asset/fbx/fbx_7e78658f",
+    "rag_name": "半导体的全自动电感检测喷码编带分选一体机",
+    "rag_dims": {
+      "width_m": 15.50674,
+      "depth_m": 8.758618,
+      "height_m": 14.320508
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.110595,
+        "y_m": 0.087525,
+        "z_m": 0.066162
+      },
+      "max": {
+        "x_m": 18.910596,
+        "y_m": 15.637526,
+        "z_m": 19.446227
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M035",
+    "relative_path": "半导体工厂/半导体线路板上下料设备.fbx",
+    "name": "半导体线路板上下料设备",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 4422700,
+    "path": "source-models/产线模型库/半导体工厂/半导体线路板上下料设备.fbx",
+    "rag_id": "asset/fbx/fbx_1292a3bb",
+    "rag_name": "半导体线路板上下料设备",
+    "rag_dims": {
+      "width_m": 7.26402,
+      "depth_m": 13.65,
+      "height_m": 18.282321
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.038519,
+        "y_m": 0.076311,
+        "z_m": 10.115
+      },
+      "max": {
+        "x_m": 7.302539,
+        "y_m": 13.726311,
+        "z_m": 32.812319
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M036",
+    "relative_path": "半导体工厂/半导体行业一体机设备.fbx",
+    "name": "半导体行业一体机设备",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 54869132,
+    "path": "source-models/产线模型库/半导体工厂/半导体行业一体机设备.fbx",
+    "rag_id": "asset/fbx/fbx_cd880c0d",
+    "rag_name": "半导体行业一体机设备",
+    "rag_dims": {
+      "width_m": 22.507511,
+      "depth_m": 47.632312,
+      "height_m": 25.05417
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.092684,
+        "y_m": 0.400979,
+        "z_m": 3.214329
+      },
+      "max": {
+        "x_m": 27.343943,
+        "y_m": 48.033291,
+        "z_m": 28.268499
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M037",
+    "relative_path": "半导体工厂/四槽硅片清洗刻蚀机.fbx",
+    "name": "四槽硅片清洗刻蚀机",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 4020364,
+    "path": "source-models/产线模型库/半导体工厂/四槽硅片清洗刻蚀机.fbx",
+    "rag_id": "asset/fbx/fbx_3ed136d0",
+    "rag_name": "四槽硅片清洗刻蚀机",
+    "rag_dims": {
+      "width_m": 14.1,
+      "depth_m": 12.030219,
+      "height_m": 18.26
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.078097,
+        "y_m": 0.063448,
+        "z_m": 0.024756
+      },
+      "max": {
+        "x_m": 14.178097,
+        "y_m": 12.093667,
+        "z_m": 18.884756
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_3ed136d0.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M038",
+    "relative_path": "半导体工厂/圆盘抽真空包装机.fbx",
+    "name": "圆盘抽真空包装机",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 87804956,
+    "path": "source-models/产线模型库/半导体工厂/圆盘抽真空包装机.fbx",
+    "rag_id": "asset/fbx/fbx_097ef6b2",
+    "rag_name": "圆盘抽真空包装机",
+    "rag_dims": {
+      "width_m": 35.951766,
+      "depth_m": 16.912999,
+      "height_m": 20.641343
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.180566,
+        "y_m": 0.05994,
+        "z_m": 10.832598
+      },
+      "max": {
+        "x_m": 36.132332,
+        "y_m": 16.972939,
+        "z_m": 31.47394
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M039",
+    "relative_path": "半导体工厂/扩张机.fbx",
+    "name": "扩张机",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 1056748,
+    "path": "source-models/产线模型库/半导体工厂/扩张机.fbx",
+    "rag_id": "asset/fbx/fbx_3c6fae07",
+    "rag_name": "扩张机",
+    "rag_dims": {
+      "width_m": 3.280003,
+      "depth_m": 2.615,
+      "height_m": 7.68
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.020057,
+        "y_m": 0.010513,
+        "z_m": 0.01373
+      },
+      "max": {
+        "x_m": 3.30006,
+        "y_m": 2.625513,
+        "z_m": 8.32373
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_3c6fae07.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M040",
+    "relative_path": "半导体工厂/自动贴片成型总装.fbx",
+    "name": "自动贴片成型总装",
+    "group": "半导体工厂",
+    "format": ".fbx",
+    "bytes": 18995196,
+    "path": "source-models/产线模型库/半导体工厂/自动贴片成型总装.fbx",
+    "rag_id": "asset/fbx/fbx_37331baa",
+    "rag_name": "自动贴片成型总装",
+    "rag_dims": {
+      "width_m": 12.445169,
+      "depth_m": 11.751212,
+      "height_m": 12.487872
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 2.627648,
+        "y_m": 0.020108,
+        "z_m": 0.126094
+      },
+      "max": {
+        "x_m": 16.379888,
+        "y_m": 20.083837,
+        "z_m": 13.401094
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M041",
+    "relative_path": "工业风工厂 展厅 机床3d模型015/5工厂展厅.fbx",
+    "name": "5工厂展厅",
+    "group": "工业风工厂 展厅 机床3d模型015",
+    "format": ".fbx",
+    "bytes": 466913808,
+    "path": "source-models/产线模型库/工业风工厂 展厅 机床3d模型015/5工厂展厅.fbx",
+    "rag_id": "asset/max/industrial_factory_showroom_machine_015",
+    "rag_name": "工业风工厂 展厅 机床3d模型015",
+    "rag_dims": {
+      "width_m": 0.755857,
+      "depth_m": 0.851179,
+      "height_m": 0.586508
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.001,
+    "fbx_unit_scale_factor": 0.1,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -25.218916,
+        "y_m": -8.838234,
+        "z_m": -5.904797
+      },
+      "max": {
+        "x_m": 17.285,
+        "y_m": 8.180039,
+        "z_m": 12.168847
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M042",
+    "relative_path": "工业风工厂 展厅 机床3d模型015/5工厂展厅.max",
+    "name": "5工厂展厅",
+    "group": "工业风工厂 展厅 机床3d模型015",
+    "format": ".max",
+    "bytes": 139432700,
+    "path": "source-models/产线模型库/工业风工厂 展厅 机床3d模型015/5工厂展厅.max",
+    "rag_id": "asset/max/industrial_factory_showroom_machine_015",
+    "rag_name": "工业风工厂 展厅 机床3d模型015",
+    "rag_dims": {
+      "width_m": 0.755857,
+      "depth_m": 0.851179,
+      "height_m": 0.586508
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.001,
+    "fbx_unit_scale_factor": 0.1,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -25.218916,
+        "y_m": -8.838234,
+        "z_m": -5.904797
+      },
+      "max": {
+        "x_m": 17.285,
+        "y_m": 8.180039,
+        "z_m": 12.168847
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": true
+  },
+  {
+    "id": "M043",
+    "relative_path": "工厂工业设备/四柱液压压力机.fbx",
+    "name": "四柱液压压力机",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 837772,
+    "path": "source-models/产线模型库/工厂工业设备/四柱液压压力机.fbx",
+    "rag_id": "asset/fbx/fbx_9707ae30",
+    "rag_name": "四柱液压压力机",
+    "rag_dims": {
+      "width_m": 0.136046,
+      "depth_m": 0.093495,
+      "height_m": 0.208543
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.139854,
+        "y_m": -0.220206,
+        "z_m": -0.0
+      },
+      "max": {
+        "x_m": 0.2759,
+        "y_m": -0.126711,
+        "z_m": 0.208543
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M044",
+    "relative_path": "工厂工业设备/夹具工作台.fbx",
+    "name": "夹具工作台",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 1471596,
+    "path": "source-models/产线模型库/工厂工业设备/夹具工作台.fbx",
+    "rag_id": "asset/fbx/fbx_7716b9f7",
+    "rag_name": "夹具工作台",
+    "rag_dims": {
+      "width_m": 0.270965,
+      "depth_m": 0.198041,
+      "height_m": 0.163302
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.099528,
+        "y_m": -1.749702,
+        "z_m": 0.024447
+      },
+      "max": {
+        "x_m": 0.171436,
+        "y_m": -1.551662,
+        "z_m": 0.187749
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_7716b9f7.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M045",
+    "relative_path": "工厂工业设备/安装平台.fbx",
+    "name": "安装平台",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 25708,
+    "path": "source-models/产线模型库/工厂工业设备/安装平台.fbx",
+    "rag_id": "asset/fbx/fbx_9dca0e84",
+    "rag_name": "安装平台",
+    "rag_dims": {
+      "width_m": 0.2,
+      "depth_m": 0.2,
+      "height_m": 0.039687
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.897245,
+        "y_m": -1.758755,
+        "z_m": -0.013216
+      },
+      "max": {
+        "x_m": -0.697245,
+        "y_m": -1.558755,
+        "z_m": 0.066471
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M046",
+    "relative_path": "工厂工业设备/工具柜.fbx",
+    "name": "工具柜",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 16612812,
+    "path": "source-models/产线模型库/工厂工业设备/工具柜.fbx",
+    "rag_id": "asset/fbx/fbx_1a80889c",
+    "rag_name": "工具柜",
+    "rag_dims": {
+      "width_m": 0.070562,
+      "depth_m": 0.004572,
+      "height_m": 0.033146
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.553599,
+        "y_m": -0.216772,
+        "z_m": -0.000327
+      },
+      "max": {
+        "x_m": 0.731029,
+        "y_m": -0.126698,
+        "z_m": 0.171984
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M047",
+    "relative_path": "工厂工业设备/机器人线性滑台工作站.fbx",
+    "name": "机器人线性滑台工作站",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 2010380,
+    "path": "source-models/产线模型库/工厂工业设备/机器人线性滑台工作站.fbx",
+    "rag_id": "asset/fbx/fbx_88e820ac",
+    "rag_name": "机器人线性滑台工作站",
+    "rag_dims": {
+      "width_m": 0.736447,
+      "depth_m": 0.333419,
+      "height_m": 0.303269
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.471235,
+        "y_m": -0.887664,
+        "z_m": -8.1e-05
+      },
+      "max": {
+        "x_m": 0.265211,
+        "y_m": -0.554245,
+        "z_m": 0.303189
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M048",
+    "relative_path": "工厂工业设备/机箱.fbx",
+    "name": "机箱",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 83276,
+    "path": "source-models/产线模型库/工厂工业设备/机箱.fbx",
+    "rag_id": "asset/fbx/fbx_ebfc71a6",
+    "rag_name": "机箱",
+    "rag_dims": {
+      "width_m": 0.08652,
+      "depth_m": 0.080442,
+      "height_m": 0.150912
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.370464,
+        "y_m": -0.209364,
+        "z_m": 0.000385
+      },
+      "max": {
+        "x_m": 0.456984,
+        "y_m": -0.128922,
+        "z_m": 0.151297
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M049",
+    "relative_path": "工厂工业设备/液压动力单元.fbx",
+    "name": "液压动力单元",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 8332140,
+    "path": "source-models/产线模型库/工厂工业设备/液压动力单元.fbx",
+    "rag_id": "asset/fbx/fbx_177626cb",
+    "rag_name": "液压动力单元",
+    "rag_dims": {
+      "width_m": 0.186416,
+      "depth_m": 0.132825,
+      "height_m": 0.154589
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.414754,
+        "y_m": -1.730545,
+        "z_m": 0.012845
+      },
+      "max": {
+        "x_m": -0.228338,
+        "y_m": -1.59772,
+        "z_m": 0.167434
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M050",
+    "relative_path": "工厂工业设备/电火花成型机.fbx",
+    "name": "电火花成型机",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 4975564,
+    "path": "source-models/产线模型库/工厂工业设备/电火花成型机.fbx",
+    "rag_id": "asset/fbx/fbx_c87c6aaa",
+    "rag_name": "电火花成型机",
+    "rag_dims": {
+      "width_m": 0.257221,
+      "depth_m": 0.107757,
+      "height_m": 0.227157
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.720777,
+        "y_m": -0.230752,
+        "z_m": -0.000847
+      },
+      "max": {
+        "x_m": -0.431708,
+        "y_m": -0.122994,
+        "z_m": 0.226311
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M051",
+    "relative_path": "工厂工业设备/电火花穿孔机.fbx",
+    "name": "电火花穿孔机",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 586844,
+    "path": "source-models/产线模型库/工厂工业设备/电火花穿孔机.fbx",
+    "rag_id": "asset/fbx/fbx_313d8039",
+    "rag_name": "电火花穿孔机",
+    "rag_dims": {
+      "width_m": 0.170655,
+      "depth_m": 0.097725,
+      "height_m": 0.215068
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.78114,
+        "y_m": -0.819126,
+        "z_m": -0.000326
+      },
+      "max": {
+        "x_m": -0.610484,
+        "y_m": -0.721401,
+        "z_m": 0.214742
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M052",
+    "relative_path": "工厂工业设备/管材切割坡口机.fbx",
+    "name": "管材切割坡口机",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 5372300,
+    "path": "source-models/产线模型库/工厂工业设备/管材切割坡口机.fbx",
+    "rag_id": "asset/fbx/fbx_8251e44c",
+    "rag_name": "管材切割坡口机",
+    "rag_dims": {
+      "width_m": 0.257627,
+      "depth_m": 0.134142,
+      "height_m": 0.128747
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.297763,
+        "y_m": -1.740668,
+        "z_m": 0.044619
+      },
+      "max": {
+        "x_m": 0.55539,
+        "y_m": -1.606525,
+        "z_m": 0.173366
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M053",
+    "relative_path": "工厂工业设备/辊压机.fbx",
+    "name": "辊压机",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 4803020,
+    "path": "source-models/产线模型库/工厂工业设备/辊压机.fbx",
+    "rag_id": "asset/fbx/fbx_4d43d987",
+    "rag_name": "辊压机",
+    "rag_dims": {
+      "width_m": 0.13454,
+      "depth_m": 0.221446,
+      "height_m": 0.214962
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -1.343303,
+        "y_m": -0.310267,
+        "z_m": -0.000253
+      },
+      "max": {
+        "x_m": -1.208764,
+        "y_m": -0.088821,
+        "z_m": 0.214709
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M054",
+    "relative_path": "工厂工业设备/锥形料斗.fbx",
+    "name": "锥形料斗",
+    "group": "工厂工业设备",
+    "format": ".fbx",
+    "bytes": 1119340,
+    "path": "source-models/产线模型库/工厂工业设备/锥形料斗.fbx",
+    "rag_id": "asset/fbx/fbx_c36a1e83",
+    "rag_name": "锥形料斗",
+    "rag_dims": {
+      "width_m": 0.149673,
+      "depth_m": 0.149673,
+      "height_m": 0.198993
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -1.743472,
+        "y_m": -0.238113,
+        "z_m": -0.000145
+      },
+      "max": {
+        "x_m": -1.593799,
+        "y_m": -0.088439,
+        "z_m": 0.198847
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M055",
+    "relative_path": "数据中心/中国移动服务器一体化机柜（5台）.fbx",
+    "name": "中国移动服务器一体化机柜（5台）",
+    "group": "数据中心",
+    "format": ".fbx",
+    "bytes": 263524512,
+    "path": "source-models/产线模型库/数据中心/中国移动服务器一体化机柜（5台）.fbx",
+    "rag_id": "asset/fbx/5",
+    "rag_name": "中国移动服务器一体化机柜（5台）",
+    "rag_dims": {
+      "width_m": 8.893698,
+      "depth_m": 0.123638,
+      "height_m": 0.9761
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.001,
+    "fbx_unit_scale_factor": 0.1,
+    "fbx_bbox_filter": "iqr_3.0+percentile_1_99",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -4.446849,
+        "y_m": -3.709323,
+        "z_m": -9.986428
+      },
+      "max": {
+        "x_m": 4.446849,
+        "y_m": 3.709323,
+        "z_m": 0.97
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/5.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M056",
+    "relative_path": "数据中心/单机柜.fbx",
+    "name": "单机柜",
+    "group": "数据中心",
+    "format": ".fbx",
+    "bytes": 95299308,
+    "path": "source-models/产线模型库/数据中心/单机柜.fbx",
+    "rag_id": "asset/fbx/fbx_be827a77",
+    "rag_name": "单机柜",
+    "rag_dims": {
+      "width_m": 6.402,
+      "depth_m": 22.459748,
+      "height_m": 10.7963
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.03201,
+        "y_m": 0.040403,
+        "z_m": 8.081901
+      },
+      "max": {
+        "x_m": 6.43401,
+        "y_m": 22.500151,
+        "z_m": 18.878201
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_be827a77.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M057",
+    "relative_path": "机床设备/CNC数控加工中心.fbx",
+    "name": "CNC数控加工中心",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 882348,
+    "path": "source-models/产线模型库/机床设备/CNC数控加工中心.fbx",
+    "rag_id": "asset/fbx/fbx_84d31057",
+    "rag_name": "CNC数控加工中心",
+    "rag_dims": {
+      "width_m": 25.036847,
+      "depth_m": 22.783805,
+      "height_m": 23.245853
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.0001,
+    "fbx_unit_scale_factor": 0.0001,
+    "fbx_bbox_filter": "none_runtime_obj_bounds",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 1.0,
+        "y_m": 1.0,
+        "z_m": 1.0
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_84d31057.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M058",
+    "relative_path": "机床设备/六轴CNC加工中心：塑料油瓶加工机.fbx",
+    "name": "六轴CNC加工中心：塑料油瓶加工机",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 34134588,
+    "path": "source-models/产线模型库/机床设备/六轴CNC加工中心：塑料油瓶加工机.fbx",
+    "rag_id": "asset/fbx/fbx_465611ff",
+    "rag_name": "六轴CNC加工中心：塑料油瓶加工机",
+    "rag_dims": {
+      "width_m": 18.699,
+      "depth_m": 19.978831,
+      "height_m": 26.610003
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.0001,
+    "fbx_unit_scale_factor": 0.0001,
+    "fbx_bbox_filter": "none_runtime_obj_bounds",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 1.0,
+        "y_m": 1.0,
+        "z_m": 1.0
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_465611ff.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M059",
+    "relative_path": "机床设备/卧式铣床.fbx",
+    "name": "卧式铣床",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 1583084,
+    "path": "source-models/产线模型库/机床设备/卧式铣床.fbx",
+    "rag_id": "asset/fbx/fbx_17fcd2ed",
+    "rag_name": "卧式铣床",
+    "rag_dims": {
+      "width_m": 0.189026,
+      "depth_m": 0.118016,
+      "height_m": 0.176605
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -0.225262,
+        "y_m": -0.238561,
+        "z_m": -0.0
+      },
+      "max": {
+        "x_m": -0.036236,
+        "y_m": -0.120545,
+        "z_m": 0.177117
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "same_filename_old_path_needs_confirmation",
+    "preview_skip": false
+  },
+  {
+    "id": "M060",
+    "relative_path": "机床设备/哈斯数控加工中心.fbx",
+    "name": "哈斯数控加工中心",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 264540,
+    "path": "source-models/产线模型库/机床设备/哈斯数控加工中心.fbx",
+    "rag_id": "asset/fbx/fbx_52f1abc3",
+    "rag_name": "哈斯数控加工中心",
+    "rag_dims": {
+      "width_m": 23.45583,
+      "depth_m": 36.372336,
+      "height_m": 30.000353
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.0001,
+    "fbx_unit_scale_factor": 0.0001,
+    "fbx_bbox_filter": "none_runtime_obj_bounds",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 1.0,
+        "y_m": 1.0,
+        "z_m": 1.0
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_52f1abc3.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M061",
+    "relative_path": "机床设备/微型加工中心.fbx",
+    "name": "微型加工中心",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 8810556,
+    "path": "source-models/产线模型库/机床设备/微型加工中心.fbx",
+    "rag_id": "asset/fbx/fbx_c6a19eec",
+    "rag_name": "微型加工中心",
+    "rag_dims": {
+      "width_m": 4.17,
+      "depth_m": 4.400001,
+      "height_m": 4.250001
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.0001,
+    "fbx_unit_scale_factor": 0.0001,
+    "fbx_bbox_filter": "none_runtime_obj_bounds",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 1.0,
+        "y_m": 1.0,
+        "z_m": 1.0
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_c6a19eec.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M062",
+    "relative_path": "机床设备/摇臂钻床.fbx",
+    "name": "摇臂钻床",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 759980,
+    "path": "source-models/产线模型库/机床设备/摇臂钻床.fbx",
+    "rag_id": "asset/fbx/fbx_a3e1a9c2",
+    "rag_name": "摇臂钻床",
+    "rag_dims": {
+      "width_m": 0.1234,
+      "depth_m": 0.068343,
+      "height_m": 0.199845
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -1.00733,
+        "y_m": -0.233367,
+        "z_m": 0.002756
+      },
+      "max": {
+        "x_m": -0.88393,
+        "y_m": -0.165024,
+        "z_m": 0.202601
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_a3e1a9c2.glb",
+    "manual_review": true,
+    "rag_match_mode": "same_filename_old_path_needs_confirmation",
+    "preview_skip": false
+  },
+  {
+    "id": "M063",
+    "relative_path": "机床设备/数控机床.fbx",
+    "name": "数控机床",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 2134540,
+    "path": "source-models/产线模型库/机床设备/数控机床.fbx",
+    "rag_id": "asset/fbx/fbx_8261b7e0",
+    "rag_name": "数控机床",
+    "rag_dims": {
+      "width_m": 0.258991,
+      "depth_m": 0.190181,
+      "height_m": 0.111903
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -1.378733,
+        "y_m": -1.752799,
+        "z_m": -0.013854
+      },
+      "max": {
+        "x_m": -1.119742,
+        "y_m": -1.554393,
+        "z_m": 0.227229
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "same_filename_old_path_needs_confirmation",
+    "preview_skip": false
+  },
+  {
+    "id": "M064",
+    "relative_path": "机床设备/新型车铣复合加工中心.fbx",
+    "name": "新型车铣复合加工中心",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 18815260,
+    "path": "source-models/产线模型库/机床设备/新型车铣复合加工中心.fbx",
+    "rag_id": "asset/fbx/fbx_6901bdd8",
+    "rag_name": "新型车铣复合加工中心",
+    "rag_dims": {
+      "width_m": 70.35521,
+      "depth_m": 41.976381,
+      "height_m": 34.430007
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.0001,
+    "fbx_unit_scale_factor": 0.0001,
+    "fbx_bbox_filter": "none_runtime_obj_bounds",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 1.0,
+        "y_m": 1.0,
+        "z_m": 1.0
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_6901bdd8.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M065",
+    "relative_path": "机床设备/立式加工中心1100X900.fbx",
+    "name": "立式加工中心1100X900",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 4367964,
+    "path": "source-models/产线模型库/机床设备/立式加工中心1100X900.fbx",
+    "rag_id": "asset/fbx/fbx_fb04a2ee",
+    "rag_name": "立式加工中心1100X900",
+    "rag_dims": {
+      "width_m": 23.91741,
+      "depth_m": 26.603004,
+      "height_m": 28.536162
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.0001,
+    "fbx_unit_scale_factor": 0.0001,
+    "fbx_bbox_filter": "none_runtime_obj_bounds",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 1.0,
+        "y_m": 1.0,
+        "z_m": 1.0
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_fb04a2ee.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M066",
+    "relative_path": "机床设备/立式加工中心GA-V918C.fbx",
+    "name": "立式加工中心GA-V918C",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 25598764,
+    "path": "source-models/产线模型库/机床设备/立式加工中心GA-V918C.fbx",
+    "rag_id": "asset/fbx/fbx_abd43f9f",
+    "rag_name": "立式加工中心GA-V918C",
+    "rag_dims": {
+      "width_m": 64.424005,
+      "depth_m": 33.467135,
+      "height_m": 43.398621
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.0001,
+    "fbx_unit_scale_factor": 0.0001,
+    "fbx_bbox_filter": "none_runtime_obj_bounds",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 1.0,
+        "y_m": 1.0,
+        "z_m": 1.0
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_abd43f9f.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M067",
+    "relative_path": "机床设备/立式加工中心光机模型.fbx",
+    "name": "立式加工中心光机模型",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 305308,
+    "path": "source-models/产线模型库/机床设备/立式加工中心光机模型.fbx",
+    "rag_id": "asset/fbx/fbx_f4980f8b",
+    "rag_name": "立式加工中心光机模型",
+    "rag_dims": {
+      "width_m": 10.8,
+      "depth_m": 18.540899,
+      "height_m": 14.350003
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.0001,
+    "fbx_unit_scale_factor": 0.0001,
+    "fbx_bbox_filter": "none_runtime_obj_bounds",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 1.0,
+        "y_m": 1.0,
+        "z_m": 1.0
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_f4980f8b.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M068",
+    "relative_path": "机床设备/立式四轴数控铣床.fbx",
+    "name": "立式四轴数控铣床",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 9636156,
+    "path": "source-models/产线模型库/机床设备/立式四轴数控铣床.fbx",
+    "rag_id": "asset/fbx/fbx_f2db5dfe",
+    "rag_name": "立式四轴数控铣床",
+    "rag_dims": {
+      "width_m": 8.539999,
+      "depth_m": 10.256001,
+      "height_m": 7.405002
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.0001,
+    "fbx_unit_scale_factor": 0.0001,
+    "fbx_bbox_filter": "none_runtime_obj_bounds",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 1.0,
+        "y_m": 1.0,
+        "z_m": 1.0
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_f2db5dfe.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M069",
+    "relative_path": "机床设备/高速立式车铣加工中心.fbx",
+    "name": "高速立式车铣加工中心",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 25236476,
+    "path": "source-models/产线模型库/机床设备/高速立式车铣加工中心.fbx",
+    "rag_id": "asset/fbx/fbx_d8f6cfdf",
+    "rag_name": "高速立式车铣加工中心",
+    "rag_dims": {
+      "width_m": 25.655,
+      "depth_m": 38.703321,
+      "height_m": 25.600006
+    },
+    "source_unit": "unknown",
+    "unit_scale_to_m": 0.0001,
+    "fbx_unit_scale_factor": 0.0001,
+    "fbx_bbox_filter": "none_runtime_obj_bounds",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "z_m": 0.0
+      },
+      "max": {
+        "x_m": 1.0,
+        "y_m": 1.0,
+        "z_m": 1.0
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_d8f6cfdf.glb",
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M070",
+    "relative_path": "机床设备/龙门式数控切割机.fbx",
+    "name": "龙门式数控切割机",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 16681836,
+    "path": "source-models/产线模型库/机床设备/龙门式数控切割机.fbx",
+    "rag_id": "asset/fbx/fbx_3b1181c9",
+    "rag_name": "龙门式数控切割机",
+    "rag_dims": {
+      "width_m": 0.371563,
+      "depth_m": 0.526742,
+      "height_m": 0.433268
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": -2.072837,
+        "y_m": -0.975262,
+        "z_m": -0.024327
+      },
+      "max": {
+        "x_m": -0.941423,
+        "y_m": -0.448519,
+        "z_m": 0.447096
+      }
+    },
+    "runtime_path": "models/runtime-models/glb/fbx_3b1181c9.glb",
+    "manual_review": true,
+    "rag_match_mode": "same_filename_old_path_needs_confirmation",
+    "preview_skip": false
+  },
+  {
+    "id": "M071",
+    "relative_path": "机床设备/龙门铣床.fbx",
+    "name": "龙门铣床",
+    "group": "机床设备",
+    "format": ".fbx",
+    "bytes": 5287052,
+    "path": "source-models/产线模型库/机床设备/龙门铣床.fbx",
+    "rag_id": "asset/fbx/fbx_51f787e0",
+    "rag_name": "龙门铣床",
+    "rag_dims": {
+      "width_m": 0.41861,
+      "depth_m": 0.480547,
+      "height_m": 0.293629
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.446843,
+        "y_m": -0.982822,
+        "z_m": -0.00019
+      },
+      "max": {
+        "x_m": 1.15954,
+        "y_m": -0.502275,
+        "z_m": 0.293439
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "same_filename_old_path_needs_confirmation",
+    "preview_skip": false
+  },
+  {
+    "id": "M072",
+    "relative_path": "电子装备/AGV小车/agv.glb",
+    "name": "agv",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 11039440,
+    "path": "source-models/产线模型库/电子装备/AGV小车/agv.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M073",
+    "relative_path": "电子装备/models/29-能耗监测网关.glb",
+    "name": "29-能耗监测网关",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 1140720,
+    "path": "source-models/产线模型库/电子装备/models/29-能耗监测网关.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M074",
+    "relative_path": "电子装备/models/IRF2948B_communications_service_monitor.glb",
+    "name": "IRF2948B_communications_service_monitor",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 1412732,
+    "path": "source-models/产线模型库/电子装备/models/IRF2948B_communications_service_monitor.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M075",
+    "relative_path": "电子装备/models/Keyboard-Video-Mouse Switch.glb",
+    "name": "Keyboard-Video-Mouse Switch",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 873336,
+    "path": "source-models/产线模型库/电子装备/models/Keyboard-Video-Mouse Switch.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M076",
+    "relative_path": "电子装备/models/UHF电调滤波器.glb",
+    "name": "UHF电调滤波器",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 902396,
+    "path": "source-models/产线模型库/电子装备/models/UHF电调滤波器.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M077",
+    "relative_path": "电子装备/models/VHF电调滤波器.glb",
+    "name": "VHF电调滤波器",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 902368,
+    "path": "source-models/产线模型库/电子装备/models/VHF电调滤波器.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M078",
+    "relative_path": "电子装备/models/tool_流水线.glb",
+    "name": "tool_流水线",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 13680568,
+    "path": "source-models/产线模型库/电子装备/models/tool_流水线.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M079",
+    "relative_path": "电子装备/models/传送带2.glb",
+    "name": "传送带2",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 7137788,
+    "path": "source-models/产线模型库/电子装备/models/传送带2.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M080",
+    "relative_path": "电子装备/models/地面.glb",
+    "name": "地面",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 416164,
+    "path": "source-models/产线模型库/电子装备/models/地面.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M081",
+    "relative_path": "电子装备/models/场景一搭建工程.glb",
+    "name": "场景一搭建工程",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 324257484,
+    "path": "source-models/产线模型库/电子装备/models/场景一搭建工程.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M082",
+    "relative_path": "电子装备/models/大温箱.glb",
+    "name": "大温箱",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 601780,
+    "path": "source-models/产线模型库/电子装备/models/大温箱.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M083",
+    "relative_path": "电子装备/models/工人1.glb",
+    "name": "工人1",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 2375400,
+    "path": "source-models/产线模型库/电子装备/models/工人1.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M084",
+    "relative_path": "电子装备/models/工人2.glb",
+    "name": "工人2",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 4839744,
+    "path": "source-models/产线模型库/电子装备/models/工人2.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M085",
+    "relative_path": "电子装备/models/暂存架.glb",
+    "name": "暂存架",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 88863896,
+    "path": "source-models/产线模型库/电子装备/models/暂存架.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M086",
+    "relative_path": "电子装备/models/柔性测试工作站.glb",
+    "name": "柔性测试工作站",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 26221756,
+    "path": "source-models/产线模型库/电子装备/models/柔性测试工作站.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M087",
+    "relative_path": "电子装备/models/桌子.glb",
+    "name": "桌子",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 184864,
+    "path": "source-models/产线模型库/电子装备/models/桌子.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M088",
+    "relative_path": "电子装备/models/温箱小.glb",
+    "name": "温箱小",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 607804,
+    "path": "source-models/产线模型库/电子装备/models/温箱小.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M089",
+    "relative_path": "电子装备/models/激光打标标准机台.glb",
+    "name": "激光打标标准机台",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 589608,
+    "path": "source-models/产线模型库/电子装备/models/激光打标标准机台.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M090",
+    "relative_path": "电子装备/models/物料.glb",
+    "name": "物料",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 12675928,
+    "path": "source-models/产线模型库/电子装备/models/物料.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M091",
+    "relative_path": "电子装备/models/皮带线.glb",
+    "name": "皮带线",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 6494012,
+    "path": "source-models/产线模型库/电子装备/models/皮带线.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M092",
+    "relative_path": "电子装备/models/线边库.glb",
+    "name": "线边库",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 46409916,
+    "path": "source-models/产线模型库/电子装备/models/线边库.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M093",
+    "relative_path": "电子装备/models/装夹台.glb",
+    "name": "装夹台",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 25445048,
+    "path": "source-models/产线模型库/电子装备/models/装夹台.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M094",
+    "relative_path": "电子装备/models/触摸屏.glb",
+    "name": "触摸屏",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 94228,
+    "path": "source-models/产线模型库/电子装备/models/触摸屏.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M095",
+    "relative_path": "电子装备/models/设备1.glb",
+    "name": "设备1",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 180115184,
+    "path": "source-models/产线模型库/电子装备/models/设备1.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M096",
+    "relative_path": "电子装备/models/货架.glb",
+    "name": "货架",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 73684100,
+    "path": "source-models/产线模型库/电子装备/models/货架.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M097",
+    "relative_path": "电子装备/models/超声波焊接机.glb",
+    "name": "超声波焊接机",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 6825728,
+    "path": "source-models/产线模型库/电子装备/models/超声波焊接机.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M098",
+    "relative_path": "电子装备/models/输送线.glb",
+    "name": "输送线",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 29811288,
+    "path": "source-models/产线模型库/电子装备/models/输送线.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M099",
+    "relative_path": "电子装备/models/输送线2.glb",
+    "name": "输送线2",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 15419616,
+    "path": "source-models/产线模型库/电子装备/models/输送线2.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M100",
+    "relative_path": "电子装备/models/输送线3.glb",
+    "name": "输送线3",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 413884492,
+    "path": "source-models/产线模型库/电子装备/models/输送线3.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M101",
+    "relative_path": "电子装备/models/铝型材支架.glb",
+    "name": "铝型材支架",
+    "group": "电子装备",
+    "format": ".glb",
+    "bytes": 5143100,
+    "path": "source-models/产线模型库/电子装备/models/铝型材支架.glb",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M102",
+    "relative_path": "电子装备/工作台/工作台子.STL",
+    "name": "工作台子",
+    "group": "电子装备",
+    "format": ".stl",
+    "bytes": 697284,
+    "path": "source-models/产线模型库/电子装备/工作台/工作台子.STL",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M103",
+    "relative_path": "电子装备/工作台/普通工作台.STL",
+    "name": "普通工作台",
+    "group": "电子装备",
+    "format": ".stl",
+    "bytes": 170584,
+    "path": "source-models/产线模型库/电子装备/工作台/普通工作台.STL",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M104",
+    "relative_path": "电子装备/置物架（buffer）/置物架.STL",
+    "name": "置物架",
+    "group": "电子装备",
+    "format": ".stl",
+    "bytes": 2095884,
+    "path": "source-models/产线模型库/电子装备/置物架（buffer）/置物架.STL",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": false
+  },
+  {
+    "id": "M105",
+    "relative_path": "自动PCB上下料点胶测试自动线/PCB PLACING MACHINE ASSEMBLY.STL",
+    "name": "PCB PLACING MACHINE ASSEMBLY",
+    "group": "自动PCB上下料点胶测试自动线",
+    "format": ".stl",
+    "bytes": 345625434,
+    "path": "source-models/产线模型库/自动PCB上下料点胶测试自动线/PCB PLACING MACHINE ASSEMBLY.STL",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": true
+  },
+  {
+    "id": "M106",
+    "relative_path": "自动PCB上下料点胶测试自动线/PCB PLACING MACHINE ASSEMBLY.fbx",
+    "name": "PCB PLACING MACHINE ASSEMBLY",
+    "group": "自动PCB上下料点胶测试自动线",
+    "format": ".fbx",
+    "bytes": 121734412,
+    "path": "source-models/产线模型库/自动PCB上下料点胶测试自动线/PCB PLACING MACHINE ASSEMBLY.fbx",
+    "rag_id": "asset/fbx/pcb_placing_machine_assembly",
+    "rag_name": "PCB PLACING MACHINE ASSEMBLY",
+    "rag_dims": {
+      "width_m": 12.354235,
+      "depth_m": 22.425001,
+      "height_m": 44.334483
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "none",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.105255,
+        "y_m": 0.056886,
+        "z_m": 0.247944
+      },
+      "max": {
+        "x_m": 12.45949,
+        "y_m": 22.481887,
+        "z_m": 44.582427
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M107",
+    "relative_path": "转盘式组装线/Asm1.STL",
+    "name": "Asm1",
+    "group": "转盘式组装线",
+    "format": ".stl",
+    "bytes": 63471984,
+    "path": "source-models/产线模型库/转盘式组装线/Asm1.STL",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": true,
+    "variant_note": "Same folder as rotary assembly FBX; not a new machine"
+  },
+  {
+    "id": "M108",
+    "relative_path": "转盘式组装线/转盘式组装线.fbx",
+    "name": "转盘式组装线",
+    "group": "转盘式组装线",
+    "format": ".fbx",
+    "bytes": 22269212,
+    "path": "source-models/产线模型库/转盘式组装线/转盘式组装线.fbx",
+    "rag_id": "asset/fbx/fbx_a71ceea9",
+    "rag_name": "转盘式组装线",
+    "rag_dims": {
+      "width_m": 78.733682,
+      "depth_m": 19.413253,
+      "height_m": 60.593775
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 4.666455,
+        "y_m": 0.044064,
+        "z_m": 0.290512
+      },
+      "max": {
+        "x_m": 83.400137,
+        "y_m": 19.457317,
+        "z_m": 70.294097
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  },
+  {
+    "id": "M109",
+    "relative_path": "钢平台上生产线布局/钢平台上生产线整体布局.STL",
+    "name": "钢平台上生产线整体布局",
+    "group": "钢平台上生产线布局",
+    "format": ".stl",
+    "bytes": 321282434,
+    "path": "source-models/产线模型库/钢平台上生产线布局/钢平台上生产线整体布局.STL",
+    "rag_id": null,
+    "rag_name": null,
+    "rag_dims": {},
+    "source_unit": null,
+    "unit_scale_to_m": null,
+    "fbx_unit_scale_factor": null,
+    "fbx_bbox_filter": null,
+    "raw_fbx_bbox": null,
+    "runtime_path": null,
+    "manual_review": null,
+    "rag_match_mode": "not_in_current_rag",
+    "preview_skip": true
+  },
+  {
+    "id": "M110",
+    "relative_path": "钢平台上生产线布局/钢平台上生产线整体布局.fbx",
+    "name": "钢平台上生产线整体布局",
+    "group": "钢平台上生产线布局",
+    "format": ".fbx",
+    "bytes": 111691756,
+    "path": "source-models/产线模型库/钢平台上生产线布局/钢平台上生产线整体布局.fbx",
+    "rag_id": "asset/fbx/fbx_08edb467",
+    "rag_name": "钢平台上生产线整体布局",
+    "rag_dims": {
+      "width_m": 91.800002,
+      "depth_m": 81.834997,
+      "height_m": 27.012904
+    },
+    "source_unit": "cm",
+    "unit_scale_to_m": 0.01,
+    "fbx_unit_scale_factor": 1.0,
+    "fbx_bbox_filter": "iqr_3.0",
+    "raw_fbx_bbox": {
+      "min": {
+        "x_m": 0.084002,
+        "y_m": 0.472337,
+        "z_m": 12.14475
+      },
+      "max": {
+        "x_m": 91.884004,
+        "y_m": 82.307334,
+        "z_m": 47.939634
+      }
+    },
+    "runtime_path": null,
+    "manual_review": true,
+    "rag_match_mode": "exact_relative_path",
+    "preview_skip": false
+  }
+]

@@ -1,0 +1,3 @@
+Add tool cabinet C near CNC B, using the same kind as the existing tool cabinets. Transfer tool cabinet B's tool-service duties to tool cabinet C. Remove tool cabinet B.
+
+Replace the raw-material rack with the wider line-side storage unit already used here, retaining its receiving and supply duties. Move tool cabinet A 1 m east and rotate it 90 degrees clockwise. Leave the other equipment in place. If a requested placement conflicts with the operating requirements, explain the conflict and propose a nearby feasible alternative.

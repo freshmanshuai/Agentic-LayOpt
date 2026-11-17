@@ -1,0 +1,1 @@
+Widen the central aisle and both aligned door openings to 6 m, keeping the aisle centerline fixed. Shift either buffer outward only if needed. Move only affected equipment or parking bays, including row members that must move together. Keep their orientations and minimize movement. Preserve the work areas and verify that the assigned AGV transfers remain possible.

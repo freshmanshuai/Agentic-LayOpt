@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-store, max-age=0" />
+  <title>Agentic LayOpt</title>
+  <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/web/styles.css?v=20261028-generic" />
+</head>
+<body>
+  <div id="app-shell" class="app-shell">
+    <header class="topbar">
+      <div class="brand-block">
+        <button id="toggle-left" class="tool-button compact" type="button" title="Collapse task configuration" aria-label="Collapse task configuration">&#9776;</button>
+        <h1>Agentic LayOpt</h1>
+      </div>
+      <ol class="global-stepper" aria-label="Workflow progress">
+        <li id="top-step-intent" data-status="pending"><span>1</span><b>Intent</b></li>
+        <li id="top-step-designer" data-status="pending"><span>2</span><b>Design</b></li>
+        <li id="top-step-validator" data-status="pending"><span>3</span><b>Validate</b></li>
+        <li id="top-step-evaluator" data-status="pending"><span>4</span><b>Evaluate</b></li>
+      </ol>
+      <div class="topbar-meta">
+        <span id="task-type-state" class="task-type-chip">Task not identified</span>
+        <div class="run-summary"><span id="request-state" class="run-state">Idle</span><span id="elapsed-time">0.0s</span></div>
+        <span id="backend-state" class="state-chip muted">Backend checking</span>
+        <span id="viewport-state" class="state-chip muted">Viewport loading</span>
+        <button id="save-button" class="tool-button" type="button">Save</button>
+        <button id="export-button" class="tool-button" type="button">Export</button>
+        <button id="toggle-right" class="tool-button compact" type="button" title="Collapse context panel" aria-label="Collapse context panel">&#9776;</button>
+      </div>
+    </header>
+
+    <main class="workbench">
+      <aside class="task-panel" aria-label="Task configuration">
+        <div class="panel-titlebar"><h2>Conversation</h2><p>Describe, refine, validate, or evaluate a layout.</p></div>
+        <div id="chat-log" class="chat-log" aria-live="polite"></div>
+
+        <div class="conversation-composer">
+          <label class="engineering-context-field" for="engineering-context">
+            <span><strong>Engineering context</strong><small>Saved with this session. Describe stable facility, inventory, process, and evaluation assumptions here.</small></span>
+            <textarea id="engineering-context" rows="4" spellcheck="false" aria-label="Engineering context for this session"></textarea>
+          </label>
+          <textarea id="prompt-input" rows="4" spellcheck="false" aria-label="Message Agentic LayOpt"></textarea>
+          <p class="default-policy">Defaults apply unless you specify otherwise.</p>
+          <div class="composer-toolbar">
+            <div class="composer-options">
+              <details class="prompt-option">
+                <summary>Objective <span id="objective-count">Auto</span></summary>
+                <div class="prompt-popover objective-options">
+                  <label><input id="objective-distance" type="checkbox" /> Minimize material handling distance</label>
+                  <label><input id="objective-utilization" type="checkbox" /> Maximize space utilization</label>
+                  <label><input id="objective-adjacency" type="checkbox" /> Maximize adjacency satisfaction</label>
+                  <label><input id="objective-process" type="checkbox" /> Maximize process order consistency</label>
+                  <label><input id="objective-change" type="checkbox" /> Minimize layout change</label>
+                </div>
+              </details>
+              <details class="prompt-option">
+                <summary>Solver <span id="solver-used">GA</span></summary>
+                <div class="prompt-popover solver-options">
+                  <label for="solver-select">Layout solver</label>
+                  <select id="solver-select" aria-label="Layout solver">
+                    <option value="genetic_algorithm" selected>Genetic Algorithm</option>
+                  </select>
+                </div>
+              </details>
+              <details class="prompt-option">
+                <summary>Params</summary>
+                <div class="prompt-popover parameter-options">
+                  <label>Population size <input id="parameter-population" type="number" min="4" max="500" placeholder="48" /></label>
+                  <label>Mutation rate <input id="parameter-mutation" type="number" min="0" max="1" step="0.01" placeholder="0.2" /></label>
+                  <label>Maximum generations <input id="parameter-iterations" type="number" min="1" max="10000" placeholder="100" /></label>
+                  <label>Random seed <input id="parameter-seed" type="number" placeholder="0" /></label>
+                  <label>Timeout (s) <input id="parameter-timeout" type="number" min="0.1" step="0.1" placeholder="Backend default" /></label>
+                </div>
+              </details>
+            </div>
+            <div class="composer-actions">
+              <details class="action-menu">
+                <summary aria-label="More conversation actions" title="More actions">&#8942;</summary>
+                <div class="action-menu-popover"><button id="clear-button" type="button">Clear conversation</button><button id="restore-button" type="button">Restore saved task</button></div>
+              </details>
+              <button id="run-button" class="primary-button send-button" type="button">Send</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="center-stage">
+        <section class="viewport-panel">
+          <div class="viewport-toolbar">
+            <div class="viewport-title"><h2>Layout viewport</h2><span id="viewport-mode" hidden></span></div>
+            <div class="view-tools" aria-label="Viewport controls">
+              <select id="camera-mode" class="view-select" aria-label="Camera projection"><option value="perspective">Perspective</option><option value="orthographic">Orthographic</option></select>
+              <button id="reset-camera" class="tool-button compact" type="button" title="Reset camera" aria-label="Reset camera">&#8635;</button>
+              <label class="view-toggle"><input id="show-grid" type="checkbox" checked /> Grid</label>
+              <label class="view-toggle"><input id="show-models" type="checkbox" checked /> Models</label>
+              <label class="view-toggle"><input id="show-boundary" type="checkbox" checked /> Envelope</label>
+              <label class="view-toggle"><input id="show-walls" type="checkbox" checked /> Walls</label>
+              <label class="view-toggle"><input id="show-aisles" type="checkbox" checked /> Aisles</label>
+              <label class="view-toggle"><input id="show-maintenance" type="checkbox" checked /> Maintenance</label>
+              <label id="show-flow-label" class="view-toggle"><input id="show-flow" type="checkbox" checked /> Logistics</label>
+              <label class="view-toggle"><input id="show-overlap" type="checkbox" checked /> Conflicts</label>
+            </div>
+          </div>
+          <div class="viewport-frame">
+            <canvas id="three-viewport" aria-label="Interactive 3D factory layout"></canvas>
+            <div id="viewport-empty">Run a request to render a layout. Drag to rotate, scroll to zoom.</div>
+            <div class="viewport-hud" aria-label="Current solver status">
+              <div><span>Solver</span><strong id="hud-solver">Not run</strong></div>
+              <div><span>Progress</span><strong id="hud-progress">-</strong></div>
+              <div><span id="hud-current-label">Current</span><strong id="hud-current-score">-</strong></div>
+              <div><span id="hud-best-label">Best</span><strong id="hud-best-score">-</strong></div>
+              <div><span>Violations</span><strong id="hud-violations">-</strong></div>
+              <div><span>Elapsed</span><strong id="hud-elapsed">0.0s</strong></div>
+            </div>
+          </div>
+          <div class="viewport-status"><span id="layout-status">No layout generated</span><span id="viewport-interaction-hint">Drag to rotate &middot; click to select &middot; scroll to zoom</span></div>
+        </section>
+
+        <section id="details-drawer" class="details-drawer collapsed">
+          <button id="drawer-toggle" class="drawer-summary" type="button" aria-expanded="false"><span><strong>Details</strong><span id="drawer-status">Idle &middot; 0 errors</span></span><span class="drawer-chevron">&#8963;</span></button>
+          <div class="drawer-body">
+            <nav class="drawer-tabs" aria-label="Detail views">
+              <button class="drawer-tab active" type="button" data-drawer-tab="trace">Trace</button>
+              <button class="drawer-tab" type="button" data-drawer-tab="solver">Solver metrics</button>
+              <button class="drawer-tab" type="button" data-drawer-tab="flp-ir">FLP-IR</button>
+              <button class="drawer-tab" type="button" data-drawer-tab="validation">Validation</button>
+              <button class="drawer-tab" type="button" data-drawer-tab="evaluation">Evaluation</button>
+              <button class="drawer-tab" type="button" data-drawer-tab="rag">RAG evidence</button>
+              <button class="drawer-tab" type="button" data-drawer-tab="semantic">Semantic slots</button>
+            </nav>
+            <div class="drawer-content">
+              <pre id="trace-output" class="drawer-pane active" data-drawer-pane="trace">No agent events yet.</pre>
+              <pre id="solver-output" class="drawer-pane" data-drawer-pane="solver">No solver report.</pre>
+              <pre id="flp-ir-output" class="drawer-pane" data-drawer-pane="flp-ir">No FLP-IR available.</pre>
+              <pre id="validation-detail-output" class="drawer-pane" data-drawer-pane="validation">No validation details.</pre>
+              <pre id="evaluation-detail-output" class="drawer-pane" data-drawer-pane="evaluation">No evaluation details.</pre>
+              <pre id="rag-output" class="drawer-pane" data-drawer-pane="rag">No RAG evidence available.</pre>
+              <dl id="semantic-output" class="drawer-pane compact-kv" data-drawer-pane="semantic"></dl>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <aside class="context-panel" aria-label="Context panel">
+        <nav class="context-tabs" aria-label="Context views">
+          <button class="context-tab active" type="button" data-context-tab="workflow">Workflow</button>
+          <button class="context-tab" type="button" data-context-tab="properties">Properties</button>
+          <button class="context-tab" type="button" data-context-tab="validation">Validation</button>
+        </nav>
+        <div class="context-scroll">
+          <section class="context-pane active" data-context-pane="workflow">
+            <div class="context-heading"><h2>Agent workflow</h2><span id="workflow-status">Waiting</span></div>
+            <ol class="agent-stepper">
+              <li id="agent-step-intent" data-status="pending"><div class="agent-marker">1</div><div class="agent-step-content"><div class="agent-step-heading"><strong>Intent Understanding</strong><span id="agent-intent">pending</span></div><p id="agent-intent-summary">Waiting for a layout requirement.</p><small id="agent-intent-time"></small></div></li>
+              <li id="agent-step-designer" data-status="pending"><div class="agent-marker">2</div><div class="agent-step-content"><div class="agent-step-heading"><strong>Designer</strong><span id="agent-designer">pending</span></div><p id="agent-designer-summary">Waiting for resolved intent and evidence.</p><small id="agent-designer-time"></small></div></li>
+              <li id="agent-step-validator" data-status="pending"><div class="agent-marker">3</div><div class="agent-step-content"><div class="agent-step-heading"><strong>Validator</strong><span id="agent-validator">pending</span></div><p id="agent-validator-summary">Waiting for a candidate FLP-IR.</p><small id="agent-validator-time"></small></div></li>
+              <li id="agent-step-evaluator" data-status="pending"><div class="agent-marker">4</div><div class="agent-step-content"><div class="agent-step-heading"><strong>Evaluator</strong><span id="agent-evaluator">pending</span></div><p id="agent-evaluator-summary">Waiting for a valid layout.</p><small id="agent-evaluator-time"></small></div></li>
+            </ol>
+            <section id="requirement-review" class="requirement-review" hidden>
+              <div class="subheading"><h3>Parsed requirements</h3><span id="requirements-state">Review</span></div>
+              <div class="requirement-fields">
+                <label><span>Task type <small id="source-intent" class="source-badge">Detected</small></span><select id="requirement-intent"><option value="generate_feasible_layout">Generate layout</option><option value="optimize_layout_from_scratch">Optimize new layout</option><option value="optimize_existing_layout">Optimize current layout</option><option value="edit_layout">Edit current layout</option><option value="constraint_repair">Repair layout</option><option value="validate_layout">Validate current layout</option><option value="evaluate_layout">Evaluate current layout</option><option value="unknown_or_unsupported">Unclear task</option></select></label>
+                <div class="requirement-pair"><label><span>Site width (m) <small id="source-site" class="source-badge">Missing</small></span><input id="requirement-site-width" type="number" min="0" step="0.1" /></label><label><span>Site depth (m)</span><input id="requirement-site-depth" type="number" min="0" step="0.1" /></label></div>
+                <label><span>Equipment <small id="source-assets" class="source-badge">Missing</small></span><input id="requirement-assets" type="text" placeholder="Equipment names, comma separated" /></label>
+                <label><span>Constraints <small id="source-constraints" class="source-badge default">Default</small></span><input id="requirement-constraints" type="text" value="no_overlap" /></label>
+                <label><span>Objectives <small id="source-objectives" class="source-badge">Auto</small></span><input id="requirement-objectives" type="text" placeholder="Comma separated" /></label>
+              </div>
+              <div id="requirement-missing" class="requirement-missing"></div>
+              <button id="apply-requirements" class="secondary-button" type="button">Apply changes and continue</button>
+            </section>
+            <div id="workflow-error-actions" class="workflow-error-actions" hidden>
+              <button id="retry-button" type="button">Retry workflow</button>
+              <button id="view-error-log" type="button">View error log</button>
+            </div>
+            <div id="clarification-block" class="notice-block" hidden>
+              <div class="subheading"><h3>More information needed</h3></div>
+              <div id="clarification-output"></div>
+              <div class="inline-reply"><textarea id="clarification-reply" rows="2" placeholder="Add the missing details"></textarea><button id="clarification-send" type="button">Reply</button></div>
+            </div>
+            <div class="recent-activity"><div class="subheading"><h3>Recent activity</h3><button id="open-trace" type="button">View all</button></div><ol id="trace-recent"><li>Submit a task to start the workflow.</li></ol></div>
+          </section>
+          <section class="context-pane" data-context-pane="properties">
+            <div class="context-heading"><h2>Properties</h2><span id="property-context">Site</span></div>
+            <div id="selection-output" class="property-sheet">No equipment selected.</div>
+          </section>
+          <section class="context-pane" data-context-pane="validation">
+            <div class="context-heading"><h2>Layout quality</h2><span id="quality-status">Not evaluated</span></div>
+            <nav class="subtabs" aria-label="Quality views"><button class="subtab active" type="button" data-quality-tab="constraints">Constraint checks</button><button class="subtab" type="button" data-quality-tab="evaluation">Evaluation</button></nav>
+            <div id="validation-output" class="quality-pane active" data-quality-pane="constraints">Run the workflow to validate a layout.</div>
+            <div id="evaluation-output" class="quality-pane" data-quality-pane="evaluation">Evaluation appears after a valid layout is produced.</div>
+          </section>
+        </div>
+      </aside>
+    </main>
+    <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  </div>
+  <script type="importmap">{"imports":{"three":"/web/vendor/three/three.module.js","three/addons/":"/web/vendor/three/addons/"}}</script>
+    <script type="module" src="/web/app.js?v=20261028-generic"></script>
+</body>
+</html>

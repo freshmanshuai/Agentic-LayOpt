@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task/intent.schema.json",
+  "title": "Intent Schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "intent_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "active_layout_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "site_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "user_message": {
+      "type": "string"
+    },
+    "intent_type": {
+      "type": "string",
+      "enum": [
+        "generate_feasible_layout",
+        "optimize_layout_from_scratch",
+        "optimize_existing_layout",
+        "edit_layout",
+        "validate_layout",
+        "evaluate_layout",
+        "explain_layout",
+        "compare_layouts",
+        "export_layout",
+        "unknown_or_unsupported"
+      ]
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "requires_existing_layout": {
+      "type": "boolean"
+    },
+    "requires_asset_lookup": {
+      "type": "boolean"
+    },
+    "requires_site": {
+      "type": "boolean"
+    },
+    "requires_confirmation": {
+      "type": "boolean"
+    },
+    "target_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "target_type": {
+            "type": "string",
+            "enum": [
+              "all_equipment",
+              "equipment_instance",
+              "asset",
+              "model_asset",
+              "site",
+              "zone",
+              "site_feature",
+              "flow",
+              "constraint",
+              "objective",
+              "layout",
+              "operation"
+            ]
+          },
+          "surface_text": {
+            "type": "string"
+          },
+          "resolved_library_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "resolved_instance_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "resolved_site_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "resolved_model_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confidence": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "target_type",
+          "surface_text",
+          "resolved_library_id",
+          "resolved_instance_id",
+          "resolved_site_id",
+          "resolved_model_asset_id",
+          "confidence"
+        ]
+      }
+    },
+    "detected_operations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "move",
+          "rotate",
+          "replace",
+          "add",
+          "remove",
+          "resize_site",
+          "swap",
+          "lock",
+          "unlock",
+          "set_constraint",
+          "remove_constraint",
+          "update_objective"
+        ]
+      }
+    },
+    "unresolved_items": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/UnresolvedItem"
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/ProvenanceItem"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "intent_id",
+    "project_id",
+    "active_layout_id",
+    "site_id",
+    "user_message",
+    "intent_type",
+    "confidence",
+    "requires_existing_layout",
+    "requires_asset_lookup",
+    "requires_site",
+    "requires_confirmation",
+    "target_refs",
+    "detected_operations",
+    "unresolved_items",
+    "provenance"
+  ],
+  "additionalProperties": false
+}

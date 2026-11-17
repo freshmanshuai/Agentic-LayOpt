@@ -1,0 +1,235 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "state/layout_state.schema.json",
+  "title": "Layout State Schema",
+  "description": "Canonical state of a layout. It references site_id, library_id, and model_asset_id, and stores only engineering state needed by the planning system.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "layout_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "site_id": {
+      "type": "string"
+    },
+    "source_task_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_edit_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "version": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "committed",
+        "archived",
+        "invalid"
+      ]
+    },
+    "parent_layout_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "unit_system": {
+      "$ref": "../common/common_engineering.schema.json#/$defs/UnitSystem"
+    },
+    "equipment_placements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "instance_id": {
+            "type": "string"
+          },
+          "library_id": {
+            "type": "string"
+          },
+          "model_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pose": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+          },
+          "geometry": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/Geometry"
+          },
+          "maintenance_clearance_m": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/ClearanceM"
+          },
+          "safety_clearance_m": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/ClearanceM"
+          },
+          "locked": {
+            "type": "boolean"
+          },
+          "placement_source": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/SourceRef"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "instance_id",
+          "library_id",
+          "model_asset_id",
+          "pose",
+          "geometry",
+          "maintenance_clearance_m",
+          "safety_clearance_m",
+          "locked",
+          "placement_source"
+        ]
+      }
+    },
+    "active_constraints": {
+      "type": "object",
+      "properties": {
+        "hard": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/Constraint"
+          }
+        },
+        "soft": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/SoftConstraint"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "hard",
+        "soft"
+      ]
+    },
+    "objective_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "objective_type": {
+            "type": "string"
+          },
+          "value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "is_weighted": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "objective_type",
+          "value",
+          "unit",
+          "is_weighted"
+        ]
+      }
+    },
+    "history": {
+      "type": "object",
+      "properties": {
+        "created_by_operation_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "created_by_operation_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "generate_feasible_layout",
+            "optimize_layout_from_scratch",
+            "optimize_existing_layout",
+            "edit_layout",
+            "imported_from_site_asset",
+            "manual_input",
+            null
+          ]
+        },
+        "created_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "committed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "created_by_operation_id",
+        "created_by_operation_type",
+        "created_at",
+        "committed_at"
+      ]
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/ProvenanceItem"
+      }
+    },
+    "metadata": {
+      "$ref": "../common/common_engineering.schema.json#/$defs/Metadata"
+    }
+  },
+  "required": [
+    "schema_version",
+    "layout_id",
+    "project_id",
+    "site_id",
+    "source_task_id",
+    "source_edit_id",
+    "version",
+    "status",
+    "parent_layout_id",
+    "unit_system",
+    "equipment_placements",
+    "active_constraints",
+    "objective_values",
+    "history",
+    "provenance",
+    "metadata"
+  ],
+  "additionalProperties": false
+}

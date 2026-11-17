@@ -1,0 +1,127 @@
+{
+  "basis": "Visual inspection of calibrated CAD in Unity, four local cardinal views, 2026-10-18. Operator-facing geometry annotation; not manufacturer access or docking certification.",
+  "evidence_directory": "rag_dataset/sources/model_library_audit_20261015/operator_front_views",
+  "coordinate_frame": "Canonical runtime GLB at layout yaw zero: x east, y up, z north. Unity FBX prototypes require an X reflection before applying layout pose.",
+  "models": {
+    "asset/fbx/fbx_84d31057": {
+      "audit_id": "M057",
+      "front_vectors_xz": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "evidence": "Machining opening and work area visible on minus-Z face."
+    },
+    "asset/fbx/fbx_fb04a2ee": {
+      "audit_id": "M065",
+      "front_vectors_xz": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "evidence": "Work zone and control panel visible on minus-Z face."
+    },
+    "asset/fbx/fbx_6901bdd8": {
+      "audit_id": "M064",
+      "front_vectors_xz": [
+        [
+          0,
+          1
+        ]
+      ],
+      "evidence": "Enclosure access doors and operator pendant visible on plus-Z face."
+    },
+    "asset/fbx/fbx_a3e1a9c2": {
+      "audit_id": "M062",
+      "front_vectors_xz": [
+        [
+          0,
+          1
+        ]
+      ],
+      "evidence": "Drill feed controls and worktable visible from plus Z."
+    },
+    "asset/fbx/fbx_313d8039": {
+      "audit_id": "M051",
+      "front_vectors_xz": [
+        [
+          0,
+          1
+        ]
+      ],
+      "evidence": "Worktable controls and display face plus Z."
+    },
+    "asset/glb/m093_fixture_workstation": {
+      "audit_id": "M093",
+      "front_vectors_xz": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "evidence": "Open working area visible on minus-Z face."
+    },
+    "asset/glb/m086_flexible_test_workstation": {
+      "audit_id": "M086",
+      "front_vectors_xz": [
+        [
+          0,
+          1
+        ]
+      ],
+      "evidence": "Paired access doors with handles on plus-Z face; rear equipment panels visible at minus Z."
+    },
+    "asset/glb/m088_small_temperature_chamber": {
+      "audit_id": "M088",
+      "front_vectors_xz": [
+        [
+          1,
+          0
+        ]
+      ],
+      "evidence": "Chamber access door and handle on canonical plus-X face after correcting the FBX X reflection; opposite face has ventilation."
+    },
+    "asset/fbx/fbx_1a80889c": {
+      "audit_id": "M046",
+      "front_vectors_xz": [
+        [
+          0,
+          1
+        ]
+      ],
+      "evidence": "Cabinet doors and handles on plus-Z face."
+    },
+    "asset/stl/m104_storage_rack": {
+      "audit_id": "M104",
+      "front_vectors_xz": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "evidence": "Two open shelf faces; narrow X faces have mesh ends."
+    },
+    "asset/glb/m092_line_side_storage_unit": {
+      "audit_id": "M092",
+      "front_vectors_xz": [
+        [
+          0,
+          1
+        ]
+      ],
+      "evidence": "Shelf openings on plus-Z face; enclosed rear panels on minus Z."
+    }
+  },
+  "unannotated": {
+    "M089": "Laser head geometry does not establish a unique operator front. Retain pose rather than guess.",
+    "M098": "Conveyor orientation is governed by the accepted transfer cell.",
+    "M103": "Work tables have no unique front; preserve transfer-cell alignment.",
+    "M072": "AGV parking pose is not a fixed workstation operator front."
+  }
+}

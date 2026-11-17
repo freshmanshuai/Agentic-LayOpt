@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.1",
+  "assets": [
+    {
+      "model_asset_id": "asset/fbx/fbx_1292a3bb",
+      "resource_path": "FLPRoughDesign/Models/fbx_1292a3bb",
+      "domains": ["semiconductor"]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_37331baa",
+      "resource_path": "FLPRoughDesign/Models/fbx_37331baa",
+      "domains": ["semiconductor"]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_37ff826e",
+      "resource_path": "FLPRoughDesign/Models/fbx_37ff826e",
+      "domains": ["semiconductor"]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_3ed136d0",
+      "resource_path": "FLPRoughDesign/Models/fbx_3ed136d0",
+      "domains": ["semiconductor"]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_3c6fae07",
+      "resource_path": "FLPRoughDesign/Models/fbx_3c6fae07",
+      "domains": ["semiconductor"]
+    }
+  ]
+}

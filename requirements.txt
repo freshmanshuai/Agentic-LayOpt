@@ -1,0 +1,12 @@
+jsonschema
+referencing
+httpx
+qdrant-client
+FlagEmbedding
+torch
+transformers
+ortools==9.8.3296
+numpy==1.26.4
+protobuf==4.25.3
+trimesh==4.8.3
+pillow

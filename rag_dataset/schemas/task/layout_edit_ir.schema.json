@@ -1,0 +1,326 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task/layout_edit_ir.schema.json",
+  "title": "Layout Edit IR Schema",
+  "description": "Intermediate representation for direct operations on an existing layout.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "edit_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "base_layout_id": {
+      "type": "string"
+    },
+    "edit_type": {
+      "type": "string",
+      "enum": [
+        "single_step",
+        "multi_step"
+      ]
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "operation_id": {
+            "type": "string"
+          },
+          "op_type": {
+            "type": "string",
+            "enum": [
+              "move",
+              "rotate",
+              "replace",
+              "add",
+              "remove",
+              "resize_site",
+              "swap",
+              "lock",
+              "unlock",
+              "set_constraint",
+              "remove_constraint",
+              "update_objective"
+            ]
+          },
+          "instance_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "target_refs": {
+            "type": "array",
+            "items": {
+              "$ref": "../common/common_engineering.schema.json#/$defs/TargetRef"
+            }
+          },
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "move_mode": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "absolute",
+                  "relative",
+                  null
+                ]
+              },
+              "target_pose": {
+                "anyOf": [
+                  {
+                    "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "delta_pose": {
+                "anyOf": [
+                  {
+                    "$ref": "../common/common_engineering.schema.json#/$defs/DeltaPose"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rotation_mode": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "absolute",
+                  "relative",
+                  null
+                ]
+              },
+              "target_yaw_deg": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "delta_yaw_deg": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "new_library_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "new_model_asset_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "role": {"type": ["string", "null"]},
+              "reference_instance_id": {"type": ["string", "null"]},
+              "quantity": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "placement_policy": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "explicit_pose",
+                  "near_instance",
+                  "near_site_feature",
+                  "inside_zone",
+                  "auto_place",
+                  null
+                ]
+              },
+              "target_site_feature_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "target_zone_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "site_width_m": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "exclusiveMinimum": 0
+              },
+              "site_depth_m": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "exclusiveMinimum": 0
+              },
+              "constraint_update": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": true
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "objective_update": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": true
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "move_mode",
+              "target_pose",
+              "delta_pose",
+              "rotation_mode",
+              "target_yaw_deg",
+              "delta_yaw_deg",
+              "new_library_id",
+              "new_model_asset_id",
+              "quantity",
+              "placement_policy",
+              "target_site_feature_id",
+              "target_zone_id",
+              "site_width_m",
+              "site_depth_m",
+              "constraint_update",
+              "objective_update"
+            ]
+          },
+          "preserve": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "pose",
+                "position",
+                "yaw_deg",
+                "flow_relations",
+                "instance_id",
+                "constraints",
+                "objectives"
+              ]
+            }
+          },
+          "requires_confirmation": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "operation_id",
+          "op_type",
+          "instance_id",
+          "target_refs",
+          "parameters",
+          "preserve",
+          "requires_confirmation"
+        ]
+      }
+    },
+    "post_edit_policy": {
+      "type": "object",
+      "properties": {
+        "dry_run_first": {
+          "type": "boolean"
+        },
+        "check_hard_constraints": {
+          "type": "boolean"
+        },
+        "allow_auto_repair": {
+          "type": "boolean"
+        },
+        "repair_scope": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "local_neighborhood",
+            "selected_instances",
+            "editable_zone",
+            "global",
+            null
+          ]
+        },
+        "max_repair_radius_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "max_moved_instances": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "dry_run_first",
+        "check_hard_constraints",
+        "allow_auto_repair",
+        "repair_scope",
+        "max_repair_radius_m",
+        "max_moved_instances"
+      ]
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/ProvenanceItem"
+      }
+    },
+    "unresolved_items": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/UnresolvedItem"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "edit_id",
+    "project_id",
+    "base_layout_id",
+    "edit_type",
+    "operations",
+    "post_edit_policy",
+    "provenance",
+    "unresolved_items"
+  ],
+  "additionalProperties": false
+}

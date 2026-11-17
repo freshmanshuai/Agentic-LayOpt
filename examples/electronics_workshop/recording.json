@@ -1,0 +1,299 @@
+{
+  "session_id": "web-1792389564611",
+  "title": "Electronic-control equipment workshop: recorded Agentic LayOpt session",
+  "objects": 23,
+  "main_process_objects": 13,
+  "auxiliary_objects": 10,
+  "daily_batches": [
+    20,
+    20,
+    50
+  ],
+  "engineering_context_file": "inputs/engineering_context.txt",
+  "turns": [
+    {
+      "turn_id": 1,
+      "stage": "generate",
+      "input_kind": "stage_prompt",
+      "input_source": "prompt_file",
+      "started_at": "2026-10-19T05:59:25.370Z",
+      "terminal_at": "2026-10-19T06:02:13.433Z",
+      "status": "NEED_CLARIFICATION",
+      "input_file": "inputs/turn-01.txt",
+      "request_file": "recording/requests/turn-01.json",
+      "events_file": "recording/events/turn-01.trace.txt",
+      "events_source": "captured UI trace; standalone HTTP body unavailable",
+      "llm_call_files": [
+        "recording/llm_calls/turn-01-slots.json",
+        "recording/llm_calls/turn-01-grounded.json"
+      ],
+      "operator_metadata": null,
+      "deterministic_repairs": [
+        {
+          "field_path": "constraints[12].constraint_type",
+          "action": "canonicalize_recognized_natural_site_constraint",
+          "basis": "natural_site_requirements"
+        },
+        {
+          "field_path": "process_relations",
+          "action": "restore_explicit_process_relations",
+          "basis": "linguistic_frame+engineering_rag_grounding"
+        }
+      ],
+      "selected_for_stage_result": false,
+      "superseded_or_rejected": false
+    },
+    {
+      "turn_id": 2,
+      "stage": "generate",
+      "input_kind": "clarification_reply",
+      "input_source": "operator_clarification_reply",
+      "started_at": "2026-10-19T06:02:59.040Z",
+      "terminal_at": "2026-10-19T06:03:54.767Z",
+      "status": "VALID_SOLVER_READY",
+      "input_file": "inputs/turn-02.txt",
+      "request_file": "recording/requests/turn-02.json",
+      "events_file": "recording/events/turn-02.sse.txt",
+      "events_source": "original captured HTTP SSE body",
+      "llm_call_files": [
+        "recording/llm_calls/turn-02-slots.json",
+        "recording/llm_calls/turn-02-grounded.json"
+      ],
+      "operator_metadata": {
+        "operator_note": "Assistant operator selected descriptions present in this attempt's actual RAG candidates. The VMC, fixture stations, tables, and conveyor reuse the user's explicit earlier choices. The turn-mill choice retains the large unit from the user-accepted case sizes and the requested maintenance provision for that large center. This records prior user authorization and case design, not a new human answer. Dimensions are case-calibrated catalog values, not manufacturer specifications. No asset IDs or selected-asset payload were supplied.",
+        "selection_basis": null
+      },
+      "deterministic_repairs": [
+        {
+          "field_path": "process_relations",
+          "action": "replace_with_fully_bound_explicit_arrow_chains",
+          "basis": "stable_engineering_context+engineering_rag_grounding"
+        }
+      ],
+      "selected_for_stage_result": true,
+      "superseded_or_rejected": false
+    },
+    {
+      "turn_id": 3,
+      "stage": "optimize",
+      "input_kind": "stage_prompt",
+      "input_source": "prompt_file",
+      "started_at": "2026-10-19T06:05:33.192Z",
+      "terminal_at": "2026-10-19T06:07:56.404Z",
+      "status": "VALID_SOLVER_READY",
+      "input_file": "inputs/turn-03.txt",
+      "request_file": "recording/requests/turn-03.json",
+      "events_file": "recording/events/turn-03.sse.txt",
+      "events_source": "original captured HTTP SSE body",
+      "llm_call_files": [
+        "recording/llm_calls/turn-03-slots.json",
+        "recording/llm_calls/turn-03-grounded.json"
+      ],
+      "operator_metadata": null,
+      "deterministic_repairs": [],
+      "selected_for_stage_result": true,
+      "superseded_or_rejected": false
+    },
+    {
+      "turn_id": 4,
+      "stage": "edit",
+      "input_kind": "stage_prompt",
+      "input_source": "prompt_file",
+      "started_at": "2026-10-19T06:08:43.791Z",
+      "terminal_at": "2026-10-19T06:09:14.368Z",
+      "status": "NEED_CLARIFICATION",
+      "input_file": "inputs/turn-04.txt",
+      "request_file": "recording/requests/turn-04.json",
+      "events_file": "recording/events/turn-04.trace.txt",
+      "events_source": "captured UI trace; standalone HTTP body unavailable",
+      "llm_call_files": [
+        "recording/llm_calls/turn-04-slots.json",
+        "recording/llm_calls/turn-04-grounded.json"
+      ],
+      "operator_metadata": null,
+      "deterministic_repairs": [
+        {
+          "field_path": "asset_mentions[1].surface_text",
+          "action": "restore_rag_mention_span",
+          "basis": "engineering_rag_grounding"
+        },
+        {
+          "field_path": "asset_mentions[2].surface_text",
+          "action": "restore_rag_mention_span",
+          "basis": "engineering_rag_grounding"
+        },
+        {
+          "field_path": "asset_mentions[3].surface_text",
+          "action": "restore_rag_mention_span",
+          "basis": "engineering_rag_grounding"
+        },
+        {
+          "field_path": "asset_mentions[3].model_asset_id",
+          "action": "bind_selected_rag_asset",
+          "basis": "engineering_rag_grounding"
+        },
+        {
+          "field_path": "asset_mentions[5].surface_text",
+          "action": "restore_rag_mention_span",
+          "basis": "engineering_rag_grounding"
+        },
+        {
+          "field_path": "edit_operations",
+          "action": "canonicalize_linguistic_edit_operations",
+          "basis": "linguistic_frame+engineering_rag_grounding"
+        },
+        {
+          "field_path": "edit_operations",
+          "action": "bind_authoritative_edit_instance",
+          "basis": "literal_target_surface+declared_labels+instance_directory"
+        }
+      ],
+      "selected_for_stage_result": false,
+      "superseded_or_rejected": false
+    },
+    {
+      "turn_id": 5,
+      "stage": "edit",
+      "input_kind": "stage_prompt",
+      "input_source": "prompt_file",
+      "started_at": "2026-10-19T06:34:26.352Z",
+      "terminal_at": "2026-10-19T06:35:24.322Z",
+      "status": "VALID_WITH_WARNINGS",
+      "input_file": "inputs/turn-05.txt",
+      "request_file": "recording/requests/turn-05.json",
+      "events_file": "recording/events/turn-05.sse.txt",
+      "events_source": "original captured HTTP SSE body",
+      "llm_call_files": [
+        "recording/llm_calls/turn-05-slots.json",
+        "recording/llm_calls/turn-05-grounded.json"
+      ],
+      "operator_metadata": null,
+      "deterministic_repairs": [
+        {
+          "field_path": "edit_operations",
+          "action": "canonicalize_linguistic_edit_operations",
+          "basis": "linguistic_frame+engineering_rag_grounding"
+        },
+        {
+          "field_path": "edit_operations",
+          "action": "bind_authoritative_edit_instance",
+          "basis": "literal_target_surface+declared_labels+instance_directory"
+        }
+      ],
+      "selected_for_stage_result": false,
+      "superseded_or_rejected": true
+    },
+    {
+      "turn_id": 6,
+      "stage": "edit",
+      "input_kind": "stage_prompt",
+      "input_source": "prompt_file",
+      "started_at": "2026-10-19T06:57:08.918Z",
+      "terminal_at": "2026-10-19T06:58:19.483Z",
+      "status": "VALID_WITH_WARNINGS",
+      "input_file": "inputs/turn-06.txt",
+      "request_file": "recording/requests/turn-06.json",
+      "events_file": "recording/events/turn-06.sse.txt",
+      "events_source": "original captured HTTP SSE body",
+      "llm_call_files": [
+        "recording/llm_calls/turn-06-slots.json",
+        "recording/llm_calls/turn-06-grounded.json"
+      ],
+      "operator_metadata": null,
+      "deterministic_repairs": [
+        {
+          "field_path": "edit_operations",
+          "action": "canonicalize_linguistic_edit_operations",
+          "basis": "linguistic_frame+engineering_rag_grounding"
+        },
+        {
+          "field_path": "edit_operations",
+          "action": "bind_authoritative_edit_instance",
+          "basis": "literal_target_surface+declared_labels+instance_directory"
+        }
+      ],
+      "selected_for_stage_result": true,
+      "superseded_or_rejected": false
+    },
+    {
+      "turn_id": 7,
+      "stage": "repair",
+      "input_kind": "stage_prompt",
+      "input_source": "prompt_file",
+      "started_at": "2026-10-19T07:01:09.839Z",
+      "terminal_at": "2026-10-19T07:04:29.259Z",
+      "status": "VALID_SOLVER_READY",
+      "input_file": "inputs/turn-07.txt",
+      "request_file": "recording/requests/turn-07.json",
+      "events_file": "recording/events/turn-07.sse.txt",
+      "events_source": "original captured HTTP SSE body",
+      "llm_call_files": [
+        "recording/llm_calls/turn-07-slots.json",
+        "recording/llm_calls/turn-07-grounded.json"
+      ],
+      "operator_metadata": null,
+      "deterministic_repairs": [
+        {
+          "field_path": "intent_type",
+          "action": "route_explicit_central_aisle_width_repair",
+          "basis": "literal_current_user_input"
+        },
+        {
+          "field_path": "asset_mentions[2].surface_text",
+          "action": "restore_rag_mention_span",
+          "basis": "engineering_rag_grounding"
+        }
+      ],
+      "selected_for_stage_result": true,
+      "superseded_or_rejected": false
+    }
+  ],
+  "stages": [
+    {
+      "stage": "generate",
+      "turn_id": 2,
+      "status": "VALID_SOLVER_READY",
+      "workspace_file": "stages/generate/workspace.json",
+      "layout_file": "stages/generate/layout.json",
+      "flp_ir_file": "stages/generate/flp_ir.json"
+    },
+    {
+      "stage": "optimize",
+      "turn_id": 3,
+      "status": "VALID_SOLVER_READY",
+      "workspace_file": "stages/optimize/workspace.json",
+      "layout_file": "stages/optimize/layout.json",
+      "flp_ir_file": "stages/optimize/flp_ir.json"
+    },
+    {
+      "stage": "edit",
+      "turn_id": 6,
+      "status": "VALID_WITH_WARNINGS",
+      "workspace_file": "stages/edit/workspace.json",
+      "layout_file": "stages/edit/layout.json",
+      "flp_ir_file": "stages/edit/flp_ir.json"
+    },
+    {
+      "stage": "repair",
+      "turn_id": 7,
+      "status": "VALID_SOLVER_READY",
+      "workspace_file": "stages/repair/workspace.json",
+      "layout_file": "stages/repair/layout.json",
+      "flp_ir_file": "stages/repair/flp_ir.json"
+    }
+  ],
+  "scope": "One preserved business session, seven turns across an initial run and two continuations.",
+  "execution_notes": [
+    "Inputs were prewritten natural-language prompts submitted through the ordinary workbench.",
+    "The same session contains clarification, a rejected Edit proposal, code-fix restarts, and restoration of accepted state.",
+    "Generate/Optimize were accepted in the initial run; the final Edit/Repair came from a later continuation.",
+    "The recording includes 14 original intent-understanding request/response records. Request model: deepseek-v4-flash; returned model field: deepseek-flash.",
+    "Grounding is reused where recorded; not every stage performs fresh retrieval.",
+    "Deterministic compilation and repair rules supplement model output.",
+    "The final Edit is a disclosed feasible alternative, not exact directive success.",
+    "Historical receipts remain historical records; viewing them is not new inference or backend verification.",
+    "Earlier development attempts preceding this business session are retained privately and are not part of this public recording.",
+    "Only this selected session is public; no old fixed E4 case implementation is included."
+  ],
+  "transport_omissions": "Browser transport headers, screenshots, local filesystem locations, and server-control files are omitted. Two clarification turns have UI traces rather than standalone captured HTTP bodies."
+}

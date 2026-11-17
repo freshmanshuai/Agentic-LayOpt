@@ -1,0 +1,2349 @@
+{
+  "format": "agentic_layopt_glb_manifest_v1",
+  "package_format": "case_study_runtime_package_v1",
+  "generated_at_utc": "2026-10-17T06:03:53.522578+00:00",
+  "runtime_url_root": "/runtime-models/",
+  "assets": [
+    {
+      "model_asset_id": "asset/fbx/0_5m",
+      "asset_name": "0.5M接驳台",
+      "equipment_type": "fbx_scene",
+      "glb_url": "/runtime-models/glb/0_5m.glb",
+      "glb_bytes": 7943300,
+      "source_obj_url": "/runtime-models/obj/0d5637f3_0_5M/0_5M.obj",
+      "source_obj_bytes": 9949621,
+      "vertices": 258949,
+      "triangles": 143958,
+      "bounds": [
+        [
+          2.041064,
+          7.753087,
+          -506.024872
+        ],
+        [
+          681.996399,
+          916.725952,
+          -6.024855
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/5",
+      "asset_name": "中国移动服务器一体化机柜（5台）",
+      "equipment_type": "fbx_scene",
+      "glb_url": "/runtime-models/glb/5.glb",
+      "glb_bytes": 21096,
+      "glb_sha256": "594306c0e0526723b5df74216cd72ddc70daea01b5589c7112afdbcd39f8d3ee",
+      "rendering_role": "project_low_poly_proxy",
+      "planning_dimensions_m": {
+        "width": 3.0,
+        "depth": 1.2,
+        "height": 2.0
+      },
+      "dimension_provenance": {
+        "type": "project_manual_proxy_calibration",
+        "status": "pending_human_engineering_review",
+        "note": "Used only for rough-layout planning; source catalog bounds are not treated as physical dimensions."
+      },
+      "source_asset_preserved": true
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_00",
+      "asset_name": "卧式离心泵机组",
+      "equipment_type": "horizontal_centrifugal_pump_set",
+      "glb_url": "/runtime-models/glb/factory_unit_00.glb",
+      "glb_bytes": 1212212,
+      "source_obj_url": "/runtime-models/obj/6240a35b_Factory_Unit_00/Factory_Unit_00.obj",
+      "source_obj_bytes": 5169588,
+      "vertices": 83816,
+      "triangles": 83708,
+      "bounds": [
+        [
+          -2.42941,
+          -1e-06,
+          -1.625067
+        ],
+        [
+          1.550907,
+          2.428748,
+          1.625066
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_01",
+      "asset_name": "防爆接线盒",
+      "equipment_type": "explosion_proof_junction_box",
+      "glb_url": "/runtime-models/glb/factory_unit_01.glb",
+      "glb_bytes": 268592,
+      "source_obj_url": "/runtime-models/obj/b064f86e_Factory_Unit_01/Factory_Unit_01.obj",
+      "source_obj_bytes": 1165104,
+      "vertices": 18729,
+      "triangles": 21012,
+      "bounds": [
+        [
+          -0.305057,
+          0.536869,
+          -0.344454
+        ],
+        [
+          0.305057,
+          1.392332,
+          0.365336
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_02",
+      "asset_name": "油浸式电力变压器",
+      "equipment_type": "oil_immersed_power_transformer",
+      "glb_url": "/runtime-models/glb/factory_unit_02.glb",
+      "glb_bytes": 532228,
+      "source_obj_url": "/runtime-models/obj/2a5cd5d7_Factory_Unit_02/Factory_Unit_02.obj",
+      "source_obj_bytes": 1999797,
+      "vertices": 35516,
+      "triangles": 34326,
+      "bounds": [
+        [
+          -0.426274,
+          0.0,
+          -0.813796
+        ],
+        [
+          0.426274,
+          1.488084,
+          0.813796
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_03",
+      "asset_name": "高压电气机组",
+      "equipment_type": "high_voltage_electrical_unit",
+      "glb_url": "/runtime-models/glb/factory_unit_03.glb",
+      "glb_bytes": 1134632,
+      "source_obj_url": "/runtime-models/obj/7721a32e_Factory_Unit_03/Factory_Unit_03.obj",
+      "source_obj_bytes": 5494457,
+      "vertices": 85122,
+      "triangles": 94252,
+      "bounds": [
+        [
+          -3.651087,
+          -0.000825,
+          -2.812522
+        ],
+        [
+          4.394559,
+          3.504609,
+          3.326488
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_04",
+      "asset_name": "电气控制柜",
+      "equipment_type": "electrical_control_cabinet",
+      "glb_url": "/runtime-models/glb/factory_unit_04.glb",
+      "glb_bytes": 81156,
+      "source_obj_url": "/runtime-models/obj/d16d137c_Factory_Unit_04/Factory_Unit_04.obj",
+      "source_obj_bytes": 299330,
+      "vertices": 5381,
+      "triangles": 6056,
+      "bounds": [
+        [
+          -0.2115,
+          0.468624,
+          -0.171161
+        ],
+        [
+          0.2115,
+          1.453314,
+          0.170881
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_05",
+      "asset_name": "离心鼓风机机组",
+      "equipment_type": "centrifugal_blower_unit",
+      "glb_url": "/runtime-models/glb/factory_unit_05.glb",
+      "glb_bytes": 894452,
+      "source_obj_url": "/runtime-models/obj/08293660_Factory_Unit_05/Factory_Unit_05.obj",
+      "source_obj_bytes": 2808221,
+      "vertices": 62345,
+      "triangles": 47142,
+      "bounds": [
+        [
+          -3.255114,
+          0.0,
+          -1.374486
+        ],
+        [
+          1.908627,
+          2.982761,
+          1.246445
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_06",
+      "asset_name": "立式感应炉",
+      "equipment_type": "vertical_induction_furnace",
+      "glb_url": "/runtime-models/glb/factory_unit_06.glb",
+      "glb_bytes": 573736,
+      "source_obj_url": "/runtime-models/obj/5574d2c7_Factory_Unit_06/Factory_Unit_06.obj",
+      "source_obj_bytes": 2244566,
+      "vertices": 34678,
+      "triangles": 38230,
+      "bounds": [
+        [
+          -0.681921,
+          0.0,
+          -0.681921
+        ],
+        [
+          0.681921,
+          1.440185,
+          0.681921
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_07",
+      "asset_name": "带平台立式分离塔",
+      "equipment_type": "platformed_vertical_separator_tower",
+      "glb_url": "/runtime-models/glb/factory_unit_07.glb",
+      "glb_bytes": 2014604,
+      "source_obj_url": "/runtime-models/obj/74bd2827_Factory_Unit_07/Factory_Unit_07.obj",
+      "source_obj_bytes": 6602900,
+      "vertices": 146441,
+      "triangles": 108292,
+      "bounds": [
+        [
+          -4.897012,
+          -0.021437,
+          -4.6795
+        ],
+        [
+          2.30629,
+          9.911501,
+          3.550964
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_08",
+      "asset_name": "工业卷扬机",
+      "equipment_type": "industrial_winch_unit",
+      "glb_url": "/runtime-models/glb/factory_unit_08.glb",
+      "glb_bytes": 1686648,
+      "source_obj_url": "/runtime-models/obj/2968cde6_Factory_Unit_08/Factory_Unit_08.obj",
+      "source_obj_bytes": 9951637,
+      "vertices": 122279,
+      "triangles": 150566,
+      "bounds": [
+        [
+          -1.890933,
+          0.0,
+          -1.000619
+        ],
+        [
+          2.145028,
+          2.165074,
+          0.910652
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_09",
+      "asset_name": "移动式料斗泵",
+      "equipment_type": "mobile_hopper_pump_unit",
+      "glb_url": "/runtime-models/glb/factory_unit_09.glb",
+      "glb_bytes": 1216876,
+      "source_obj_url": "/runtime-models/obj/3737f291_Factory_Unit_09/Factory_Unit_09.obj",
+      "source_obj_bytes": 5719887,
+      "vertices": 87849,
+      "triangles": 96842,
+      "bounds": [
+        [
+          -0.951626,
+          -0.000321,
+          -0.451759
+        ],
+        [
+          0.690163,
+          1.611223,
+          0.45176
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_10",
+      "asset_name": "双料斗螺旋给料机",
+      "equipment_type": "dual_hopper_screw_feeder",
+      "glb_url": "/runtime-models/glb/factory_unit_10.glb",
+      "glb_bytes": 1885116,
+      "source_obj_url": "/runtime-models/obj/178ef188_Factory_Unit_10/Factory_Unit_10.obj",
+      "source_obj_bytes": 8854487,
+      "vertices": 152481,
+      "triangles": 161913,
+      "bounds": [
+        [
+          -2.247171,
+          0.96806,
+          -1.062593
+        ],
+        [
+          2.247171,
+          4.77895,
+          1.062592
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_11",
+      "asset_name": "双联压缩机撬装机组",
+      "equipment_type": "dual_compressor_skid",
+      "glb_url": "/runtime-models/glb/factory_unit_11.glb",
+      "glb_bytes": 1074060,
+      "source_obj_url": "/runtime-models/obj/31f748e9_Factory_Unit_11/Factory_Unit_11.obj",
+      "source_obj_bytes": 5492085,
+      "vertices": 74391,
+      "triangles": 90134,
+      "bounds": [
+        [
+          -3.875041,
+          0.0,
+          -1.101755
+        ],
+        [
+          3.866002,
+          2.041809,
+          1.101753
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_12",
+      "asset_name": "工业设备门架",
+      "equipment_type": "industrial_equipment_gantry_module",
+      "glb_url": "/runtime-models/glb/factory_unit_12.glb",
+      "glb_bytes": 2115280,
+      "source_obj_url": "/runtime-models/obj/570dc9c5_Factory_Unit_12/Factory_Unit_12.obj",
+      "source_obj_bytes": 10251066,
+      "vertices": 150464,
+      "triangles": 159816,
+      "bounds": [
+        [
+          -3.174855,
+          0.0,
+          -0.834053
+        ],
+        [
+          3.174858,
+          5.053968,
+          1.776554
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_13",
+      "asset_name": "普通车床",
+      "equipment_type": "engine_lathe",
+      "glb_url": "/runtime-models/glb/factory_unit_13.glb",
+      "glb_bytes": 540540,
+      "source_obj_url": "/runtime-models/obj/e290846f_Factory_Unit_13/Factory_Unit_13.obj",
+      "source_obj_bytes": 2554752,
+      "vertices": 36757,
+      "triangles": 42166,
+      "bounds": [
+        [
+          -1.914237,
+          0.0,
+          -0.527506
+        ],
+        [
+          1.621354,
+          2.088506,
+          0.861032
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_14",
+      "asset_name": "大型电动执行机构",
+      "equipment_type": "large_motorized_actuator",
+      "glb_url": "/runtime-models/glb/factory_unit_14.glb",
+      "glb_bytes": 642232,
+      "source_obj_url": "/runtime-models/obj/7e59d3fd_Factory_Unit_14/Factory_Unit_14.obj",
+      "source_obj_bytes": 2984106,
+      "vertices": 47444,
+      "triangles": 48237,
+      "bounds": [
+        [
+          -1.311709,
+          0.001418,
+          -1.580989
+        ],
+        [
+          0.987746,
+          3.398329,
+          1.105906
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_15",
+      "asset_name": "双层卧式压力罐",
+      "equipment_type": "stacked_horizontal_pressure_vessels",
+      "glb_url": "/runtime-models/glb/factory_unit_15.glb",
+      "glb_bytes": 1744052,
+      "source_obj_url": "/runtime-models/obj/e4d3038a_Factory_Unit_15/Factory_Unit_15.obj",
+      "source_obj_bytes": 5724477,
+      "vertices": 126546,
+      "triangles": 103010,
+      "bounds": [
+        [
+          -2.001456,
+          0.000243,
+          -1.612998
+        ],
+        [
+          1.900208,
+          4.637506,
+          1.601927
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_16",
+      "asset_name": "框架式卧式储罐",
+      "equipment_type": "framed_horizontal_storage_tank",
+      "glb_url": "/runtime-models/glb/factory_unit_16.glb",
+      "glb_bytes": 252616,
+      "source_obj_url": "/runtime-models/obj/b1e375ce_Factory_Unit_16/Factory_Unit_16.obj",
+      "source_obj_bytes": 1270411,
+      "vertices": 16899,
+      "triangles": 20384,
+      "bounds": [
+        [
+          -3.59267,
+          0.000388,
+          -1.588446
+        ],
+        [
+          3.223536,
+          4.235937,
+          1.588446
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_17",
+      "asset_name": "箱式设备控制台",
+      "equipment_type": "box_type_equipment_console",
+      "glb_url": "/runtime-models/glb/factory_unit_17.glb",
+      "glb_bytes": 157852,
+      "source_obj_url": "/runtime-models/obj/afc0b69f_Factory_Unit_17/Factory_Unit_17.obj",
+      "source_obj_bytes": 780100,
+      "vertices": 9756,
+      "triangles": 12793,
+      "bounds": [
+        [
+          -0.6,
+          0.0,
+          -0.6
+        ],
+        [
+          0.6,
+          1.92597,
+          0.642896
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_18",
+      "asset_name": "C型压力测试机",
+      "equipment_type": "c_frame_press_tester",
+      "glb_url": "/runtime-models/glb/factory_unit_18.glb",
+      "glb_bytes": 516268,
+      "source_obj_url": "/runtime-models/obj/39c3bbfc_Factory_Unit_18/Factory_Unit_18.obj",
+      "source_obj_bytes": 2216372,
+      "vertices": 34305,
+      "triangles": 35106,
+      "bounds": [
+        [
+          -0.984708,
+          1e-06,
+          -1.12972
+        ],
+        [
+          1.858825,
+          5.470852,
+          1.638685
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/factory_unit_19",
+      "asset_name": "塔式起重机",
+      "equipment_type": "tower_crane",
+      "glb_url": "/runtime-models/glb/factory_unit_19.glb",
+      "glb_bytes": 1104108,
+      "source_obj_url": "/runtime-models/obj/8e1514dd_Factory_Unit_19/Factory_Unit_19.obj",
+      "source_obj_bytes": 5427437,
+      "vertices": 87831,
+      "triangles": 83350,
+      "bounds": [
+        [
+          -2.777709,
+          0.0,
+          -2.758605
+        ],
+        [
+          15.536527,
+          24.732208,
+          2.758605
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_1292a3bb",
+      "asset_name": "半导体线路板上下料设备",
+      "equipment_type": "fbx_scene",
+      "glb_url": "/runtime-models/glb/fbx_1292a3bb.glb?v=20260803-baked-orientation-2",
+      "glb_bytes": 2892772,
+      "source_obj_url": "/runtime-models/obj/c78de1ed_model/model.obj",
+      "source_obj_bytes": 17876020,
+      "vertices": 512752,
+      "triangles": 292036,
+      "bounds": [
+        [
+          3.851864,
+          7.631339000000077,
+          1011.499878
+        ],
+        [
+          730.253906,
+          1372.6315920000002,
+          3281.231934
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_17fcd2ed",
+      "asset_name": "卧式铣床",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M059.glb",
+      "runtime_relative_path": "glb/calibrated/M059.glb",
+      "glb_bytes": 4550536,
+      "bounds": [
+        [
+          -0.9451286911964418,
+          0,
+          -0.5900782120594823
+        ],
+        [
+          0.9451286911964416,
+          1.7711682143820302,
+          0.5900782120594821
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.8902573823928834,
+        "depth_m": 1.1801564241189644,
+        "height_m": 1.7711682143820302
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/卧式铣床.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M059",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "case_calibration_using_approved_batch_scale",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded early_2026_07_05 machining FBX scene at scale 0.001; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+        "batch": "early_2026_07_05",
+        "loaded_scene_uniform_scale": 0.001,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_1a80889c",
+      "asset_name": "Tool cabinet",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M046.glb",
+      "runtime_relative_path": "glb/calibrated/M046.glb",
+      "glb_bytes": 51346724,
+      "bounds": [
+        [
+          -0.8871490478515627,
+          0,
+          -0.4503720733483203
+        ],
+        [
+          0.8871490478515627,
+          1.7231077126892063,
+          0.4503720733483201
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.7742980957031254,
+        "depth_m": 0.9007441466966404,
+        "height_m": 1.7231077126892063
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "工厂工业设备/工具柜.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M046",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "采用完整变换后包围盒，排除旧 RAG 百分位裁切造成的 4.6 mm 深度；旧批次完整坐标按毫米解释，需确认。",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": null,
+        "loaded_scene_uniform_scale": 0.001,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "reviewed_role_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_313d8039",
+      "asset_name": "EDM drilling machine",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M051.glb",
+      "runtime_relative_path": "glb/calibrated/M051.glb",
+      "glb_bytes": 1976844,
+      "bounds": [
+        [
+          -0.853276634216309,
+          0,
+          -0.48862512941902647
+        ],
+        [
+          0.8532766342163081,
+          2.1506835618567983,
+          0.48862512941902647
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.706553268432617,
+        "depth_m": 0.9772502588380529,
+        "height_m": 2.1506835618567983
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "工厂工业设备/电火花穿孔机.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M051",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "旧批次完整加载坐标按毫米解释；完整几何测量，不沿用顶点百分位过滤。物理尺度需确认。",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": null,
+        "loaded_scene_uniform_scale": 0.001,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "reviewed_role_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_37331baa",
+      "asset_name": "自动贴片成型总装",
+      "equipment_type": "fbx_scene",
+      "glb_url": "/runtime-models/glb/fbx_37331baa.glb?v=20260803-baked-orientation-2",
+      "glb_bytes": 9715692,
+      "source_obj_url": "/runtime-models/obj/3d3ae8ad_model/model.obj",
+      "source_obj_bytes": 66713981,
+      "vertices": 1596812,
+      "triangles": 857235,
+      "bounds": [
+        [
+          262.764832,
+          2.010859000000004,
+          12.609138999999896
+        ],
+        [
+          1637.98877,
+          2008.383911,
+          1340.109253
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_37ff826e",
+      "asset_name": "半导体全自动编带机",
+      "equipment_type": "fbx_scene",
+      "glb_url": "/runtime-models/glb/fbx_37ff826e.glb",
+      "glb_bytes": 10333188,
+      "source_obj_url": "/runtime-models/obj/1b8d6dae_model/model.obj",
+      "source_obj_bytes": 80188014,
+      "vertices": 1839138,
+      "triangles": 989409,
+      "bounds": [
+        [
+          9.93389,
+          7.326334,
+          -1677.126709
+        ],
+        [
+          2521.377197,
+          1067.484131,
+          -8.978334
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_3b1181c9",
+      "asset_name": "龙门式数控切割机",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M070.glb",
+      "runtime_relative_path": "glb/calibrated/M070.glb",
+      "glb_bytes": 62585956,
+      "bounds": [
+        [
+          -5.657072067260742,
+          0,
+          -2.6337127711077564
+        ],
+        [
+          5.657072067260742,
+          4.714231514796201,
+          2.6337127711077564
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 11.314144134521484,
+        "depth_m": 5.267425542215513,
+        "height_m": 4.714231514796201
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/龙门式数控切割机.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M070",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "case_calibration_using_approved_batch_scale",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded early_2026_07_05 machining FBX scene at scale 0.001; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+        "batch": "early_2026_07_05",
+        "loaded_scene_uniform_scale": 0.001,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_3c6fae07",
+      "asset_name": "扩张机",
+      "equipment_type": "fbx_scene",
+      "glb_url": "/runtime-models/glb/fbx_3c6fae07.glb",
+      "glb_bytes": 594128,
+      "source_obj_url": "/runtime-models/obj/5e09ec13_model/model.obj",
+      "source_obj_bytes": 3203095,
+      "vertices": 92998,
+      "triangles": 48704,
+      "bounds": [
+        [
+          2.005696,
+          1.37295,
+          -262.551361
+        ],
+        [
+          330.006012,
+          832.372986,
+          -1.051308
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_3ed136d0",
+      "asset_name": "四槽硅片清洗刻蚀机",
+      "equipment_type": "fbx_scene",
+      "glb_url": "/runtime-models/glb/fbx_3ed136d0.glb",
+      "glb_bytes": 2286504,
+      "source_obj_url": "/runtime-models/obj/9abd6fd7_model/model.obj",
+      "source_obj_bytes": 14983181,
+      "vertices": 408998,
+      "triangles": 249754,
+      "bounds": [
+        [
+          7.809734,
+          2.47544,
+          -1209.367065
+        ],
+        [
+          1417.809692,
+          1888.475586,
+          -6.344828
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_465611ff",
+      "asset_name": "六轴CNC加工中心：塑料油瓶加工机",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M058.glb",
+      "runtime_relative_path": "glb/calibrated/M058.glb",
+      "glb_bytes": 111853928,
+      "bounds": [
+        [
+          -0.934950023651123,
+          0,
+          -0.9989415615039596
+        ],
+        [
+          0.9349500236511231,
+          2.661000348861391,
+          0.9989415615039597
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.869900047302246,
+        "depth_m": 1.9978831230079193,
+        "height_m": 2.661000348861391
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/六轴CNC加工中心：塑料油瓶加工机.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M058",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "case_calibration_using_approved_batch_scale",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+        "batch": "late_2026_07_12",
+        "loaded_scene_uniform_scale": 1e-05,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_51f787e0",
+      "asset_name": "龙门铣床",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M071.glb",
+      "runtime_relative_path": "glb/calibrated/M071.glb",
+      "glb_bytes": 19400740,
+      "bounds": [
+        [
+          -3.5634859085083006,
+          0,
+          -2.402735758600195
+        ],
+        [
+          3.5634859085083015,
+          2.9362891346624327,
+          2.402735758600194
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 7.126971817016602,
+        "depth_m": 4.805471517200389,
+        "height_m": 2.9362891346624327
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/龙门铣床.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M071",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "case_calibration_using_approved_batch_scale",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded early_2026_07_05 machining FBX scene at scale 0.001; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+        "batch": "early_2026_07_05",
+        "loaded_scene_uniform_scale": 0.001,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_52f1abc3",
+      "asset_name": "哈斯数控加工中心",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M060.glb",
+      "runtime_relative_path": "glb/calibrated/M060.glb",
+      "glb_bytes": 873040,
+      "bounds": [
+        [
+          -1.17279150390625,
+          0,
+          -1.818616821532257
+        ],
+        [
+          1.17279150390625,
+          3.000035260549208,
+          1.818616821532257
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 2.3455830078125,
+        "depth_m": 3.637233643064514,
+        "height_m": 3.000035260549208
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/哈斯数控加工中心.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M060",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "case_calibration_using_approved_batch_scale",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+        "batch": "late_2026_07_12",
+        "loaded_scene_uniform_scale": 1e-05,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_6901bdd8",
+      "asset_name": "新型车铣复合加工中心",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M064.glb",
+      "runtime_relative_path": "glb/calibrated/M064.glb",
+      "glb_bytes": 71440168,
+      "bounds": [
+        [
+          -3.517760496139527,
+          0,
+          -2.098819067089016
+        ],
+        [
+          3.5177604961395263,
+          3.4430006823322,
+          2.098819067089016
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 7.035520992279054,
+        "depth_m": 4.197638134178032,
+        "height_m": 3.4430006823322
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/新型车铣复合加工中心.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M064",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "User-reviewed candidate calibration: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": "late_2026_07_12",
+        "loaded_scene_uniform_scale": 1e-05,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_7716b9f7",
+      "asset_name": "夹具工作台",
+      "equipment_type": "fbx_scene",
+      "glb_url": "/runtime-models/glb/fbx_7716b9f7.glb",
+      "glb_bytes": 3631472,
+      "source_obj_url": "/runtime-models/obj/8a6e7899_model/model.obj",
+      "source_obj_bytes": 5324126,
+      "vertices": 119641,
+      "triangles": 63254,
+      "bounds": [
+        [
+          -9.952841,
+          2.444744,
+          155.166153
+        ],
+        [
+          17.143646,
+          18.774895,
+          174.970215
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_8261b7e0",
+      "asset_name": "数控机床",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M063.glb",
+      "runtime_relative_path": "glb/calibrated/M063.glb",
+      "glb_bytes": 8027892,
+      "bounds": [
+        [
+          -1.2949554443359368,
+          0,
+          -0.9920290049806493
+        ],
+        [
+          1.2949554443359386,
+          2.4108288778742626,
+          0.992029004980651
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 2.5899108886718754,
+        "depth_m": 1.9840580099613003,
+        "height_m": 2.4108288778742626
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/数控机床.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M063",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "User-reviewed candidate calibration: interpret the full loaded early_2026_07_05 machining FBX scene at scale 0.001; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": "early_2026_07_05",
+        "loaded_scene_uniform_scale": 0.001,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_84d31057",
+      "asset_name": "CNC数控加工中心",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M057.glb",
+      "runtime_relative_path": "glb/calibrated/M057.glb",
+      "glb_bytes": 3033632,
+      "bounds": [
+        [
+          -1.2518423461914066,
+          0,
+          -1.1391902528380282
+        ],
+        [
+          1.251842346191406,
+          2.324585332132708,
+          1.1391902528380282
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 2.5036846923828127,
+        "depth_m": 2.2783805056760564,
+        "height_m": 2.324585332132708
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/CNC数控加工中心.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M057",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "case_calibration_using_approved_batch_scale",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+        "batch": "late_2026_07_12",
+        "loaded_scene_uniform_scale": 1e-05,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_a3e1a9c2",
+      "asset_name": "摇臂钻床",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M062.glb",
+      "runtime_relative_path": "glb/calibrated/M062.glb",
+      "glb_bytes": 2395264,
+      "bounds": [
+        [
+          -0.6170013427734382,
+          0,
+          -0.3417159754776986
+        ],
+        [
+          0.6170013427734382,
+          1.998452339652842,
+          0.3417159754776984
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.2340026855468764,
+        "depth_m": 0.683431950955397,
+        "height_m": 1.998452339652842
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/摇臂钻床.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M062",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "User-reviewed candidate calibration: interpret the full loaded early_2026_07_05 machining FBX scene at scale 0.001; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": "early_2026_07_05",
+        "loaded_scene_uniform_scale": 0.001,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_abd43f9f",
+      "asset_name": "立式加工中心GA-V918C",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M066.glb",
+      "runtime_relative_path": "glb/calibrated/M066.glb",
+      "glb_bytes": 112987904,
+      "bounds": [
+        [
+          -3.221200252532959,
+          0,
+          -1.6733567463869887
+        ],
+        [
+          3.221200252532959,
+          4.33986211751429,
+          1.673356746386989
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 6.442400505065918,
+        "depth_m": 3.3467134927739774,
+        "height_m": 4.33986211751429
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/立式加工中心GA-V918C.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M066",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "case_calibration_using_approved_batch_scale",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+        "batch": "late_2026_07_12",
+        "loaded_scene_uniform_scale": 1e-05,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_be827a77",
+      "asset_name": "单机柜",
+      "equipment_type": "fbx_scene",
+      "glb_url": "/runtime-models/glb/fbx_be827a77.glb",
+      "glb_bytes": 6612,
+      "glb_sha256": "e36a6ff19f9c3efebf3f298de1d06d5902e5559cb4f99e2bdbbef286d2e3be88",
+      "rendering_role": "project_low_poly_proxy",
+      "planning_dimensions_m": {
+        "width": 0.6,
+        "depth": 1.2,
+        "height": 2.0
+      },
+      "dimension_provenance": {
+        "type": "project_manual_proxy_calibration",
+        "status": "pending_human_engineering_review",
+        "note": "Used only for rough-layout planning; source catalog bounds are not treated as physical dimensions."
+      },
+      "source_asset_preserved": true
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_c6a19eec",
+      "asset_name": "微型加工中心",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M061.glb",
+      "runtime_relative_path": "glb/calibrated/M061.glb",
+      "glb_bytes": 26589320,
+      "bounds": [
+        [
+          -0.20849999570846559,
+          0,
+          -0.22000003551470743
+        ],
+        [
+          0.20849999570846556,
+          0.42500005694412,
+          0.2200000355147074
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 0.4169999914169311,
+        "depth_m": 0.44000007102941485,
+        "height_m": 0.42500005694412
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/微型加工中心.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M061",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "case_calibration_using_approved_batch_scale",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+        "batch": "late_2026_07_12",
+        "loaded_scene_uniform_scale": 1e-05,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_d8f6cfdf",
+      "asset_name": "高速立式车铣加工中心",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M069.glb",
+      "runtime_relative_path": "glb/calibrated/M069.glb",
+      "glb_bytes": 79337648,
+      "bounds": [
+        [
+          -1.2827499823570252,
+          0,
+          -1.9351660713371335
+        ],
+        [
+          1.2827499823570252,
+          2.560000611483555,
+          1.9351660713371335
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 2.5654999647140504,
+        "depth_m": 3.870332142674267,
+        "height_m": 2.560000611483555
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/高速立式车铣加工中心.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M069",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "case_calibration_using_approved_batch_scale",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+        "batch": "late_2026_07_12",
+        "loaded_scene_uniform_scale": 1e-05,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_db886347",
+      "asset_name": "半导体器件移印包装机",
+      "equipment_type": "fbx_scene",
+      "glb_url": "/runtime-models/glb/fbx_db886347.glb?v=20260803-baked-orientation-2",
+      "glb_bytes": 13883088,
+      "source_obj_url": "/runtime-models/obj/7c694520_model/model.obj",
+      "source_obj_bytes": 100050753,
+      "vertices": 2627647,
+      "triangles": 1388710,
+      "bounds": [
+        [
+          1.878882,
+          7.110693000000024,
+          58.66336799999994
+        ],
+        [
+          601.878906,
+          1207.11084,
+          2088.653564
+        ]
+      ]
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_f2db5dfe",
+      "asset_name": "立式四轴数控铣床",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M068.glb",
+      "runtime_relative_path": "glb/calibrated/M068.glb",
+      "glb_bytes": 37242976,
+      "bounds": [
+        [
+          -0.42699994170665745,
+          0,
+          -0.5128000698700411
+        ],
+        [
+          0.42699994170665745,
+          0.7405001933174861,
+          0.5128000698700412
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 0.8539998834133149,
+        "depth_m": 1.0256001397400825,
+        "height_m": 0.7405001933174861
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/立式四轴数控铣床.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M068",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "case_calibration_using_approved_batch_scale",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+        "batch": "late_2026_07_12",
+        "loaded_scene_uniform_scale": 1e-05,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_f4980f8b",
+      "asset_name": "立式加工中心光机模型",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M067.glb",
+      "runtime_relative_path": "glb/calibrated/M067.glb",
+      "glb_bytes": 1285972,
+      "bounds": [
+        [
+          -0.5399999973773957,
+          0,
+          -0.9270449258793821
+        ],
+        [
+          0.5399999973773957,
+          1.4350003497532375,
+          0.927044925879382
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.0799999947547914,
+        "depth_m": 1.854089851758764,
+        "height_m": 1.4350003497532375
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/立式加工中心光机模型.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M067",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "case_calibration_using_approved_batch_scale",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+        "batch": "late_2026_07_12",
+        "loaded_scene_uniform_scale": 1e-05,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_fb04a2ee",
+      "asset_name": "立式加工中心1100X900",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M065.glb",
+      "runtime_relative_path": "glb/calibrated/M065.glb",
+      "glb_bytes": 15388368,
+      "bounds": [
+        [
+          -1.1958705196380615,
+          0,
+          -1.3301501977427435
+        ],
+        [
+          1.1958705196380617,
+          2.853616152259388,
+          1.3301501977427435
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 2.3917410392761234,
+        "depth_m": 2.660300395485487,
+        "height_m": 2.853616152259388
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "机床设备/立式加工中心1100X900.fbx",
+      "source_format": ".fbx",
+      "source_audit_id": "M065",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "User-reviewed candidate calibration: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": "late_2026_07_12",
+        "loaded_scene_uniform_scale": 1e-05,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "all_machine_batch_calibration",
+      "raw_source_glb_url": null
+    },
+    {
+      "model_asset_id": "asset/glb/m072_agv",
+      "asset_name": "AGV",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M072.glb",
+      "runtime_relative_path": "glb/calibrated/M072.glb",
+      "glb_bytes": 11033448,
+      "bounds": [
+        [
+          -0.268000011,
+          0,
+          -0.368000027
+        ],
+        [
+          0.268000011,
+          0.907000025,
+          0.368000027
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 0.536000022,
+        "depth_m": 0.736000054,
+        "height_m": 0.907000025
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "电子装备/AGV小车/agv.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M072",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "独立文件三轴均为总装同名 AGV 的 1/1000。以总装实例为内部尺度参照，整体放大 1000 倍，保留比例。",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": null,
+        "loaded_scene_uniform_scale": 1000,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 8.564496889462703e-09
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "reviewed_role_calibration",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/M072.glb"
+    },
+    {
+      "model_asset_id": "asset/glb/m073_energy_monitoring_gateway",
+      "asset_name": "29-能耗监测网关",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M073.glb",
+      "runtime_relative_path": "glb/source_raw/M073.glb",
+      "glb_bytes": 1140720,
+      "source_relative": "电子装备/models/29-能耗监测网关.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M073",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m074_communications_service_monitor",
+      "asset_name": "IRF2948B_communications_service_monitor",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M074.glb",
+      "runtime_relative_path": "glb/source_raw/M074.glb",
+      "glb_bytes": 1412732,
+      "source_relative": "电子装备/models/IRF2948B_communications_service_monitor.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M074",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m075_keyboard_video_mouse_switch",
+      "asset_name": "Keyboard-Video-Mouse Switch",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M075.glb",
+      "runtime_relative_path": "glb/source_raw/M075.glb",
+      "glb_bytes": 873336,
+      "source_relative": "电子装备/models/Keyboard-Video-Mouse Switch.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M075",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m076_uhf_tunable_filter",
+      "asset_name": "UHF电调滤波器",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M076.glb",
+      "runtime_relative_path": "glb/source_raw/M076.glb",
+      "glb_bytes": 902396,
+      "source_relative": "电子装备/models/UHF电调滤波器.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M076",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m077_vhf_tunable_filter",
+      "asset_name": "VHF电调滤波器",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M077.glb",
+      "runtime_relative_path": "glb/source_raw/M077.glb",
+      "glb_bytes": 902368,
+      "source_relative": "电子装备/models/VHF电调滤波器.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M077",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m078_tool_conveyor_line",
+      "asset_name": "tool_流水线",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M078.glb",
+      "runtime_relative_path": "glb/source_raw/M078.glb",
+      "glb_bytes": 13680568,
+      "source_relative": "电子装备/models/tool_流水线.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M078",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m079_conveyor_2",
+      "asset_name": "Short conveyor",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M079.glb",
+      "runtime_relative_path": "glb/calibrated/M079.glb",
+      "glb_bytes": 7190076,
+      "bounds": [
+        [
+          -0.7800004910677671,
+          0,
+          -3.260002085932542
+        ],
+        [
+          0.7800004910677671,
+          1.8000020024920824,
+          3.260002085932541
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.5600009821355343,
+        "depth_m": 6.520004171865083,
+        "height_m": 1.8000020024920824
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "电子装备/models/传送带2.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M079",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "保留 glTF 米制和 Y 向上；完整输送单元长度约 6.52 m，实际算实体占地，不把它缩成装饰小件。",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": null,
+        "loaded_scene_uniform_scale": 1,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "reviewed_role_calibration",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/M079.glb"
+    },
+    {
+      "model_asset_id": "asset/glb/m080_floor_surface",
+      "asset_name": "地面",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M080.glb",
+      "runtime_relative_path": "glb/source_raw/M080.glb",
+      "glb_bytes": 416164,
+      "source_relative": "电子装备/models/地面.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M080",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m081_electronics_workshop_scene",
+      "asset_name": "场景一搭建工程",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M081.glb",
+      "runtime_relative_path": "glb/source_raw/M081.glb",
+      "glb_bytes": 324257484,
+      "source_relative": "电子装备/models/场景一搭建工程.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M081",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m082_large_temperature_chamber",
+      "asset_name": "大温箱",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M082.glb",
+      "runtime_relative_path": "glb/source_raw/M082.glb",
+      "glb_bytes": 601780,
+      "source_relative": "电子装备/models/大温箱.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M082",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m083_worker_figure_1",
+      "asset_name": "工人1",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M083.glb",
+      "runtime_relative_path": "glb/source_raw/M083.glb",
+      "glb_bytes": 2375400,
+      "source_relative": "电子装备/models/工人1.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M083",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m084_worker_figure_2",
+      "asset_name": "工人2",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M084.glb",
+      "runtime_relative_path": "glb/source_raw/M084.glb",
+      "glb_bytes": 4839744,
+      "source_relative": "电子装备/models/工人2.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M084",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m085_temporary_storage_visual_scene",
+      "asset_name": "暂存架",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M085.glb",
+      "runtime_relative_path": "glb/source_raw/M085.glb",
+      "glb_bytes": 88863896,
+      "source_relative": "电子装备/models/暂存架.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M085",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m086_flexible_test_workstation",
+      "asset_name": "Flexible test workstation",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M086.glb",
+      "runtime_relative_path": "glb/calibrated/M086.glb",
+      "glb_bytes": 26219004,
+      "bounds": [
+        [
+          -0.6005729249999999,
+          0,
+          -0.40103660365303084
+        ],
+        [
+          0.600572925,
+          1.9359914127116213,
+          0.40103660365303084
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.20114585,
+        "depth_m": 0.8020732073060617,
+        "height_m": 1.9359914127116213
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "电子装备/models/柔性测试工作站.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M086",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "glTF 米制、Y 向上；三轴包围盒与总装同名工位一致，不额外缩放。",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": null,
+        "loaded_scene_uniform_scale": 1,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 8.781583904493573e-09
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "reviewed_role_calibration",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/M086.glb"
+    },
+    {
+      "model_asset_id": "asset/glb/m087_table",
+      "asset_name": "桌子",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M087.glb",
+      "runtime_relative_path": "glb/source_raw/M087.glb",
+      "glb_bytes": 184864,
+      "source_relative": "电子装备/models/桌子.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M087",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m088_small_temperature_chamber",
+      "asset_name": "Temperature chamber",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M088.glb",
+      "runtime_relative_path": "glb/calibrated/M088.glb",
+      "glb_bytes": 706208,
+      "bounds": [
+        [
+          -0.650191535,
+          0,
+          -0.7349089295
+        ],
+        [
+          0.650191535,
+          1.8426775137060565,
+          0.7349089295
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.30038307,
+        "depth_m": 1.469817859,
+        "height_m": 1.8426775137060565
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "电子装备/models/温箱小.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M088",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "保留 glTF 米制与 Y 向上及已有变换；没有同型号外部尺寸依据，作为原模型名义尺度。",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": null,
+        "loaded_scene_uniform_scale": 1,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 2.097290030533827e-08
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "reviewed_role_calibration",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/M088.glb"
+    },
+    {
+      "model_asset_id": "asset/glb/m089_laser_marking_station",
+      "asset_name": "Laser marking station",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M089.glb",
+      "runtime_relative_path": "glb/calibrated/M089.glb",
+      "glb_bytes": 590156,
+      "bounds": [
+        [
+          -0.5772392048558768,
+          0,
+          -0.4999999888241293
+        ],
+        [
+          0.5772392048558768,
+          2.65199601921448,
+          0.49999998882412944
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.1544784097117535,
+        "depth_m": 0.9999999776482588,
+        "height_m": 2.65199601921448
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "电子装备/models/激光打标标准机台.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M089",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "按底板和立柱几何将 -Z 转到 +Y（绕 X +90°），使底板落地；保持 glTF 数值比例。文件为 STEP 导出的机构模型，轴向与完整工位功能需用户目视确认。",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": null,
+        "loaded_scene_uniform_scale": 1,
+        "additional_rotation_x_deg": 90,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "reviewed_role_calibration",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/M089.glb"
+    },
+    {
+      "model_asset_id": "asset/glb/m090_material_model",
+      "asset_name": "物料",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M090.glb",
+      "runtime_relative_path": "glb/source_raw/M090.glb",
+      "glb_bytes": 12675928,
+      "source_relative": "电子装备/models/物料.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M090",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m091_belt_conveyor",
+      "asset_name": "皮带线",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M091.glb",
+      "runtime_relative_path": "glb/source_raw/M091.glb",
+      "glb_bytes": 6494012,
+      "source_relative": "电子装备/models/皮带线.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M091",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m092_line_side_storage_unit",
+      "asset_name": "Line-side storage unit",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M092.glb",
+      "runtime_relative_path": "glb/calibrated/M092.glb",
+      "glb_bytes": 46394772,
+      "bounds": [
+        [
+          -2.059999764000003,
+          2.7755575615628914e-17,
+          -0.6512079830525693
+        ],
+        [
+          2.059999764000003,
+          1.9150001708873843,
+          0.6512079830525692
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 4.119999528000006,
+        "depth_m": 1.3024159661051384,
+        "height_m": 1.9150001708873843
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "电子装备/models/线边库.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M092",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "保留 glTF 米制和既有总成姿态；作为完整线边库存储单元，不拆成单个架体。",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": null,
+        "loaded_scene_uniform_scale": 1,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 1.2251221592762818e-08
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "reviewed_role_calibration",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/M092.glb"
+    },
+    {
+      "model_asset_id": "asset/glb/m093_fixture_workstation",
+      "asset_name": "Fixture and integration workstation",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M093.glb",
+      "runtime_relative_path": "glb/calibrated/M093.glb",
+      "glb_bytes": 25466212,
+      "bounds": [
+        [
+          -0.610426127910614,
+          0,
+          -0.5868682894822335
+        ],
+        [
+          0.610426127910614,
+          2.360962557788489,
+          0.5868682894822335
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.220852255821228,
+        "depth_m": 1.173736578964467,
+        "height_m": 2.360962557788489
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "电子装备/models/装夹台.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M093",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "glTF 米制、Y 向上；保留原节点变换。与总装中同名装夹设备比较高度一致，但突出件包络不同，保留本文件完整外形。",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": null,
+        "loaded_scene_uniform_scale": 1,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "reviewed_role_calibration",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/M093.glb"
+    },
+    {
+      "model_asset_id": "asset/glb/m094_touchscreen",
+      "asset_name": "触摸屏",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M094.glb",
+      "runtime_relative_path": "glb/source_raw/M094.glb",
+      "glb_bytes": 94228,
+      "source_relative": "电子装备/models/触摸屏.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M094",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m095_unspecified_equipment",
+      "asset_name": "设备1",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M095.glb",
+      "runtime_relative_path": "glb/source_raw/M095.glb",
+      "glb_bytes": 180115184,
+      "source_relative": "电子装备/models/设备1.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M095",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m096_multi_object_rack_scene",
+      "asset_name": "货架",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M096.glb",
+      "runtime_relative_path": "glb/source_raw/M096.glb",
+      "glb_bytes": 73684100,
+      "source_relative": "电子装备/models/货架.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M096",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m097_ultrasonic_welding_machine",
+      "asset_name": "超声波焊接机",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M097.glb",
+      "runtime_relative_path": "glb/source_raw/M097.glb",
+      "glb_bytes": 6825728,
+      "source_relative": "电子装备/models/超声波焊接机.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M097",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m098_conveyor_line",
+      "asset_name": "Conveyor line (输送线)",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M098.glb",
+      "runtime_relative_path": "glb/source_raw/M098.glb",
+      "glb_bytes": 30387908,
+      "source_relative": "电子装备/models/输送线.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M098",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import",
+      "dimensions_m": {
+        "width_m": 7.519754886627197,
+        "height_m": 0.7176001071929932,
+        "depth_m": 1.039599984884262
+      },
+      "bounds": [
+        [
+          -3.7598774433135986,
+          0,
+          -0.519799992442131
+        ],
+        [
+          3.7598774433135986,
+          0.7176001071929932,
+          0.519799992442131
+        ]
+      ],
+      "model_origin_policy": "center_floor",
+      "calibration_source": "rag_dataset/sources/candidate_calibration_20261015/conveyor_calibration.json"
+    },
+    {
+      "model_asset_id": "asset/glb/m099_conveyor_line_2",
+      "asset_name": "输送线2",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M099.glb",
+      "runtime_relative_path": "glb/source_raw/M099.glb",
+      "glb_bytes": 15419616,
+      "source_relative": "电子装备/models/输送线2.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M099",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m100_conveyor_line_3",
+      "asset_name": "输送线3",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M100.glb",
+      "runtime_relative_path": "glb/source_raw/M100.glb",
+      "glb_bytes": 413884492,
+      "source_relative": "电子装备/models/输送线3.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M100",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/glb/m101_aluminum_profile_support",
+      "asset_name": "铝型材支架",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M101.glb",
+      "runtime_relative_path": "glb/source_raw/M101.glb",
+      "glb_bytes": 5143100,
+      "source_relative": "电子装备/models/铝型材支架.glb",
+      "source_format": ".glb",
+      "source_audit_id": "M101",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/stl/m102_worktable_child",
+      "asset_name": "工作台子",
+      "equipment_type": "source_geometry_candidate",
+      "glb_url": "/runtime-models/glb/source_raw/M102.glb",
+      "runtime_relative_path": "glb/source_raw/M102.glb",
+      "glb_bytes": 1172348,
+      "source_relative": "电子装备/工作台/工作台子.STL",
+      "source_format": ".stl",
+      "source_audit_id": "M102",
+      "rendering_role": "source_raw_runtime_model",
+      "geometry_status": "uncalibrated_source_geometry",
+      "unit_scale_to_m": null,
+      "planning_dimensions_m": null,
+      "coordinate_normalization": "source axes retained; no meter or grounding claim",
+      "dimension_claim_scope": "not_available_from_raw_source_entry",
+      "compression": "not_applied_preparation",
+      "source_kind": "raw_source_import"
+    },
+    {
+      "model_asset_id": "asset/stl/m103_work_table",
+      "asset_name": "Work table",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M103.glb",
+      "runtime_relative_path": "glb/calibrated/M103.glb",
+      "glb_bytes": 246740,
+      "bounds": [
+        [
+          -0.49999998593330375,
+          0,
+          -0.8000000216960907
+        ],
+        [
+          0.49999998593330386,
+          0.784999978542328,
+          0.8000000216960907
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 0.9999999718666076,
+        "depth_m": 1.6000000433921815,
+        "height_m": 0.784999978542328
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "电子装备/工作台/普通工作台.STL",
+      "source_format": ".stl",
+      "source_audit_id": "M103",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "原 STL 没有物理单位；按毫米解释，并以短竖腿方向 Y 为高度，撤销上次预览工具的错误 -90° 旋转。毫米假设需确认。",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": null,
+        "loaded_scene_uniform_scale": 0.001,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "reviewed_role_calibration",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/M103.glb"
+    },
+    {
+      "model_asset_id": "asset/stl/m104_storage_rack",
+      "asset_name": "Storage rack",
+      "equipment_type": "case_calibrated_candidate",
+      "glb_url": "/runtime-models/glb/calibrated/M104.glb",
+      "runtime_relative_path": "glb/calibrated/M104.glb",
+      "glb_bytes": 3019200,
+      "bounds": [
+        [
+          -0.5000000038146973,
+          0,
+          -0.3049978485107422
+        ],
+        [
+          0.5000000038146973,
+          1.7999999561309814,
+          0.3049978485107422
+        ]
+      ],
+      "effective_dimensions_m": {
+        "width_m": 1.0000000076293947,
+        "depth_m": 0.6099956970214844,
+        "height_m": 1.7999999561309814
+      },
+      "unit_scale_to_m": 1.0,
+      "source_relative": "电子装备/置物架（buffer）/置物架.STL",
+      "source_format": ".stl",
+      "source_audit_id": "M104",
+      "rendering_role": "case_calibrated_runtime_model",
+      "geometry_status": "user_confirmed_case_calibration",
+      "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+      "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+      "calibration_provenance": {
+        "basis": "STL 按毫米解释，Y 为竖直立柱；得到 1.0 × 0.61 × 1.8 m 候选尺寸。没有单位标签，需确认。",
+        "confirmation_scope": "individual_candidate_review",
+        "batch": null,
+        "loaded_scene_uniform_scale": 0.001,
+        "additional_rotation_x_deg": 0,
+        "source_geometry_review": "manual_review_required",
+        "reopen_max_error_m": 0
+      },
+      "compression": "not_applied_preparation",
+      "source_kind": "reviewed_role_calibration",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/M104.glb"
+    }
+  ],
+  "failures": [],
+  "package_metadata": {
+    "purpose": "isolated 2026-10-15 runtime asset preparation",
+    "baseline_runtime_manifest": "models/runtime-models/glb_manifest.json",
+    "baseline_runtime_asset_count": 42,
+    "baseline_glb_files_copied": 51,
+    "calibrated_asset_count": 26,
+    "raw_source_glb_count": 30,
+    "raw_source_stl_count": 3,
+    "compression_mode": "not_applied_preparation",
+    "geometry_claim_policy": "case calibration or source visual geometry; no manufacturer dimensions inferred"
+  }
+}

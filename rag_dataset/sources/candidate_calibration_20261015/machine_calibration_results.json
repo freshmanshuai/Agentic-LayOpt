@@ -1,0 +1,1247 @@
+[
+  {
+    "key": "M057",
+    "audit_id": "M057",
+    "label": "CNC数控加工中心",
+    "model_asset_id": "asset/fbx/fbx_84d31057",
+    "source_path": "source-models/产线模型库/机床设备/CNC数控加工中心.fbx",
+    "source_relative": "机床设备/CNC数控加工中心.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "late_2026_07_12",
+    "uniform_scale_from_loaded_scene": 1e-05,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "case_calibration_using_approved_batch_scale",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+    "source_geometry_review": "manual_review_required",
+    "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        250368.46923828125,
+        232458.53321327077,
+        227838.05056760562
+      ],
+      "width_m": 250368.46923828125,
+      "depth_m": 227838.05056760562,
+      "height_m": 232458.53321327077,
+      "min": [
+        95643.98193359375,
+        -0.037119523870195216,
+        -227838.05056760562
+      ],
+      "max": [
+        346012.451171875,
+        232458.4960937469,
+        0
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        2.5036846923828127,
+        2.324585332132708,
+        2.2783805056760564
+      ],
+      "width_m": 2.5036846923828127,
+      "depth_m": 2.2783805056760564,
+      "height_m": 2.324585332132708,
+      "min": [
+        -1.2518423461914066,
+        0,
+        -1.1391902528380282
+      ],
+      "max": [
+        1.251842346191406,
+        2.324585332132708,
+        1.1391902528380282
+      ]
+    },
+    "meshes": 1,
+    "vertices": 126324,
+    "export_bytes": 3033632,
+    "reopened_candidate_m": {
+      "xyz": [
+        2.5036846923828127,
+        2.324585332132708,
+        2.2783805056760564
+      ],
+      "width_m": 2.5036846923828127,
+      "depth_m": 2.2783805056760564,
+      "height_m": 2.324585332132708,
+      "min": [
+        -1.2518423461914066,
+        0,
+        -1.1391902528380282
+      ],
+      "max": [
+        1.251842346191406,
+        2.324585332132708,
+        1.1391902528380282
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M058",
+    "audit_id": "M058",
+    "label": "六轴CNC加工中心：塑料油瓶加工机",
+    "model_asset_id": "asset/fbx/fbx_465611ff",
+    "source_path": "source-models/产线模型库/机床设备/六轴CNC加工中心：塑料油瓶加工机.fbx",
+    "source_relative": "机床设备/六轴CNC加工中心：塑料油瓶加工机.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "late_2026_07_12",
+    "uniform_scale_from_loaded_scene": 1e-05,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "case_calibration_using_approved_batch_scale",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+    "source_geometry_review": "manual_review_required",
+    "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        186990.0047302246,
+        266100.0348861391,
+        199788.31230079188
+      ],
+      "width_m": 186990.0047302246,
+      "depth_m": 199788.31230079188,
+      "height_m": 266100.0348861391,
+      "min": [
+        1301.3160705566406,
+        593.4707717373311,
+        -201025.0800709783
+      ],
+      "max": [
+        188291.32080078125,
+        266693.50565787643,
+        -1236.7677701864122
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        1.869900047302246,
+        2.661000348861391,
+        1.9978831230079193
+      ],
+      "width_m": 1.869900047302246,
+      "depth_m": 1.9978831230079193,
+      "height_m": 2.661000348861391,
+      "min": [
+        -0.934950023651123,
+        0,
+        -0.9989415615039596
+      ],
+      "max": [
+        0.9349500236511231,
+        2.661000348861391,
+        0.9989415615039597
+      ]
+    },
+    "meshes": 1,
+    "vertices": 4660497,
+    "export_bytes": 111853928,
+    "reopened_candidate_m": {
+      "xyz": [
+        1.869900047302246,
+        2.661000348861391,
+        1.9978831230079193
+      ],
+      "width_m": 1.869900047302246,
+      "depth_m": 1.9978831230079193,
+      "height_m": 2.661000348861391,
+      "min": [
+        -0.934950023651123,
+        0,
+        -0.9989415615039596
+      ],
+      "max": [
+        0.9349500236511231,
+        2.661000348861391,
+        0.9989415615039597
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M059",
+    "audit_id": "M059",
+    "label": "卧式铣床",
+    "model_asset_id": "asset/fbx/fbx_17fcd2ed",
+    "source_path": "source-models/产线模型库/机床设备/卧式铣床.fbx",
+    "source_relative": "机床设备/卧式铣床.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "early_2026_07_05",
+    "uniform_scale_from_loaded_scene": 0.001,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "case_calibration_using_approved_batch_scale",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+    "source_geometry_review": "manual_review_required",
+    "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded early_2026_07_05 machining FBX scene at scale 0.001; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        1890.2573823928833,
+        1771.1682143820303,
+        1180.1564241189642
+      ],
+      "width_m": 1890.2573823928833,
+      "depth_m": 1180.1564241189642,
+      "height_m": 1771.1682143820303,
+      "min": [
+        -2252.615165710449,
+        -0.0014057346856791865,
+        1205.4490064842923
+      ],
+      "max": [
+        -362.3577833175659,
+        1771.1668086473446,
+        2385.6054306032565
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        1.8902573823928834,
+        1.7711682143820302,
+        1.1801564241189644
+      ],
+      "width_m": 1.8902573823928834,
+      "depth_m": 1.1801564241189644,
+      "height_m": 1.7711682143820302,
+      "min": [
+        -0.9451286911964418,
+        0,
+        -0.5900782120594823
+      ],
+      "max": [
+        0.9451286911964416,
+        1.7711682143820302,
+        0.5900782120594821
+      ]
+    },
+    "meshes": 1,
+    "vertices": 189528,
+    "export_bytes": 4550536,
+    "reopened_candidate_m": {
+      "xyz": [
+        1.8902573823928834,
+        1.7711682143820302,
+        1.1801564241189644
+      ],
+      "width_m": 1.8902573823928834,
+      "depth_m": 1.1801564241189644,
+      "height_m": 1.7711682143820302,
+      "min": [
+        -0.9451286911964418,
+        0,
+        -0.5900782120594823
+      ],
+      "max": [
+        0.9451286911964416,
+        1.7711682143820302,
+        0.5900782120594821
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M060",
+    "audit_id": "M060",
+    "label": "哈斯数控加工中心",
+    "model_asset_id": "asset/fbx/fbx_52f1abc3",
+    "source_path": "source-models/产线模型库/机床设备/哈斯数控加工中心.fbx",
+    "source_relative": "机床设备/哈斯数控加工中心.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "late_2026_07_12",
+    "uniform_scale_from_loaded_scene": 1e-05,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "case_calibration_using_approved_batch_scale",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+    "source_geometry_review": "manual_review_required",
+    "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        234558.30078125,
+        300003.52605492075,
+        363723.36430645135
+      ],
+      "width_m": 234558.30078125,
+      "depth_m": 363723.36430645135,
+      "height_m": 300003.52605492075,
+      "min": [
+        0,
+        -0.05925804974121687,
+        -363723.36430645135
+      ],
+      "max": [
+        234558.30078125,
+        300003.466796871,
+        0
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        2.3455830078125,
+        3.000035260549208,
+        3.637233643064514
+      ],
+      "width_m": 2.3455830078125,
+      "depth_m": 3.637233643064514,
+      "height_m": 3.000035260549208,
+      "min": [
+        -1.17279150390625,
+        0,
+        -1.818616821532257
+      ],
+      "max": [
+        1.17279150390625,
+        3.000035260549208,
+        1.818616821532257
+      ]
+    },
+    "meshes": 1,
+    "vertices": 36300,
+    "export_bytes": 873040,
+    "reopened_candidate_m": {
+      "xyz": [
+        2.3455830078125,
+        3.000035260549208,
+        3.637233643064514
+      ],
+      "width_m": 2.3455830078125,
+      "depth_m": 3.637233643064514,
+      "height_m": 3.000035260549208,
+      "min": [
+        -1.17279150390625,
+        0,
+        -1.818616821532257
+      ],
+      "max": [
+        1.17279150390625,
+        3.000035260549208,
+        1.818616821532257
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M061",
+    "audit_id": "M061",
+    "label": "微型加工中心",
+    "model_asset_id": "asset/fbx/fbx_c6a19eec",
+    "source_path": "source-models/产线模型库/机床设备/微型加工中心.fbx",
+    "source_relative": "机床设备/微型加工中心.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "late_2026_07_12",
+    "uniform_scale_from_loaded_scene": 1e-05,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "case_calibration_using_approved_batch_scale",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+    "source_geometry_review": "manual_review_required",
+    "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        41699.999141693115,
+        42500.00569441199,
+        44000.007102941476
+      ],
+      "width_m": 41699.999141693115,
+      "depth_m": 44000.007102941476,
+      "height_m": 42500.00569441199,
+      "min": [
+        350.00085830688477,
+        4.742840743718028,
+        -44000.00692490193
+      ],
+      "max": [
+        42050,
+        42504.74853515571,
+        0.0001780395479996276
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        0.4169999914169311,
+        0.42500005694412,
+        0.44000007102941485
+      ],
+      "width_m": 0.4169999914169311,
+      "depth_m": 0.44000007102941485,
+      "height_m": 0.42500005694412,
+      "min": [
+        -0.20849999570846559,
+        0,
+        -0.22000003551470743
+      ],
+      "max": [
+        0.20849999570846556,
+        0.42500005694412,
+        0.2200000355147074
+      ]
+    },
+    "meshes": 1,
+    "vertices": 1107810,
+    "export_bytes": 26589320,
+    "reopened_candidate_m": {
+      "xyz": [
+        0.4169999914169311,
+        0.42500005694412,
+        0.44000007102941485
+      ],
+      "width_m": 0.4169999914169311,
+      "depth_m": 0.44000007102941485,
+      "height_m": 0.42500005694412,
+      "min": [
+        -0.20849999570846559,
+        0,
+        -0.22000003551470743
+      ],
+      "max": [
+        0.20849999570846556,
+        0.42500005694412,
+        0.2200000355147074
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M062",
+    "audit_id": "M062",
+    "label": "摇臂钻床",
+    "model_asset_id": "asset/fbx/fbx_a3e1a9c2",
+    "source_path": "source-models/产线模型库/机床设备/摇臂钻床.fbx",
+    "source_relative": "机床设备/摇臂钻床.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "early_2026_07_05",
+    "uniform_scale_from_loaded_scene": 0.001,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "user_confirmed_case_calibration",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "individual_candidate_review",
+    "source_geometry_review": "manual_review_required",
+    "basis": "User-reviewed candidate calibration: interpret the full loaded early_2026_07_05 machining FBX scene at scale 0.001; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        1234.002685546875,
+        1998.452339652842,
+        683.4319509553966
+      ],
+      "width_m": 1234.002685546875,
+      "depth_m": 683.4319509553966,
+      "height_m": 1998.452339652842,
+      "min": [
+        -10073.298645019531,
+        27.555692832861933,
+        1650.237516295946
+      ],
+      "max": [
+        -8839.295959472656,
+        2026.008032485704,
+        2333.6694672513427
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        1.2340026855468764,
+        1.998452339652842,
+        0.683431950955397
+      ],
+      "width_m": 1.2340026855468764,
+      "depth_m": 0.683431950955397,
+      "height_m": 1.998452339652842,
+      "min": [
+        -0.6170013427734382,
+        0,
+        -0.3417159754776986
+      ],
+      "max": [
+        0.6170013427734382,
+        1.998452339652842,
+        0.3417159754776984
+      ]
+    },
+    "meshes": 1,
+    "vertices": 99726,
+    "export_bytes": 2395264,
+    "reopened_candidate_m": {
+      "xyz": [
+        1.2340026855468764,
+        1.998452339652842,
+        0.683431950955397
+      ],
+      "width_m": 1.2340026855468764,
+      "depth_m": 0.683431950955397,
+      "height_m": 1.998452339652842,
+      "min": [
+        -0.6170013427734382,
+        0,
+        -0.3417159754776986
+      ],
+      "max": [
+        0.6170013427734382,
+        1.998452339652842,
+        0.3417159754776984
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M063",
+    "audit_id": "M063",
+    "label": "数控机床",
+    "model_asset_id": "asset/fbx/fbx_8261b7e0",
+    "source_path": "source-models/产线模型库/机床设备/数控机床.fbx",
+    "source_relative": "机床设备/数控机床.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "early_2026_07_05",
+    "uniform_scale_from_loaded_scene": 0.001,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "user_confirmed_case_calibration",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "individual_candidate_review",
+    "source_geometry_review": "manual_review_required",
+    "basis": "User-reviewed candidate calibration: interpret the full loaded early_2026_07_05 machining FBX scene at scale 0.001; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        2589.910888671875,
+        2410.8288778742626,
+        1984.0580099612998
+      ],
+      "width_m": 2589.910888671875,
+      "depth_m": 1984.0580099612998,
+      "height_m": 2410.8288778742626,
+      "min": [
+        -13787.332153320312,
+        -138.53598313988087,
+        15543.9312093866
+      ],
+      "max": [
+        -11197.421264648438,
+        2272.2928947343817,
+        17527.9892193479
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        2.5899108886718754,
+        2.4108288778742626,
+        1.9840580099613003
+      ],
+      "width_m": 2.5899108886718754,
+      "depth_m": 1.9840580099613003,
+      "height_m": 2.4108288778742626,
+      "min": [
+        -1.2949554443359368,
+        0,
+        -0.9920290049806493
+      ],
+      "max": [
+        1.2949554443359386,
+        2.4108288778742626,
+        0.992029004980651
+      ]
+    },
+    "meshes": 1,
+    "vertices": 334419,
+    "export_bytes": 8027892,
+    "reopened_candidate_m": {
+      "xyz": [
+        2.5899108886718754,
+        2.4108288778742626,
+        1.9840580099613003
+      ],
+      "width_m": 2.5899108886718754,
+      "depth_m": 1.9840580099613003,
+      "height_m": 2.4108288778742626,
+      "min": [
+        -1.2949554443359368,
+        0,
+        -0.9920290049806493
+      ],
+      "max": [
+        1.2949554443359386,
+        2.4108288778742626,
+        0.992029004980651
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M064",
+    "audit_id": "M064",
+    "label": "新型车铣复合加工中心",
+    "model_asset_id": "asset/fbx/fbx_6901bdd8",
+    "source_path": "source-models/产线模型库/机床设备/新型车铣复合加工中心.fbx",
+    "source_relative": "机床设备/新型车铣复合加工中心.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "late_2026_07_12",
+    "uniform_scale_from_loaded_scene": 1e-05,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "user_confirmed_case_calibration",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "individual_candidate_review",
+    "source_geometry_review": "manual_review_required",
+    "basis": "User-reviewed candidate calibration: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        703552.0992279053,
+        344300.0682332199,
+        419763.81341780315
+      ],
+      "width_m": 703552.0992279053,
+      "depth_m": 419763.81341780315,
+      "height_m": 344300.0682332199,
+      "min": [
+        3979.2972564697266,
+        149.92894216800272,
+        -437101.1303367723
+      ],
+      "max": [
+        707531.396484375,
+        344449.9971753879,
+        -17337.316918969143
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        7.035520992279054,
+        3.4430006823322,
+        4.197638134178032
+      ],
+      "width_m": 7.035520992279054,
+      "depth_m": 4.197638134178032,
+      "height_m": 3.4430006823322,
+      "min": [
+        -3.517760496139527,
+        0,
+        -2.098819067089016
+      ],
+      "max": [
+        3.5177604961395263,
+        3.4430006823322,
+        2.098819067089016
+      ]
+    },
+    "meshes": 1,
+    "vertices": 2976594,
+    "export_bytes": 71440168,
+    "reopened_candidate_m": {
+      "xyz": [
+        7.035520992279054,
+        3.4430006823322,
+        4.197638134178032
+      ],
+      "width_m": 7.035520992279054,
+      "depth_m": 4.197638134178032,
+      "height_m": 3.4430006823322,
+      "min": [
+        -3.517760496139527,
+        0,
+        -2.098819067089016
+      ],
+      "max": [
+        3.5177604961395263,
+        3.4430006823322,
+        2.098819067089016
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M065",
+    "audit_id": "M065",
+    "label": "立式加工中心1100X900",
+    "model_asset_id": "asset/fbx/fbx_fb04a2ee",
+    "source_path": "source-models/产线模型库/机床设备/立式加工中心1100X900.fbx",
+    "source_relative": "机床设备/立式加工中心1100X900.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "late_2026_07_12",
+    "uniform_scale_from_loaded_scene": 1e-05,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "user_confirmed_case_calibration",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "individual_candidate_review",
+    "source_geometry_review": "manual_review_required",
+    "basis": "User-reviewed candidate calibration: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        239174.1039276123,
+        285361.61522593873,
+        266030.0395485487
+      ],
+      "width_m": 239174.1039276123,
+      "depth_m": 266030.0395485487,
+      "height_m": 285361.61522593873,
+      "min": [
+        1521.7945098876953,
+        849.9568689280353,
+        -267078.1228016553
+      ],
+      "max": [
+        240695.8984375,
+        286211.5720948668,
+        -1048.0832531066492
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        2.3917410392761234,
+        2.853616152259388,
+        2.660300395485487
+      ],
+      "width_m": 2.3917410392761234,
+      "depth_m": 2.660300395485487,
+      "height_m": 2.853616152259388,
+      "min": [
+        -1.1958705196380615,
+        0,
+        -1.3301501977427435
+      ],
+      "max": [
+        1.1958705196380617,
+        2.853616152259388,
+        1.3301501977427435
+      ]
+    },
+    "meshes": 1,
+    "vertices": 641103,
+    "export_bytes": 15388368,
+    "reopened_candidate_m": {
+      "xyz": [
+        2.3917410392761234,
+        2.853616152259388,
+        2.660300395485487
+      ],
+      "width_m": 2.3917410392761234,
+      "depth_m": 2.660300395485487,
+      "height_m": 2.853616152259388,
+      "min": [
+        -1.1958705196380615,
+        0,
+        -1.3301501977427435
+      ],
+      "max": [
+        1.1958705196380617,
+        2.853616152259388,
+        1.3301501977427435
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M066",
+    "audit_id": "M066",
+    "label": "立式加工中心GA-V918C",
+    "model_asset_id": "asset/fbx/fbx_abd43f9f",
+    "source_path": "source-models/产线模型库/机床设备/立式加工中心GA-V918C.fbx",
+    "source_relative": "机床设备/立式加工中心GA-V918C.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "late_2026_07_12",
+    "uniform_scale_from_loaded_scene": 1e-05,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "case_calibration_using_approved_batch_scale",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+    "source_geometry_review": "manual_review_required",
+    "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        644240.0505065918,
+        433986.2117514289,
+        334671.34927739773
+      ],
+      "width_m": 644240.0505065918,
+      "depth_m": 334671.34927739773,
+      "height_m": 433986.2117514289,
+      "min": [
+        2553.113555908203,
+        377821.5027574302,
+        -336726.8900727601
+      ],
+      "max": [
+        646793.1640625,
+        811807.7145088591,
+        -2055.540795362393
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        6.442400505065918,
+        4.33986211751429,
+        3.3467134927739774
+      ],
+      "width_m": 6.442400505065918,
+      "depth_m": 3.3467134927739774,
+      "height_m": 4.33986211751429,
+      "min": [
+        -3.221200252532959,
+        0,
+        -1.6733567463869887
+      ],
+      "max": [
+        3.221200252532959,
+        4.33986211751429,
+        1.673356746386989
+      ]
+    },
+    "meshes": 1,
+    "vertices": 4707750,
+    "export_bytes": 112987904,
+    "reopened_candidate_m": {
+      "xyz": [
+        6.442400505065918,
+        4.33986211751429,
+        3.3467134927739774
+      ],
+      "width_m": 6.442400505065918,
+      "depth_m": 3.3467134927739774,
+      "height_m": 4.33986211751429,
+      "min": [
+        -3.221200252532959,
+        0,
+        -1.6733567463869887
+      ],
+      "max": [
+        3.221200252532959,
+        4.33986211751429,
+        1.673356746386989
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M067",
+    "audit_id": "M067",
+    "label": "立式加工中心光机模型",
+    "model_asset_id": "asset/fbx/fbx_f4980f8b",
+    "source_path": "source-models/产线模型库/机床设备/立式加工中心光机模型.fbx",
+    "source_relative": "机床设备/立式加工中心光机模型.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "late_2026_07_12",
+    "uniform_scale_from_loaded_scene": 1e-05,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "case_calibration_using_approved_batch_scale",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+    "source_geometry_review": "manual_review_required",
+    "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        107999.99947547913,
+        143500.0349753237,
+        185408.9851758764
+      ],
+      "width_m": 107999.99947547913,
+      "depth_m": 185408.9851758764,
+      "height_m": 143500.0349753237,
+      "min": [
+        488.391637802124,
+        717.4698620634595,
+        -185687.79205069895
+      ],
+      "max": [
+        108488.39111328125,
+        144217.50483738718,
+        -278.8068748225434
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        1.0799999947547914,
+        1.4350003497532375,
+        1.854089851758764
+      ],
+      "width_m": 1.0799999947547914,
+      "depth_m": 1.854089851758764,
+      "height_m": 1.4350003497532375,
+      "min": [
+        -0.5399999973773957,
+        0,
+        -0.9270449258793821
+      ],
+      "max": [
+        0.5399999973773957,
+        1.4350003497532375,
+        0.927044925879382
+      ]
+    },
+    "meshes": 1,
+    "vertices": 53502,
+    "export_bytes": 1285972,
+    "reopened_candidate_m": {
+      "xyz": [
+        1.0799999947547914,
+        1.4350003497532375,
+        1.854089851758764
+      ],
+      "width_m": 1.0799999947547914,
+      "depth_m": 1.854089851758764,
+      "height_m": 1.4350003497532375,
+      "min": [
+        -0.5399999973773957,
+        0,
+        -0.9270449258793821
+      ],
+      "max": [
+        0.5399999973773957,
+        1.4350003497532375,
+        0.927044925879382
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M068",
+    "audit_id": "M068",
+    "label": "立式四轴数控铣床",
+    "model_asset_id": "asset/fbx/fbx_f2db5dfe",
+    "source_path": "source-models/产线模型库/机床设备/立式四轴数控铣床.fbx",
+    "source_relative": "机床设备/立式四轴数控铣床.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "late_2026_07_12",
+    "uniform_scale_from_loaded_scene": 1e-05,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "case_calibration_using_approved_batch_scale",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+    "source_geometry_review": "manual_review_required",
+    "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        85399.98834133148,
+        74050.0193317486,
+        102560.01397400821
+      ],
+      "width_m": 85399.98834133148,
+      "depth_m": 102560.01397400821,
+      "height_m": 74050.0193317486,
+      "min": [
+        365.93573093414307,
+        280.4432936882619,
+        -102689.19668028063
+      ],
+      "max": [
+        85765.92407226562,
+        74330.46262543686,
+        -129.18270627241736
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        0.8539998834133149,
+        0.7405001933174861,
+        1.0256001397400825
+      ],
+      "width_m": 0.8539998834133149,
+      "depth_m": 1.0256001397400825,
+      "height_m": 0.7405001933174861,
+      "min": [
+        -0.42699994170665745,
+        0,
+        -0.5128000698700411
+      ],
+      "max": [
+        0.42699994170665745,
+        0.7405001933174861,
+        0.5128000698700412
+      ]
+    },
+    "meshes": 1,
+    "vertices": 1551711,
+    "export_bytes": 37242976,
+    "reopened_candidate_m": {
+      "xyz": [
+        0.8539998834133149,
+        0.7405001933174861,
+        1.0256001397400825
+      ],
+      "width_m": 0.8539998834133149,
+      "depth_m": 1.0256001397400825,
+      "height_m": 0.7405001933174861,
+      "min": [
+        -0.42699994170665745,
+        0,
+        -0.5128000698700411
+      ],
+      "max": [
+        0.42699994170665745,
+        0.7405001933174861,
+        0.5128000698700412
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M069",
+    "audit_id": "M069",
+    "label": "高速立式车铣加工中心",
+    "model_asset_id": "asset/fbx/fbx_d8f6cfdf",
+    "source_path": "source-models/产线模型库/机床设备/高速立式车铣加工中心.fbx",
+    "source_relative": "机床设备/高速立式车铣加工中心.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "late_2026_07_12",
+    "uniform_scale_from_loaded_scene": 1e-05,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "case_calibration_using_approved_batch_scale",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+    "source_geometry_review": "manual_review_required",
+    "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded late_2026_07_12 machining FBX scene at scale 1e-05; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        256549.99647140503,
+        256000.06114835548,
+        387033.21426742664
+      ],
+      "width_m": 256549.99647140503,
+      "depth_m": 387033.21426742664,
+      "height_m": 256000.06114835548,
+      "min": [
+        1259.9400520324707,
+        1757.6048175655428,
+        -387338.2744159239
+      ],
+      "max": [
+        257809.9365234375,
+        257757.665965921,
+        -305.0601484972893
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        2.5654999647140504,
+        2.560000611483555,
+        3.870332142674267
+      ],
+      "width_m": 2.5654999647140504,
+      "depth_m": 3.870332142674267,
+      "height_m": 2.560000611483555,
+      "min": [
+        -1.2827499823570252,
+        0,
+        -1.9351660713371335
+      ],
+      "max": [
+        1.2827499823570252,
+        2.560000611483555,
+        1.9351660713371335
+      ]
+    },
+    "meshes": 1,
+    "vertices": 3305655,
+    "export_bytes": 79337648,
+    "reopened_candidate_m": {
+      "xyz": [
+        2.5654999647140504,
+        2.560000611483555,
+        3.870332142674267
+      ],
+      "width_m": 2.5654999647140504,
+      "depth_m": 3.870332142674267,
+      "height_m": 2.560000611483555,
+      "min": [
+        -1.2827499823570252,
+        0,
+        -1.9351660713371335
+      ],
+      "max": [
+        1.2827499823570252,
+        2.560000611483555,
+        1.9351660713371335
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M070",
+    "audit_id": "M070",
+    "label": "龙门式数控切割机",
+    "model_asset_id": "asset/fbx/fbx_3b1181c9",
+    "source_path": "source-models/产线模型库/机床设备/龙门式数控切割机.fbx",
+    "source_relative": "机床设备/龙门式数控切割机.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "early_2026_07_05",
+    "uniform_scale_from_loaded_scene": 0.001,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "case_calibration_using_approved_batch_scale",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+    "source_geometry_review": "manual_review_required",
+    "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded early_2026_07_05 machining FBX scene at scale 0.001; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        11314.144134521484,
+        4714.231514796201,
+        5267.425542215514
+      ],
+      "width_m": 11314.144134521484,
+      "depth_m": 5267.425542215514,
+      "height_m": 4714.231514796201,
+      "min": [
+        -20728.370666503906,
+        -243.2658756003219,
+        4485.191379741736
+      ],
+      "max": [
+        -9414.226531982422,
+        4470.965639195879,
+        9752.61692195725
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        11.314144134521484,
+        4.714231514796201,
+        5.267425542215513
+      ],
+      "width_m": 11.314144134521484,
+      "depth_m": 5.267425542215513,
+      "height_m": 4.714231514796201,
+      "min": [
+        -5.657072067260742,
+        0,
+        -2.6337127711077564
+      ],
+      "max": [
+        5.657072067260742,
+        4.714231514796201,
+        2.6337127711077564
+      ]
+    },
+    "meshes": 1,
+    "vertices": 2607669,
+    "export_bytes": 62585956,
+    "reopened_candidate_m": {
+      "xyz": [
+        11.314144134521484,
+        4.714231514796201,
+        5.267425542215513
+      ],
+      "width_m": 11.314144134521484,
+      "depth_m": 5.267425542215513,
+      "height_m": 4.714231514796201,
+      "min": [
+        -5.657072067260742,
+        0,
+        -2.6337127711077564
+      ],
+      "max": [
+        5.657072067260742,
+        4.714231514796201,
+        2.6337127711077564
+      ]
+    },
+    "reopen_max_error_m": 0
+  },
+  {
+    "key": "M071",
+    "audit_id": "M071",
+    "label": "龙门铣床",
+    "model_asset_id": "asset/fbx/fbx_51f787e0",
+    "source_path": "source-models/产线模型库/机床设备/龙门铣床.fbx",
+    "source_relative": "机床设备/龙门铣床.fbx",
+    "source_format": ".fbx",
+    "calibration_batch": "early_2026_07_05",
+    "uniform_scale_from_loaded_scene": 0.001,
+    "rotation_x_deg": 0,
+    "preserve_source_node_transforms": true,
+    "coordinate_normalization": "full-node-geometry; Y-up; bottom-center origin",
+    "geometry_status": "case_calibration_using_approved_batch_scale",
+    "dimension_claim_scope": "case_calibration_not_manufacturer_specification",
+    "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion",
+    "source_geometry_review": "manual_review_required",
+    "basis": "Case-calibration extrapolation from the user-approved batch rule: interpret the full loaded early_2026_07_05 machining FBX scene at scale 0.001; retain node geometry and existing orientation, then normalize to Y-up and bottom-center for runtime use.",
+    "before_loaded_native": {
+      "xyz": [
+        7126.971817016602,
+        2936.2891346624324,
+        4805.471517200389
+      ],
+      "width_m": 7126.971817016602,
+      "depth_m": 4805.471517200389,
+      "height_m": 2936.2891346624324,
+      "min": [
+        4468.425369262695,
+        -1.8942228958762763,
+        5022.745035842596
+      ],
+      "max": [
+        11595.397186279297,
+        2934.394911766556,
+        9828.216553042985
+      ]
+    },
+    "after_candidate_m": {
+      "xyz": [
+        7.126971817016602,
+        2.9362891346624327,
+        4.805471517200389
+      ],
+      "width_m": 7.126971817016602,
+      "depth_m": 4.805471517200389,
+      "height_m": 2.9362891346624327,
+      "min": [
+        -3.5634859085083006,
+        0,
+        -2.402735758600195
+      ],
+      "max": [
+        3.5634859085083015,
+        2.9362891346624327,
+        2.402735758600194
+      ]
+    },
+    "meshes": 1,
+    "vertices": 808287,
+    "export_bytes": 19400740,
+    "reopened_candidate_m": {
+      "xyz": [
+        7.126971817016602,
+        2.9362891346624327,
+        4.805471517200389
+      ],
+      "width_m": 7.126971817016602,
+      "depth_m": 4.805471517200389,
+      "height_m": 2.9362891346624327,
+      "min": [
+        -3.5634859085083006,
+        0,
+        -2.402735758600195
+      ],
+      "max": [
+        3.5634859085083015,
+        2.9362891346624327,
+        2.402735758600194
+      ]
+    },
+    "reopen_max_error_m": 0
+  }
+]

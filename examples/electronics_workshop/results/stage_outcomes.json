@@ -1,0 +1,105 @@
+{
+  "generate": {
+    "design_status": "rough_layout_generated",
+    "exact_edit_directives_satisfied": null,
+    "evaluator_assisted_recovery": {}
+  },
+  "optimize": {
+    "design_status": "quality_candidate_generated",
+    "exact_edit_directives_satisfied": null,
+    "evaluator_assisted_recovery": {}
+  },
+  "edit": {
+    "design_status": "layout_recovered_with_disclosed_deviation",
+    "exact_edit_directives_satisfied": false,
+    "evaluator_assisted_recovery": {
+      "required": true,
+      "original_task_type": "DirectiveEdit",
+      "original_directive_satisfied": false,
+      "recovery_status": "EVALUATOR_RECOVERY_SUCCESS",
+      "policy": "local_feasible_with_disclosure",
+      "trigger_source": "evaluator",
+      "changed_instance_ids": [
+        "equipment_016",
+        "equipment_014"
+      ],
+      "preserve_instance_ids": [
+        "equipment_001",
+        "equipment_002",
+        "equipment_003",
+        "equipment_004",
+        "equipment_005",
+        "equipment_006",
+        "equipment_007",
+        "equipment_008",
+        "equipment_009",
+        "equipment_010",
+        "equipment_011",
+        "equipment_012",
+        "equipment_013",
+        "equipment_017",
+        "equipment_018",
+        "equipment_019",
+        "equipment_020",
+        "equipment_021",
+        "equipment_022",
+        "equipment_023",
+        "equipment_024",
+        "equipment_015"
+      ],
+      "requested_vs_applied": [
+        {
+          "instance_id": "equipment_016",
+          "requested_position": {
+            "x_m": -12.54563694718698,
+            "y_m": 0,
+            "z_m": -4.125138816282858
+          },
+          "applied_position": {
+            "x_m": -11.384335652540644,
+            "y_m": 0,
+            "z_m": -4.125138816282858
+          },
+          "translation_from_requested_endpoint_m": {
+            "dx_m": 1.1613012946463357,
+            "dz_m": 0,
+            "distance_m": 1.1613012946463357
+          },
+          "requested_yaw_deg": 0,
+          "applied_yaw_deg": 0,
+          "yaw_deviation_deg": 0
+        },
+        {
+          "instance_id": "equipment_014",
+          "requested_position": {
+            "x_m": -8.369596336305602,
+            "y_m": 0,
+            "z_m": -5.175450730712859
+          },
+          "applied_position": {
+            "x_m": -8.590638959937154,
+            "y_m": 0,
+            "z_m": -8.5669613812683
+          },
+          "translation_from_requested_endpoint_m": {
+            "dx_m": -0.22104262363155236,
+            "dz_m": -3.391510650555441,
+            "distance_m": 3.398706273612492
+          },
+          "requested_yaw_deg": 270,
+          "applied_yaw_deg": 270,
+          "yaw_deviation_deg": 0
+        }
+      ],
+      "reason_codes": [
+        "CLEARANCE_DEFICIT",
+        "CLEARANCE_DEFICIT"
+      ]
+    }
+  },
+  "repair": {
+    "design_status": "REPAIR_SUCCESS",
+    "exact_edit_directives_satisfied": null,
+    "evaluator_assisted_recovery": {}
+  }
+}

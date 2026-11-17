@@ -1,0 +1,1238 @@
+{
+  "layout_id": "layout_v2",
+  "layout_type": "rough_design",
+  "site": {
+    "workcell_areas": [
+      {
+        "kind": "manual_transfer_cell",
+        "member_instance_ids": [
+          "equipment_021",
+          "equipment_019",
+          "equipment_020"
+        ],
+        "min_x": -9.919754830360413,
+        "max_x": 5.551115123125783e-17,
+        "min_z": 10.300651501611338,
+        "max_z": 11.90065154500352,
+        "operator_area": {
+          "min_x": -9.919754830360413,
+          "max_x": 5.551115123125783e-17,
+          "min_z": 9.300651501611338,
+          "max_z": 10.300651501611338
+        },
+        "parameters": {
+          "planning_kind": "manual_conveyor_cell",
+          "conveyor_instance_id": "equipment_021",
+          "input_table_instance_id": "equipment_019",
+          "output_table_instance_id": "equipment_020",
+          "end_gap_m": 0.2,
+          "operator_strip_m": 1,
+          "basis": "Agent planning proposal accepted in the user clarification; manual lifting, no OEM docking claim",
+          "source_text": "ENGINEERING CONTEXT — FLEXIBLE MANUFACTURING OF ELECTRONIC CONTROL EQUIPMENT\n\nFACILITY AND WORK AREAS\n\nThe floor is 48 m east to west and 30 m north to south. Enclose it with black perimeter walls. Keep a central 4 m-wide logistics aisle running east to west through the center. Center the receiving door in the west wall and the dispatch door in the east wall, aligned with the aisle. Both openings are initially 4 m wide, with usable approaches.\n\nMachining belongs south of the aisle. Assembly and manual conveyor transfer belong in the northwest; testing and finishing belong in the northeast. Mark these work areas with light floor boundaries and readable labels. Provide a 3 m by 3 m inbound buffer near the receiving door, south of the aisle, and an equally sized outbound buffer near dispatch, north of the aisle. Hatch both buffers diagonally. No surveyed interior columns or other fixed obstacles are supplied for this case. Keep equipment and parking bays outside the aisle, door approaches, buffers, and reserved operating areas. Prevent overlap and keep the required access and maintenance space usable.\n\nEQUIPMENT INVENTORY AND ORGANIZATION\n\nUse 13 main process units:\nSouth: two general CNC machining centers A and B; two compact vertical machining centers A and B; one turn-mill center; one radial drilling machine; one EDM drilling machine.\nNorth: two fixture assembly workstations A and B; two flexible test workstations A and B; one small temperature chamber; one laser marking station.\n\nAdd ten auxiliary objects: two tool cabinets A and B; a raw-material storage rack; a finished-goods storage rack; a line-side storage unit; a loading work table; an unloading work table; a pallet-track conveyor; two AGVs A and B. Use freestanding racks and work tables rather than composite scenes containing several unrelated objects.\n\nOrganize the south machining area as two east-west rows of four bays each.\nAlign the stations in each row along a common east-west line.\nRow 1 is closest to the central aisle; row 2 is behind it, toward the south wall.\nRow 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B.\nRow 2, west to east: turn-mill center; radial drilling machine; EDM drilling machine; reserved bay.\nLeave the eighth bay empty for future expansion or maintenance.\n\nUse the following operation and maintenance spaces as case requirements:\n- Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.\n- Turn-mill center: 1.5 m at the service front, 1.0 m at the rear, and 1.0 m on each side.\n- Other main process workstations, including assembly, testing, the temperature chamber, and laser marking: 1.0 m at the service front, 0.6 m at the rear, and 0.6 m on each side.\n- Storage racks, line-side storage, and tool cabinets: 0.8 m at the service front, 0.4 m at the rear, and 0.4 m on each side.\nThe work tables and conveyor use the connected handoff-cell requirements below. Preserve boundary, overlap, aisle, access, and maintenance-space checks.\n\nAuxiliary placement:\nSouth: raw-material rack; tool cabinet A; tool cabinet B.\nKeep the raw-material rack near receiving and each tool cabinet near the machines it serves. Put line-side storage near the assembly workstations. Give each AGV a parking bay outside the aisle.\nNorthwest: fixture A; fixture B; loading table; conveyor; unloading table; line-side storage.\nNortheast: test A; test B; temperature chamber; laser marking; finished-goods rack.\n\nThe two work tables stand at opposite short ends of the conveyor, centered on its ends. Keep the cell parallel to the central aisle. Allow a 0.20 m gap at each end and a continuous 1.0 m operator strip on the aisle side. Operators lift containers across these gaps; equal table and conveyor heights and automatic docking are not assumed. These handoff dimensions are accepted case planning assumptions.\n\nPRODUCTION AND LOGISTICS\n\nDaily demand and routes remain the same throughout this case:\n- Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.\n- Communication control units, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC B -> vertical machining center B -> EDM drilling -> line-side storage -> fixture B -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.\n- Power control modules, 50 batches per day: receiving -> inbound buffer -> raw-material rack -> turn-mill center -> radial drilling -> EDM drilling -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test B -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.\n\nAGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage. AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.\n\nOperators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking. They also load and unload the AGVs and conveyor. The conveyor carries containers between the loading and unloading ends of its cell. Handoffs at process machines are external manual transfers; automatic machine docking is not required.\n\nOperators perform these daily tool-service round trips:\n- Tool service for CNC A, 2 trips per day: tool cabinet A -> CNC A -> tool cabinet A.\n- Tool service for vertical machining center A, 2 trips per day: tool cabinet A -> vertical machining center A -> tool cabinet A.\n- Tool service for CNC B, 2 trips per day: tool cabinet B -> CNC B -> tool cabinet B.\n- Tool service for vertical machining center B, 2 trips per day: tool cabinet B -> vertical machining center B -> tool cabinet B.\n\nEVALUATION ASSUMPTIONS\n\nAGV transport cost is an index based on usable travel paths: loaded travel costs 1 index unit per meter and empty travel costs 0.8. Use one batch per trip. After each delivery, the empty AGV returns to its pickup point. Group shuttle jobs by pickup location in their first occurrence in the product routes. Include empty travel between groups and the daily departure from and return to the parking bay. These are planning assumptions, not measured charges, energy use, or a fleet scheduling simulation.\n\nRelocation effort is measured from the accepted Generate positions. A moved object incurs a fixed effort plus its horizontal Manhattan displacement multiplied by a per-meter coefficient. Rotation alone has no charge. For an AGV, this refers to moving its parking bay. The following fixed and per-meter coefficients are planning indices, not actual moving fees:\n- CNC machining center: fixed effort 8; distance effort 0.6 per meter.\n- Vertical machining center: fixed effort 10; distance effort 0.8 per meter.\n- Turn-mill machining center: fixed effort 16; distance effort 1.2 per meter.\n- Radial drilling machine: fixed effort 5; distance effort 0.4 per meter.\n- EDM drilling machine: fixed effort 6; distance effort 0.5 per meter.\n- Fixture workstation: fixed effort 3; distance effort 0.2 per meter.\n- Flexible test workstation: fixed effort 4; distance effort 0.25 per meter.\n- Laser marking station: fixed effort 3; distance effort 0.2 per meter.\n- Temperature chamber: fixed effort 6; distance effort 0.4 per meter.\n- Tool cabinet: fixed effort 1; distance effort 0.1 per meter.\n- Work table: fixed effort 1; distance effort 0.08 per meter.\n- Storage rack: fixed effort 2; distance effort 0.1 per meter.\n- Line-side storage: fixed effort 2; distance effort 0.1 per meter.\n- Conveyor: fixed effort 8; distance effort 0.35 per meter.\n- AGV: fixed effort 0.5; distance effort 0.02 per meter.\n\nWhen optimization is requested, give AGV transport cost and relocation effort equal importance. Among the returned feasible Pareto candidates, normalize each objective by its observed range and select the point closest to the component-wise ideal. This is the case selection policy, not a claim of global optimality. No purchase or disposal costs are supplied for inventory changes.\nPrevious request requiring clarification:\nCreate an initial layout for this workshop. Keep the machining stations in their two-row arrangement and leave the reserved bay clear. Clarify any unresolved equipment or handoff choice. Hard constraint: no overlap.\n\nUser clarification:\nUse the compact Vertical machining center 1100 x 900, approximately 2.39 m by 2.66 m, for both vertical machining stations. For the turn-mill center, use Turn-mill machining center, approximately 7.04 m by 4.20 m. Use the Fixture workstation, approximately 1.22 m by 1.17 m, for both assembly stations. Use the freestanding Work table, approximately 1.00 m by 1.60 m, for both loading and unloading. Choose Conveyor line, the approximately 7.52 m by 1.04 m pallet-track conveyor. Hard constraint: no overlap."
+        }
+      }
+    ],
+    "site_id": "SITE_INLINE_001",
+    "width_m": 48,
+    "depth_m": 30,
+    "dimensions_m": {
+      "width_m": 48,
+      "height_m": 0,
+      "depth_m": 30
+    },
+    "layout_topology": null,
+    "site_features": [
+      {
+        "site_feature_id": "natural_site/central_east_west_aisle",
+        "feature_type": "corridor",
+        "feature_name": "central east-west aisle",
+        "pose": {
+          "x_m": 0,
+          "y_m": 0,
+          "z_m": 0,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": null
+        },
+        "dimensions_m": {
+          "width_m": 48,
+          "depth_m": 6,
+          "height_m": 0.1
+        },
+        "must_remain_clear": true,
+        "source": "user_input",
+        "source_model_asset_id": null,
+        "source_node_ref": null,
+        "confidence": 1
+      },
+      {
+        "site_feature_id": "natural_site/receiving_door",
+        "feature_type": "entrance",
+        "feature_name": "receiving",
+        "pose": {
+          "x_m": -24,
+          "y_m": 0,
+          "z_m": 0,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": "site_frame"
+        },
+        "dimensions_m": {
+          "width_m": 0.2,
+          "depth_m": 6,
+          "height_m": 3.6
+        },
+        "must_remain_clear": true,
+        "source": "computed",
+        "confidence": 1
+      },
+      {
+        "site_feature_id": "natural_site/dispatch_door",
+        "feature_type": "exit",
+        "feature_name": "dispatch",
+        "pose": {
+          "x_m": 24,
+          "y_m": 0,
+          "z_m": 0,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": "site_frame"
+        },
+        "dimensions_m": {
+          "width_m": 0.2,
+          "depth_m": 6,
+          "height_m": 3.6
+        },
+        "must_remain_clear": true,
+        "source": "computed",
+        "confidence": 1
+      },
+      {
+        "site_feature_id": "natural_site/buffer_inbound",
+        "feature_type": "forbidden_zone",
+        "feature_name": "inbound buffer",
+        "pose": {
+          "x_m": -22.5,
+          "y_m": 0,
+          "z_m": -4.5,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": null
+        },
+        "dimensions_m": {
+          "width_m": 3,
+          "depth_m": 3,
+          "height_m": 0.1
+        },
+        "must_remain_clear": true,
+        "source": "user_input",
+        "source_model_asset_id": null,
+        "source_node_ref": null,
+        "confidence": 1
+      },
+      {
+        "site_feature_id": "natural_site/buffer_outbound",
+        "feature_type": "forbidden_zone",
+        "feature_name": "outbound buffer",
+        "pose": {
+          "x_m": 22.5,
+          "y_m": 0,
+          "z_m": 4.5,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": null
+        },
+        "dimensions_m": {
+          "width_m": 3,
+          "depth_m": 3,
+          "height_m": 0.1
+        },
+        "must_remain_clear": true,
+        "source": "user_input",
+        "source_model_asset_id": null,
+        "source_node_ref": null,
+        "confidence": 1
+      }
+    ],
+    "fixed_equipment_instances": [],
+    "non_placeable_zones": [
+      {
+        "zone_id": "natural_site/central_east_west_aisle",
+        "zone_type": "corridor",
+        "min_x_m": -24,
+        "max_x_m": 24,
+        "min_z_m": -3,
+        "max_z_m": 3,
+        "width_m": 48,
+        "depth_m": 6
+      },
+      {
+        "zone_id": "natural_site/receiving_door",
+        "zone_type": "entrance",
+        "min_x_m": -24.1,
+        "max_x_m": -23.9,
+        "min_z_m": -3,
+        "max_z_m": 3,
+        "width_m": 0.2,
+        "depth_m": 6
+      },
+      {
+        "zone_id": "natural_site/dispatch_door",
+        "zone_type": "exit",
+        "min_x_m": 23.9,
+        "max_x_m": 24.1,
+        "min_z_m": -3,
+        "max_z_m": 3,
+        "width_m": 0.2,
+        "depth_m": 6
+      },
+      {
+        "zone_id": "natural_site/buffer_inbound",
+        "zone_type": "forbidden_zone",
+        "min_x_m": -24,
+        "max_x_m": -21,
+        "min_z_m": -6,
+        "max_z_m": -3,
+        "width_m": 3,
+        "depth_m": 3
+      },
+      {
+        "zone_id": "natural_site/buffer_outbound",
+        "zone_type": "forbidden_zone",
+        "min_x_m": 21,
+        "max_x_m": 24,
+        "min_z_m": 3,
+        "max_z_m": 6,
+        "width_m": 3,
+        "depth_m": 3
+      },
+      {
+        "zone_id": "natural_site/workstation_bay_row_2_column_4",
+        "zone_type": "forbidden_zone",
+        "min_x_m": 12.75,
+        "max_x_m": 24,
+        "min_z_m": -15,
+        "max_z_m": -8.302361865821968,
+        "width_m": 11.25,
+        "depth_m": 6.697638134178032
+      }
+    ],
+    "placement_regions": [
+      {
+        "zone_id": "natural_site/placement_north_of_east_west_aisle",
+        "zone_type": "placement_region",
+        "min_x_m": -24,
+        "max_x_m": 24,
+        "min_z_m": 3,
+        "max_z_m": 15,
+        "width_m": 48,
+        "depth_m": 12
+      },
+      {
+        "zone_id": "natural_site/placement_south_of_east_west_aisle",
+        "zone_type": "placement_region",
+        "min_x_m": -24,
+        "max_x_m": 24,
+        "min_z_m": -15,
+        "max_z_m": -3,
+        "width_m": 48,
+        "depth_m": 12
+      },
+      {
+        "zone_id": "functional/northwest",
+        "zone_type": "placement_region",
+        "min_x_m": -24,
+        "max_x_m": 0,
+        "min_z_m": 3,
+        "max_z_m": 15,
+        "width_m": 24,
+        "depth_m": 12
+      },
+      {
+        "zone_id": "functional/northeast",
+        "zone_type": "placement_region",
+        "min_x_m": 0,
+        "max_x_m": 24,
+        "min_z_m": 3,
+        "max_z_m": 15,
+        "width_m": 24,
+        "depth_m": 12
+      },
+      {
+        "zone_id": "natural_site/workstation_bay_row_1_column_1/placement",
+        "zone_type": "placement_region",
+        "min_x_m": -21,
+        "max_x_m": -9.75,
+        "min_z_m": -8.302361865821968,
+        "max_z_m": -2.9999999999999996,
+        "width_m": 11.25,
+        "depth_m": 5.302361865821969
+      },
+      {
+        "zone_id": "natural_site/workstation_bay_row_1_column_2/placement",
+        "zone_type": "placement_region",
+        "min_x_m": -9.75,
+        "max_x_m": 1.5,
+        "min_z_m": -8.302361865821968,
+        "max_z_m": -2.9999999999999996,
+        "width_m": 11.25,
+        "depth_m": 5.302361865821969
+      },
+      {
+        "zone_id": "natural_site/workstation_bay_row_1_column_3/placement",
+        "zone_type": "placement_region",
+        "min_x_m": 1.5,
+        "max_x_m": 12.75,
+        "min_z_m": -8.302361865821968,
+        "max_z_m": -2.9999999999999996,
+        "width_m": 11.25,
+        "depth_m": 5.302361865821969
+      },
+      {
+        "zone_id": "natural_site/workstation_bay_row_1_column_4/placement",
+        "zone_type": "placement_region",
+        "min_x_m": 12.75,
+        "max_x_m": 24,
+        "min_z_m": -8.302361865821968,
+        "max_z_m": -2.9999999999999996,
+        "width_m": 11.25,
+        "depth_m": 5.302361865821969
+      },
+      {
+        "zone_id": "natural_site/workstation_bay_row_2_column_1/placement",
+        "zone_type": "placement_region",
+        "min_x_m": -21,
+        "max_x_m": -9.75,
+        "min_z_m": -15,
+        "max_z_m": -8.302361865821968,
+        "width_m": 11.25,
+        "depth_m": 6.697638134178032
+      },
+      {
+        "zone_id": "natural_site/workstation_bay_row_2_column_2/placement",
+        "zone_type": "placement_region",
+        "min_x_m": -9.75,
+        "max_x_m": 1.5,
+        "min_z_m": -15,
+        "max_z_m": -8.302361865821968,
+        "width_m": 11.25,
+        "depth_m": 6.697638134178032
+      },
+      {
+        "zone_id": "natural_site/workstation_bay_row_2_column_3/placement",
+        "zone_type": "placement_region",
+        "min_x_m": 1.5,
+        "max_x_m": 12.75,
+        "min_z_m": -15,
+        "max_z_m": -8.302361865821968,
+        "width_m": 11.25,
+        "depth_m": 6.697638134178032
+      }
+    ],
+    "workstation_bays": [
+      {
+        "bay_id": "natural_site/workstation_bay_row_1_column_1",
+        "label": "CNC A",
+        "row_index": 1,
+        "column_index": 1,
+        "reserved": false,
+        "pose": {
+          "x_m": -15.375,
+          "y_m": 0,
+          "z_m": -5.651180932910984,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": "site_layout_frame"
+        },
+        "dimensions_m": {
+          "width_m": 11.25,
+          "depth_m": 5.302361865821969
+        },
+        "bounds_m": {
+          "min_x_m": -21,
+          "max_x_m": -9.75,
+          "min_z_m": -8.302361865821968,
+          "max_z_m": -2.9999999999999996
+        },
+        "assigned_instance_ids": [
+          "equipment_001"
+        ],
+        "row_alignment_z_m": -5.851180932910983
+      },
+      {
+        "bay_id": "natural_site/workstation_bay_row_1_column_2",
+        "label": "vertical machining center A",
+        "row_index": 1,
+        "column_index": 2,
+        "reserved": false,
+        "pose": {
+          "x_m": -4.125,
+          "y_m": 0,
+          "z_m": -5.651180932910984,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": "site_layout_frame"
+        },
+        "dimensions_m": {
+          "width_m": 11.25,
+          "depth_m": 5.302361865821969
+        },
+        "bounds_m": {
+          "min_x_m": -9.75,
+          "max_x_m": 1.5,
+          "min_z_m": -8.302361865821968,
+          "max_z_m": -2.9999999999999996
+        },
+        "assigned_instance_ids": [
+          "equipment_003"
+        ],
+        "row_alignment_z_m": -5.851180932910983
+      },
+      {
+        "bay_id": "natural_site/workstation_bay_row_1_column_3",
+        "label": "CNC B",
+        "row_index": 1,
+        "column_index": 3,
+        "reserved": false,
+        "pose": {
+          "x_m": 7.125,
+          "y_m": 0,
+          "z_m": -5.651180932910984,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": "site_layout_frame"
+        },
+        "dimensions_m": {
+          "width_m": 11.25,
+          "depth_m": 5.302361865821969
+        },
+        "bounds_m": {
+          "min_x_m": 1.5,
+          "max_x_m": 12.75,
+          "min_z_m": -8.302361865821968,
+          "max_z_m": -2.9999999999999996
+        },
+        "assigned_instance_ids": [
+          "equipment_002"
+        ],
+        "row_alignment_z_m": -5.851180932910983
+      },
+      {
+        "bay_id": "natural_site/workstation_bay_row_1_column_4",
+        "label": "vertical machining center B",
+        "row_index": 1,
+        "column_index": 4,
+        "reserved": false,
+        "pose": {
+          "x_m": 18.375,
+          "y_m": 0,
+          "z_m": -5.651180932910984,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": "site_layout_frame"
+        },
+        "dimensions_m": {
+          "width_m": 11.25,
+          "depth_m": 5.302361865821969
+        },
+        "bounds_m": {
+          "min_x_m": 12.75,
+          "max_x_m": 24,
+          "min_z_m": -8.302361865821968,
+          "max_z_m": -2.9999999999999996
+        },
+        "assigned_instance_ids": [
+          "equipment_004"
+        ],
+        "row_alignment_z_m": -5.851180932910983
+      },
+      {
+        "bay_id": "natural_site/workstation_bay_row_2_column_1",
+        "label": "turn-mill center",
+        "row_index": 2,
+        "column_index": 1,
+        "reserved": false,
+        "pose": {
+          "x_m": -15.375,
+          "y_m": 0,
+          "z_m": -11.651180932910984,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": "site_layout_frame"
+        },
+        "dimensions_m": {
+          "width_m": 11.25,
+          "depth_m": 6.697638134178032
+        },
+        "bounds_m": {
+          "min_x_m": -21,
+          "max_x_m": -9.75,
+          "min_z_m": -15,
+          "max_z_m": -8.302361865821968
+        },
+        "assigned_instance_ids": [
+          "equipment_005"
+        ],
+        "row_alignment_z_m": -11.901180932910984
+      },
+      {
+        "bay_id": "natural_site/workstation_bay_row_2_column_2",
+        "label": "radial drilling machine",
+        "row_index": 2,
+        "column_index": 2,
+        "reserved": false,
+        "pose": {
+          "x_m": -4.125,
+          "y_m": 0,
+          "z_m": -11.651180932910984,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": "site_layout_frame"
+        },
+        "dimensions_m": {
+          "width_m": 11.25,
+          "depth_m": 6.697638134178032
+        },
+        "bounds_m": {
+          "min_x_m": -9.75,
+          "max_x_m": 1.5,
+          "min_z_m": -15,
+          "max_z_m": -8.302361865821968
+        },
+        "assigned_instance_ids": [
+          "equipment_006"
+        ],
+        "row_alignment_z_m": -11.901180932910984
+      },
+      {
+        "bay_id": "natural_site/workstation_bay_row_2_column_3",
+        "label": "EDM drilling machine",
+        "row_index": 2,
+        "column_index": 3,
+        "reserved": false,
+        "pose": {
+          "x_m": 7.125,
+          "y_m": 0,
+          "z_m": -11.651180932910984,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": "site_layout_frame"
+        },
+        "dimensions_m": {
+          "width_m": 11.25,
+          "depth_m": 6.697638134178032
+        },
+        "bounds_m": {
+          "min_x_m": 1.5,
+          "max_x_m": 12.75,
+          "min_z_m": -15,
+          "max_z_m": -8.302361865821968
+        },
+        "assigned_instance_ids": [
+          "equipment_007"
+        ],
+        "row_alignment_z_m": -11.901180932910984
+      },
+      {
+        "bay_id": "natural_site/workstation_bay_row_2_column_4",
+        "label": "reserved bay",
+        "row_index": 2,
+        "column_index": 4,
+        "reserved": true,
+        "pose": {
+          "x_m": 18.375,
+          "y_m": 0,
+          "z_m": -11.651180932910984,
+          "roll_deg": 0,
+          "pitch_deg": 0,
+          "yaw_deg": 0,
+          "coordinate_frame_id": "site_layout_frame"
+        },
+        "dimensions_m": {
+          "width_m": 11.25,
+          "depth_m": 6.697638134178032
+        },
+        "bounds_m": {
+          "min_x_m": 12.75,
+          "max_x_m": 24,
+          "min_z_m": -15,
+          "max_z_m": -8.302361865821968
+        },
+        "assigned_instance_ids": [],
+        "row_alignment_z_m": null
+      }
+    ],
+    "center_x_m": 0,
+    "center_z_m": 0,
+    "min_x_m": -24,
+    "max_x_m": 24,
+    "min_z_m": -15,
+    "max_z_m": 15,
+    "canonical_constraint_spec_sha256": "aca1183b9acf5befd54ad133c98eb1c03d57128f8e3815a3752295018fa1c79f"
+  },
+  "placements": [
+    {
+      "instance_id": "equipment_001",
+      "model_asset_id": "asset/fbx/fbx_84d31057",
+      "equipment_type": "CNC A",
+      "position": {
+        "x_m": -15.896177762732052,
+        "y_m": 0,
+        "z_m": -5.851180932910983
+      },
+      "rotation": {
+        "yaw_deg": 180
+      },
+      "yaw_deg": 180,
+      "dimensions_m": {
+        "width_m": 2.5036846923828127,
+        "height_m": 2.324585332132708,
+        "depth_m": 2.2783805056760564
+      },
+      "footprint": {
+        "width_m": 2.5036846923828127,
+        "depth_m": 2.2783805056760564,
+        "height_m": 2.324585332132708,
+        "min_x": -17.148020108923458,
+        "max_x": -14.644335416540645,
+        "min_z": -6.990371185749011,
+        "max_z": -4.711990680072955
+      }
+    },
+    {
+      "instance_id": "equipment_002",
+      "model_asset_id": "asset/fbx/fbx_84d31057",
+      "equipment_type": "CNC B",
+      "position": {
+        "x_m": 6.427487301781101,
+        "y_m": 0,
+        "z_m": -5.851180932910983
+      },
+      "rotation": {
+        "yaw_deg": 90
+      },
+      "yaw_deg": 90,
+      "dimensions_m": {
+        "width_m": 2.2783805056760564,
+        "height_m": 2.324585332132708,
+        "depth_m": 2.5036846923828127
+      },
+      "footprint": {
+        "width_m": 2.2783805056760564,
+        "depth_m": 2.5036846923828127,
+        "height_m": 2.324585332132708,
+        "min_x": 5.288297048943073,
+        "max_x": 7.566677554619129,
+        "min_z": -7.1030232791023895,
+        "max_z": -4.599338586719577
+      }
+    },
+    {
+      "instance_id": "equipment_003",
+      "model_asset_id": "asset/fbx/fbx_fb04a2ee",
+      "equipment_type": "vertical machining center A",
+      "position": {
+        "x_m": -5.729890157770607,
+        "y_m": 0,
+        "z_m": -5.851180932910983
+      },
+      "rotation": {
+        "yaw_deg": 180
+      },
+      "yaw_deg": 180,
+      "dimensions_m": {
+        "width_m": 2.3917410392761234,
+        "height_m": 2.853616152259388,
+        "depth_m": 2.660300395485487
+      },
+      "footprint": {
+        "width_m": 2.3917410392761234,
+        "depth_m": 2.660300395485487,
+        "height_m": 2.853616152259388,
+        "min_x": -6.925760677408669,
+        "max_x": -4.534019638132546,
+        "min_z": -7.181331130653727,
+        "max_z": -4.52103073516824
+      }
+    },
+    {
+      "instance_id": "equipment_004",
+      "model_asset_id": "asset/fbx/fbx_fb04a2ee",
+      "equipment_type": "vertical machining center B",
+      "position": {
+        "x_m": 14.880150197742744,
+        "y_m": 0,
+        "z_m": -5.851180932910983
+      },
+      "rotation": {
+        "yaw_deg": 180
+      },
+      "yaw_deg": 180,
+      "dimensions_m": {
+        "width_m": 2.3917410392761234,
+        "height_m": 2.853616152259388,
+        "depth_m": 2.660300395485487
+      },
+      "footprint": {
+        "width_m": 2.3917410392761234,
+        "depth_m": 2.660300395485487,
+        "height_m": 2.853616152259388,
+        "min_x": 13.684279678104682,
+        "max_x": 16.076020717380807,
+        "min_z": -7.181331130653727,
+        "max_z": -4.52103073516824
+      }
+    },
+    {
+      "instance_id": "equipment_005",
+      "model_asset_id": "asset/fbx/fbx_6901bdd8",
+      "equipment_type": "turn-mill center",
+      "position": {
+        "x_m": -14.267760496139527,
+        "y_m": 0,
+        "z_m": -11.901180932910984
+      },
+      "rotation": {
+        "yaw_deg": 0
+      },
+      "yaw_deg": 0,
+      "dimensions_m": {
+        "width_m": 7.035520992279054,
+        "height_m": 3.4430006823322,
+        "depth_m": 4.197638134178032
+      },
+      "footprint": {
+        "width_m": 7.035520992279054,
+        "depth_m": 4.197638134178032,
+        "height_m": 3.4430006823322,
+        "min_x": -17.785520992279054,
+        "max_x": -10.75,
+        "min_z": -14,
+        "max_z": -9.802361865821968
+      }
+    },
+    {
+      "instance_id": "equipment_006",
+      "model_asset_id": "asset/fbx/fbx_a3e1a9c2",
+      "equipment_type": "radial drilling",
+      "position": {
+        "x_m": -3.6333587891809573,
+        "y_m": 0,
+        "z_m": -11.901180932910984
+      },
+      "rotation": {
+        "yaw_deg": 90
+      },
+      "yaw_deg": 90,
+      "dimensions_m": {
+        "width_m": 0.683431950955397,
+        "height_m": 1.998452339652842,
+        "depth_m": 1.2340026855468764
+      },
+      "footprint": {
+        "width_m": 0.683431950955397,
+        "depth_m": 1.2340026855468764,
+        "height_m": 1.998452339652842,
+        "min_x": -3.9750747646586557,
+        "max_x": -3.291642813703259,
+        "min_z": -12.518182275684422,
+        "max_z": -11.284179590137546
+      }
+    },
+    {
+      "instance_id": "equipment_007",
+      "model_asset_id": "asset/fbx/fbx_313d8039",
+      "equipment_type": "EDM drilling",
+      "position": {
+        "x_m": 3.9181354907557333,
+        "y_m": 0,
+        "z_m": -11.901180932910984
+      },
+      "rotation": {
+        "yaw_deg": 270
+      },
+      "yaw_deg": 270,
+      "dimensions_m": {
+        "width_m": 0.9772502588380529,
+        "height_m": 2.1506835618567983,
+        "depth_m": 1.706553268432617
+      },
+      "footprint": {
+        "width_m": 0.9772502588380529,
+        "depth_m": 1.706553268432617,
+        "height_m": 2.1506835618567983,
+        "min_x": 3.429510361336707,
+        "max_x": 4.40676062017476,
+        "min_z": -12.754457567127293,
+        "max_z": -11.047904298694675
+      }
+    },
+    {
+      "instance_id": "equipment_008",
+      "model_asset_id": "asset/glb/m093_fixture_workstation",
+      "equipment_type": "fixture A",
+      "position": {
+        "x_m": -7.576895481800809,
+        "y_m": 0,
+        "z_m": 7.530026422786435
+      },
+      "rotation": {
+        "yaw_deg": 0
+      },
+      "yaw_deg": 0,
+      "dimensions_m": {
+        "width_m": 1.220852255821228,
+        "height_m": 2.360962557788489,
+        "depth_m": 1.173736578964467
+      },
+      "footprint": {
+        "width_m": 1.220852255821228,
+        "depth_m": 1.173736578964467,
+        "height_m": 2.360962557788489,
+        "min_x": -8.187321609711423,
+        "max_x": -6.966469353890195,
+        "min_z": 6.943158133304201,
+        "max_z": 8.116894712268667
+      }
+    },
+    {
+      "instance_id": "equipment_009",
+      "model_asset_id": "asset/glb/m093_fixture_workstation",
+      "equipment_type": "fixture B",
+      "position": {
+        "x_m": -9.958186224915632,
+        "y_m": 0,
+        "z_m": 4.586868289482234
+      },
+      "rotation": {
+        "yaw_deg": 0
+      },
+      "yaw_deg": 0,
+      "dimensions_m": {
+        "width_m": 1.220852255821228,
+        "height_m": 2.360962557788489,
+        "depth_m": 1.173736578964467
+      },
+      "footprint": {
+        "width_m": 1.220852255821228,
+        "depth_m": 1.173736578964467,
+        "height_m": 2.360962557788489,
+        "min_x": -10.568612352826246,
+        "max_x": -9.347760097005018,
+        "min_z": 4,
+        "max_z": 5.173736578964467
+      }
+    },
+    {
+      "instance_id": "equipment_010",
+      "model_asset_id": "asset/glb/m086_flexible_test_workstation",
+      "equipment_type": "test A",
+      "position": {
+        "x_m": 7.606795995757374,
+        "y_m": 0,
+        "z_m": 11.135941817737182
+      },
+      "rotation": {
+        "yaw_deg": 180
+      },
+      "yaw_deg": 180,
+      "dimensions_m": {
+        "width_m": 1.20114585,
+        "height_m": 1.9359914127116213,
+        "depth_m": 0.8020732073060617
+      },
+      "footprint": {
+        "width_m": 1.20114585,
+        "depth_m": 0.8020732073060617,
+        "height_m": 1.9359914127116213,
+        "min_x": 7.0062230707573745,
+        "max_x": 8.207368920757375,
+        "min_z": 10.73490521408415,
+        "max_z": 11.536978421390213
+      }
+    },
+    {
+      "instance_id": "equipment_011",
+      "model_asset_id": "asset/glb/m086_flexible_test_workstation",
+      "equipment_type": "test B",
+      "position": {
+        "x_m": 4.446182816365857,
+        "y_m": 0,
+        "z_m": 7.7832066344011865
+      },
+      "rotation": {
+        "yaw_deg": 180
+      },
+      "yaw_deg": 180,
+      "dimensions_m": {
+        "width_m": 1.20114585,
+        "height_m": 1.9359914127116213,
+        "depth_m": 0.8020732073060617
+      },
+      "footprint": {
+        "width_m": 1.20114585,
+        "depth_m": 0.8020732073060617,
+        "height_m": 1.9359914127116213,
+        "min_x": 3.845609891365857,
+        "max_x": 5.046755741365857,
+        "min_z": 7.3821700307481555,
+        "max_z": 8.184243238054217
+      }
+    },
+    {
+      "instance_id": "equipment_012",
+      "model_asset_id": "asset/glb/m088_small_temperature_chamber",
+      "equipment_type": "temperature chamber",
+      "position": {
+        "x_m": 7.189918236301377,
+        "y_m": 0,
+        "z_m": 8.010239120107476
+      },
+      "rotation": {
+        "yaw_deg": 270
+      },
+      "yaw_deg": 270,
+      "dimensions_m": {
+        "width_m": 1.469817859,
+        "height_m": 1.8426775137060565,
+        "depth_m": 1.30038307
+      },
+      "footprint": {
+        "width_m": 1.469817859,
+        "depth_m": 1.30038307,
+        "height_m": 1.8426775137060565,
+        "min_x": 6.455009306801378,
+        "max_x": 7.924827165801377,
+        "min_z": 7.360047585107476,
+        "max_z": 8.660430655107476
+      }
+    },
+    {
+      "instance_id": "equipment_013",
+      "model_asset_id": "asset/glb/m089_laser_marking_station",
+      "equipment_type": "laser marking",
+      "position": {
+        "x_m": 18.32595793450728,
+        "y_m": 0,
+        "z_m": 9.007411298507087
+      },
+      "rotation": {
+        "yaw_deg": 270
+      },
+      "yaw_deg": 270,
+      "dimensions_m": {
+        "width_m": 0.9999999776482588,
+        "height_m": 2.65199601921448,
+        "depth_m": 1.1544784097117535
+      },
+      "footprint": {
+        "width_m": 0.9999999776482588,
+        "depth_m": 1.1544784097117535,
+        "height_m": 2.65199601921448,
+        "min_x": 17.82595794568315,
+        "max_x": 18.82595792333141,
+        "min_z": 8.43017209365121,
+        "max_z": 9.584650503362964
+      }
+    },
+    {
+      "instance_id": "equipment_014",
+      "model_asset_id": "asset/fbx/fbx_1a80889c",
+      "equipment_type": "tool cabinet A",
+      "position": {
+        "x_m": -8.590638959937154,
+        "y_m": 0,
+        "z_m": -8.5669613812683
+      },
+      "rotation": {
+        "yaw_deg": 270
+      },
+      "yaw_deg": 270,
+      "dimensions_m": {
+        "width_m": 0.9007441466966404,
+        "height_m": 1.7231077126892063,
+        "depth_m": 1.7742980957031254
+      },
+      "footprint": {
+        "width_m": 0.9007441466966404,
+        "depth_m": 1.7742980957031254,
+        "height_m": 1.7231077126892063,
+        "min_x": -9.041011033285475,
+        "max_x": -8.140266886588833,
+        "min_z": -9.454110429119861,
+        "max_z": -7.679812333416737
+      }
+    },
+    {
+      "instance_id": "equipment_016",
+      "model_asset_id": "asset/glb/m092_line_side_storage_unit",
+      "equipment_type": "raw-material rack",
+      "position": {
+        "x_m": -11.384335652540644,
+        "y_m": 0,
+        "z_m": -4.451207983052569
+      },
+      "rotation": {
+        "yaw_deg": 0
+      },
+      "yaw_deg": 0,
+      "dimensions_m": {
+        "width_m": 4.119999528000006,
+        "height_m": 1.9150001708873843,
+        "depth_m": 1.3024159661051384
+      },
+      "footprint": {
+        "width_m": 4.119999528000006,
+        "depth_m": 1.3024159661051384,
+        "height_m": 1.9150001708873843,
+        "min_x": -13.444335416540646,
+        "max_x": -9.324335888540642,
+        "min_z": -5.102415966105139,
+        "max_z": -3.8
+      }
+    },
+    {
+      "instance_id": "equipment_017",
+      "model_asset_id": "asset/stl/m104_storage_rack",
+      "equipment_type": "finished-goods rack",
+      "position": {
+        "x_m": 18.722837694908048,
+        "y_m": 0,
+        "z_m": 6.877469190227184
+      },
+      "rotation": {
+        "yaw_deg": 180
+      },
+      "yaw_deg": 180,
+      "dimensions_m": {
+        "width_m": 1.0000000076293947,
+        "height_m": 1.7999999561309814,
+        "depth_m": 0.6099956970214844
+      },
+      "footprint": {
+        "width_m": 1.0000000076293947,
+        "depth_m": 0.6099956970214844,
+        "height_m": 1.7999999561309814,
+        "min_x": 18.22283769109335,
+        "max_x": 19.222837698722746,
+        "min_z": 6.572471341716442,
+        "max_z": 7.182467038737926
+      }
+    },
+    {
+      "instance_id": "equipment_018",
+      "model_asset_id": "asset/glb/m092_line_side_storage_unit",
+      "equipment_type": "line-side storage",
+      "position": {
+        "x_m": -4.547022153919437,
+        "y_m": 0,
+        "z_m": 4.451207983052569
+      },
+      "rotation": {
+        "yaw_deg": 180
+      },
+      "yaw_deg": 180,
+      "dimensions_m": {
+        "width_m": 4.119999528000006,
+        "height_m": 1.9150001708873843,
+        "depth_m": 1.3024159661051384
+      },
+      "footprint": {
+        "width_m": 4.119999528000006,
+        "depth_m": 1.3024159661051384,
+        "height_m": 1.9150001708873843,
+        "min_x": -6.6070219179194405,
+        "max_x": -2.487022389919434,
+        "min_z": 3.8,
+        "max_z": 5.102415966105139
+      }
+    },
+    {
+      "instance_id": "equipment_019",
+      "model_asset_id": "asset/stl/m103_work_table",
+      "equipment_type": "loading table",
+      "position": {
+        "x_m": -9.419754844427109,
+        "y_m": 0,
+        "z_m": 11.100651523307429
+      },
+      "rotation": {
+        "yaw_deg": 0
+      },
+      "yaw_deg": 0,
+      "dimensions_m": {
+        "width_m": 0.9999999718666076,
+        "height_m": 0.784999978542328,
+        "depth_m": 1.6000000433921815
+      },
+      "footprint": {
+        "width_m": 0.9999999718666076,
+        "depth_m": 1.6000000433921815,
+        "height_m": 0.784999978542328,
+        "min_x": -9.919754830360413,
+        "max_x": -8.919754858493805,
+        "min_z": 10.300651501611338,
+        "max_z": 11.90065154500352
+      }
+    },
+    {
+      "instance_id": "equipment_020",
+      "model_asset_id": "asset/stl/m103_work_table",
+      "equipment_type": "unloading table",
+      "position": {
+        "x_m": -0.49999998593330375,
+        "y_m": 0,
+        "z_m": 11.100651523307429
+      },
+      "rotation": {
+        "yaw_deg": 0
+      },
+      "yaw_deg": 0,
+      "dimensions_m": {
+        "width_m": 0.9999999718666076,
+        "height_m": 0.784999978542328,
+        "depth_m": 1.6000000433921815
+      },
+      "footprint": {
+        "width_m": 0.9999999718666076,
+        "depth_m": 1.6000000433921815,
+        "height_m": 0.784999978542328,
+        "min_x": -0.9999999718666075,
+        "max_x": 5.551115123125783e-17,
+        "min_z": 10.300651501611338,
+        "max_z": 11.90065154500352
+      }
+    },
+    {
+      "instance_id": "equipment_021",
+      "model_asset_id": "asset/glb/m098_conveyor_line",
+      "equipment_type": "conveyor",
+      "position": {
+        "x_m": -4.959877415180206,
+        "y_m": 0,
+        "z_m": 11.100651523307429
+      },
+      "rotation": {
+        "yaw_deg": 0
+      },
+      "yaw_deg": 0,
+      "dimensions_m": {
+        "width_m": 7.519754886627197,
+        "height_m": 0.7176001071929932,
+        "depth_m": 1.039599984884262
+      },
+      "footprint": {
+        "width_m": 7.519754886627197,
+        "depth_m": 1.039599984884262,
+        "height_m": 0.7176001071929932,
+        "min_x": -8.719754858493804,
+        "max_x": -1.1999999718666077,
+        "min_z": 10.580851530865298,
+        "max_z": 11.62045151574956
+      }
+    },
+    {
+      "instance_id": "equipment_022",
+      "model_asset_id": "asset/glb/m072_agv",
+      "equipment_type": "AGV A",
+      "position": {
+        "x_m": 5.075146570172759,
+        "y_m": 0,
+        "z_m": 4.884663010649948
+      },
+      "rotation": {
+        "yaw_deg": 270
+      },
+      "yaw_deg": 270,
+      "dimensions_m": {
+        "width_m": 0.736000054,
+        "height_m": 0.907000025,
+        "depth_m": 0.536000022
+      },
+      "footprint": {
+        "width_m": 0.736000054,
+        "depth_m": 0.536000022,
+        "height_m": 0.907000025,
+        "min_x": 4.707146543172759,
+        "max_x": 5.443146597172759,
+        "min_z": 4.616662999649948,
+        "max_z": 5.152663021649948
+      }
+    },
+    {
+      "instance_id": "equipment_023",
+      "model_asset_id": "asset/glb/m072_agv",
+      "equipment_type": "AGV B",
+      "position": {
+        "x_m": -0.7104432966639216,
+        "y_m": 0,
+        "z_m": -8.391501485308037
+      },
+      "rotation": {
+        "yaw_deg": 180
+      },
+      "yaw_deg": 180,
+      "dimensions_m": {
+        "width_m": 0.536000022,
+        "height_m": 0.907000025,
+        "depth_m": 0.736000054
+      },
+      "footprint": {
+        "width_m": 0.536000022,
+        "depth_m": 0.736000054,
+        "height_m": 0.907000025,
+        "min_x": -0.9784433076639216,
+        "max_x": -0.4424432856639216,
+        "min_z": -8.759501512308038,
+        "max_z": -8.023501458308036
+      }
+    },
+    {
+      "instance_id": "equipment_024",
+      "model_asset_id": "asset/fbx/fbx_1a80889c",
+      "equipment_type": "tool_cabinet",
+      "position": {
+        "x_m": 8.824514770507804,
+        "y_m": 0,
+        "z_m": -8.694790973123506
+      },
+      "rotation": {
+        "yaw_deg": 0
+      },
+      "yaw_deg": 0,
+      "dimensions_m": {
+        "width_m": 1.7742980957031254,
+        "height_m": 1.7231077126892063,
+        "depth_m": 0.9007441466966404
+      },
+      "footprint": {
+        "width_m": 1.7742980957031254,
+        "depth_m": 0.9007441466966404,
+        "height_m": 1.7231077126892063,
+        "min_x": 7.937365722656241,
+        "max_x": 9.711663818359366,
+        "min_z": -9.145163046471827,
+        "max_z": -8.244418899775185
+      }
+    }
+  ],
+  "generation_policy": "canonical_ga_user_constraint_repair",
+  "solver_used": "genetic_algorithm",
+  "revision_id": "layout_v2",
+  "parent_layout_id": "layout_v2",
+  "source_edit_id": "EDIT_001",
+  "known_invalid": false,
+  "known_violations": []
+}

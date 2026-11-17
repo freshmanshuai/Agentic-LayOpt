@@ -1,0 +1,469 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "state/site.schema.json",
+  "title": "Site Schema",
+  "description": "Describes workshop/site information. It supports model-asset-derived sites, user-defined sites, and hybrid sites.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "site_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "site_name": {
+      "type": "string"
+    },
+    "site_description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "layout_topology": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "straight",
+        "u_shape",
+        "l_shape",
+        "loop",
+        "parallel",
+        "zoned",
+        null
+      ]
+    },
+    "site_definition_mode": {
+      "type": "string",
+      "enum": [
+        "asset_derived",
+        "user_defined",
+        "hybrid"
+      ]
+    },
+    "bound_site_asset": {
+      "type": "object",
+      "properties": {
+        "model_asset_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "asset_scope": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "equipment",
+            "site",
+            "production_line",
+            "composite_scene",
+            null
+          ]
+        },
+        "use_asset_boundary": {
+          "type": "boolean"
+        },
+        "use_asset_site_features": {
+          "type": "boolean"
+        },
+        "use_asset_zones": {
+          "type": "boolean"
+        },
+        "use_asset_embedded_equipment": {
+          "type": "boolean"
+        },
+        "asset_coordinate_frame_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "model_asset_id",
+        "asset_scope",
+        "use_asset_boundary",
+        "use_asset_site_features",
+        "use_asset_zones",
+        "use_asset_embedded_equipment",
+        "asset_coordinate_frame_id"
+      ]
+    },
+    "user_defined_source": {
+      "type": "object",
+      "properties": {
+        "source_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "user_input",
+            "manual_input",
+            "model_file",
+            "computed",
+            null
+          ]
+        },
+        "source_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_file_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "created_from_intent_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "source_type",
+        "source_text",
+        "source_file_id",
+        "created_from_intent_id"
+      ]
+    },
+    "unit_system": {
+      "$ref": "../common/common_engineering.schema.json#/$defs/UnitSystem"
+    },
+    "coordinate_frames": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/CoordinateFrame"
+      }
+    },
+    "boundary": {
+      "type": "object",
+      "properties": {
+        "shape_type": {
+          "type": "string",
+          "enum": [
+            "rectangle"
+          ]
+        },
+        "pose": {
+          "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+        },
+        "dimensions_m": {
+          "$ref": "../common/common_engineering.schema.json#/$defs/DimensionsM"
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "model_extraction",
+            "user_input",
+            "manual_input",
+            "rule_library",
+            "computed"
+          ]
+        },
+        "source_model_asset_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_node_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "shape_type",
+        "pose",
+        "dimensions_m",
+        "source",
+        "source_model_asset_id",
+        "source_node_ref",
+        "confidence"
+      ]
+    },
+    "site_features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "site_feature_id": {
+            "type": "string"
+          },
+          "feature_type": {
+            "type": "string",
+            "enum": [
+              "entrance",
+              "exit",
+              "obstacle",
+              "forbidden_zone",
+              "corridor",
+              "wall",
+              "column",
+              "loading_area",
+              "unloading_area",
+              "utility_area",
+              "unknown",
+              "other"
+            ]
+          },
+          "feature_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pose": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+          },
+          "dimensions_m": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/DimensionsM"
+          },
+          "must_remain_clear": {
+            "type": "boolean"
+          },
+          "source": {
+            "type": "string",
+            "enum": [
+              "model_extraction",
+              "user_input",
+              "manual_input",
+              "rule_library",
+              "computed"
+            ]
+          },
+          "source_model_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_node_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confidence": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "site_feature_id",
+          "feature_type",
+          "feature_name",
+          "pose",
+          "dimensions_m",
+          "must_remain_clear",
+          "source",
+          "source_model_asset_id",
+          "source_node_ref",
+          "confidence"
+        ]
+      }
+    },
+    "zones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "zone_id": {
+            "type": "string"
+          },
+          "zone_type": {
+            "type": "string"
+          },
+          "zone_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pose": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+          },
+          "dimensions_m": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/DimensionsM"
+          },
+          "allowed_categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "forbidden_categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "type": "string",
+            "enum": [
+              "model_extraction",
+              "user_input",
+              "manual_input",
+              "rule_library",
+              "computed"
+            ]
+          },
+          "source_model_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_node_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confidence": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "zone_id",
+          "zone_type",
+          "zone_name",
+          "pose",
+          "dimensions_m",
+          "allowed_categories",
+          "forbidden_categories",
+          "source",
+          "source_model_asset_id",
+          "source_node_ref",
+          "confidence"
+        ]
+      }
+    },
+    "embedded_equipment_instances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "instance_id": {
+            "type": "string"
+          },
+          "library_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_model_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_node_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pose": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+          },
+          "geometry": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/Geometry"
+          },
+          "import_policy": {
+            "type": "string",
+            "enum": [
+              "import_as_fixed",
+              "import_as_movable",
+              "import_as_reference_only",
+              "ignore"
+            ]
+          },
+          "confidence": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "instance_id",
+          "library_id",
+          "model_asset_id",
+          "source_model_asset_id",
+          "source_node_ref",
+          "pose",
+          "geometry",
+          "import_policy",
+          "confidence"
+        ]
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/ProvenanceItem"
+      }
+    },
+    "metadata": {
+      "$ref": "../common/common_engineering.schema.json#/$defs/Metadata"
+    }
+  },
+  "required": [
+    "schema_version",
+    "site_id",
+    "project_id",
+    "site_name",
+    "site_description",
+    "site_definition_mode",
+    "bound_site_asset",
+    "user_defined_source",
+    "unit_system",
+    "coordinate_frames",
+    "boundary",
+    "site_features",
+    "zones",
+    "embedded_equipment_instances",
+    "provenance",
+    "metadata"
+  ],
+  "additionalProperties": false
+}

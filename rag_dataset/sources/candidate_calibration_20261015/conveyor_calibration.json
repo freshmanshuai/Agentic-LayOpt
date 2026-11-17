@@ -1,0 +1,35 @@
+{
+  "audit_id": "M098",
+  "key": "carrier_conveyor",
+  "label": "Conveyor line",
+  "source_relative": "电子装备/models/输送线.glb",
+  "source_format": ".glb",
+  "geometry_status": "user_confirmed_case_calibration",
+  "basis_grade": "P",
+  "basis": "The user selected the previously inspected 7.52 m by 1.04 m carrier-rail conveyor and approved reuse of its case scale. No manufacturer dimensions or automatic docking are asserted.",
+  "uniform_scale_from_loaded_scene": 1.0,
+  "rotation_x_deg": 0,
+  "coordinate_normalization": "center_floor",
+  "calibration_batch": "closed_loop_case_20261016",
+  "after_candidate_m": {
+    "width_m": 7.519754886627197,
+    "height_m": 0.7176001071929932,
+    "depth_m": 1.039599984884262,
+    "xyz": [
+      7.519754886627197,
+      0.7176001071929932,
+      1.039599984884262
+    ],
+    "min": [
+      -3.7598774433135986,
+      0,
+      -0.519799992442131
+    ],
+    "max": [
+      3.7598774433135986,
+      0.7176001071929932,
+      0.519799992442131
+    ]
+  },
+  "_calibration_source_id": "user-confirmed-conveyor-case-calibration-20261016"
+}

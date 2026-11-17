@@ -1,0 +1,487 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task/flp_ir.schema.json",
+  "title": "FLP IR Schema",
+  "description": "Intermediate representation for layout generation and optimization tasks. It does not encode direct edit operations.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "task_meta": {
+      "type": "object",
+      "properties": {
+        "task_id": {
+          "type": "string"
+        },
+        "task_type": {
+          "type": "string",
+          "enum": [
+            "generate_feasible_layout",
+            "optimize_layout_from_scratch",
+            "optimize_existing_layout"
+          ]
+        },
+        "project_id": {
+          "type": "string"
+        },
+        "domain": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "created_from_intent_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "equipment_library_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rule_library_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "task_id",
+        "task_type",
+        "project_id",
+        "domain",
+        "created_from_intent_id",
+        "equipment_library_version",
+        "rule_library_version"
+      ]
+    },
+    "unit_system": {
+      "$ref": "../common/common_engineering.schema.json#/$defs/UnitSystem"
+    },
+    "site_ref": {
+      "type": "object",
+      "properties": {
+        "site_id": {
+          "type": "string"
+        },
+        "site_source": {
+          "type": "string",
+          "enum": [
+            "asset_derived",
+            "user_defined",
+            "hybrid"
+          ]
+        },
+        "bound_model_asset_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "default_dimensions_m": {
+          "type": "object",
+          "properties": {
+            "width_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "depth_m": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "width_m",
+            "depth_m"
+          ]
+        },
+        "site_snapshot": {
+          "anyOf": [
+            {
+              "$ref": "../state/site.schema.json"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "schema_version": {
+                  "const": "inline-site-v1"
+                },
+                "site_id": {
+                  "type": "string"
+                },
+                "site_definition_mode": {
+                  "const": "user_defined"
+                },
+                "boundary": {
+                  "type": "object"
+                },
+                "site_features": {
+                  "type": "array"
+                },
+                "zones": {
+                  "type": "array"
+                },
+                "embedded_equipment_instances": {
+                  "type": "array"
+                }
+              },
+              "required": [
+                "schema_version",
+                "site_id",
+                "site_definition_mode",
+                "boundary",
+                "site_features",
+                "zones",
+                "embedded_equipment_instances"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "site_id",
+        "site_source",
+        "bound_model_asset_id"
+      ]
+    },
+    "equipment_instances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "instance_id": {
+            "type": "string"
+          },
+          "library_id": {
+            "type": "string"
+          },
+          "model_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "quantity_index": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "role": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "locked": {
+            "type": "boolean"
+          },
+          "initial_pose": {
+            "anyOf": [
+              {
+                "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "fixed_pose": {
+            "anyOf": [
+              {
+                "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "allowed_regions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "required_ports": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "geometry": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/Geometry"
+          },
+          "maintenance_clearance_m": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/ClearanceM"
+          },
+          "safety_clearance_m": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/ClearanceM"
+          },
+          "allowed_orientations_deg": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "instance_id",
+          "library_id",
+          "model_asset_id",
+          "quantity_index",
+          "role",
+          "locked",
+          "initial_pose",
+          "fixed_pose",
+          "allowed_regions",
+          "required_ports",
+          "geometry",
+          "maintenance_clearance_m",
+          "safety_clearance_m",
+          "allowed_orientations_deg"
+        ]
+      }
+    },
+    "flow_relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "flow_id": {
+            "type": "string"
+          },
+          "from_instance_id": {
+            "type": "string"
+          },
+          "to_instance_id": {
+            "type": "string"
+          },
+          "flow_type": {
+            "type": "string"
+          },
+          "flow_weight": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "sequence_order": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "required_connection": {
+            "type": "boolean"
+          },
+          "transport_mode": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "carrier_instance_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "carrier_source_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "flow_id",
+          "from_instance_id",
+          "to_instance_id",
+          "flow_type",
+          "flow_weight",
+          "sequence_order",
+          "required_connection"
+        ]
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "hard": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/Constraint"
+          }
+        },
+        "soft": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/common_engineering.schema.json#/$defs/SoftConstraint"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "hard",
+        "soft"
+      ]
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/Objective"
+      }
+    },
+    "optimization_scope": {
+      "type": "object",
+      "properties": {
+        "base_layout_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "locked_instances": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "movable_instances": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "editable_zones": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "base_layout_id",
+        "locked_instances",
+        "movable_instances",
+        "editable_zones"
+      ]
+    },
+    "delta_policy": {
+      "type": "object",
+      "properties": {
+        "use_current_layout_as_reference": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "penalize_large_movements": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "max_movement_distance_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "movement_cost_weight": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "use_current_layout_as_reference",
+        "penalize_large_movements",
+        "max_movement_distance_m",
+        "movement_cost_weight"
+      ]
+    },
+    "planning_preferences": {
+      "type": "object",
+      "properties": {
+        "generation_policy": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "process_flow_based",
+            "zone_based",
+            "compact",
+            "manual_seed",
+            "asset_based",
+            null
+          ]
+        },
+        "max_runtime_s": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "return_top_k": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "generation_policy",
+        "max_runtime_s",
+        "return_top_k"
+      ]
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/ProvenanceItem"
+      }
+    },
+    "unresolved_items": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/UnresolvedItem"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "task_meta",
+    "unit_system",
+    "site_ref",
+    "equipment_instances",
+    "flow_relations",
+    "constraints",
+    "objectives",
+    "optimization_scope",
+    "delta_policy",
+    "planning_preferences",
+    "provenance",
+    "unresolved_items"
+  ],
+  "additionalProperties": false
+}

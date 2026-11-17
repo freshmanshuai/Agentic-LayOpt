@@ -1,0 +1,13 @@
+{
+  "name": "agentic-layopt-web-runtime",
+  "private": true,
+  "scripts": {
+    "convert:models": "python -m tool.assets.convert_runtime_obj_to_glb",
+    "vendor:three": "node tool/assets/vendor_three_runtime.mjs"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "4.4.1",
+    "playwright-core": "1.61.1",
+    "three": "0.185.1"
+  }
+}

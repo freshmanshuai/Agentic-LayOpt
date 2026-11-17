@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "state/layout_diff.schema.json",
+  "title": "Layout Diff Schema",
+  "description": "Describes differences between two layout states.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "layout_diff_id": {
+      "type": "string"
+    },
+    "from_layout_id": {
+      "type": "string"
+    },
+    "to_layout_id": {
+      "type": "string"
+    },
+    "changed_instances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "instance_id": {
+            "type": "string"
+          },
+          "change_type": {
+            "type": "string",
+            "enum": [
+              "added",
+              "removed",
+              "moved",
+              "rotated",
+              "replaced",
+              "locked",
+              "unlocked",
+              "updated",
+              "unchanged"
+            ]
+          },
+          "from_pose": {
+            "anyOf": [
+              {
+                "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "to_pose": {
+            "anyOf": [
+              {
+                "$ref": "../common/common_engineering.schema.json#/$defs/Pose"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "movement_distance_m": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "yaw_change_deg": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "from_library_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "to_library_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "from_model_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "to_model_asset_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "instance_id",
+          "change_type",
+          "from_pose",
+          "to_pose",
+          "movement_distance_m",
+          "yaw_change_deg",
+          "from_library_id",
+          "to_library_id",
+          "from_model_asset_id",
+          "to_model_asset_id"
+        ]
+      }
+    },
+    "changed_constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "constraint_id": {
+            "type": "string"
+          },
+          "change_type": {
+            "type": "string",
+            "enum": [
+              "added",
+              "removed",
+              "updated",
+              "unchanged"
+            ]
+          },
+          "constraint_type": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "constraint_id",
+          "change_type",
+          "constraint_type"
+        ]
+      }
+    },
+    "changed_objectives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "objective_type": {
+            "type": "string"
+          },
+          "change_type": {
+            "type": "string",
+            "enum": [
+              "added",
+              "removed",
+              "updated",
+              "unchanged"
+            ]
+          },
+          "from_value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "to_value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "delta": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "objective_type",
+          "change_type",
+          "from_value",
+          "to_value",
+          "delta"
+        ]
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "../common/common_engineering.schema.json#/$defs/ProvenanceItem"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "layout_diff_id",
+    "from_layout_id",
+    "to_layout_id",
+    "changed_instances",
+    "changed_constraints",
+    "changed_objectives",
+    "provenance"
+  ],
+  "additionalProperties": false
+}

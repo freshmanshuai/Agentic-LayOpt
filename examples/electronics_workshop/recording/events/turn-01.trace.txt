@@ -1,0 +1,3698 @@
+{
+  "event": "session_started",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "AgenticLayOpt",
+  "status": "running",
+  "summary": "Session turn started.",
+  "payload": {}
+}
+
+{
+  "event": "intent_slots_started",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "IntentUnderstandingAgent",
+  "status": "running",
+  "summary": "Separating equipment, constraints, objectives, process relations and edits.",
+  "payload": {}
+}
+
+{
+  "event": "intent_slots_done",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "IntentUnderstandingAgent",
+  "status": "done",
+  "summary": "Linguistic intent slots extracted.",
+  "payload": {
+    "linguistic_frame": {
+      "intent_type": "generate_initial_layout",
+      "confidence": 0.9,
+      "site": {
+        "width_m": 48,
+        "depth_m": 30,
+        "source_text": ""
+      },
+      "asset_mentions": [
+        {
+          "surface_text": "two general CNC machining centers A and B",
+          "quantity": 2
+        },
+        {
+          "surface_text": "two compact vertical machining centers A and B",
+          "quantity": 2
+        },
+        {
+          "surface_text": "one turn-mill center",
+          "quantity": 1
+        },
+        {
+          "surface_text": "one radial drilling machine",
+          "quantity": 1
+        },
+        {
+          "surface_text": "one EDM drilling machine",
+          "quantity": 1
+        },
+        {
+          "surface_text": "two fixture assembly workstations A and B",
+          "quantity": 2
+        },
+        {
+          "surface_text": "two flexible test workstations A and B",
+          "quantity": 2
+        },
+        {
+          "surface_text": "one small temperature chamber",
+          "quantity": 1
+        },
+        {
+          "surface_text": "one laser marking station",
+          "quantity": 1
+        },
+        {
+          "surface_text": "two tool cabinets A and B",
+          "quantity": 2
+        },
+        {
+          "surface_text": "a raw-material storage rack",
+          "quantity": 1
+        },
+        {
+          "surface_text": "a finished-goods storage rack",
+          "quantity": 1
+        },
+        {
+          "surface_text": "a line-side storage unit",
+          "quantity": 1
+        },
+        {
+          "surface_text": "a loading work table",
+          "quantity": 1
+        },
+        {
+          "surface_text": "an unloading work table",
+          "quantity": 1
+        },
+        {
+          "surface_text": "a pallet-track conveyor",
+          "quantity": 1
+        },
+        {
+          "surface_text": "two AGVs A and B",
+          "quantity": 2
+        }
+      ],
+      "domain_intent": null,
+      "constraints": [
+        {
+          "constraint_type": "corridor_preservation",
+          "severity": "hard",
+          "source_text": "Keep a central 4 m-wide logistics aisle running east to west through the center."
+        },
+        {
+          "constraint_type": "region_membership",
+          "severity": "hard",
+          "source_text": "Machining belongs south of the aisle. Assembly and manual conveyor transfer belong in the northwest; testing and finishing belong in the northeast."
+        },
+        {
+          "constraint_type": "alignment",
+          "severity": "hard",
+          "source_text": "Align the stations in each row along a common east-west line."
+        },
+        {
+          "constraint_type": "spatial_order",
+          "severity": "hard",
+          "source_text": "Row 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B."
+        },
+        {
+          "constraint_type": "no_overlap",
+          "severity": "hard",
+          "source_text": "Hard constraint: no overlap."
+        },
+        {
+          "constraint_type": "minimum_clearance",
+          "severity": "hard",
+          "source_text": "Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side."
+        },
+        {
+          "constraint_type": "forbidden_zone_avoidance",
+          "severity": "hard",
+          "source_text": "Keep equipment and parking bays outside the aisle, door approaches, buffers, and reserved operating areas."
+        },
+        {
+          "constraint_type": "entrance_exit_unblocked",
+          "severity": "hard",
+          "source_text": "Center the receiving door in the west wall and the dispatch door in the east wall, aligned with the aisle."
+        },
+        {
+          "constraint_type": "adjacency",
+          "severity": "hard",
+          "source_text": "Provide a 3 m by 3 m inbound buffer near the receiving door, south of the aisle, and an equally sized outbound buffer near dispatch, north of the aisle."
+        },
+        {
+          "constraint_type": "near",
+          "severity": "hard",
+          "source_text": "Keep the raw-material rack near receiving and each tool cabinet near the machines it serves."
+        }
+      ],
+      "objectives": [],
+      "process_relations": [
+        {
+          "from_surface_text": "receiving",
+          "to_surface_text": "inbound buffer",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 1,
+          "flow_type": "manual",
+          "source_text": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+          "transport_mode": "operator",
+          "carrier_surface_text": null,
+          "carrier_source_text": null
+        },
+        {
+          "from_surface_text": "inbound buffer",
+          "to_surface_text": "raw-material rack",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 2,
+          "flow_type": "agv",
+          "source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage.",
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV A",
+          "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+        },
+        {
+          "from_surface_text": "raw-material rack",
+          "to_surface_text": "CNC A",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 3,
+          "flow_type": "agv",
+          "source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage.",
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV A",
+          "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+        },
+        {
+          "from_surface_text": "CNC A",
+          "to_surface_text": "vertical machining center A",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 4,
+          "flow_type": "agv",
+          "source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage.",
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV A",
+          "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+        },
+        {
+          "from_surface_text": "vertical machining center A",
+          "to_surface_text": "line-side storage",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 5,
+          "flow_type": "agv",
+          "source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage.",
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV A",
+          "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage."
+        },
+        {
+          "from_surface_text": "line-side storage",
+          "to_surface_text": "fixture A",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 6,
+          "flow_type": "agv",
+          "source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.",
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV B",
+          "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer."
+        },
+        {
+          "from_surface_text": "fixture A",
+          "to_surface_text": "loading table",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 7,
+          "flow_type": "manual",
+          "source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking.",
+          "transport_mode": "operator",
+          "carrier_surface_text": null,
+          "carrier_source_text": null
+        },
+        {
+          "from_surface_text": "loading table",
+          "to_surface_text": "conveyor",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 8,
+          "flow_type": "conveyor",
+          "source_text": "The conveyor carries containers between the loading and unloading ends of its cell.",
+          "transport_mode": "conveyor",
+          "carrier_surface_text": "conveyor",
+          "carrier_source_text": "The conveyor carries containers between the loading and unloading ends of its cell."
+        },
+        {
+          "from_surface_text": "conveyor",
+          "to_surface_text": "unloading table",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 9,
+          "flow_type": "conveyor",
+          "source_text": "The conveyor carries containers between the loading and unloading ends of its cell.",
+          "transport_mode": "conveyor",
+          "carrier_surface_text": "conveyor",
+          "carrier_source_text": "The conveyor carries containers between the loading and unloading ends of its cell."
+        },
+        {
+          "from_surface_text": "unloading table",
+          "to_surface_text": "test A",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 10,
+          "flow_type": "manual",
+          "source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking.",
+          "transport_mode": "operator",
+          "carrier_surface_text": null,
+          "carrier_source_text": null
+        },
+        {
+          "from_surface_text": "test A",
+          "to_surface_text": "temperature chamber",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 11,
+          "flow_type": "agv",
+          "source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.",
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV B",
+          "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer."
+        },
+        {
+          "from_surface_text": "temperature chamber",
+          "to_surface_text": "laser marking",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 12,
+          "flow_type": "manual",
+          "source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking.",
+          "transport_mode": "operator",
+          "carrier_surface_text": null,
+          "carrier_source_text": null
+        },
+        {
+          "from_surface_text": "laser marking",
+          "to_surface_text": "finished-goods rack",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 13,
+          "flow_type": "agv",
+          "source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.",
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV B",
+          "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer."
+        },
+        {
+          "from_surface_text": "finished-goods rack",
+          "to_surface_text": "outbound buffer",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 14,
+          "flow_type": "agv",
+          "source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.",
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV B",
+          "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer."
+        },
+        {
+          "from_surface_text": "outbound buffer",
+          "to_surface_text": "dispatch",
+          "product": "Industrial controllers",
+          "flow_weight": 20,
+          "sequence_order": 15,
+          "flow_type": "manual",
+          "source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking.",
+          "transport_mode": "operator",
+          "carrier_surface_text": null,
+          "carrier_source_text": null
+        }
+      ],
+      "edit_operations": [],
+      "requires_existing_layout": false,
+      "missing_information": [
+        "Equipment dimensions/footprints for all 13 main process units and 10 auxiliary objects are not supplied",
+        "Reserved bay location within row 2 is specified as the eighth bay but its exact footprint is not given",
+        "AGV parking bay locations are not specified"
+      ],
+      "clarification_questions": [
+        "What are the footprint dimensions (width x depth) of each equipment type, since no dimensions are supplied for the 13 process units and 10 auxiliary objects?",
+        "Should the reserved bay be treated as a fixed empty footprint of a specific size, and if so what size?",
+        "Where should the two AGV parking bays be placed (e.g., which side of the aisle or which corner)?"
+      ],
+      "reasoning_summary": "Initial layout generation requested for a 48x30 m workshop with a central 4 m east-west aisle, south machining area in two east-west rows of four bays (row 1: CNC A, VMC A, CNC B, VMC B; row 2: turn-mill, radial drill, EDM drill, reserved bay), northwest assembly/conveyor cell, northeast testing/finishing, buffers at doors, and auxiliary placement. Hard no-overlap constraint plus case clearance, a",
+      "extraction_issues": []
+    },
+    "asset_surfaces": [
+      "two general CNC machining centers A and B",
+      "two compact vertical machining centers A and B",
+      "one turn-mill center",
+      "one radial drilling machine",
+      "one EDM drilling machine",
+      "two fixture assembly workstations A and B",
+      "two flexible test workstations A and B",
+      "one small temperature chamber",
+      "one laser marking station",
+      "two tool cabinets A and B",
+      "a raw-material storage rack",
+      "a finished-goods storage rack",
+      "a line-side storage unit",
+      "a loading work table",
+      "an unloading work table",
+      "a pallet-track conveyor",
+      "two AGVs A and B"
+    ]
+  }
+}
+
+{
+  "event": "rag_started",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "EngineeringRAG",
+  "status": "running",
+  "summary": "Retrieving engineering evidence.",
+  "payload": {}
+}
+
+{
+  "event": "rag_done",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "EngineeringRAG",
+  "status": "done",
+  "summary": "Engineering evidence attached to the intent call.",
+  "payload": {
+    "payload_sha256": "90d68cb26c42d14e2f5c8b2f59870cee5b154c85d4daf3e4ced41f136dd11a26",
+    "evidence_ids": [
+      "evidence/model_asset/asset_glb_m092_line_side_storage_unit/summary",
+      "evidence/model_asset/asset_fbx_fbx_313d8039/summary",
+      "evidence/model_asset/asset_glb_m088_small_temperature_chamber/summary",
+      "evidence/model_asset/asset_glb_m089_laser_marking_station/summary",
+      "evidence/model_asset/asset_fbx_fbx_6901bdd8/summary",
+      "evidence/model_asset/asset_fbx_fbx_a3e1a9c2/summary",
+      "evidence/model_asset/asset_glb_m086_flexible_test_workstation/summary",
+      "evidence/model_asset/asset_fbx_fbx_1a80889c/summary",
+      "evidence/model_asset/asset_glb_m072_agv/summary",
+      "evidence/model_asset/asset_fbx_fbx_d8f6cfdf/summary",
+      "evidence/model_asset/asset_glb_m093_fixture_workstation/summary",
+      "evidence/model_asset/asset_fbx_fbx_84d31057/summary",
+      "evidence/model_asset/asset_fbx_fbx_fb04a2ee/summary",
+      "evidence/model_asset/asset_fbx_fbx_abd43f9f/summary",
+      "evidence/model_asset/asset_fbx_fbx_52f1abc3/summary",
+      "evidence/model_asset/asset_stl_m104_storage_rack/summary",
+      "evidence/model_asset/asset_stl_m103_work_table/summary",
+      "evidence/model_asset/asset_fbx_fbx_7716b9f7/summary",
+      "evidence/model_asset/asset_fbx_fbx_f4980f8b/summary",
+      "evidence/model_asset/asset_glb_m087_table/summary",
+      "evidence/model_asset/asset_glb_m096_multi_object_rack_scene/summary",
+      "evidence/model_asset/asset_glb_m098_conveyor_line/summary",
+      "evidence/model_asset/asset_fbx_fbx_465611ff/summary",
+      "evidence/model_asset/asset_glb_m091_belt_conveyor/summary",
+      "m_1269_1310",
+      "m_1312_1358",
+      "m_1360_1380",
+      "m_1382_1409",
+      "m_1411_1435",
+      "m_1444_1485",
+      "m_1487_1525",
+      "m_1527_1556",
+      "m_1558_1583",
+      "m_1613_1638",
+      "m_1640_1667",
+      "m_1669_1698",
+      "m_1700_1724",
+      "m_1726_1746",
+      "m_1748_1771",
+      "m_1773_1796",
+      "m_1798_1814"
+    ],
+    "backend": {
+      "service_class": "EngineeringRAGService",
+      "backend_id": null,
+      "mode": null,
+      "service": null,
+      "source_path": null,
+      "source_sha256": null
+    },
+    "clarification_options": [
+      {
+        "surface_text": "two compact vertical machining centers A and B",
+        "choices": [
+          {
+            "display_label": "Vertical machining center 1100 x 900 (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 2.39 m by 2.66 m)"
+          },
+          {
+            "display_label": "Vertical machining center GA-V918C (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 6.44 m by 3.35 m)"
+          },
+          {
+            "display_label": "Bare vertical machining-center model (catalog type: vertical machining center bare model; catalog-recorded function: machining; catalog footprint: approximately 1.08 m by 1.85 m)"
+          }
+        ]
+      },
+      {
+        "surface_text": "one turn-mill center",
+        "choices": [
+          {
+            "display_label": "Turn-mill machining center (catalog type: turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 7.04 m by 4.2 m)"
+          },
+          {
+            "display_label": "High-speed vertical turn-mill machining center (catalog type: high speed vertical turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 2.57 m by 3.87 m)"
+          },
+          {
+            "display_label": "CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.5 m by 2.28 m)"
+          }
+        ]
+      },
+      {
+        "surface_text": "two fixture assembly workstations A and B",
+        "choices": [
+          {
+            "display_label": "Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m)"
+          },
+          {
+            "display_label": "Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m)"
+          },
+          {
+            "display_label": "Flexible test workstation (catalog footprint: approximately 1.2 m by 0.8 m)"
+          }
+        ]
+      },
+      {
+        "surface_text": "a loading work table",
+        "choices": [
+          {
+            "display_label": "Table"
+          },
+          {
+            "display_label": "Work table (catalog footprint: approximately 1 m by 1.6 m)"
+          },
+          {
+            "display_label": "Worktable subunit"
+          }
+        ]
+      },
+      {
+        "surface_text": "an unloading work table",
+        "choices": [
+          {
+            "display_label": "Table"
+          },
+          {
+            "display_label": "Work table (catalog footprint: approximately 1 m by 1.6 m)"
+          },
+          {
+            "display_label": "Worktable subunit"
+          }
+        ]
+      },
+      {
+        "surface_text": "a pallet-track conveyor",
+        "choices": [
+          {
+            "display_label": "Conveyor line (catalog scope: production line; catalog footprint: approximately 7.52 m by 1.04 m)"
+          },
+          {
+            "display_label": "Belt conveyor (catalog type: belt conveyor line; catalog scope: production line)"
+          },
+          {
+            "display_label": "Conveyor 2 (catalog type: conveyor line segment; catalog scope: production line; catalog footprint: approximately 1.56 m by 6.52 m)"
+          }
+        ]
+      }
+    ],
+    "retrieval_ms": 148269.886,
+    "retrieved_asset_surfaces": [
+      "two general CNC machining centers A and B",
+      "two compact vertical machining centers A and B",
+      "one turn-mill center",
+      "one radial drilling machine",
+      "one EDM drilling machine",
+      "two fixture assembly workstations A and B",
+      "two flexible test workstations A and B",
+      "one small temperature chamber",
+      "one laser marking station",
+      "two tool cabinets A and B",
+      "a raw-material storage rack",
+      "a finished-goods storage rack",
+      "a line-side storage unit",
+      "a loading work table",
+      "an unloading work table",
+      "a pallet-track conveyor",
+      "two AGVs A and B"
+    ]
+  }
+}
+
+{
+  "event": "intent_started",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "IntentUnderstandingAgent",
+  "status": "running",
+  "summary": "Parsing user intent.",
+  "payload": {}
+}
+
+{
+  "event": "intent_done",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "IntentUnderstandingAgent",
+  "status": "done",
+  "summary": "Initial layout generation requested for a 48x30 m workshop with a central 4 m east-west aisle, south machining area in two east-west rows of four bays (row 1: CNC A, VMC A, CNC B, VMC B; row 2: turn-mill, radial drill, EDM drill, reserved bay), northwest assembly/conveyor cell, northeast testing/finishing, buffers at doors, and auxiliary placement. Hard no-overlap constraint plus case clearance, a",
+  "payload": {
+    "intent": {
+      "schema_version": "0.1.0",
+      "intent_id": "INTENT_001",
+      "project_id": "PROJECT_001",
+      "active_layout_id": null,
+      "site_id": null,
+      "user_message": "Create an initial layout for this workshop. Keep the machining stations in their two-row arrangement and leave the reserved bay clear. Clarify any unresolved equipment or handoff choice. Hard constraint: no overlap. Site 48m x 30m. Selected model_asset_id 2 units of asset/fbx/fbx_84d31057 1 units of asset/fbx/fbx_a3e1a9c2 1 units of asset/fbx/fbx_313d8039 2 units of asset/glb/m086_flexible_test_workstation 1 units of asset/glb/m088_small_temperature_chamber 1 units of asset/glb/m089_laser_marking_station 2 units of asset/fbx/fbx_1a80889c 2 units of asset/stl/m104_storage_rack 1 units of asset/glb/m092_line_side_storage_unit 2 units of asset/glb/m072_agv 2 units of two compact vertical machining centers A and B 1 units of one turn-mill center 2 units of two fixture assembly workstations A and B 1 units of a loading work table 1 units of an unloading work table 1 units of a pallet-track conveyor. Hard constraint: no overlap. Keep equipment inside the boundary.",
+      "intent_type": "generate_feasible_layout",
+      "confidence": 0.9,
+      "requires_existing_layout": false,
+      "requires_asset_lookup": false,
+      "requires_site": true,
+      "requires_confirmation": false,
+      "target_refs": [],
+      "detected_operations": [],
+      "unresolved_items": [],
+      "provenance": [
+        {
+          "field_path": "intent.intent_type",
+          "source_type": "llm_compiler",
+          "source_id": "IntentUnderstandingAgent",
+          "source_field": "intent_type",
+          "confidence": 0.9,
+          "note": "Intent type supplied by DeepSeek; rule fallback is disabled."
+        }
+      ],
+      "task_type": "generate_feasible_layout",
+      "completeness": {
+        "status": "blocking",
+        "required_fields": {
+          "site": "missing",
+          "equipment": "resolved",
+          "active_layout": "resolved"
+        },
+        "blocking_count": 15,
+        "warning_count": 3,
+        "can_enter_designer": false
+      },
+      "unresolved_requirements": [
+        {
+          "requirement_id": "missing_site_dimensions",
+          "field_path": "site",
+          "description": "A layout task requires user-provided site dimensions or dimensions inherited from an active layout; model-inferred dimensions are not accepted as facts.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "model_reported_missing_001",
+          "field_path": null,
+          "description": "Equipment footprint dimensions for all 13 main process units and 10 auxiliary objects are not supplied",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "model_reported_missing_002",
+          "field_path": null,
+          "description": "Reserved bay footprint size and exact position within row 2 are not specified",
+          "severity": "warning",
+          "resolution_policy": "record_warning"
+        },
+        {
+          "requirement_id": "model_reported_missing_003",
+          "field_path": null,
+          "description": "AGV parking bay locations are not specified",
+          "severity": "warning",
+          "resolution_policy": "record_warning"
+        },
+        {
+          "requirement_id": "model_reported_missing_004",
+          "field_path": null,
+          "description": "Ambiguous asset bindings remain for vertical machining centers, turn-mill center, fixture workstations, work tables, and pallet-track conveyor",
+          "severity": "warning",
+          "resolution_policy": "record_warning"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_001",
+          "field_path": "asset_mentions[1].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_002",
+          "field_path": "asset_mentions[2].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_003",
+          "field_path": "asset_mentions[5].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_004",
+          "field_path": "asset_mentions[13].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_005",
+          "field_path": "asset_mentions[14].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_006",
+          "field_path": "asset_mentions[15].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_007",
+          "field_path": "process_relations[1].to_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_008",
+          "field_path": "process_relations[2].from_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_009",
+          "field_path": "process_relations[2].to_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_010",
+          "field_path": "process_relations[3].from_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_011",
+          "field_path": "process_relations[5].to_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_012",
+          "field_path": "process_relations[6].from_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_transport_assignments_incomplete_013",
+          "field_path": "process_relations",
+          "description": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role.",
+          "severity": "blocking",
+          "resolution_policy": "revise_intent"
+        }
+      ],
+      "can_enter_designer": false
+    },
+    "semantic_intent": {
+      "intent_type": "generate_feasible_layout",
+      "confidence": 0.9,
+      "site": {
+        "width_m": 48,
+        "depth_m": 30,
+        "source_text": "The floor is 48 m east to west and 30 m north to south."
+      },
+      "asset_mentions": [
+        {
+          "surface_text": "two general CNC machining centers A and B",
+          "model_asset_id": "asset/fbx/fbx_84d31057",
+          "quantity": 2
+        },
+        {
+          "surface_text": "two compact vertical machining centers A and B",
+          "model_asset_id": "",
+          "quantity": 2
+        },
+        {
+          "surface_text": "one turn-mill center",
+          "model_asset_id": "",
+          "quantity": 1
+        },
+        {
+          "surface_text": "one radial drilling machine",
+          "model_asset_id": "asset/fbx/fbx_a3e1a9c2",
+          "quantity": 1
+        },
+        {
+          "surface_text": "one EDM drilling machine",
+          "model_asset_id": "asset/fbx/fbx_313d8039",
+          "quantity": 1
+        },
+        {
+          "surface_text": "two fixture assembly workstations A and B",
+          "model_asset_id": "",
+          "quantity": 2
+        },
+        {
+          "surface_text": "two flexible test workstations A and B",
+          "model_asset_id": "asset/glb/m086_flexible_test_workstation",
+          "quantity": 2
+        },
+        {
+          "surface_text": "one small temperature chamber",
+          "model_asset_id": "asset/glb/m088_small_temperature_chamber",
+          "quantity": 1
+        },
+        {
+          "surface_text": "one laser marking station",
+          "model_asset_id": "asset/glb/m089_laser_marking_station",
+          "quantity": 1
+        },
+        {
+          "surface_text": "two tool cabinets A and B",
+          "model_asset_id": "asset/fbx/fbx_1a80889c",
+          "quantity": 2
+        },
+        {
+          "surface_text": "a raw-material storage rack",
+          "model_asset_id": "asset/stl/m104_storage_rack",
+          "quantity": 1
+        },
+        {
+          "surface_text": "a finished-goods storage rack",
+          "model_asset_id": "asset/stl/m104_storage_rack",
+          "quantity": 1
+        },
+        {
+          "surface_text": "a line-side storage unit",
+          "model_asset_id": "asset/glb/m092_line_side_storage_unit",
+          "quantity": 1
+        },
+        {
+          "surface_text": "a loading work table",
+          "model_asset_id": "",
+          "quantity": 1
+        },
+        {
+          "surface_text": "an unloading work table",
+          "model_asset_id": "",
+          "quantity": 1
+        },
+        {
+          "surface_text": "a pallet-track conveyor",
+          "model_asset_id": "",
+          "quantity": 1
+        },
+        {
+          "surface_text": "two AGVs A and B",
+          "model_asset_id": "asset/glb/m072_agv",
+          "quantity": 2
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_type": "corridor_preservation",
+          "severity": "hard",
+          "source_text": "Keep a central 4 m-wide logistics aisle running east to west through the center."
+        },
+        {
+          "constraint_type": "region_membership",
+          "severity": "hard",
+          "source_text": "Machining belongs south of the aisle. Assembly and manual conveyor transfer belong in the northwest; testing and finishing belong in the northeast."
+        },
+        {
+          "constraint_type": "alignment",
+          "severity": "hard",
+          "source_text": "Align the stations in each row along a common east-west line."
+        },
+        {
+          "constraint_type": "spatial_order",
+          "severity": "hard",
+          "source_text": "Row 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B."
+        },
+        {
+          "constraint_type": "no_overlap",
+          "severity": "hard",
+          "source_text": "Hard constraint: no overlap."
+        },
+        {
+          "constraint_type": "minimum_clearance",
+          "severity": "hard",
+          "source_text": "Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side."
+        },
+        {
+          "constraint_type": "forbidden_zone_avoidance",
+          "severity": "hard",
+          "source_text": "Keep equipment and parking bays outside the aisle, door approaches, buffers, and reserved operating areas."
+        },
+        {
+          "constraint_type": "entrance_exit_unblocked",
+          "severity": "hard",
+          "source_text": "Center the receiving door in the west wall and the dispatch door in the east wall, aligned with the aisle."
+        },
+        {
+          "constraint_type": "near",
+          "severity": "hard",
+          "source_text": "Keep the raw-material rack near receiving and each tool cabinet near the machines it serves."
+        },
+        {
+          "constraint_type": "adjacency",
+          "severity": "hard",
+          "source_text": "The two work tables stand at opposite short ends of the conveyor, centered on its ends."
+        },
+        {
+          "constraint_type": "inside_boundary",
+          "severity": "hard",
+          "source_text": "Enclose it with black perimeter walls."
+        }
+      ],
+      "objectives": [],
+      "process_relations": [
+        {
+          "from_quantity_index": null,
+          "to_site_feature_name": "inbound buffer",
+          "required_connection": false,
+          "to_model_asset_id": null,
+          "from_site_feature_name": "receiving",
+          "from_surface_text": "receiving",
+          "evidence_source": null,
+          "carrier_source_text": null,
+          "carrier_model_asset_id": null,
+          "product": "Industrial controllers",
+          "source_text": "Industrial controllers, 20 batches per day: receiving -> inbound buffer -> raw-material rack -> CNC A -> vertical machining center A -> line-side storage -> fixture A -> loading table -> conveyor -> unloading table -> test A -> temperature chamber -> laser marking -> finished-goods rack -> outbound buffer -> dispatch.",
+          "to_quantity_index": null,
+          "to_surface_text": "inbound buffer",
+          "flow_type": "manual",
+          "from_instance_id": null,
+          "transport_mode": "operator",
+          "carrier_surface_text": null,
+          "carrier_instance_id": null,
+          "to_instance_id": null,
+          "evidence_ref": null,
+          "carrier_quantity_index": null,
+          "from_model_asset_id": null,
+          "flow_weight": 20,
+          "sequence_order": 1
+        },
+        {
+          "from_quantity_index": null,
+          "to_site_feature_name": null,
+          "required_connection": false,
+          "to_model_asset_id": "asset/stl/m104_storage_rack",
+          "from_site_feature_name": "inbound buffer",
+          "from_surface_text": "inbound buffer",
+          "evidence_source": null,
+          "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage.",
+          "carrier_model_asset_id": "asset/glb/m072_agv",
+          "product": "Industrial controllers",
+          "source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage.",
+          "to_quantity_index": 1,
+          "to_surface_text": "raw-material rack",
+          "flow_type": "agv",
+          "from_instance_id": null,
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV A",
+          "carrier_instance_id": null,
+          "to_instance_id": null,
+          "evidence_ref": null,
+          "carrier_quantity_index": 1,
+          "from_model_asset_id": null,
+          "flow_weight": 20,
+          "sequence_order": 2
+        },
+        {
+          "from_quantity_index": 1,
+          "to_site_feature_name": null,
+          "required_connection": false,
+          "to_model_asset_id": "asset/fbx/fbx_84d31057",
+          "from_site_feature_name": null,
+          "from_surface_text": "raw-material rack",
+          "evidence_source": null,
+          "carrier_source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage.",
+          "carrier_model_asset_id": "asset/glb/m072_agv",
+          "product": "Industrial controllers",
+          "source_text": "AGV A carries material from the inbound buffer to raw-material storage, from storage to each first machining station, between successive machining stations, and from machining to line-side storage.",
+          "to_quantity_index": 1,
+          "to_surface_text": "CNC A",
+          "flow_type": "agv",
+          "from_instance_id": null,
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV A",
+          "carrier_instance_id": null,
+          "to_instance_id": null,
+          "evidence_ref": null,
+          "carrier_quantity_index": 1,
+          "from_model_asset_id": "asset/stl/m104_storage_rack",
+          "flow_weight": 20,
+          "sequence_order": 3
+        },
+        {
+          "from_quantity_index": 1,
+          "to_site_feature_name": null,
+          "required_connection": false,
+          "to_model_asset_id": "asset/glb/m088_small_temperature_chamber",
+          "from_site_feature_name": null,
+          "from_surface_text": "test A",
+          "evidence_source": null,
+          "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.",
+          "carrier_model_asset_id": "asset/glb/m072_agv",
+          "product": "Industrial controllers",
+          "source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.",
+          "to_quantity_index": 1,
+          "to_surface_text": "temperature chamber",
+          "flow_type": "agv",
+          "from_instance_id": null,
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV B",
+          "carrier_instance_id": null,
+          "to_instance_id": null,
+          "evidence_ref": null,
+          "carrier_quantity_index": 2,
+          "from_model_asset_id": "asset/glb/m086_flexible_test_workstation",
+          "flow_weight": 20,
+          "sequence_order": 11
+        },
+        {
+          "from_quantity_index": 1,
+          "to_site_feature_name": null,
+          "required_connection": false,
+          "to_model_asset_id": "asset/glb/m089_laser_marking_station",
+          "from_site_feature_name": null,
+          "from_surface_text": "temperature chamber",
+          "evidence_source": null,
+          "carrier_source_text": null,
+          "carrier_model_asset_id": null,
+          "product": "Industrial controllers",
+          "source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking.",
+          "to_quantity_index": 1,
+          "to_surface_text": "laser marking",
+          "flow_type": "manual",
+          "from_instance_id": null,
+          "transport_mode": "operator",
+          "carrier_surface_text": null,
+          "carrier_instance_id": null,
+          "to_instance_id": null,
+          "evidence_ref": null,
+          "carrier_quantity_index": null,
+          "from_model_asset_id": "asset/glb/m088_small_temperature_chamber",
+          "flow_weight": 20,
+          "sequence_order": 12
+        },
+        {
+          "from_quantity_index": 1,
+          "to_site_feature_name": null,
+          "required_connection": false,
+          "to_model_asset_id": "asset/stl/m104_storage_rack",
+          "from_site_feature_name": null,
+          "from_surface_text": "laser marking",
+          "evidence_source": null,
+          "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.",
+          "carrier_model_asset_id": "asset/glb/m072_agv",
+          "product": "Industrial controllers",
+          "source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.",
+          "to_quantity_index": 2,
+          "to_surface_text": "finished-goods rack",
+          "flow_type": "agv",
+          "from_instance_id": null,
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV B",
+          "carrier_instance_id": null,
+          "to_instance_id": null,
+          "evidence_ref": null,
+          "carrier_quantity_index": 2,
+          "from_model_asset_id": "asset/glb/m089_laser_marking_station",
+          "flow_weight": 20,
+          "sequence_order": 13
+        },
+        {
+          "from_quantity_index": 2,
+          "to_site_feature_name": "outbound buffer",
+          "required_connection": false,
+          "to_model_asset_id": null,
+          "from_site_feature_name": null,
+          "from_surface_text": "finished-goods rack",
+          "evidence_source": null,
+          "carrier_source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.",
+          "carrier_model_asset_id": "asset/glb/m072_agv",
+          "product": "Industrial controllers",
+          "source_text": "AGV B carries parts from line-side storage to the fixture workstations, from testing to the temperature chamber, from laser marking to finished-goods storage, and from finished-goods storage to the outbound buffer.",
+          "to_quantity_index": null,
+          "to_surface_text": "outbound buffer",
+          "flow_type": "agv",
+          "from_instance_id": null,
+          "transport_mode": "AGV",
+          "carrier_surface_text": "AGV B",
+          "carrier_instance_id": null,
+          "to_instance_id": null,
+          "evidence_ref": null,
+          "carrier_quantity_index": 2,
+          "from_model_asset_id": "asset/stl/m104_storage_rack",
+          "flow_weight": 20,
+          "sequence_order": 14
+        },
+        {
+          "from_quantity_index": null,
+          "to_site_feature_name": "dispatch",
+          "required_connection": false,
+          "to_model_asset_id": null,
+          "from_site_feature_name": "outbound buffer",
+          "from_surface_text": "outbound buffer",
+          "evidence_source": null,
+          "carrier_source_text": null,
+          "carrier_model_asset_id": null,
+          "product": "Industrial controllers",
+          "source_text": "Operators handle receiving to the inbound buffer, the outbound buffer to dispatch, fixture workstations to the loading table, the unloading table to the test workstations, and the temperature chamber to laser marking.",
+          "to_quantity_index": null,
+          "to_surface_text": "dispatch",
+          "flow_type": "manual",
+          "from_instance_id": null,
+          "transport_mode": "operator",
+          "carrier_surface_text": null,
+          "carrier_instance_id": null,
+          "to_instance_id": null,
+          "evidence_ref": null,
+          "carrier_quantity_index": null,
+          "from_model_asset_id": null,
+          "flow_weight": 20,
+          "sequence_order": 15
+        }
+      ],
+      "edit_operations": [],
+      "controlled_initial_violations": [],
+      "controlled_violation": null,
+      "repair_scope": {},
+      "allowed_repair_operations": [],
+      "edit_relaxation_policy": null,
+      "move_distance": null,
+      "domain_intent": null,
+      "requires_existing_layout": false,
+      "missing_information": [
+        "Equipment footprint dimensions for all 13 main process units and 10 auxiliary objects are not supplied",
+        "Reserved bay footprint size and exact position within row 2 are not specified",
+        "AGV parking bay locations are not specified",
+        "Ambiguous asset bindings remain for vertical machining centers, turn-mill center, fixture workstations, work tables, and pallet-track conveyor"
+      ],
+      "clarification_questions": [
+        "What are the footprint dimensions (width x depth) of each equipment type, since no dimensions are supplied for the 13 process units and 10 auxiliary objects?",
+        "Should the reserved bay be treated as a fixed empty footprint of a specific size, and if so what size?",
+        "Where should the two AGV parking bays be placed (e.g., which side of the aisle or which corner)?",
+        "Which candidate model should be used for the compact vertical machining centers, the turn-mill center, the fixture assembly workstations, the loading/unloading work tables, and the pallet-track conveyor?",
+        "Please provide the site width and depth, for example 20m x 12m.",
+        "Equipment footprint dimensions for all 13 main process units and 10 auxiliary objects are not supplied",
+        "Use the identity selected for this equipment mention by Engineering RAG.",
+        "Bind the literal process endpoint to its Engineering RAG-selected asset identity."
+      ],
+      "reasoning_summary": "Initial layout generation requested for a 48x30 m workshop with a central 4 m east-west aisle, south machining area in two east-west rows of four bays (row 1: CNC A, VMC A, CNC B, VMC B; row 2: turn-mill, radial drill, EDM drill, reserved bay), northwest assembly/conveyor cell, northeast testing/finishing, buffers at doors, and auxiliary placement. Hard no-overlap constraint plus case clearance, a",
+      "source": "llm",
+      "llm_error": null,
+      "task_contract_type": "Generate",
+      "authoritative_context_sha256": "40444c1fe8ed52c3cfe76d464a90a41184b2c0b1a7a93523f8f04baffa03720b",
+      "completeness": {
+        "status": "blocking",
+        "required_fields": {
+          "site": "missing",
+          "equipment": "resolved",
+          "active_layout": "resolved"
+        },
+        "blocking_count": 15,
+        "warning_count": 3,
+        "can_enter_designer": false
+      },
+      "unresolved_requirements": [
+        {
+          "requirement_id": "missing_site_dimensions",
+          "field_path": "site",
+          "description": "A layout task requires user-provided site dimensions or dimensions inherited from an active layout; model-inferred dimensions are not accepted as facts.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "model_reported_missing_001",
+          "field_path": null,
+          "description": "Equipment footprint dimensions for all 13 main process units and 10 auxiliary objects are not supplied",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "model_reported_missing_002",
+          "field_path": null,
+          "description": "Reserved bay footprint size and exact position within row 2 are not specified",
+          "severity": "warning",
+          "resolution_policy": "record_warning"
+        },
+        {
+          "requirement_id": "model_reported_missing_003",
+          "field_path": null,
+          "description": "AGV parking bay locations are not specified",
+          "severity": "warning",
+          "resolution_policy": "record_warning"
+        },
+        {
+          "requirement_id": "model_reported_missing_004",
+          "field_path": null,
+          "description": "Ambiguous asset bindings remain for vertical machining centers, turn-mill center, fixture workstations, work tables, and pallet-track conveyor",
+          "severity": "warning",
+          "resolution_policy": "record_warning"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_001",
+          "field_path": "asset_mentions[1].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_002",
+          "field_path": "asset_mentions[2].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_003",
+          "field_path": "asset_mentions[5].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_004",
+          "field_path": "asset_mentions[13].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_005",
+          "field_path": "asset_mentions[14].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_asset_not_grounded_006",
+          "field_path": "asset_mentions[15].model_asset_id",
+          "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_007",
+          "field_path": "process_relations[1].to_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_008",
+          "field_path": "process_relations[2].from_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_009",
+          "field_path": "process_relations[2].to_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_010",
+          "field_path": "process_relations[3].from_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_011",
+          "field_path": "process_relations[5].to_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_process_relation_not_grounded_012",
+          "field_path": "process_relations[6].from_model_asset_id",
+          "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user"
+        },
+        {
+          "requirement_id": "intent_transport_assignments_incomplete_013",
+          "field_path": "process_relations",
+          "description": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role.",
+          "severity": "blocking",
+          "resolution_policy": "revise_intent"
+        }
+      ],
+      "semantic_evidence": [
+        {
+          "evidence_id": "semantic_evidence_001",
+          "field_path": "site",
+          "value_source": "model_inference",
+          "source_text": "The floor is 48 m east to west and 30 m north to south.",
+          "confidence": 0.9
+        },
+        {
+          "evidence_id": "semantic_evidence_002",
+          "field_path": "asset_mentions[0]",
+          "value_source": "model_inference",
+          "source_text": "two general CNC machining centers A and B",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_003",
+          "field_path": "asset_mentions[1]",
+          "value_source": "model_inference",
+          "source_text": "two compact vertical machining centers A and B",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_004",
+          "field_path": "asset_mentions[2]",
+          "value_source": "model_inference",
+          "source_text": "one turn-mill center",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_005",
+          "field_path": "asset_mentions[3]",
+          "value_source": "model_inference",
+          "source_text": "one radial drilling machine",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_006",
+          "field_path": "asset_mentions[4]",
+          "value_source": "model_inference",
+          "source_text": "one EDM drilling machine",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_007",
+          "field_path": "asset_mentions[5]",
+          "value_source": "model_inference",
+          "source_text": "two fixture assembly workstations A and B",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_008",
+          "field_path": "asset_mentions[6]",
+          "value_source": "model_inference",
+          "source_text": "two flexible test workstations A and B",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_009",
+          "field_path": "asset_mentions[7]",
+          "value_source": "model_inference",
+          "source_text": "one small temperature chamber",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_010",
+          "field_path": "asset_mentions[8]",
+          "value_source": "model_inference",
+          "source_text": "one laser marking station",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_011",
+          "field_path": "asset_mentions[9]",
+          "value_source": "model_inference",
+          "source_text": "two tool cabinets A and B",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_012",
+          "field_path": "asset_mentions[10]",
+          "value_source": "model_inference",
+          "source_text": "a raw-material storage rack",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_013",
+          "field_path": "asset_mentions[11]",
+          "value_source": "model_inference",
+          "source_text": "a finished-goods storage rack",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_014",
+          "field_path": "asset_mentions[12]",
+          "value_source": "model_inference",
+          "source_text": "a line-side storage unit",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_015",
+          "field_path": "asset_mentions[13]",
+          "value_source": "model_inference",
+          "source_text": "a loading work table",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_016",
+          "field_path": "asset_mentions[14]",
+          "value_source": "model_inference",
+          "source_text": "an unloading work table",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_017",
+          "field_path": "asset_mentions[15]",
+          "value_source": "model_inference",
+          "source_text": "a pallet-track conveyor",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_018",
+          "field_path": "asset_mentions[16]",
+          "value_source": "model_inference",
+          "source_text": "two AGVs A and B",
+          "confidence": 0.85
+        },
+        {
+          "evidence_id": "semantic_evidence_019",
+          "field_path": "constraints[0]",
+          "value_source": "user_input",
+          "source_text": "Keep a central 4 m-wide logistics aisle running east to west through the center.",
+          "confidence": 1
+        },
+        {
+          "evidence_id": "semantic_evidence_020",
+          "field_path": "constraints[1]",
+          "value_source": "user_input",
+          "source_text": "Machining belongs south of the aisle. Assembly and manual conveyor transfer belong in the northwest; testing and finishing belong in the northeast.",
+          "confidence": 1
+        },
+        {
+          "evidence_id": "semantic_evidence_021",
+          "field_path": "constraints[2]",
+          "value_source": "user_input",
+          "source_text": "Align the stations in each row along a common east-west line.",
+          "confidence": 1
+        },
+        {
+          "evidence_id": "semantic_evidence_022",
+          "field_path": "constraints[3]",
+          "value_source": "user_input",
+          "source_text": "Row 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B.",
+          "confidence": 1
+        },
+        {
+          "evidence_id": "semantic_evidence_023",
+          "field_path": "constraints[4]",
+          "value_source": "user_input",
+          "source_text": "Hard constraint: no overlap.",
+          "confidence": 1
+        },
+        {
+          "evidence_id": "semantic_evidence_024",
+          "field_path": "constraints[5]",
+          "value_source": "user_input",
+          "source_text": "Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+          "confidence": 1
+        },
+        {
+          "evidence_id": "semantic_evidence_025",
+          "field_path": "constraints[6]",
+          "value_source": "user_input",
+          "source_text": "Keep equipment and parking bays outside the aisle, door approaches, buffers, and reserved operating areas.",
+          "confidence": 1
+        },
+        {
+          "evidence_id": "semantic_evidence_026",
+          "field_path": "constraints[7]",
+          "value_source": "user_input",
+          "source_text": "Center the receiving door in the west wall and the dispatch door in the east wall, aligned with the aisle.",
+          "confidence": 1
+        },
+        {
+          "evidence_id": "semantic_evidence_027",
+          "field_path": "constraints[8]",
+          "value_source": "user_input",
+          "source_text": "Keep the raw-material rack near receiving and each tool cabinet near the machines it serves.",
+          "confidence": 1
+        },
+        {
+          "evidence_id": "semantic_evidence_028",
+          "field_path": "constraints[9]",
+          "value_source": "user_input",
+          "source_text": "The two work tables stand at opposite short ends of the conveyor, centered on its ends.",
+          "confidence": 1
+        },
+        {
+          "evidence_id": "semantic_evidence_029",
+          "field_path": "constraints[10]",
+          "value_source": "user_input",
+          "source_text": "Enclose it with black perimeter walls.",
+          "confidence": 1
+        }
+      ],
+      "can_enter_designer": false,
+      "intent_contract": {
+        "schema_version": "layout-agentic-intent-contract-v2",
+        "status": "REPAIRABLE",
+        "issues": [
+          {
+            "issue_id": "intent_asset_not_grounded_001",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[1].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_002",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[2].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_003",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[5].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_004",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[13].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_005",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[14].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_006",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[15].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_007",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[1].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_008",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[2].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_009",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[2].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/fbx/fbx_84d31057"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_010",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[3].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/glb/m086_flexible_test_workstation"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_011",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[5].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_012",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[6].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_transport_assignments_incomplete_013",
+            "issue_type": "intent_transport_assignments_incomplete",
+            "field_path": "process_relations",
+            "message": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role.",
+            "severity": "blocking",
+            "resolution_policy": "revise_intent",
+            "details": {
+              "relation_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                "named_agv_not_assigned",
+                "conveyor_not_assigned"
+              ]
+            }
+          }
+        ],
+        "repairs": [],
+        "authoritatively_resolved_issues": []
+      },
+      "deterministic_repairs": [
+        {
+          "field_path": "constraints[12].constraint_type",
+          "action": "canonicalize_recognized_natural_site_constraint",
+          "basis": "natural_site_requirements"
+        },
+        {
+          "field_path": "process_relations",
+          "action": "restore_explicit_process_relations",
+          "basis": "linguistic_frame+engineering_rag_grounding"
+        }
+      ]
+    },
+    "completeness": {
+      "status": "blocking",
+      "required_fields": {
+        "site": "missing",
+        "equipment": "resolved",
+        "active_layout": "resolved"
+      },
+      "blocking_count": 15,
+      "warning_count": 3,
+      "can_enter_designer": false
+    },
+    "unresolved_requirements": [
+      {
+        "requirement_id": "missing_site_dimensions",
+        "field_path": "site",
+        "description": "A layout task requires user-provided site dimensions or dimensions inherited from an active layout; model-inferred dimensions are not accepted as facts.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "model_reported_missing_001",
+        "field_path": null,
+        "description": "Equipment footprint dimensions for all 13 main process units and 10 auxiliary objects are not supplied",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "model_reported_missing_002",
+        "field_path": null,
+        "description": "Reserved bay footprint size and exact position within row 2 are not specified",
+        "severity": "warning",
+        "resolution_policy": "record_warning"
+      },
+      {
+        "requirement_id": "model_reported_missing_003",
+        "field_path": null,
+        "description": "AGV parking bay locations are not specified",
+        "severity": "warning",
+        "resolution_policy": "record_warning"
+      },
+      {
+        "requirement_id": "model_reported_missing_004",
+        "field_path": null,
+        "description": "Ambiguous asset bindings remain for vertical machining centers, turn-mill center, fixture workstations, work tables, and pallet-track conveyor",
+        "severity": "warning",
+        "resolution_policy": "record_warning"
+      },
+      {
+        "requirement_id": "intent_asset_not_grounded_001",
+        "field_path": "asset_mentions[1].model_asset_id",
+        "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_asset_not_grounded_002",
+        "field_path": "asset_mentions[2].model_asset_id",
+        "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_asset_not_grounded_003",
+        "field_path": "asset_mentions[5].model_asset_id",
+        "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_asset_not_grounded_004",
+        "field_path": "asset_mentions[13].model_asset_id",
+        "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_asset_not_grounded_005",
+        "field_path": "asset_mentions[14].model_asset_id",
+        "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_asset_not_grounded_006",
+        "field_path": "asset_mentions[15].model_asset_id",
+        "description": "Use the identity selected for this equipment mention by Engineering RAG.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_process_relation_not_grounded_007",
+        "field_path": "process_relations[1].to_model_asset_id",
+        "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_process_relation_not_grounded_008",
+        "field_path": "process_relations[2].from_model_asset_id",
+        "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_process_relation_not_grounded_009",
+        "field_path": "process_relations[2].to_model_asset_id",
+        "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_process_relation_not_grounded_010",
+        "field_path": "process_relations[3].from_model_asset_id",
+        "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_process_relation_not_grounded_011",
+        "field_path": "process_relations[5].to_model_asset_id",
+        "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_process_relation_not_grounded_012",
+        "field_path": "process_relations[6].from_model_asset_id",
+        "description": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+        "severity": "blocking",
+        "resolution_policy": "ask_user"
+      },
+      {
+        "requirement_id": "intent_transport_assignments_incomplete_013",
+        "field_path": "process_relations",
+        "description": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role.",
+        "severity": "blocking",
+        "resolution_policy": "revise_intent"
+      }
+    ],
+    "can_enter_designer": false,
+    "semantic_evidence": [
+      {
+        "evidence_id": "semantic_evidence_001",
+        "field_path": "site",
+        "value_source": "model_inference",
+        "source_text": "The floor is 48 m east to west and 30 m north to south.",
+        "confidence": 0.9
+      },
+      {
+        "evidence_id": "semantic_evidence_002",
+        "field_path": "asset_mentions[0]",
+        "value_source": "model_inference",
+        "source_text": "two general CNC machining centers A and B",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_003",
+        "field_path": "asset_mentions[1]",
+        "value_source": "model_inference",
+        "source_text": "two compact vertical machining centers A and B",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_004",
+        "field_path": "asset_mentions[2]",
+        "value_source": "model_inference",
+        "source_text": "one turn-mill center",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_005",
+        "field_path": "asset_mentions[3]",
+        "value_source": "model_inference",
+        "source_text": "one radial drilling machine",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_006",
+        "field_path": "asset_mentions[4]",
+        "value_source": "model_inference",
+        "source_text": "one EDM drilling machine",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_007",
+        "field_path": "asset_mentions[5]",
+        "value_source": "model_inference",
+        "source_text": "two fixture assembly workstations A and B",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_008",
+        "field_path": "asset_mentions[6]",
+        "value_source": "model_inference",
+        "source_text": "two flexible test workstations A and B",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_009",
+        "field_path": "asset_mentions[7]",
+        "value_source": "model_inference",
+        "source_text": "one small temperature chamber",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_010",
+        "field_path": "asset_mentions[8]",
+        "value_source": "model_inference",
+        "source_text": "one laser marking station",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_011",
+        "field_path": "asset_mentions[9]",
+        "value_source": "model_inference",
+        "source_text": "two tool cabinets A and B",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_012",
+        "field_path": "asset_mentions[10]",
+        "value_source": "model_inference",
+        "source_text": "a raw-material storage rack",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_013",
+        "field_path": "asset_mentions[11]",
+        "value_source": "model_inference",
+        "source_text": "a finished-goods storage rack",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_014",
+        "field_path": "asset_mentions[12]",
+        "value_source": "model_inference",
+        "source_text": "a line-side storage unit",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_015",
+        "field_path": "asset_mentions[13]",
+        "value_source": "model_inference",
+        "source_text": "a loading work table",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_016",
+        "field_path": "asset_mentions[14]",
+        "value_source": "model_inference",
+        "source_text": "an unloading work table",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_017",
+        "field_path": "asset_mentions[15]",
+        "value_source": "model_inference",
+        "source_text": "a pallet-track conveyor",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_018",
+        "field_path": "asset_mentions[16]",
+        "value_source": "model_inference",
+        "source_text": "two AGVs A and B",
+        "confidence": 0.85
+      },
+      {
+        "evidence_id": "semantic_evidence_019",
+        "field_path": "constraints[0]",
+        "value_source": "user_input",
+        "source_text": "Keep a central 4 m-wide logistics aisle running east to west through the center.",
+        "confidence": 1
+      },
+      {
+        "evidence_id": "semantic_evidence_020",
+        "field_path": "constraints[1]",
+        "value_source": "user_input",
+        "source_text": "Machining belongs south of the aisle. Assembly and manual conveyor transfer belong in the northwest; testing and finishing belong in the northeast.",
+        "confidence": 1
+      },
+      {
+        "evidence_id": "semantic_evidence_021",
+        "field_path": "constraints[2]",
+        "value_source": "user_input",
+        "source_text": "Align the stations in each row along a common east-west line.",
+        "confidence": 1
+      },
+      {
+        "evidence_id": "semantic_evidence_022",
+        "field_path": "constraints[3]",
+        "value_source": "user_input",
+        "source_text": "Row 1, west to east: CNC A; vertical machining center A; CNC B; vertical machining center B.",
+        "confidence": 1
+      },
+      {
+        "evidence_id": "semantic_evidence_023",
+        "field_path": "constraints[4]",
+        "value_source": "user_input",
+        "source_text": "Hard constraint: no overlap.",
+        "confidence": 1
+      },
+      {
+        "evidence_id": "semantic_evidence_024",
+        "field_path": "constraints[5]",
+        "value_source": "user_input",
+        "source_text": "Ordinary machining equipment: 1.2 m at the service front, 0.8 m at the rear, and 0.8 m on each side.",
+        "confidence": 1
+      },
+      {
+        "evidence_id": "semantic_evidence_025",
+        "field_path": "constraints[6]",
+        "value_source": "user_input",
+        "source_text": "Keep equipment and parking bays outside the aisle, door approaches, buffers, and reserved operating areas.",
+        "confidence": 1
+      },
+      {
+        "evidence_id": "semantic_evidence_026",
+        "field_path": "constraints[7]",
+        "value_source": "user_input",
+        "source_text": "Center the receiving door in the west wall and the dispatch door in the east wall, aligned with the aisle.",
+        "confidence": 1
+      },
+      {
+        "evidence_id": "semantic_evidence_027",
+        "field_path": "constraints[8]",
+        "value_source": "user_input",
+        "source_text": "Keep the raw-material rack near receiving and each tool cabinet near the machines it serves.",
+        "confidence": 1
+      },
+      {
+        "evidence_id": "semantic_evidence_028",
+        "field_path": "constraints[9]",
+        "value_source": "user_input",
+        "source_text": "The two work tables stand at opposite short ends of the conveyor, centered on its ends.",
+        "confidence": 1
+      },
+      {
+        "evidence_id": "semantic_evidence_029",
+        "field_path": "constraints[10]",
+        "value_source": "user_input",
+        "source_text": "Enclose it with black perimeter walls.",
+        "confidence": 1
+      }
+    ],
+    "intent_contract": {
+      "schema_version": "layout-agentic-intent-contract-v2",
+      "status": "REPAIRABLE",
+      "issues": [
+        {
+          "issue_id": "intent_asset_not_grounded_001",
+          "issue_type": "intent_asset_not_grounded",
+          "field_path": "asset_mentions[1].model_asset_id",
+          "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": null
+          }
+        },
+        {
+          "issue_id": "intent_asset_not_grounded_002",
+          "issue_type": "intent_asset_not_grounded",
+          "field_path": "asset_mentions[2].model_asset_id",
+          "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": null
+          }
+        },
+        {
+          "issue_id": "intent_asset_not_grounded_003",
+          "issue_type": "intent_asset_not_grounded",
+          "field_path": "asset_mentions[5].model_asset_id",
+          "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": null
+          }
+        },
+        {
+          "issue_id": "intent_asset_not_grounded_004",
+          "issue_type": "intent_asset_not_grounded",
+          "field_path": "asset_mentions[13].model_asset_id",
+          "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": null
+          }
+        },
+        {
+          "issue_id": "intent_asset_not_grounded_005",
+          "issue_type": "intent_asset_not_grounded",
+          "field_path": "asset_mentions[14].model_asset_id",
+          "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": null
+          }
+        },
+        {
+          "issue_id": "intent_asset_not_grounded_006",
+          "issue_type": "intent_asset_not_grounded",
+          "field_path": "asset_mentions[15].model_asset_id",
+          "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": null
+          }
+        },
+        {
+          "issue_id": "intent_process_relation_not_grounded_007",
+          "issue_type": "intent_process_relation_not_grounded",
+          "field_path": "process_relations[1].to_model_asset_id",
+          "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": "asset/stl/m104_storage_rack"
+          }
+        },
+        {
+          "issue_id": "intent_process_relation_not_grounded_008",
+          "issue_type": "intent_process_relation_not_grounded",
+          "field_path": "process_relations[2].from_model_asset_id",
+          "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": "asset/stl/m104_storage_rack"
+          }
+        },
+        {
+          "issue_id": "intent_process_relation_not_grounded_009",
+          "issue_type": "intent_process_relation_not_grounded",
+          "field_path": "process_relations[2].to_model_asset_id",
+          "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": "asset/fbx/fbx_84d31057"
+          }
+        },
+        {
+          "issue_id": "intent_process_relation_not_grounded_010",
+          "issue_type": "intent_process_relation_not_grounded",
+          "field_path": "process_relations[3].from_model_asset_id",
+          "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": "asset/glb/m086_flexible_test_workstation"
+          }
+        },
+        {
+          "issue_id": "intent_process_relation_not_grounded_011",
+          "issue_type": "intent_process_relation_not_grounded",
+          "field_path": "process_relations[5].to_model_asset_id",
+          "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": "asset/stl/m104_storage_rack"
+          }
+        },
+        {
+          "issue_id": "intent_process_relation_not_grounded_012",
+          "issue_type": "intent_process_relation_not_grounded",
+          "field_path": "process_relations[6].from_model_asset_id",
+          "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+          "severity": "blocking",
+          "resolution_policy": "ask_user",
+          "details": {
+            "model_asset_id": "asset/stl/m104_storage_rack"
+          }
+        },
+        {
+          "issue_id": "intent_transport_assignments_incomplete_013",
+          "issue_type": "intent_transport_assignments_incomplete",
+          "field_path": "process_relations",
+          "message": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role.",
+          "severity": "blocking",
+          "resolution_policy": "revise_intent",
+          "details": {
+            "relation_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              "named_agv_not_assigned",
+              "conveyor_not_assigned"
+            ]
+          }
+        }
+      ],
+      "repairs": [],
+      "authoritatively_resolved_issues": []
+    }
+  }
+}
+
+{
+  "event": "intent_validation_done",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "ValidatorAgent",
+  "status": "done",
+  "summary": "NEED_CLARIFICATION",
+  "payload": {
+    "intent_validation": {
+      "agent_name": "ValidatorAgent",
+      "validation_report": {
+        "schema_version": "layout-agentic-intent-validation-v1",
+        "status": "NEED_CLARIFICATION",
+        "scope": "intent",
+        "errors": [
+          {
+            "issue_id": "intent_asset_not_grounded_001",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[1].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_002",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[2].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_003",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[5].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_004",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[13].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_005",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[14].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_006",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[15].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_007",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[1].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_008",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[2].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_009",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[2].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/fbx/fbx_84d31057"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_010",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[3].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/glb/m086_flexible_test_workstation"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_011",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[5].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_012",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[6].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_transport_assignments_incomplete_013",
+            "issue_type": "intent_transport_assignments_incomplete",
+            "field_path": "process_relations",
+            "message": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role.",
+            "severity": "blocking",
+            "resolution_policy": "revise_intent",
+            "details": {
+              "relation_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                "named_agv_not_assigned",
+                "conveyor_not_assigned"
+              ]
+            }
+          },
+          {
+            "issue_id": "missing_site_dimensions",
+            "issue_type": "missing_site_dimensions",
+            "field_path": "site",
+            "message": "A layout task requires user-provided site dimensions or dimensions inherited from an active layout; model-inferred dimensions are not accepted as facts.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {}
+          },
+          {
+            "issue_id": "model_reported_missing_001",
+            "issue_type": "model_reported_missing_001",
+            "field_path": null,
+            "message": "Equipment footprint dimensions for all 13 main process units and 10 auxiliary objects are not supplied",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {}
+          }
+        ],
+        "warnings": [],
+        "contract_status": "REPAIRABLE",
+        "can_enter_designer": false
+      },
+      "intent_validation": {
+        "schema_version": "layout-agentic-intent-validation-v1",
+        "status": "NEED_CLARIFICATION",
+        "scope": "intent",
+        "errors": [
+          {
+            "issue_id": "intent_asset_not_grounded_001",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[1].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_002",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[2].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_003",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[5].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_004",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[13].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_005",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[14].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_006",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[15].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_007",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[1].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_008",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[2].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_009",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[2].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/fbx/fbx_84d31057"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_010",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[3].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/glb/m086_flexible_test_workstation"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_011",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[5].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_012",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[6].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_transport_assignments_incomplete_013",
+            "issue_type": "intent_transport_assignments_incomplete",
+            "field_path": "process_relations",
+            "message": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role.",
+            "severity": "blocking",
+            "resolution_policy": "revise_intent",
+            "details": {
+              "relation_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                "named_agv_not_assigned",
+                "conveyor_not_assigned"
+              ]
+            }
+          },
+          {
+            "issue_id": "missing_site_dimensions",
+            "issue_type": "missing_site_dimensions",
+            "field_path": "site",
+            "message": "A layout task requires user-provided site dimensions or dimensions inherited from an active layout; model-inferred dimensions are not accepted as facts.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {}
+          },
+          {
+            "issue_id": "model_reported_missing_001",
+            "issue_type": "model_reported_missing_001",
+            "field_path": null,
+            "message": "Equipment footprint dimensions for all 13 main process units and 10 auxiliary objects are not supplied",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {}
+          }
+        ],
+        "warnings": [],
+        "contract_status": "REPAIRABLE",
+        "can_enter_designer": false
+      },
+      "layout_validation": {
+        "status": "NOT_RUN",
+        "issues": [],
+        "violation_count": 0
+      },
+      "validation_scope": "intent",
+      "repair": {
+        "source": "validator",
+        "target_agent": "IntentUnderstandingAgent",
+        "source_revision_id": "intent_validation_v1",
+        "disposition": "clarification_required",
+        "should_revise": false,
+        "actions": [
+          {
+            "action_id": "intent_repair_001",
+            "action_type": "revise_intent_field",
+            "target_agent": "IntentUnderstandingAgent",
+            "field_path": "process_relations",
+            "issue_type": "intent_transport_assignments_incomplete",
+            "instruction": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role.",
+            "allowed_sources": [
+              "user_message",
+              "conversation_history",
+              "linguistic_frame",
+              "engineering_rag_grounding",
+              "active_layout",
+              "instance_directory"
+            ]
+          }
+        ],
+        "repair_actions": [
+          {
+            "action_id": "intent_repair_001",
+            "action_type": "revise_intent_field",
+            "target_agent": "IntentUnderstandingAgent",
+            "field_path": "process_relations",
+            "issue_type": "intent_transport_assignments_incomplete",
+            "instruction": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role.",
+            "allowed_sources": [
+              "user_message",
+              "conversation_history",
+              "linguistic_frame",
+              "engineering_rag_grounding",
+              "active_layout",
+              "instance_directory"
+            ]
+          }
+        ],
+        "issues": [
+          {
+            "issue_id": "intent_asset_not_grounded_001",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[1].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_002",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[2].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_003",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[5].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_004",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[13].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_005",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[14].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_asset_not_grounded_006",
+            "issue_type": "intent_asset_not_grounded",
+            "field_path": "asset_mentions[15].model_asset_id",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": null
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_007",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[1].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_008",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[2].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_009",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[2].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/fbx/fbx_84d31057"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_010",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[3].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/glb/m086_flexible_test_workstation"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_011",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[5].to_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_process_relation_not_grounded_012",
+            "issue_type": "intent_process_relation_not_grounded",
+            "field_path": "process_relations[6].from_model_asset_id",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {
+              "model_asset_id": "asset/stl/m104_storage_rack"
+            }
+          },
+          {
+            "issue_id": "intent_transport_assignments_incomplete_013",
+            "issue_type": "intent_transport_assignments_incomplete",
+            "field_path": "process_relations",
+            "message": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role.",
+            "severity": "blocking",
+            "resolution_policy": "revise_intent",
+            "details": {
+              "relation_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                "named_agv_not_assigned",
+                "conveyor_not_assigned"
+              ]
+            }
+          },
+          {
+            "issue_id": "missing_site_dimensions",
+            "issue_type": "missing_site_dimensions",
+            "field_path": "site",
+            "message": "A layout task requires user-provided site dimensions or dimensions inherited from an active layout; model-inferred dimensions are not accepted as facts.",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {}
+          },
+          {
+            "issue_id": "model_reported_missing_001",
+            "issue_type": "model_reported_missing_001",
+            "field_path": null,
+            "message": "Equipment footprint dimensions for all 13 main process units and 10 auxiliary objects are not supplied",
+            "severity": "blocking",
+            "resolution_policy": "ask_user",
+            "details": {}
+          }
+        ],
+        "clarification_questions": [
+          "For \"two compact vertical machining centers A and B\", choose one: Vertical machining center 1100 x 900 (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 2.39 m by 2.66 m); Vertical machining center GA-V918C (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 6.44 m by 3.35 m); Bare vertical machining-center model (catalog type: vertical machining center bare model; catalog-recorded function: machining; catalog footprint: approximately 1.08 m by 1.85 m); High-speed vertical turn-mill machining center (catalog type: high speed vertical turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 2.57 m by 3.87 m); CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.5 m by 2.28 m).",
+          "For \"one turn-mill center\", choose one: Turn-mill machining center (catalog type: turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 7.04 m by 4.2 m); High-speed vertical turn-mill machining center (catalog type: high speed vertical turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 2.57 m by 3.87 m); CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.5 m by 2.28 m); Haas CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.35 m by 3.64 m); Vertical machining center 1100 x 900 (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 2.39 m by 2.66 m).",
+          "For \"two fixture assembly workstations A and B\", choose one: Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m); Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Flexible test workstation (catalog footprint: approximately 1.2 m by 0.8 m); Robot linear-slide workstation (catalog type: robot linear slide workstation; catalog footprint: approximately 0.74 m by 0.33 m); Laser marking station (catalog footprint: approximately 1.15 m by 1 m).",
+          "For \"a loading work table\", choose one: Table; Work table (catalog footprint: approximately 1 m by 1.6 m); Worktable subunit; Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m).",
+          "For \"an unloading work table\", choose one: Table; Work table (catalog footprint: approximately 1 m by 1.6 m); Worktable subunit; Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m).",
+          "For \"a pallet-track conveyor\", choose one: Conveyor line (catalog scope: production line; catalog footprint: approximately 7.52 m by 1.04 m); Belt conveyor (catalog type: belt conveyor line; catalog scope: production line); Conveyor 2 (catalog type: conveyor line segment; catalog scope: production line; catalog footprint: approximately 1.56 m by 6.52 m); Conveyor line 3 (catalog type: conveyor line; catalog scope: production line); Conveyor line 2 (catalog type: conveyor line; catalog scope: production line).",
+          "Please provide the site width and depth, for example 20m x 12m.",
+          "Equipment footprint dimensions for all 13 main process units and 10 auxiliary objects are not supplied"
+        ],
+        "requires_user_clarification": true,
+        "can_auto_repair": false,
+        "fatal": false
+      },
+      "revision": {
+        "revision_index": 1,
+        "validation_revision_id": "intent_validation_v1",
+        "intent_revision_id": "intent_v1",
+        "flp_ir_revision_id": null,
+        "layout_revision_id": null
+      },
+      "trace": {
+        "agent_name": "ValidatorAgent",
+        "contract_version": "1.1",
+        "responsibility": "Validate semantic intent separately from FLP-IR/layout state, then emit executable feedback for the responsible upstream agent.",
+        "input_ref": "intent_v1",
+        "output_ref": "intent_validation_v1",
+        "iteration": 1,
+        "input_artifacts": [
+          "intent_v1"
+        ],
+        "output_artifacts": [
+          "intent_validation_v1",
+          "intent_feedback_v1"
+        ],
+        "decision": "clarification_required",
+        "evidence": [
+          "intent_asset_not_grounded:asset_mentions[1].model_asset_id",
+          "intent_asset_not_grounded:asset_mentions[2].model_asset_id",
+          "intent_asset_not_grounded:asset_mentions[5].model_asset_id",
+          "intent_asset_not_grounded:asset_mentions[13].model_asset_id",
+          "intent_asset_not_grounded:asset_mentions[14].model_asset_id",
+          "intent_asset_not_grounded:asset_mentions[15].model_asset_id",
+          "intent_process_relation_not_grounded:process_relations[1].to_model_asset_id",
+          "intent_process_relation_not_grounded:process_relations[2].from_model_asset_id",
+          "intent_process_relation_not_grounded:process_relations[2].to_model_asset_id",
+          "intent_process_relation_not_grounded:process_relations[3].from_model_asset_id",
+          "intent_process_relation_not_grounded:process_relations[5].to_model_asset_id",
+          "intent_process_relation_not_grounded:process_relations[6].from_model_asset_id",
+          "intent_transport_assignments_incomplete:process_relations",
+          "missing_site_dimensions:site",
+          "model_reported_missing_001:None"
+        ]
+      },
+      "contract": {
+        "contract_name": "ValidatorAgent",
+        "contract_version": "1.1",
+        "input_fields": [
+          "flp_ir",
+          "intent",
+          "semantic_intent",
+          "rough_layout"
+        ],
+        "output_fields": [
+          "validation_report",
+          "intent_validation",
+          "layout_validation",
+          "validation_scope",
+          "repair",
+          "revision",
+          "trace"
+        ],
+        "valid": true,
+        "errors": []
+      }
+    }
+  },
+  "iteration": 1
+}
+
+{
+  "event": "design_done",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "DesignerAgent",
+  "status": "skipped",
+  "summary": "skipped_by_intent_contract",
+  "payload": {
+    "design": {
+      "agent_name": "DesignerAgent",
+      "design_status": "skipped_by_intent_contract",
+      "handoff": null,
+      "evidence_package": null,
+      "flp_ir": null,
+      "rough_layout": null,
+      "solver_report": null,
+      "solver_used": null,
+      "design_basis": {
+        "intent_type": "generate_feasible_layout",
+        "protected_user_constraints": [],
+        "skip_reason": "Intent contract forbids design while blocking requirements remain."
+      },
+      "solver_evidence": null,
+      "applied_feedback": [],
+      "revision": {
+        "revision_index": 1,
+        "design_revision_id": "design_v1",
+        "flp_ir_revision_id": null,
+        "layout_revision_id": null,
+        "parent_layout_id": null,
+        "feedback_source": null,
+        "feedback_revision_id": null
+      },
+      "trace": {
+        "agent_name": "DesignerAgent",
+        "contract_version": "1.1",
+        "responsibility": "Compile FLP-IR, call the selected solver, and apply structured validation or evaluation feedback.",
+        "input_ref": "intent_v1",
+        "output_ref": "design_skipped",
+        "iteration": 1,
+        "input_artifacts": [
+          "intent_v1"
+        ],
+        "output_artifacts": [
+          "design_skipped"
+        ],
+        "decision": "not_invoked_due_to_intent_contract",
+        "evidence": [
+          "missing_site_dimensions",
+          "model_reported_missing_001",
+          "model_reported_missing_002",
+          "model_reported_missing_003",
+          "model_reported_missing_004",
+          "intent_asset_not_grounded_001",
+          "intent_asset_not_grounded_002",
+          "intent_asset_not_grounded_003",
+          "intent_asset_not_grounded_004",
+          "intent_asset_not_grounded_005",
+          "intent_asset_not_grounded_006",
+          "intent_process_relation_not_grounded_007",
+          "intent_process_relation_not_grounded_008",
+          "intent_process_relation_not_grounded_009",
+          "intent_process_relation_not_grounded_010",
+          "intent_process_relation_not_grounded_011",
+          "intent_process_relation_not_grounded_012",
+          "intent_transport_assignments_incomplete_013"
+        ]
+      },
+      "contract": {
+        "contract_name": "DesignerAgent",
+        "contract_version": "1.1",
+        "input_fields": [
+          "intent",
+          "semantic_intent",
+          "scene_context",
+          "feedback"
+        ],
+        "output_fields": [
+          "design_status",
+          "flp_ir",
+          "rough_layout",
+          "solver_report",
+          "design_basis",
+          "solver_evidence",
+          "applied_feedback",
+          "revision",
+          "trace"
+        ],
+        "valid": true,
+        "errors": []
+      }
+    }
+  },
+  "iteration": 1
+}
+
+{
+  "event": "validation_done",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "ValidatorAgent",
+  "status": "done",
+  "summary": "NEED_CLARIFICATION",
+  "payload": {
+    "validation": {
+      "agent_name": "ValidatorAgent",
+      "validation_report": {
+        "status": "NEED_CLARIFICATION",
+        "errors": [
+          {
+            "error_type": "missing_site",
+            "message": "A layout task requires user-provided site dimensions or dimensions inherited from an active layout; model-inferred dimensions are not accepted as facts.",
+            "field_path": "site"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Equipment footprint dimensions for all 13 main process units and 10 auxiliary objects are not supplied",
+            "field_path": null
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "field_path": "asset_mentions[1].model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "field_path": "asset_mentions[2].model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "field_path": "asset_mentions[5].model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "field_path": "asset_mentions[13].model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "field_path": "asset_mentions[14].model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Use the identity selected for this equipment mention by Engineering RAG.",
+            "field_path": "asset_mentions[15].model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "field_path": "process_relations[1].to_model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "field_path": "process_relations[2].from_model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "field_path": "process_relations[2].to_model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "field_path": "process_relations[3].from_model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "field_path": "process_relations[5].to_model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity.",
+            "field_path": "process_relations[6].from_model_asset_id"
+          },
+          {
+            "error_type": "missing_required_field",
+            "message": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role.",
+            "field_path": "process_relations"
+          }
+        ],
+        "warnings": []
+      },
+      "intent_validation": null,
+      "layout_validation": {
+        "checked": false,
+        "status": "NOT_AVAILABLE",
+        "issues": [],
+        "violation_count": 0
+      },
+      "validation_scope": "layout",
+      "repair": {
+        "repaired_flp_ir": null,
+        "repair_actions": [],
+        "actions": [],
+        "issues": [
+          {
+            "error_type": "missing_site",
+            "classification": "clarification_required",
+            "field_path": "site",
+            "instance_ids": [],
+            "message": "A layout task requires user-provided site dimensions or dimensions inherited from an active layout; model-inferred dimensions are not accepted as facts."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": null,
+            "instance_ids": [],
+            "message": "Equipment footprint dimensions for all 13 main process units and 10 auxiliary objects are not supplied"
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "asset_mentions[1].model_asset_id",
+            "instance_ids": [],
+            "message": "Use the identity selected for this equipment mention by Engineering RAG."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "asset_mentions[2].model_asset_id",
+            "instance_ids": [],
+            "message": "Use the identity selected for this equipment mention by Engineering RAG."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "asset_mentions[5].model_asset_id",
+            "instance_ids": [],
+            "message": "Use the identity selected for this equipment mention by Engineering RAG."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "asset_mentions[13].model_asset_id",
+            "instance_ids": [],
+            "message": "Use the identity selected for this equipment mention by Engineering RAG."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "asset_mentions[14].model_asset_id",
+            "instance_ids": [],
+            "message": "Use the identity selected for this equipment mention by Engineering RAG."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "asset_mentions[15].model_asset_id",
+            "instance_ids": [],
+            "message": "Use the identity selected for this equipment mention by Engineering RAG."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "process_relations[1].to_model_asset_id",
+            "instance_ids": [],
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "process_relations[2].from_model_asset_id",
+            "instance_ids": [],
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "process_relations[2].to_model_asset_id",
+            "instance_ids": [],
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "process_relations[3].from_model_asset_id",
+            "instance_ids": [],
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "process_relations[5].to_model_asset_id",
+            "instance_ids": [],
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "process_relations[6].from_model_asset_id",
+            "instance_ids": [],
+            "message": "Bind the literal process endpoint to its Engineering RAG-selected asset identity."
+          },
+          {
+            "error_type": "missing_required_field",
+            "classification": "clarification_required",
+            "field_path": "process_relations",
+            "instance_ids": [],
+            "message": "Assign each transfer to the AGV, conveyor, or operators described in the request, and quote the sentence supplying that role."
+          }
+        ],
+        "disposition": "clarification_required",
+        "can_auto_repair": false,
+        "requires_user_clarification": true,
+        "fatal": false,
+        "source": "validator",
+        "clarification_questions": [
+          "For \"two compact vertical machining centers A and B\", choose one: Vertical machining center 1100 x 900 (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 2.39 m by 2.66 m); Vertical machining center GA-V918C (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 6.44 m by 3.35 m); Bare vertical machining-center model (catalog type: vertical machining center bare model; catalog-recorded function: machining; catalog footprint: approximately 1.08 m by 1.85 m); High-speed vertical turn-mill machining center (catalog type: high speed vertical turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 2.57 m by 3.87 m); CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.5 m by 2.28 m).",
+          "For \"one turn-mill center\", choose one: Turn-mill machining center (catalog type: turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 7.04 m by 4.2 m); High-speed vertical turn-mill machining center (catalog type: high speed vertical turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 2.57 m by 3.87 m); CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.5 m by 2.28 m); Haas CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.35 m by 3.64 m); Vertical machining center 1100 x 900 (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 2.39 m by 2.66 m).",
+          "For \"two fixture assembly workstations A and B\", choose one: Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m); Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Flexible test workstation (catalog footprint: approximately 1.2 m by 0.8 m); Robot linear-slide workstation (catalog type: robot linear slide workstation; catalog footprint: approximately 0.74 m by 0.33 m); Laser marking station (catalog footprint: approximately 1.15 m by 1 m).",
+          "For \"a loading work table\", choose one: Table; Work table (catalog footprint: approximately 1 m by 1.6 m); Worktable subunit; Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m).",
+          "For \"an unloading work table\", choose one: Table; Work table (catalog footprint: approximately 1 m by 1.6 m); Worktable subunit; Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m).",
+          "For \"a pallet-track conveyor\", choose one: Conveyor line (catalog scope: production line; catalog footprint: approximately 7.52 m by 1.04 m); Belt conveyor (catalog type: belt conveyor line; catalog scope: production line); Conveyor 2 (catalog type: conveyor line segment; catalog scope: production line; catalog footprint: approximately 1.56 m by 6.52 m); Conveyor line 3 (catalog type: conveyor line; catalog scope: production line); Conveyor line 2 (catalog type: conveyor line; catalog scope: production line)."
+        ],
+        "unsupported_reason": null,
+        "source_revision_id": "validation_v1"
+      },
+      "revision": {
+        "revision_index": 1,
+        "validation_revision_id": "validation_v1",
+        "flp_ir_revision_id": null,
+        "layout_revision_id": null
+      },
+      "trace": {
+        "agent_name": "ValidatorAgent",
+        "contract_version": "1.1",
+        "responsibility": "Validate semantic intent separately from FLP-IR/layout state, then emit executable feedback for the responsible upstream agent.",
+        "input_ref": "flp_ir_v1 + layout_v1",
+        "output_ref": "validation_v1",
+        "iteration": 1,
+        "input_artifacts": [
+          "flp_ir_v1"
+        ],
+        "output_artifacts": [
+          "validation_v1",
+          "validation_recovery_feedback_v1"
+        ],
+        "decision": "clarification_required",
+        "evidence": [
+          "missing_site:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:",
+          "missing_required_field:"
+        ]
+      },
+      "contract": {
+        "contract_name": "ValidatorAgent",
+        "contract_version": "1.1",
+        "input_fields": [
+          "flp_ir",
+          "intent",
+          "semantic_intent",
+          "rough_layout"
+        ],
+        "output_fields": [
+          "validation_report",
+          "intent_validation",
+          "layout_validation",
+          "validation_scope",
+          "repair",
+          "revision",
+          "trace"
+        ],
+        "valid": true,
+        "errors": []
+      }
+    },
+    "clarification_options": [
+      {
+        "surface_text": "two compact vertical machining centers A and B",
+        "choices": [
+          {
+            "display_label": "Vertical machining center 1100 x 900 (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 2.39 m by 2.66 m)"
+          },
+          {
+            "display_label": "Vertical machining center GA-V918C (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 6.44 m by 3.35 m)"
+          },
+          {
+            "display_label": "Bare vertical machining-center model (catalog type: vertical machining center bare model; catalog-recorded function: machining; catalog footprint: approximately 1.08 m by 1.85 m)"
+          }
+        ]
+      },
+      {
+        "surface_text": "one turn-mill center",
+        "choices": [
+          {
+            "display_label": "Turn-mill machining center (catalog type: turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 7.04 m by 4.2 m)"
+          },
+          {
+            "display_label": "High-speed vertical turn-mill machining center (catalog type: high speed vertical turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 2.57 m by 3.87 m)"
+          },
+          {
+            "display_label": "CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.5 m by 2.28 m)"
+          }
+        ]
+      },
+      {
+        "surface_text": "two fixture assembly workstations A and B",
+        "choices": [
+          {
+            "display_label": "Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m)"
+          },
+          {
+            "display_label": "Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m)"
+          },
+          {
+            "display_label": "Flexible test workstation (catalog footprint: approximately 1.2 m by 0.8 m)"
+          }
+        ]
+      },
+      {
+        "surface_text": "a loading work table",
+        "choices": [
+          {
+            "display_label": "Table"
+          },
+          {
+            "display_label": "Work table (catalog footprint: approximately 1 m by 1.6 m)"
+          },
+          {
+            "display_label": "Worktable subunit"
+          }
+        ]
+      },
+      {
+        "surface_text": "an unloading work table",
+        "choices": [
+          {
+            "display_label": "Table"
+          },
+          {
+            "display_label": "Work table (catalog footprint: approximately 1 m by 1.6 m)"
+          },
+          {
+            "display_label": "Worktable subunit"
+          }
+        ]
+      },
+      {
+        "surface_text": "a pallet-track conveyor",
+        "choices": [
+          {
+            "display_label": "Conveyor line (catalog scope: production line; catalog footprint: approximately 7.52 m by 1.04 m)"
+          },
+          {
+            "display_label": "Belt conveyor (catalog type: belt conveyor line; catalog scope: production line)"
+          },
+          {
+            "display_label": "Conveyor 2 (catalog type: conveyor line segment; catalog scope: production line; catalog footprint: approximately 1.56 m by 6.52 m)"
+          }
+        ]
+      }
+    ]
+  },
+  "iteration": 1
+}
+
+{
+  "event": "evaluation_done",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "EvaluatorAgent",
+  "status": "skipped",
+  "summary": "not_evaluated",
+  "payload": {
+    "evaluation": {
+      "agent_name": "EvaluatorAgent",
+      "evaluation_status": "not_evaluated",
+      "metrics": {},
+      "comparison": {
+        "baseline_available": false,
+        "objective_delta": null,
+        "relative_objective_improvement": null,
+        "utilization_delta": null,
+        "compactness_delta": null,
+        "violation_delta": null,
+        "improved": null
+      },
+      "optimization_feedback": {
+        "source": "evaluator",
+        "source_revision_id": "evaluation_v1",
+        "should_revise": false,
+        "issue_types": [],
+        "actions": [],
+        "stop_reason": "no_validated_layout"
+      },
+      "notes": [
+        "Evaluation was not invoked because it is not required for this task route."
+      ],
+      "revision": {
+        "revision_index": 1,
+        "evaluation_revision_id": "evaluation_v1",
+        "layout_revision_id": null
+      },
+      "trace": {
+        "agent_name": "EvaluatorAgent",
+        "contract_version": "1.1",
+        "responsibility": "Evaluate legal layout quality, compare revisions, and emit structured optimization feedback.",
+        "input_ref": "intent_v1",
+        "output_ref": "evaluation_skipped",
+        "iteration": 1,
+        "input_artifacts": [
+          "intent_v1"
+        ],
+        "output_artifacts": [
+          "evaluation_skipped"
+        ],
+        "decision": "not_invoked:no_validated_layout",
+        "evidence": []
+      },
+      "contract": {
+        "contract_name": "EvaluatorAgent",
+        "contract_version": "1.1",
+        "input_fields": [
+          "rough_layout",
+          "flp_ir",
+          "validation_report",
+          "solver_report",
+          "previous_evaluation"
+        ],
+        "output_fields": [
+          "evaluation_status",
+          "metrics",
+          "comparison",
+          "optimization_feedback",
+          "revision",
+          "trace"
+        ],
+        "valid": true,
+        "errors": []
+      }
+    }
+  },
+  "iteration": 1
+}
+
+{
+  "event": "loop_done",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "AgenticLayOpt",
+  "status": "blocked",
+  "summary": "intent_requires_clarification",
+  "payload": {
+    "status": "NEED_CLARIFICATION",
+    "loop_report": {
+      "contract_version": "1.1",
+      "state_machine": "ResolveAuthoritativeContext->CompileTaskContract->CompileCanonicalConstraints->FeasibilityPreflight->ProduceCandidate->CanonicalHardValidate->TaskContractValidate->ViewportPrecheck->TypedRepair->A2BrowserReceipt->A3BlockedCandidateReview->A3QualityOptimize->NonRegressionCheck->BrowserReceipt->Accept",
+      "candidate_selection": [
+        "clarification_or_task_contract_complete",
+        "layout_generated",
+        "hard_constraint_violation_count",
+        "task_contract_satisfaction",
+        "viewport_validity",
+        "objective_value",
+        "runtime"
+      ],
+      "a2_responsibility": "complete_feasibility_loop",
+      "a3_replacement_policy": "replace_only_if_hard_task_viewport_non_regression_and_strict_objective_improvement",
+      "a3_blocked_candidate_policy": "remove_false_clarification_from_complete_authoritative_contract;otherwise_keep_clarification;for_edit_conflict_produce_nearest_feasible_ga_alternative_with_mandatory_deviation_disclosure",
+      "max_iterations": 3,
+      "iterations": 1,
+      "converged": false,
+      "legal_solution_found": false,
+      "quality_converged": false,
+      "termination_reason": "intent_requires_clarification",
+      "repair_rounds": 0,
+      "optimization_rounds": 0,
+      "selected_revision": 1,
+      "attempted_revisions": [
+        1
+      ],
+      "solver_execution": {
+        "calls": 0,
+        "configured_generations": 0,
+        "completed_generations": 0,
+        "evaluated_individuals": 0,
+        "runtime_s": 0
+      },
+      "round_schedule": [
+        {
+          "revision_index": 1,
+          "planned_generations": null,
+          "actual_generations": null,
+          "rng_seed": null,
+          "mutation_summary": {}
+        }
+      ],
+      "artifact_chain": [
+        "intent_v1",
+        "validation_v1",
+        "evaluation_v1"
+      ]
+    },
+    "revision_history": [
+      {
+        "revision_index": 1,
+        "parent_layout_id": null,
+        "artifacts": {
+          "layout_edit_ir": null,
+          "flp_ir": null,
+          "layout": null,
+          "validation": "validation_v1",
+          "evaluation": "evaluation_v1"
+        },
+        "design_status": "skipped_by_intent_contract",
+        "validation_status": "NEED_CLARIFICATION",
+        "evaluation_status": "not_evaluated",
+        "recovery_disposition": "clarification_required",
+        "solver_used": null,
+        "solver_budget": {
+          "solver_options": {},
+          "planned_generations": null,
+          "generations_completed": null,
+          "evaluated_individuals": null,
+          "runtime_s": null
+        },
+        "mutation_summary": {},
+        "objective_value": null,
+        "violation_count": 15,
+        "hard_violation_count": null,
+        "task_contract_satisfaction": null,
+        "viewport_precheck_valid": null,
+        "applied_feedback": [],
+        "feedback_executed": false,
+        "bounded_retry_executed": false,
+        "candidate_decision": "not_legal",
+        "retained_as_best": false,
+        "selected_for_output": false
+      }
+    ]
+  },
+  "iteration": 1
+}
+
+{
+  "event": "turn_blocked",
+  "session_id": "web-1792389564611",
+  "turn_id": 1,
+  "agent_name": "AgenticLayOpt",
+  "status": "blocked",
+  "summary": "NEED_CLARIFICATION",
+  "payload": {
+    "status": "NEED_CLARIFICATION",
+    "active_layout_id": null,
+    "selected_instance_ids": [],
+    "solver_used": null,
+    "final_violation_count": 15,
+    "loop_report": {
+      "contract_version": "1.1",
+      "state_machine": "ResolveAuthoritativeContext->CompileTaskContract->CompileCanonicalConstraints->FeasibilityPreflight->ProduceCandidate->CanonicalHardValidate->TaskContractValidate->ViewportPrecheck->TypedRepair->A2BrowserReceipt->A3BlockedCandidateReview->A3QualityOptimize->NonRegressionCheck->BrowserReceipt->Accept",
+      "candidate_selection": [
+        "clarification_or_task_contract_complete",
+        "layout_generated",
+        "hard_constraint_violation_count",
+        "task_contract_satisfaction",
+        "viewport_validity",
+        "objective_value",
+        "runtime"
+      ],
+      "a2_responsibility": "complete_feasibility_loop",
+      "a3_replacement_policy": "replace_only_if_hard_task_viewport_non_regression_and_strict_objective_improvement",
+      "a3_blocked_candidate_policy": "remove_false_clarification_from_complete_authoritative_contract;otherwise_keep_clarification;for_edit_conflict_produce_nearest_feasible_ga_alternative_with_mandatory_deviation_disclosure",
+      "max_iterations": 3,
+      "iterations": 1,
+      "converged": false,
+      "legal_solution_found": false,
+      "quality_converged": false,
+      "termination_reason": "intent_requires_clarification",
+      "repair_rounds": 0,
+      "optimization_rounds": 0,
+      "selected_revision": 1,
+      "attempted_revisions": [
+        1
+      ],
+      "solver_execution": {
+        "calls": 0,
+        "configured_generations": 0,
+        "completed_generations": 0,
+        "evaluated_individuals": 0,
+        "runtime_s": 0
+      },
+      "round_schedule": [
+        {
+          "revision_index": 1,
+          "planned_generations": null,
+          "actual_generations": null,
+          "rng_seed": null,
+          "mutation_summary": {}
+        }
+      ],
+      "artifact_chain": [
+        "intent_v1",
+        "validation_v1",
+        "evaluation_v1"
+      ]
+    },
+    "revision_history": [
+      {
+        "revision_index": 1,
+        "parent_layout_id": null,
+        "artifacts": {
+          "layout_edit_ir": null,
+          "flp_ir": null,
+          "layout": null,
+          "validation": "validation_v1",
+          "evaluation": "evaluation_v1"
+        },
+        "design_status": "skipped_by_intent_contract",
+        "validation_status": "NEED_CLARIFICATION",
+        "evaluation_status": "not_evaluated",
+        "recovery_disposition": "clarification_required",
+        "solver_used": null,
+        "solver_budget": {
+          "solver_options": {},
+          "planned_generations": null,
+          "generations_completed": null,
+          "evaluated_individuals": null,
+          "runtime_s": null
+        },
+        "mutation_summary": {},
+        "objective_value": null,
+        "violation_count": 15,
+        "hard_violation_count": null,
+        "task_contract_satisfaction": null,
+        "viewport_precheck_valid": null,
+        "applied_feedback": [],
+        "feedback_executed": false,
+        "bounded_retry_executed": false,
+        "candidate_decision": "not_legal",
+        "retained_as_best": false,
+        "selected_for_output": false
+      }
+    ],
+    "assistant_message": "I need one or more choices before I can continue.\n\n- For \"two compact vertical machining centers A and B\", choose one: Vertical machining center 1100 x 900 (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 2.39 m by 2.66 m); Vertical machining center GA-V918C (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 6.44 m by 3.35 m); Bare vertical machining-center model (catalog type: vertical machining center bare model; catalog-recorded function: machining; catalog footprint: approximately 1.08 m by 1.85 m); High-speed vertical turn-mill machining center (catalog type: high speed vertical turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 2.57 m by 3.87 m); CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.5 m by 2.28 m).\n- For \"one turn-mill center\", choose one: Turn-mill machining center (catalog type: turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 7.04 m by 4.2 m); High-speed vertical turn-mill machining center (catalog type: high speed vertical turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 2.57 m by 3.87 m); CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.5 m by 2.28 m); Haas CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.35 m by 3.64 m); Vertical machining center 1100 x 900 (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 2.39 m by 2.66 m).\n- For \"two fixture assembly workstations A and B\", choose one: Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m); Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Flexible test workstation (catalog footprint: approximately 1.2 m by 0.8 m); Robot linear-slide workstation (catalog type: robot linear slide workstation; catalog footprint: approximately 0.74 m by 0.33 m); Laser marking station (catalog footprint: approximately 1.15 m by 1 m).\n- For \"a loading work table\", choose one: Table; Work table (catalog footprint: approximately 1 m by 1.6 m); Worktable subunit; Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m).\n- For \"an unloading work table\", choose one: Table; Work table (catalog footprint: approximately 1 m by 1.6 m); Worktable subunit; Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m).\n- For \"a pallet-track conveyor\", choose one: Conveyor line (catalog scope: production line; catalog footprint: approximately 7.52 m by 1.04 m); Belt conveyor (catalog type: belt conveyor line; catalog scope: production line); Conveyor 2 (catalog type: conveyor line segment; catalog scope: production line; catalog footprint: approximately 1.56 m by 6.52 m); Conveyor line 3 (catalog type: conveyor line; catalog scope: production line); Conveyor line 2 (catalog type: conveyor line; catalog scope: production line).\n\nReply with the option description you want. I will keep the rest of your request unchanged.",
+    "assistant_message_source": "clarification_projection",
+    "assistant_message_error": null,
+    "clarification_questions": [
+      "For \"two compact vertical machining centers A and B\", choose one: Vertical machining center 1100 x 900 (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 2.39 m by 2.66 m); Vertical machining center GA-V918C (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 6.44 m by 3.35 m); Bare vertical machining-center model (catalog type: vertical machining center bare model; catalog-recorded function: machining; catalog footprint: approximately 1.08 m by 1.85 m); High-speed vertical turn-mill machining center (catalog type: high speed vertical turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 2.57 m by 3.87 m); CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.5 m by 2.28 m).",
+      "For \"one turn-mill center\", choose one: Turn-mill machining center (catalog type: turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 7.04 m by 4.2 m); High-speed vertical turn-mill machining center (catalog type: high speed vertical turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 2.57 m by 3.87 m); CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.5 m by 2.28 m); Haas CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.35 m by 3.64 m); Vertical machining center 1100 x 900 (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 2.39 m by 2.66 m).",
+      "For \"two fixture assembly workstations A and B\", choose one: Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m); Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Flexible test workstation (catalog footprint: approximately 1.2 m by 0.8 m); Robot linear-slide workstation (catalog type: robot linear slide workstation; catalog footprint: approximately 0.74 m by 0.33 m); Laser marking station (catalog footprint: approximately 1.15 m by 1 m).",
+      "For \"a loading work table\", choose one: Table; Work table (catalog footprint: approximately 1 m by 1.6 m); Worktable subunit; Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m).",
+      "For \"an unloading work table\", choose one: Table; Work table (catalog footprint: approximately 1 m by 1.6 m); Worktable subunit; Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m); Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m).",
+      "For \"a pallet-track conveyor\", choose one: Conveyor line (catalog scope: production line; catalog footprint: approximately 7.52 m by 1.04 m); Belt conveyor (catalog type: belt conveyor line; catalog scope: production line); Conveyor 2 (catalog type: conveyor line segment; catalog scope: production line; catalog footprint: approximately 1.56 m by 6.52 m); Conveyor line 3 (catalog type: conveyor line; catalog scope: production line); Conveyor line 2 (catalog type: conveyor line; catalog scope: production line)."
+    ],
+    "clarification_options": [
+      {
+        "surface_text": "two compact vertical machining centers A and B",
+        "choices": [
+          {
+            "display_label": "Vertical machining center 1100 x 900 (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 2.39 m by 2.66 m)"
+          },
+          {
+            "display_label": "Vertical machining center GA-V918C (catalog type: vertical machining center; catalog-recorded function: machining; catalog footprint: approximately 6.44 m by 3.35 m)"
+          },
+          {
+            "display_label": "Bare vertical machining-center model (catalog type: vertical machining center bare model; catalog-recorded function: machining; catalog footprint: approximately 1.08 m by 1.85 m)"
+          }
+        ]
+      },
+      {
+        "surface_text": "one turn-mill center",
+        "choices": [
+          {
+            "display_label": "Turn-mill machining center (catalog type: turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 7.04 m by 4.2 m)"
+          },
+          {
+            "display_label": "High-speed vertical turn-mill machining center (catalog type: high speed vertical turn mill machining center; catalog-recorded function: machining; catalog footprint: approximately 2.57 m by 3.87 m)"
+          },
+          {
+            "display_label": "CNC machining center (catalog-recorded function: machining; catalog footprint: approximately 2.5 m by 2.28 m)"
+          }
+        ]
+      },
+      {
+        "surface_text": "two fixture assembly workstations A and B",
+        "choices": [
+          {
+            "display_label": "Fixture workstation (catalog footprint: approximately 1.22 m by 1.17 m)"
+          },
+          {
+            "display_label": "Fixture workbench (catalog footprint: approximately 0.27 m by 0.2 m)"
+          },
+          {
+            "display_label": "Flexible test workstation (catalog footprint: approximately 1.2 m by 0.8 m)"
+          }
+        ]
+      },
+      {
+        "surface_text": "a loading work table",
+        "choices": [
+          {
+            "display_label": "Table"
+          },
+          {
+            "display_label": "Work table (catalog footprint: approximately 1 m by 1.6 m)"
+          },
+          {
+            "display_label": "Worktable subunit"
+          }
+        ]
+      },
+      {
+        "surface_text": "an unloading work table",
+        "choices": [
+          {
+            "display_label": "Table"
+          },
+          {
+            "display_label": "Work table (catalog footprint: approximately 1 m by 1.6 m)"
+          },
+          {
+            "display_label": "Worktable subunit"
+          }
+        ]
+      },
+      {
+        "surface_text": "a pallet-track conveyor",
+        "choices": [
+          {
+            "display_label": "Conveyor line (catalog scope: production line; catalog footprint: approximately 7.52 m by 1.04 m)"
+          },
+          {
+            "display_label": "Belt conveyor (catalog type: belt conveyor line; catalog scope: production line)"
+          },
+          {
+            "display_label": "Conveyor 2 (catalog type: conveyor line segment; catalog scope: production line; catalog footprint: approximately 1.56 m by 6.52 m)"
+          }
+        ]
+      }
+    ],
+    "turn_context": {
+      "prior_completed_turn_count": 0,
+      "prior_turn_ids": [],
+      "clarification_context_applied": false
+    }
+  },
+  "iteration": 1
+}

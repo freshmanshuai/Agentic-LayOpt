@@ -1,0 +1,1080 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common/common_engineering.schema.json",
+  "title": "Common Engineering Schema",
+  "description": "Common reusable definitions for asset, knowledge, task, and state schemas. Spatial fields are unified; 2D and 3D are not separated by field names.",
+  "$defs": {
+    "NullableString": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "NullableNumber": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "NullableInteger": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "UnitSystem": {
+      "type": "object",
+      "properties": {
+        "length_unit": {
+          "type": "string",
+          "enum": [
+            "m",
+            "mm"
+          ]
+        },
+        "angle_unit": {
+          "type": "string",
+          "enum": [
+            "deg",
+            "rad"
+          ]
+        },
+        "mass_unit": {
+          "type": "string",
+          "enum": [
+            "kg",
+            "g",
+            "unknown"
+          ]
+        },
+        "time_unit": {
+          "type": "string",
+          "enum": [
+            "s",
+            "min",
+            "h",
+            "unknown"
+          ]
+        },
+        "coordinate_system": {
+          "type": "string",
+          "enum": [
+            "right_handed",
+            "left_handed"
+          ]
+        },
+        "canonical_storage": {
+          "type": "string",
+          "enum": [
+            "meter_degree",
+            "millimeter_degree"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "length_unit",
+        "angle_unit",
+        "mass_unit",
+        "time_unit",
+        "coordinate_system",
+        "canonical_storage"
+      ]
+    },
+    "Vector3M": {
+      "type": "object",
+      "properties": {
+        "x_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "y_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "z_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "x_m",
+        "y_m",
+        "z_m"
+      ]
+    },
+    "RotationDeg": {
+      "type": "object",
+      "properties": {
+        "roll_deg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "pitch_deg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "yaw_deg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "roll_deg",
+        "pitch_deg",
+        "yaw_deg"
+      ]
+    },
+    "TransformToParent": {
+      "type": "object",
+      "properties": {
+        "translation_m": {
+          "$ref": "#/$defs/Vector3M"
+        },
+        "rotation_deg": {
+          "$ref": "#/$defs/RotationDeg"
+        },
+        "scale": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "translation_m",
+        "rotation_deg",
+        "scale"
+      ]
+    },
+    "AxisDefinition": {
+      "type": "object",
+      "properties": {
+        "x_axis": {
+          "type": "string"
+        },
+        "y_axis": {
+          "type": "string"
+        },
+        "z_axis": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "x_axis",
+        "y_axis",
+        "z_axis"
+      ]
+    },
+    "CoordinateFrame": {
+      "type": "object",
+      "properties": {
+        "coordinate_frame_id": {
+          "type": "string"
+        },
+        "frame_type": {
+          "type": "string",
+          "enum": [
+            "cad_model",
+            "equipment_local",
+            "site_local",
+            "layout",
+            "scene"
+          ]
+        },
+        "origin_description": {
+          "type": "string"
+        },
+        "axis_definition": {
+          "$ref": "#/$defs/AxisDefinition"
+        },
+        "parent_frame_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "transform_to_parent": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TransformToParent"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "coordinate_frame_id",
+        "frame_type",
+        "origin_description",
+        "axis_definition",
+        "parent_frame_id",
+        "transform_to_parent"
+      ]
+    },
+    "Pose": {
+      "type": "object",
+      "properties": {
+        "x_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "y_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "z_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "roll_deg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "pitch_deg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "yaw_deg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "coordinate_frame_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "x_m",
+        "y_m",
+        "z_m",
+        "roll_deg",
+        "pitch_deg",
+        "yaw_deg",
+        "coordinate_frame_id"
+      ]
+    },
+    "DeltaPose": {
+      "type": "object",
+      "properties": {
+        "dx_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "dy_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "dz_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "droll_deg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "dpitch_deg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "dyaw_deg": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "dx_m",
+        "dy_m",
+        "dz_m",
+        "droll_deg",
+        "dpitch_deg",
+        "dyaw_deg"
+      ]
+    },
+    "DimensionsM": {
+      "type": "object",
+      "properties": {
+        "width_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "depth_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "height_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "width_m",
+        "depth_m",
+        "height_m"
+      ]
+    },
+    "Footprint": {
+      "type": "object",
+      "properties": {
+        "shape_type": {
+          "type": "string",
+          "enum": [
+            "rectangle"
+          ]
+        },
+        "width_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "depth_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "model_extraction",
+            "manual_input",
+            "rule_library",
+            "user_input",
+            "computed",
+            "runtime_obj_bounds"
+          ]
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "shape_type",
+        "width_m",
+        "depth_m",
+        "source",
+        "confidence"
+      ]
+    },
+    "BoundingBoxM": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "$ref": "#/$defs/Vector3M"
+        },
+        "max": {
+          "$ref": "#/$defs/Vector3M"
+        },
+        "coordinate_frame_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "min",
+        "max",
+        "coordinate_frame_id"
+      ]
+    },
+    "Geometry": {
+      "type": "object",
+      "properties": {
+        "shape_type": {
+          "type": "string",
+          "enum": [
+            "rectangle"
+          ]
+        },
+        "dimensions_m": {
+          "$ref": "#/$defs/DimensionsM"
+        },
+        "footprint": {
+          "$ref": "#/$defs/Footprint"
+        },
+        "bounding_box_m": {
+          "$ref": "#/$defs/BoundingBoxM"
+        },
+        "origin_policy": {
+          "type": "string",
+          "enum": [
+            "center_floor",
+            "geometric_center",
+            "cad_origin",
+            "user_defined",
+            "unknown"
+          ]
+        },
+        "geometry_source": {
+          "type": "string",
+          "enum": [
+            "model_extraction",
+            "manual_input",
+            "user_input",
+            "rule_library",
+            "computed",
+            "runtime_obj_bounds"
+          ]
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "shape_type",
+        "dimensions_m",
+        "footprint",
+        "bounding_box_m",
+        "origin_policy",
+        "geometry_source",
+        "confidence"
+      ]
+    },
+    "ClearanceM": {
+      "type": "object",
+      "properties": {
+        "front_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "rear_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "left_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "right_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "top_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "bottom_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "model_extraction",
+            "manual_input",
+            "user_input",
+            "rule_library",
+            "experimental_size_stratified_annotation",
+            "computed"
+          ]
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "front_m",
+        "rear_m",
+        "left_m",
+        "right_m",
+        "top_m",
+        "bottom_m",
+        "source",
+        "confidence"
+      ]
+    },
+    "Port": {
+      "type": "object",
+      "properties": {
+        "port_id": {
+          "type": "string"
+        },
+        "port_type": {
+          "type": "string",
+          "enum": [
+            "material_input",
+            "material_output",
+            "power",
+            "air",
+            "water",
+            "network",
+            "safety",
+            "human_access",
+            "unknown"
+          ]
+        },
+        "side": {
+          "type": "string",
+          "enum": [
+            "front",
+            "rear",
+            "left",
+            "right",
+            "top",
+            "bottom",
+            "center",
+            "unknown"
+          ]
+        },
+        "local_pose": {
+          "$ref": "#/$defs/Pose"
+        },
+        "compatible_flow_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "compatible_port_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "model_extraction",
+            "manual_input",
+            "user_input",
+            "rule_library",
+            "computed"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "port_id",
+        "port_type",
+        "side",
+        "local_pose",
+        "compatible_flow_types",
+        "compatible_port_types",
+        "confidence",
+        "source"
+      ]
+    },
+    "TargetRef": {
+      "type": "object",
+      "properties": {
+        "target_type": {
+          "type": "string",
+          "enum": [
+            "all_equipment",
+            "equipment_instance",
+            "asset",
+            "model_asset",
+            "site",
+            "zone",
+            "site_feature",
+            "flow",
+            "constraint",
+            "objective",
+            "layout",
+            "operation"
+          ]
+        },
+        "target_id": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "target_type",
+        "target_id"
+      ]
+    },
+    "SourceRef": {
+      "type": "object",
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "user_input",
+            "model_file",
+            "model_extraction",
+            "asset_library",
+            "rule_library",
+            "vocabulary",
+            "llm_compiler",
+            "experimental_annotation",
+            "runtime_obj_conversion",
+            "runtime_conversion",
+            "manual_override",
+            "computed"
+          ]
+        },
+        "source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_field": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "source_type",
+        "source_id",
+        "source_field"
+      ]
+    },
+    "ProvenanceItem": {
+      "type": "object",
+      "properties": {
+        "field_path": {
+          "type": "string"
+        },
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "user_input",
+            "model_file",
+            "model_extraction",
+            "asset_library",
+            "rule_library",
+            "vocabulary",
+            "llm_compiler",
+            "experimental_annotation",
+            "runtime_obj_conversion",
+            "runtime_conversion",
+            "manual_override",
+            "computed"
+          ]
+        },
+        "source_id": {
+          "type": "string"
+        },
+        "source_field": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "field_path",
+        "source_type",
+        "source_id",
+        "source_field",
+        "confidence",
+        "note"
+      ]
+    },
+    "UnresolvedItem": {
+      "type": "object",
+      "properties": {
+        "item_id": {
+          "type": "string"
+        },
+        "item_type": {
+          "type": "string",
+          "enum": [
+            "missing_field",
+            "ambiguous_reference",
+            "unsupported_requirement",
+            "conflict",
+            "extraction_low_confidence",
+            "unknown"
+          ]
+        },
+        "field_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "blocking",
+            "warning",
+            "info"
+          ]
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "resolution_policy": {
+          "type": "string",
+          "enum": [
+            "ask_user",
+            "choose_candidate",
+            "manual_review",
+            "ignore",
+            "auto_fill_from_library"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "item_id",
+        "item_type",
+        "field_path",
+        "description",
+        "severity",
+        "candidates",
+        "resolution_policy"
+      ]
+    },
+    "Metadata": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "active",
+            "inactive",
+            "deprecated",
+            "archived"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "updated_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "status",
+        "created_at",
+        "updated_at"
+      ]
+    },
+    "Constraint": {
+      "type": "object",
+      "properties": {
+        "constraint_id": {
+          "type": "string"
+        },
+        "constraint_type": {
+          "type": "string"
+        },
+        "target_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/TargetRef"
+          }
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "user_input",
+            "model_file",
+            "model_extraction",
+            "asset_library",
+            "rule_library",
+            "vocabulary",
+            "llm_compiler",
+            "manual_override",
+            "computed"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "constraint_id",
+        "constraint_type",
+        "target_refs",
+        "parameters",
+        "source",
+        "evidence_refs"
+      ]
+    },
+    "SoftConstraint": {
+      "type": "object",
+      "properties": {
+        "constraint_id": {
+          "type": "string"
+        },
+        "constraint_type": {
+          "type": "string"
+        },
+        "target_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/TargetRef"
+          }
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "weight": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "user_input",
+            "model_file",
+            "model_extraction",
+            "asset_library",
+            "rule_library",
+            "vocabulary",
+            "llm_compiler",
+            "manual_override",
+            "computed"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "constraint_id",
+        "constraint_type",
+        "target_refs",
+        "parameters",
+        "weight",
+        "source",
+        "evidence_refs"
+      ]
+    },
+    "Objective": {
+      "type": "object",
+      "properties": {
+        "objective_id": {
+          "type": "string"
+        },
+        "objective_type": {
+          "type": "string"
+        },
+        "sense": {
+          "type": "string",
+          "enum": [
+            "minimize",
+            "maximize"
+          ]
+        },
+        "weight": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "user_input",
+            "model_file",
+            "model_extraction",
+            "asset_library",
+            "rule_library",
+            "vocabulary",
+            "llm_compiler",
+            "manual_override",
+            "computed"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "objective_id",
+        "objective_type",
+        "sense",
+        "weight",
+        "parameters",
+        "source",
+        "evidence_refs"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "unit_system": {
+      "$ref": "#/$defs/UnitSystem"
+    },
+    "coordinate_frames": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/CoordinateFrame"
+      }
+    },
+    "pose": {
+      "$ref": "#/$defs/Pose"
+    },
+    "geometry": {
+      "$ref": "#/$defs/Geometry"
+    },
+    "clearance_m": {
+      "$ref": "#/$defs/ClearanceM"
+    },
+    "port": {
+      "$ref": "#/$defs/Port"
+    },
+    "target_ref": {
+      "$ref": "#/$defs/TargetRef"
+    },
+    "source_ref": {
+      "$ref": "#/$defs/SourceRef"
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ProvenanceItem"
+      }
+    },
+    "unresolved_item": {
+      "$ref": "#/$defs/UnresolvedItem"
+    },
+    "metadata": {
+      "$ref": "#/$defs/Metadata"
+    }
+  },
+  "additionalProperties": false
+}

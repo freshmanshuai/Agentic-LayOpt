@@ -1,0 +1,1 @@
+Reduce AGV transport cost and equipment relocation effort using the evaluation rules in the engineering context. Show the feasible trade-offs and select the balanced layout under the stated policy.
