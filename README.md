@@ -12,6 +12,8 @@ Agentic LayOpt turns natural-language factory-layout requirements into engineeri
 
 ## Run
 
+Models and media use Git LFS. Install Git LFS before cloning this repository. For an existing checkout, run `git lfs install` and `git lfs pull` to download the asset files before starting the server.
+
 Run commands from this directory:
 
 ```sh
