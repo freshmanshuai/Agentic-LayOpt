@@ -14,24 +14,35 @@ Agentic LayOpt turns natural-language factory-layout requirements into engineeri
 
 Models and media use Git LFS. Install Git LFS before cloning this repository. For an existing checkout, run `git lfs install` and `git lfs pull` to download the asset files before starting the server.
 
-Run commands from this directory:
+Run commands from this directory. Install the Python dependencies first:
 
 ```sh
 python -m pip install -r requirements.txt
-python -m tool.api.rough_design_api_server
 ```
 
-Open [http://127.0.0.1:8000](http://127.0.0.1:8000). Natural-language operations also require an LLM provider and a locally built BGE-M3/Qdrant index. Set `DEEPSEEK_API_KEY` and an available `BGE_M3_MODEL_PATH` in your shell, then build the index:
+For natural-language operations, configure `LLM_API_KEY`, `LLM_BASE_URL`, and `LLM_MODEL` together in your shell. Intent understanding and RAG share these settings. The service must support Chat Completions, Bearer authentication, and `response_format={"type":"json_object"}`. `LLM_BASE_URL` is the API prefix, including `/v1` when required; the client appends `/chat/completions`. Native provider APIs with different request formats require an adapter.
+
+Set an available `BGE_M3_MODEL_PATH`, then build the local BGE-M3/Qdrant index:
 
 ```sh
 python -m tool.rag.engineering_rag index --dataset-dir rag_dataset --index-dir .rag_index/engineering_rag_qdrant
 ```
 
-`.env.example` lists optional settings and is not loaded automatically. The server uses the included `models/runtime-models/` by default. Server startup does not imply that provider access or retrieval is configured.
+After configuring the service and index, start the server:
+
+```sh
+python -m tool.api.rough_design_api_server
+```
+
+On the same computer, open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to use the workbench. This address refers to your own computer.
+
+`.env.example` is a configuration reference and is not loaded automatically. The server uses the included `models/runtime-models/` by default. Server startup does not imply that provider access or retrieval is configured.
 
 To reuse an existing local index, set `ENGINEERING_RAG_INDEX_DIR` to its directory before starting the server. Use the asset catalog and embedding model that were used to build that index. Set `BGE_M3_MODEL_PATH` to the local embedding-model directory to avoid downloading its weights again.
 
-Supply your own `DEEPSEEK_API_KEY` through the environment. On Windows, the client also reads user and system environment settings. Keep credentials and personal endpoint settings outside the distributed project; `.env.example` contains no credentials. The DeepSeek service is called remotely; the embedding model, vector index, and 3D assets can run locally.
+Legacy `DEEPSEEK_API_KEY`, `DEEPSEEK_MODEL`, and `DEEPSEEK_BASE_URL` settings remain supported when the shared `LLM_*` settings are unset. `FLP_INTENT_LLM_MODEL` and `FLP_INTENT_LLM_BASE_URL` can override the intent stage while using the same key. Partial shared settings produce a configuration error rather than inheriting credentials from the legacy provider.
+
+Supply your own credentials through the environment. On Windows, the client also reads user and system environment settings. Keep credentials and personal endpoint settings outside the distributed project; `.env.example` contains no credentials. Model calls go to the configured service; the embedding model, vector index, and 3D assets can run locally.
 
 ## Code layout
 

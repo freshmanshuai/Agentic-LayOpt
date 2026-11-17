@@ -72,6 +72,39 @@ class RAGBlockedError(RuntimeError):
         }
 
 
+def _llm_environment_config(env=None, *, model=None, base_url=None, intent=False):
+    runtime_env = os.environ if env is None else env
+    shared = {
+        name: _env_value(runtime_env, name)
+        for name in ("LLM_API_KEY", "LLM_BASE_URL", "LLM_MODEL")
+    }
+    if intent:
+        model = model or _env_value(runtime_env, "FLP_INTENT_LLM_MODEL")
+        base_url = base_url or _env_value(runtime_env, "FLP_INTENT_LLM_BASE_URL")
+    if any(shared.values()):
+        config = {
+            "LLM_API_KEY": shared["LLM_API_KEY"],
+            "LLM_BASE_URL": base_url or shared["LLM_BASE_URL"],
+            "LLM_MODEL": model or shared["LLM_MODEL"],
+        }
+        missing = [name for name, value in config.items() if not value]
+        if missing:
+            raise RAGBlockedError(
+                "missing_llm_configuration",
+                "Configure LLM_API_KEY, LLM_BASE_URL, and LLM_MODEL together.",
+                details={"missing_env_vars": missing},
+                suggestions=["Use .env.example as a reference and set the variables in your shell."],
+            )
+        # Keep provider credentials together: partial generic settings must not
+        # inherit a saved DeepSeek key or send another provider's key to DeepSeek.
+        return config["LLM_API_KEY"], config["LLM_MODEL"], config["LLM_BASE_URL"]
+    return (
+        DEEPSEEK_API_KEY if env is None else _env_value(runtime_env, "DEEPSEEK_API_KEY"),
+        model or _env_value(runtime_env, "DEEPSEEK_MODEL"),
+        base_url or _env_value(runtime_env, "DEEPSEEK_BASE_URL"),
+    )
+
+
 class DeepSeekClient:
     DEFAULT_BASE_URL = "https://api.deepseek.com"
     DEFAULT_MODEL = "deepseek-v4-pro"
@@ -98,8 +131,8 @@ class DeepSeekClient:
         if not api_key:
             raise RAGBlockedError(
                 "missing_deepseek_api_key",
-                "DEEPSEEK_API_KEY is required for Engineering RAG.",
-                suggestions=["Set DEEPSEEK_API_KEY in the shell environment before running RAG commands."],
+                "An LLM API key is required for Engineering RAG.",
+                suggestions=["Configure LLM_API_KEY, LLM_BASE_URL, and LLM_MODEL, or use legacy DEEPSEEK_API_KEY settings."],
             )
         self._api_key = api_key
         self.model = model or self.DEFAULT_MODEL
@@ -135,14 +168,13 @@ class DeepSeekClient:
         backoff_base_s=1.0,
         thinking=None,
     ):
-        runtime_env = os.environ if env is None else env
-        api_key = DEEPSEEK_API_KEY if env is None else _env_value(runtime_env, "DEEPSEEK_API_KEY")
+        api_key, model, base_url = _llm_environment_config(env, model=model, base_url=base_url)
         if not api_key:
             raise RAGBlockedError(
                 "missing_deepseek_api_key",
-                "DEEPSEEK_API_KEY is required for Engineering RAG.",
+                "An LLM API key is required for Engineering RAG.",
                 details={"env_var": "DEEPSEEK_API_KEY"},
-                suggestions=["Set DEEPSEEK_API_KEY in PowerShell before running index/query/evaluate."],
+                suggestions=["Configure LLM_API_KEY, LLM_BASE_URL, and LLM_MODEL, or use legacy DEEPSEEK_API_KEY settings."],
             )
         return cls(
             api_key,
@@ -447,7 +479,7 @@ class DeepSeekClient:
         except ImportError as exc:
             raise RAGBlockedError(
                 "missing_dependency",
-                "httpx is required to call DeepSeek.",
+                "httpx is required to call the configured LLM service.",
                 details={"dependency": "httpx", "purpose": purpose},
                 suggestions=["Install dependencies with pip before running RAG commands."],
             ) from exc
@@ -723,9 +755,9 @@ class IntentLLMClient:
         if not api_key:
             raise RAGBlockedError(
                 "missing_intent_llm_api_key",
-                "DEEPSEEK_API_KEY is required for LLM intent understanding.",
+                "An API key is required for LLM intent understanding.",
                 details={"env_var": "DEEPSEEK_API_KEY"},
-                suggestions=["Set DEEPSEEK_API_KEY before running the rough-design API."],
+                suggestions=["Configure LLM_API_KEY, LLM_BASE_URL, and LLM_MODEL, or use legacy DEEPSEEK_API_KEY settings."],
             )
         self._api_key = api_key
         self.model = model or self.DEFAULT_MODEL
@@ -737,11 +769,11 @@ class IntentLLMClient:
 
     @classmethod
     def from_env(cls, *, env=None, timeout_s=60, thinking=None):
-        runtime_env = os.environ if env is None else env
+        api_key, model, base_url = _llm_environment_config(env, intent=True)
         return cls(
-            DEEPSEEK_API_KEY if env is None else _env_value(runtime_env, "DEEPSEEK_API_KEY"),
-            model=_env_value(runtime_env, "FLP_INTENT_LLM_MODEL") or _env_value(runtime_env, "DEEPSEEK_MODEL"),
-            base_url=_env_value(runtime_env, "FLP_INTENT_LLM_BASE_URL") or _env_value(runtime_env, "DEEPSEEK_BASE_URL"),
+            api_key,
+            model=model,
+            base_url=base_url,
             timeout_s=timeout_s,
             thinking=thinking,
         )

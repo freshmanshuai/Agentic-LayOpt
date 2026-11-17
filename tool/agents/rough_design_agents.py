@@ -103,7 +103,7 @@ class IntentUnderstandingAgent:
         if self.llm_client is None:
             raise RAGBlockedError(
                 "intent_llm_unavailable",
-                "IntentUnderstandingAgent requires a DeepSeek LLM client; rule fallback is disabled.",
+                "IntentUnderstandingAgent requires an LLM client; rule fallback is disabled.",
                 details={"fallback_enabled": False},
             )
         try:
@@ -1481,7 +1481,7 @@ class MonolithicPlanningAgent(DesignerAgent):
         if self.llm_client is None:
             raise RAGBlockedError(
                 "monolithic_llm_unavailable",
-                "MonolithicPlanningAgent requires one live DeepSeek planning call.",
+                "MonolithicPlanningAgent requires one live LLM planning call.",
                 details={"fallback_enabled": False},
             )
         if not hasattr(self.adapter.rag_service, "query"):
@@ -10043,7 +10043,7 @@ def _intent_from_semantic_frame(frame, fallback_intent, compiler_message, *, act
             "source_id": "IntentUnderstandingAgent",
             "source_field": "intent_type",
             "confidence": intent["confidence"],
-            "note": "Intent type supplied by DeepSeek; rule fallback is disabled.",
+            "note": "Intent type supplied by the configured LLM; rule fallback is disabled.",
         }
     ]
 
