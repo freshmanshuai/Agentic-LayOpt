@@ -7,12 +7,54 @@ Agentic LayOpt turns natural-language factory-layout requirements into engineeri
 | `tool/` | Implementation organized by service and responsibility |
 | `web_frontend/` | Workbench and vendored Three.js runtime |
 | `rag_dataset/` | Asset catalog, engineering evidence, schemas, and annotations |
-| `models/` | Runtime GLB files, native FBX models, and model bindings |
+| `models/` | Downloaded 3D model library: runtime GLBs, native FBX/STL files, and model bindings |
 | `examples/electronics_workshop/` | The single published, recorded Agentic LayOpt workshop session |
+
+## Downloads
+
+| Resource | Download |
+|---|---|
+| GenFLP-Bench | [Dataset download page](https://agentic-layopt-datasets.pages.dev/#genflp) |
+| LayOpt RAG Benchmark | [Dataset download page](https://agentic-layopt-datasets.pages.dev/#rag) |
+| 3D model library | [Hugging Face model library](https://huggingface.co/datasets/RenmingLiu/Agentic-LayOpt-Model-Library) |
+
+The dataset packages contain user tasks, context, and reference annotations. They are distributed separately from this code repository.
+
+### Install the 3D model library
+
+Download [Agentic-LayOpt-Model-Library-v1.0.zip (3.11 GiB)](https://huggingface.co/datasets/RenmingLiu/Agentic-LayOpt-Model-Library/resolve/main/Agentic-LayOpt-Model-Library-v1.0.zip?download=true) from Hugging Face. It contains 105 cataloged models, including 136 GLB files, 39 FBX files, and one STL file.
+
+The archive already contains a top-level `models/` directory. Extract its contents into the project root, alongside `README.md` and `tool/`, preserving the archive's directory structure:
+
+```text
+Agentic-LayOpt/
+  README.md
+  tool/
+  rag_dataset/
+  models/
+    catalog.json
+    catalog.csv
+    README.md
+    runtime-models/
+      glb_manifest.json
+      glb/
+    source-models/
+    unity_models/
+```
+
+For example, place the downloaded ZIP in the project root and run:
+
+```sh
+python -m zipfile -e Agentic-LayOpt-Model-Library-v1.0.zip .
+```
+
+After extraction, the runtime manifest is at `models/runtime-models/glb_manifest.json`. The server uses `models/runtime-models/` by default.
+
+Models use a stable three-digit number followed by an English name, such as `003-horizontal-centrifugal-pump-set.glb`. The downloaded `models/catalog.csv` and `models/catalog.json` map names and files to stable `model_asset_id` values; `models/README.md` explains naming and file variants.
 
 ## Run
 
-Models and media use Git LFS. Install Git LFS before cloning this repository. For an existing checkout, run `git lfs install` and `git lfs pull` to download the asset files before starting the server.
+Install the model library as described above before starting the server. Media files tracked by Git LFS use `git lfs install` and `git lfs pull` in an existing checkout.
 
 Run commands from this directory. Install the Python dependencies first:
 
@@ -36,7 +78,7 @@ python -m tool.api.rough_design_api_server
 
 On the same computer, open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser to use the workbench. This address refers to your own computer.
 
-`.env.example` is a configuration reference and is not loaded automatically. The server uses the included `models/runtime-models/` by default. Server startup does not imply that provider access or retrieval is configured.
+`.env.example` is a configuration reference and is not loaded automatically. The server uses the extracted `models/runtime-models/` by default. Server startup does not imply that provider access or retrieval is configured.
 
 To reuse an existing local index, set `ENGINEERING_RAG_INDEX_DIR` to its directory before starting the server. Use the asset catalog and embedding model that were used to build that index. Set `BGE_M3_MODEL_PATH` to the local embedding-model directory to avoid downloading its weights again.
 
@@ -60,7 +102,7 @@ Supply your own credentials through the environment. On Windows, the client also
 | `tool/execution/` | Exact edit execution, validation-driven recovery, and violation resolution |
 | `tool/assets/` | Catalog import, annotations, conversion, proxies, and frontend asset vendoring |
 
-There is no separate documentation directory. Experimental benchmark datasets and their scoring bundle are stored privately and are not distributed with this project. `rag_dataset/` contains the runtime asset catalog and engineering evidence, not the formal RAG test set.
+GenFLP-Bench and the LayOpt RAG Benchmark are released separately through the [dataset download page](https://agentic-layopt-datasets.pages.dev/). `rag_dataset/` contains the runtime asset catalog and engineering evidence, not the formal RAG test set.
 
 ## Recorded workshop example
 
@@ -74,6 +116,6 @@ python -m tool.api.rough_design_api_server --recording-only --workspace-snapshot
 
 Open [http://127.0.0.1:8000/?restore=captured](http://127.0.0.1:8000/?restore=captured). This is a read-only view of historical results, not a new execution. See the example README for the other stages and for new live requests through the normal workflow.
 
-Unit tests, private benchmark datasets, other experiments, other case examples, paper materials, and historical Git objects are excluded. The selected workshop recording is the explicit exception for case inputs, conversations, and results.
+Unit tests, benchmark ZIP files, other experiments, other case examples, paper materials, and historical Git objects are excluded from this code repository. The selected workshop recording is the explicit exception for case inputs, conversations, and results.
 
 Project code uses the [MIT license](LICENSE). Externally authored software and models retain their source terms; see [third-party notices](THIRD_PARTY_NOTICES.md).
