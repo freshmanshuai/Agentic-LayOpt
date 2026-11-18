@@ -67,7 +67,7 @@ For natural-language operations, configure `LLM_API_KEY`, `LLM_BASE_URL`, and `L
 Set an available `BGE_M3_MODEL_PATH`, then build the local BGE-M3/Qdrant index:
 
 ```sh
-python -m tool.rag.engineering_rag index --dataset-dir rag_dataset --index-dir .rag_index/engineering_rag_qdrant
+python -m tool.assets.preprocessing.build_rag_index --dataset-dir rag_dataset --index-dir .rag_index/engineering_rag_qdrant
 ```
 
 After configuring the service and index, start the server:
@@ -100,7 +100,9 @@ Supply your own credentials through the environment. On Windows, the client also
 | `tool/logistics/` | Facility endpoints, AGV cost, relocation, and transfer cells |
 | `tool/validation/` | Constraint checks, viewport prechecks, and receipts |
 | `tool/execution/` | Exact edit execution, validation-driven recovery, and violation resolution |
-| `tool/assets/` | Catalog import, annotations, conversion, proxies, and frontend asset vendoring |
+| `tool/assets/preprocessing/` | Offline asset import, annotations, conversion, metadata synchronization, frontend vendoring, and RAG index preparation |
+
+`tool/assets/preprocessing/` contains resource-preparation commands used when building or updating assets and indexes. Runtime model files remain in `models/`; online retrieval and the optional read-only Qdrant service remain in `tool/rag/`.
 
 GenFLP-Bench and the LayOpt RAG Benchmark are released separately through the [dataset download page](https://agentic-layopt-datasets.pages.dev/). `rag_dataset/` contains the runtime asset catalog and engineering evidence, not the formal RAG test set.
 

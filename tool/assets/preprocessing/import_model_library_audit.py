@@ -17,7 +17,7 @@ from pathlib import Path
 from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
 
-from tool.assets.model_naming import normalize_asset_names
+from tool.assets.preprocessing.model_naming import normalize_asset_names
 
 
 IMPORT_ID = "model-library-audit-20261015"
@@ -528,7 +528,7 @@ def _new_asset(row, geometry_row, spec, timestamp):
         "derived_files": [],
         "extraction": {
             "extraction_status": "requires_manual_review",
-            "extractor_name": "tool.assets.import_model_library_audit",
+            "extractor_name": "tool.assets.preprocessing.import_model_library_audit",
             "extractor_version": "1.0",
             "extraction_method": "scene_parser" if source_format == "glb" else "mesh_parser",
             "extracted_at": timestamp,

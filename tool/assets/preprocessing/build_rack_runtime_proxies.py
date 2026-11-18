@@ -18,10 +18,10 @@ from typing import Any, Dict, Iterable, List, Mapping, Tuple
 import numpy as np
 import trimesh
 
-from tool.assets.model_naming import model_filename
+from tool.assets.preprocessing.model_naming import model_filename
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_RUNTIME_ROOT = REPO_ROOT / "models" / "runtime-models"
 DEFAULT_OUTPUT_MANIFEST = REPO_ROOT / "rag_dataset" / "three_viewport_assets_v2.json"
 

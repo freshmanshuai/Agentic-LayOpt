@@ -2,7 +2,7 @@ import { copyFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 const sourceRoot = path.join(repoRoot, "node_modules", "three");
 const vendorRoot = path.join(repoRoot, "web_frontend", "vendor", "three");
 

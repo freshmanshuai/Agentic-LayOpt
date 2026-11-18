@@ -2,8 +2,8 @@
   "name": "agentic-layopt-web-runtime",
   "private": true,
   "scripts": {
-    "convert:models": "python -m tool.assets.convert_runtime_obj_to_glb",
-    "vendor:three": "node tool/assets/vendor_three_runtime.mjs"
+    "convert:models": "python -m tool.assets.preprocessing.convert_runtime_obj_to_glb",
+    "vendor:three": "node tool/assets/preprocessing/vendor_three_runtime.mjs"
   },
   "devDependencies": {
     "@gltf-transform/cli": "4.4.1",

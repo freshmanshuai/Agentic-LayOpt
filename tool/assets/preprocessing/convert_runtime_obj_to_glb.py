@@ -10,17 +10,17 @@ from pathlib import Path, PurePosixPath
 import trimesh
 from trimesh.exchange.gltf import export_glb
 
-from tool.assets.model_naming import model_catalog, model_filename
+from tool.assets.preprocessing.model_naming import model_catalog, model_filename
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_MODEL_STORAGE_ROOT = Path(
     os.environ.get("NLP_MODEL_STORAGE_DIR", REPO_ROOT / "models")
 )
 DEFAULT_DATASET_DIR = REPO_ROOT / "rag_dataset"
 DEFAULT_RUNTIME_DIR = DEFAULT_MODEL_STORAGE_ROOT / "runtime-models"
 DEFAULT_SOURCE_ROOT = DEFAULT_MODEL_STORAGE_ROOT / "production-model-library"
-FBX_TO_OBJ_HELPER = REPO_ROOT / "tool" / "assets" / "fbx_to_obj.mjs"
+FBX_TO_OBJ_HELPER = Path(__file__).resolve().with_name("fbx_to_obj.mjs")
 
 
 def main():

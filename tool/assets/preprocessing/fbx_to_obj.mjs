@@ -8,7 +8,7 @@ import { FBXLoader } from "three/addons/loaders/FBXLoader.js";
 const [sourcePath, outputPath] = process.argv.slice(2);
 
 if (!sourcePath || !outputPath) {
-  console.error("Usage: node tool/assets/fbx_to_obj.mjs <source.fbx> <output.obj>");
+  console.error("Usage: node tool/assets/preprocessing/fbx_to_obj.mjs <source.fbx> <output.obj>");
   process.exit(2);
 }
 

@@ -5,7 +5,7 @@ import json
 import re
 from pathlib import Path
 
-from tool.assets.sync_rag_dataset import synchronize_dataset
+from tool.assets.preprocessing.sync_rag_dataset import synchronize_dataset
 
 
 DEFAULT_SEED = 20260715

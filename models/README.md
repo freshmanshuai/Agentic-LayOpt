@@ -23,4 +23,4 @@ Calibrated and source geometry occupy separate directories. The `-source`, `-raw
 
 The application and reference annotations continue to bind models by `model_asset_id`. Source-language CAD node labels and historical source references remain in the original model content and provenance records. Public filenames, display names, and retrieval aliases use English.
 
-Conversion and catalog import use `tool/assets/model_naming.py` so regenerated files retain the same names. Add or update a model in `catalog.json` before using a new naming entry. Model terms and attribution remain as described in `../THIRD_PARTY_NOTICES.md`.
+Conversion and catalog import use `tool/assets/preprocessing/model_naming.py` so regenerated files retain the same names. Add or update a model in `catalog.json` before using a new naming entry. Model terms and attribution remain as described in `../THIRD_PARTY_NOTICES.md`.

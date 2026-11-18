@@ -5,7 +5,7 @@ from pathlib import Path
 import re
 
 
-CATALOG_PATH = Path(__file__).resolve().parents[2] / "models" / "catalog.json"
+CATALOG_PATH = Path(__file__).resolve().parents[3] / "models" / "catalog.json"
 HAN = re.compile(r"[\u3400-\u9fff]")
 
 

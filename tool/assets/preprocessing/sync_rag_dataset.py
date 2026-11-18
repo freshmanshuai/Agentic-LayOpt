@@ -1,3 +1,5 @@
+"""Refresh derived engineering-dataset metadata before rebuilding its index."""
+
 import argparse
 import json
 import re
