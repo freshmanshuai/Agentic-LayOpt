@@ -50,5 +50,3 @@ The final Edit did **not** exactly satisfy the original directive. Its disclosed
 - `stages/`: the four accepted layouts, extracted FLP-IR records, and workbench-view snapshots. Layout identity, positions, rotations, and dimensions match the recorded viewport commands.
 - `results/`: recorded measurements, outcomes, material flows, equipment changes, and Edit deviation disclosure. These are the selected example's historical results, not new benchmark measurements.
 - `recording.json`: sequence, evidence references, selected turns, and limitations.
-
-Local absolute paths, browser transport headers, private server-control files, and screenshots are not distributed. The measurements file omits only its local `source_run` path. Original inputs, model request/response records, event content, stage outcomes, and numerical values are otherwise preserved as described above. No new benchmark version, hash, or frozen result set is introduced.
