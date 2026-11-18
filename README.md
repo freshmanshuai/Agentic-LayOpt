@@ -106,7 +106,7 @@ GenFLP-Bench and the LayOpt RAG Benchmark are released separately through the [d
 
 ## Recorded workshop example
 
-The [electronic-control equipment workshop](examples/electronics_workshop/README.md) is the only case example. It contains the actual natural-language inputs, DeepSeek intent-understanding records, and four accepted stage results for the 23-object, 20/20/50-batch session. Clarifications, a rejected proposal, restarts, and the final Edit deviation are disclosed rather than hidden.
+The [electronic-control equipment workshop](examples/electronics_workshop/README.md) is the only case example. It contains the actual natural-language inputs, DeepSeek intent-understanding records, and four accepted stage results for the 23-object. Clarifications, a rejected proposal, restarts, and the final Edit deviation are disclosed rather than hidden.
 
 To view its recorded Repair result without inference credentials:
 
@@ -114,7 +114,7 @@ To view its recorded Repair result without inference credentials:
 python -m tool.api.rough_design_api_server --recording-only --workspace-snapshot examples/electronics_workshop/stages/repair/workspace.json
 ```
 
-Open [http://127.0.0.1:8000/?restore=captured](http://127.0.0.1:8000/?restore=captured). This is a read-only view of historical results, not a new execution. See the example README for the other stages and for new live requests through the normal workflow.
+This is a read-only view of historical results. See the example README for the other stages and for new live requests through the normal workflow.
 
 Unit tests, benchmark ZIP files, other experiments, other case examples, paper materials, and historical Git objects are excluded from this code repository. The selected workshop recording is the explicit exception for case inputs, conversations, and results.
 
