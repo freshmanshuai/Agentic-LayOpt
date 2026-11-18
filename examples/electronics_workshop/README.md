@@ -1,8 +1,8 @@
 # Electronic-control equipment workshop
 
-This is the only published case example. It preserves an actual Agentic LayOpt workbench session with 23 equipment and auxiliary objects, a 48 m by 30 m floor, and daily product batches of 20, 20, and 50.
+This is the only published case example. It preserves an actual Agentic LayOpt workbench session.
 
-The inputs were prewritten natural-language requirements submitted through the ordinary workbench. DeepSeek performed linguistic slot extraction and engineering-grounded intent understanding before the general task compilation, execution, validation, and recovery steps. This example does not contain the former fixed E4 case generator or its dedicated API routes.
+The inputs were prewritten natural-language requirements submitted through the ordinary workbench. DeepSeek performed linguistic slot extraction and engineering-grounded intent understanding before the general task compilation, execution, validation, and recovery steps.
 
 ## View the recorded result
 
