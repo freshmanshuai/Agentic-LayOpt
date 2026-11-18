@@ -40,8 +40,7 @@ Generate and Optimize came from the initial accepted run. The later continuation
 
 The operator clarification in turn 2 was supplied by the assistant operator using recorded candidate choices and prior user authorization. The compiler also applied deterministic normalization and binding rules. Existing grounding was reused where recorded; not every turn performed a fresh retrieval.
 
-The final Edit did **not** exactly satisfy the original directive. Its disclosed feasible alternative displaced two objects from the requested endpoints by approximately 1.1613 m and 3.3987 m. See `results/edit_deviations.json`. The warning and deviation must not be relabeled as strict success.
-
+The final Edit did **not** exactly satisfy the original directive. Its disclosed feasible alternative displaced two objects from the requested endpoints by approximately 1.1613 m and 3.3987 m. See `results/edit_deviations.json`. 
 ## Files and evidence
 
 - `inputs/`: the actual engineering context and all seven submitted texts.
