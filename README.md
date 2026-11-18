@@ -1,6 +1,6 @@
 # Agentic LayOpt
 
-Agentic LayOpt turns natural-language factory-layout requirements into engineering-grounded layout tasks. It combines asset retrieval, layout generation and optimization, explicit editing, constraint validation, recovery, and a Three.js workbench.
+Agentic LayOpt turns natural-language factory-layout requirements into engineering-grounded layout tasks.
 
 | Directory | Contents |
 |---|---|
