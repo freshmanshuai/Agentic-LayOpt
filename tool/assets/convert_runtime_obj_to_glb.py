@@ -10,6 +10,8 @@ from pathlib import Path, PurePosixPath
 import trimesh
 from trimesh.exchange.gltf import export_glb
 
+from tool.assets.model_naming import model_catalog, model_filename
+
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_MODEL_STORAGE_ROOT = Path(
@@ -17,7 +19,7 @@ DEFAULT_MODEL_STORAGE_ROOT = Path(
 )
 DEFAULT_DATASET_DIR = REPO_ROOT / "rag_dataset"
 DEFAULT_RUNTIME_DIR = DEFAULT_MODEL_STORAGE_ROOT / "runtime-models"
-DEFAULT_SOURCE_ROOT = DEFAULT_MODEL_STORAGE_ROOT / "产线模型库"
+DEFAULT_SOURCE_ROOT = DEFAULT_MODEL_STORAGE_ROOT / "production-model-library"
 FBX_TO_OBJ_HELPER = REPO_ROOT / "tool" / "assets" / "fbx_to_obj.mjs"
 
 
@@ -75,7 +77,7 @@ def main():
                 obj_item = export_missing_obj(asset, runtime_dir, Path(args.fbx_source_root))
                 obj_manifest.setdefault("items", []).append(obj_item)
                 write_obj_manifest(obj_manifest_path, obj_manifest)
-            output_path = output_dir / f"{model_asset_id.rsplit('/', 1)[-1]}.glb"
+            output_path = output_dir / model_filename(model_asset_id)
             existing = existing_by_id.get(model_asset_id)
             if not args.force and is_current(existing, obj_item, runtime_dir, output_path):
                 item = existing
@@ -292,7 +294,13 @@ def export_missing_obj(asset, runtime_dir, source_root):
     relative_obj = output_path.relative_to(runtime_dir).as_posix()
     return {
         "source_path": str(source_path),
-        "source_relative_path": source_path.relative_to(source_root).as_posix(),
+        "source_relative_path": (
+            source_path.relative_to(source_root).as_posix()
+            if source_path.is_relative_to(source_root)
+            else source_path.relative_to(REPO_ROOT).as_posix()
+            if source_path.is_relative_to(REPO_ROOT)
+            else source_path.name
+        ),
         "status": "exported",
         "obj_path": str(output_path),
         "obj_url": "/runtime-models/" + relative_obj,
@@ -307,6 +315,13 @@ def export_missing_obj(asset, runtime_dir, source_root):
 
 
 def resolve_fbx_source_path(asset, source_root):
+    record = model_catalog().get(asset.get("model_asset_id"), {})
+    for relative in record.get("files", []):
+        if Path(relative).suffix.lower() != ".fbx":
+            continue
+        packaged_source = DEFAULT_MODEL_STORAGE_ROOT / relative
+        if packaged_source.is_file():
+            return packaged_source.resolve()
     model_files = asset.get("model_files") or []
     if not model_files or not model_files[0].get("file_uri"):
         raise ValueError("asset has no source file URI")
@@ -315,6 +330,9 @@ def resolve_fbx_source_path(asset, source_root):
     if candidate.is_absolute() and candidate.is_file():
         return candidate
     normalized = file_uri.lstrip("/")
+    packaged_source = REPO_ROOT / normalized
+    if packaged_source.is_file():
+        return packaged_source.resolve()
     if normalized.startswith("产线模型库/"):
         normalized = normalized.removeprefix("产线模型库/")
     candidate = Path(source_root) / normalized

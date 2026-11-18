@@ -18,6 +18,8 @@ from typing import Any, Dict, Iterable, List, Mapping, Tuple
 import numpy as np
 import trimesh
 
+from tool.assets.model_naming import model_filename
+
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_RUNTIME_ROOT = REPO_ROOT / "models" / "runtime-models"
@@ -30,8 +32,8 @@ RACK_DIMENSIONS_M: Mapping[str, Tuple[float, float, float]] = {
     FIVE_RACK_ID: (3.0, 1.2, 2.0),
 }
 RACK_FILENAMES = {
-    SINGLE_RACK_ID: "fbx_be827a77.glb",
-    FIVE_RACK_ID: "5.glb",
+    SINGLE_RACK_ID: model_filename(SINGLE_RACK_ID),
+    FIVE_RACK_ID: model_filename(FIVE_RACK_ID),
 }
 
 

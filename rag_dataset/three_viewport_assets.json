@@ -3,28 +3,38 @@
   "assets": [
     {
       "model_asset_id": "asset/fbx/fbx_1292a3bb",
-      "resource_path": "FLPRoughDesign/Models/fbx_1292a3bb",
-      "domains": ["semiconductor"]
+      "resource_path": "FLPRoughDesign/Models/035-semiconductor-circuit-board-loading-and-unloading-equipment",
+      "domains": [
+        "semiconductor"
+      ]
     },
     {
       "model_asset_id": "asset/fbx/fbx_37331baa",
-      "resource_path": "FLPRoughDesign/Models/fbx_37331baa",
-      "domains": ["semiconductor"]
+      "resource_path": "FLPRoughDesign/Models/040-automatic-die-attach-forming-assembly",
+      "domains": [
+        "semiconductor"
+      ]
     },
     {
       "model_asset_id": "asset/fbx/fbx_37ff826e",
-      "resource_path": "FLPRoughDesign/Models/fbx_37ff826e",
-      "domains": ["semiconductor"]
+      "resource_path": "FLPRoughDesign/Models/028-semiconductor-automatic-taping-machine",
+      "domains": [
+        "semiconductor"
+      ]
     },
     {
       "model_asset_id": "asset/fbx/fbx_3ed136d0",
-      "resource_path": "FLPRoughDesign/Models/fbx_3ed136d0",
-      "domains": ["semiconductor"]
+      "resource_path": "FLPRoughDesign/Models/037-four-tank-wafer-cleaning-and-etching-machine",
+      "domains": [
+        "semiconductor"
+      ]
     },
     {
       "model_asset_id": "asset/fbx/fbx_3c6fae07",
-      "resource_path": "FLPRoughDesign/Models/fbx_3c6fae07",
-      "domains": ["semiconductor"]
+      "resource_path": "FLPRoughDesign/Models/039-expansion-machine",
+      "domains": [
+        "semiconductor"
+      ]
     }
   ]
 }

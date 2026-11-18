@@ -17,6 +17,8 @@ from pathlib import Path
 from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
 
+from tool.assets.model_naming import normalize_asset_names
+
 
 IMPORT_ID = "model-library-audit-20261015"
 CALIBRATION_ID = "candidate-calibration-20261015"
@@ -282,6 +284,7 @@ def import_audited_library(
         changed_asset_ids.add(asset_id)
 
     assets = _ordered_assets(assets)
+    changed_asset_ids.update(normalize_asset_names(assets))
     assets_by_id = {asset["model_asset_id"]: asset for asset in assets}
     chunks = _update_chunks(chunks, assets, changed_asset_ids, timestamp)
     unresolved = _updated_unresolved(assets, unresolved, catalog_new_asset_ids)
@@ -1133,7 +1136,7 @@ def _description(function_summary):
 
 
 def _display_name(english_name, native_name):
-    return f"{english_name} ({native_name})"
+    return english_name
 
 
 def _library_uri(row):

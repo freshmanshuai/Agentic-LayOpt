@@ -1,0 +1,1125 @@
+{
+  "models": [
+    {
+      "number": "002",
+      "name": "0.5M transfer station",
+      "model_asset_id": "asset/fbx/0_5m",
+      "filename_stem": "002-0-5m-transfer-station",
+      "runtime_glb_url": "/runtime-models/glb/002-0-5m-transfer-station.glb",
+      "files": [
+        "runtime-models/glb/002-0-5m-transfer-station.glb",
+        "runtime-models/glb/002-0-5m-transfer-station-raw.glb"
+      ]
+    },
+    {
+      "number": "003",
+      "name": "Horizontal centrifugal pump set",
+      "model_asset_id": "asset/fbx/factory_unit_00",
+      "filename_stem": "003-horizontal-centrifugal-pump-set",
+      "runtime_glb_url": "/runtime-models/glb/003-horizontal-centrifugal-pump-set.glb",
+      "files": [
+        "runtime-models/glb/003-horizontal-centrifugal-pump-set.glb"
+      ]
+    },
+    {
+      "number": "004",
+      "name": "Explosion-proof junction box",
+      "model_asset_id": "asset/fbx/factory_unit_01",
+      "filename_stem": "004-explosion-proof-junction-box",
+      "runtime_glb_url": "/runtime-models/glb/004-explosion-proof-junction-box.glb",
+      "files": [
+        "runtime-models/glb/004-explosion-proof-junction-box.glb"
+      ]
+    },
+    {
+      "number": "005",
+      "name": "Oil-immersed power transformer",
+      "model_asset_id": "asset/fbx/factory_unit_02",
+      "filename_stem": "005-oil-immersed-power-transformer",
+      "runtime_glb_url": "/runtime-models/glb/005-oil-immersed-power-transformer.glb",
+      "files": [
+        "runtime-models/glb/005-oil-immersed-power-transformer.glb"
+      ]
+    },
+    {
+      "number": "006",
+      "name": "High-voltage electrical unit",
+      "model_asset_id": "asset/fbx/factory_unit_03",
+      "filename_stem": "006-high-voltage-electrical-unit",
+      "runtime_glb_url": "/runtime-models/glb/006-high-voltage-electrical-unit.glb",
+      "files": [
+        "runtime-models/glb/006-high-voltage-electrical-unit.glb"
+      ]
+    },
+    {
+      "number": "007",
+      "name": "Electrical control cabinet",
+      "model_asset_id": "asset/fbx/factory_unit_04",
+      "filename_stem": "007-electrical-control-cabinet",
+      "runtime_glb_url": "/runtime-models/glb/007-electrical-control-cabinet.glb",
+      "files": [
+        "runtime-models/glb/007-electrical-control-cabinet.glb"
+      ]
+    },
+    {
+      "number": "008",
+      "name": "Centrifugal blower unit",
+      "model_asset_id": "asset/fbx/factory_unit_05",
+      "filename_stem": "008-centrifugal-blower-unit",
+      "runtime_glb_url": "/runtime-models/glb/008-centrifugal-blower-unit.glb",
+      "files": [
+        "runtime-models/glb/008-centrifugal-blower-unit.glb"
+      ]
+    },
+    {
+      "number": "009",
+      "name": "Vertical induction furnace",
+      "model_asset_id": "asset/fbx/factory_unit_06",
+      "filename_stem": "009-vertical-induction-furnace",
+      "runtime_glb_url": "/runtime-models/glb/009-vertical-induction-furnace.glb",
+      "files": [
+        "runtime-models/glb/009-vertical-induction-furnace.glb"
+      ]
+    },
+    {
+      "number": "010",
+      "name": "Platform-mounted vertical separator tower",
+      "model_asset_id": "asset/fbx/factory_unit_07",
+      "filename_stem": "010-platform-mounted-vertical-separator-tower",
+      "runtime_glb_url": "/runtime-models/glb/010-platform-mounted-vertical-separator-tower.glb",
+      "files": [
+        "runtime-models/glb/010-platform-mounted-vertical-separator-tower.glb"
+      ]
+    },
+    {
+      "number": "011",
+      "name": "Industrial winch unit",
+      "model_asset_id": "asset/fbx/factory_unit_08",
+      "filename_stem": "011-industrial-winch-unit",
+      "runtime_glb_url": "/runtime-models/glb/011-industrial-winch-unit.glb",
+      "files": [
+        "runtime-models/glb/011-industrial-winch-unit.glb"
+      ]
+    },
+    {
+      "number": "012",
+      "name": "Mobile hopper-pump unit",
+      "model_asset_id": "asset/fbx/factory_unit_09",
+      "filename_stem": "012-mobile-hopper-pump-unit",
+      "runtime_glb_url": "/runtime-models/glb/012-mobile-hopper-pump-unit.glb",
+      "files": [
+        "runtime-models/glb/012-mobile-hopper-pump-unit.glb"
+      ]
+    },
+    {
+      "number": "013",
+      "name": "Dual-hopper screw feeder",
+      "model_asset_id": "asset/fbx/factory_unit_10",
+      "filename_stem": "013-dual-hopper-screw-feeder",
+      "runtime_glb_url": "/runtime-models/glb/013-dual-hopper-screw-feeder.glb",
+      "files": [
+        "runtime-models/glb/013-dual-hopper-screw-feeder.glb"
+      ]
+    },
+    {
+      "number": "014",
+      "name": "Dual-compressor skid",
+      "model_asset_id": "asset/fbx/factory_unit_11",
+      "filename_stem": "014-dual-compressor-skid",
+      "runtime_glb_url": "/runtime-models/glb/014-dual-compressor-skid.glb",
+      "files": [
+        "runtime-models/glb/014-dual-compressor-skid.glb"
+      ]
+    },
+    {
+      "number": "015",
+      "name": "Industrial equipment gantry",
+      "model_asset_id": "asset/fbx/factory_unit_12",
+      "filename_stem": "015-industrial-equipment-gantry",
+      "runtime_glb_url": "/runtime-models/glb/015-industrial-equipment-gantry.glb",
+      "files": [
+        "runtime-models/glb/015-industrial-equipment-gantry.glb"
+      ]
+    },
+    {
+      "number": "016",
+      "name": "Engine lathe",
+      "model_asset_id": "asset/fbx/factory_unit_13",
+      "filename_stem": "016-engine-lathe",
+      "runtime_glb_url": "/runtime-models/glb/016-engine-lathe.glb",
+      "files": [
+        "runtime-models/glb/016-engine-lathe.glb"
+      ]
+    },
+    {
+      "number": "017",
+      "name": "Large motorized actuator",
+      "model_asset_id": "asset/fbx/factory_unit_14",
+      "filename_stem": "017-large-motorized-actuator",
+      "runtime_glb_url": "/runtime-models/glb/017-large-motorized-actuator.glb",
+      "files": [
+        "runtime-models/glb/017-large-motorized-actuator.glb"
+      ]
+    },
+    {
+      "number": "018",
+      "name": "Stacked horizontal pressure vessels",
+      "model_asset_id": "asset/fbx/factory_unit_15",
+      "filename_stem": "018-stacked-horizontal-pressure-vessels",
+      "runtime_glb_url": "/runtime-models/glb/018-stacked-horizontal-pressure-vessels.glb",
+      "files": [
+        "runtime-models/glb/018-stacked-horizontal-pressure-vessels.glb"
+      ]
+    },
+    {
+      "number": "019",
+      "name": "Framed horizontal storage tank",
+      "model_asset_id": "asset/fbx/factory_unit_16",
+      "filename_stem": "019-framed-horizontal-storage-tank",
+      "runtime_glb_url": "/runtime-models/glb/019-framed-horizontal-storage-tank.glb",
+      "files": [
+        "runtime-models/glb/019-framed-horizontal-storage-tank.glb"
+      ]
+    },
+    {
+      "number": "020",
+      "name": "Box-type equipment console",
+      "model_asset_id": "asset/fbx/factory_unit_17",
+      "filename_stem": "020-box-type-equipment-console",
+      "runtime_glb_url": "/runtime-models/glb/020-box-type-equipment-console.glb",
+      "files": [
+        "runtime-models/glb/020-box-type-equipment-console.glb"
+      ]
+    },
+    {
+      "number": "021",
+      "name": "C-frame pressure tester",
+      "model_asset_id": "asset/fbx/factory_unit_18",
+      "filename_stem": "021-c-frame-pressure-tester",
+      "runtime_glb_url": "/runtime-models/glb/021-c-frame-pressure-tester.glb",
+      "files": [
+        "runtime-models/glb/021-c-frame-pressure-tester.glb"
+      ]
+    },
+    {
+      "number": "022",
+      "name": "Tower crane",
+      "model_asset_id": "asset/fbx/factory_unit_19",
+      "filename_stem": "022-tower-crane",
+      "runtime_glb_url": "/runtime-models/glb/022-tower-crane.glb",
+      "files": [
+        "runtime-models/glb/022-tower-crane.glb"
+      ]
+    },
+    {
+      "number": "023",
+      "name": "Industrial kitbash scene",
+      "model_asset_id": "asset/fbx/industrial_kitbash",
+      "filename_stem": "023-industrial-kitbash-scene",
+      "runtime_glb_url": "/runtime-models/glb/023-industrial-kitbash-scene.glb",
+      "files": [
+        "source-models/023-industrial-kitbash-scene.fbx",
+        "runtime-models/glb/023-industrial-kitbash-scene.glb"
+      ]
+    },
+    {
+      "number": "025",
+      "name": "H5 chain automatic assembly line",
+      "model_asset_id": "asset/fbx/h5",
+      "filename_stem": "025-h5-chain-automatic-assembly-line",
+      "runtime_glb_url": "/runtime-models/glb/025-h5-chain-automatic-assembly-line.glb",
+      "files": [
+        "source-models/025-h5-chain-automatic-assembly-line.fbx",
+        "runtime-models/glb/025-h5-chain-automatic-assembly-line.glb"
+      ]
+    },
+    {
+      "number": "026",
+      "name": "Mixmaster model",
+      "model_asset_id": "asset/fbx/mixmaster",
+      "filename_stem": "026-mixmaster-model",
+      "runtime_glb_url": "/runtime-models/glb/026-mixmaster-model.glb",
+      "files": [
+        "source-models/026-mixmaster-model.fbx",
+        "runtime-models/glb/026-mixmaster-model.glb"
+      ]
+    },
+    {
+      "number": "027",
+      "name": "SMD component test-and-sorting machine",
+      "model_asset_id": "asset/fbx/smd",
+      "filename_stem": "027-smd-component-test-and-sorting-machine",
+      "runtime_glb_url": "/runtime-models/glb/027-smd-component-test-and-sorting-machine.glb",
+      "files": [
+        "source-models/027-smd-component-test-and-sorting-machine.fbx",
+        "runtime-models/glb/027-smd-component-test-and-sorting-machine.glb"
+      ]
+    },
+    {
+      "number": "028",
+      "name": "Semiconductor automatic taping machine",
+      "model_asset_id": "asset/fbx/fbx_37ff826e",
+      "filename_stem": "028-semiconductor-automatic-taping-machine",
+      "runtime_glb_url": "/runtime-models/glb/028-semiconductor-automatic-taping-machine.glb",
+      "files": [
+        "runtime-models/glb/028-semiconductor-automatic-taping-machine.glb"
+      ]
+    },
+    {
+      "number": "029",
+      "name": "Semiconductor cooling and thermal platform",
+      "model_asset_id": "asset/fbx/fbx_b90dd1f1",
+      "filename_stem": "029-semiconductor-cooling-and-thermal-platform",
+      "runtime_glb_url": "/runtime-models/glb/029-semiconductor-cooling-and-thermal-platform.glb",
+      "files": [
+        "source-models/029-semiconductor-cooling-and-thermal-platform.fbx",
+        "runtime-models/glb/029-semiconductor-cooling-and-thermal-platform.glb"
+      ]
+    },
+    {
+      "number": "030",
+      "name": "Semiconductor component pad-printing and packaging machine",
+      "model_asset_id": "asset/fbx/fbx_db886347",
+      "filename_stem": "030-semiconductor-component-pad-printing-and-packaging-machine",
+      "runtime_glb_url": "/runtime-models/glb/030-semiconductor-component-pad-printing-and-packaging-machine.glb?v=20260803-baked-orientation-2",
+      "files": [
+        "runtime-models/glb/030-semiconductor-component-pad-printing-and-packaging-machine.glb",
+        "runtime-models/glb/030-semiconductor-component-pad-printing-and-packaging-machine-before-orientation-fix-20260803.glb",
+        "runtime-models/glb/030-semiconductor-component-pad-printing-and-packaging-machine-before-vertex-bake-20260803.glb"
+      ]
+    },
+    {
+      "number": "031",
+      "name": "Semiconductor heat-sink fastening machine",
+      "model_asset_id": "asset/fbx/fbx_f179523c",
+      "filename_stem": "031-semiconductor-heat-sink-fastening-machine",
+      "runtime_glb_url": "/runtime-models/glb/031-semiconductor-heat-sink-fastening-machine.glb",
+      "files": [
+        "source-models/031-semiconductor-heat-sink-fastening-machine.fbx",
+        "runtime-models/glb/031-semiconductor-heat-sink-fastening-machine.glb"
+      ]
+    },
+    {
+      "number": "032",
+      "name": "Semiconductor wafer automatic labeling machine",
+      "model_asset_id": "asset/fbx/fbx_8811b0b9",
+      "filename_stem": "032-semiconductor-wafer-automatic-labeling-machine",
+      "runtime_glb_url": "/runtime-models/glb/032-semiconductor-wafer-automatic-labeling-machine.glb",
+      "files": [
+        "source-models/032-semiconductor-wafer-automatic-labeling-machine.fbx",
+        "runtime-models/glb/032-semiconductor-wafer-automatic-labeling-machine.glb"
+      ]
+    },
+    {
+      "number": "033",
+      "name": "Semiconductor inspection equipment",
+      "model_asset_id": "asset/fbx/fbx_f60888d2",
+      "filename_stem": "033-semiconductor-inspection-equipment",
+      "runtime_glb_url": "/runtime-models/glb/033-semiconductor-inspection-equipment.glb",
+      "files": [
+        "source-models/033-semiconductor-inspection-equipment.fbx",
+        "runtime-models/glb/033-semiconductor-inspection-equipment.glb"
+      ]
+    },
+    {
+      "number": "034",
+      "name": "Semiconductor integrated inspection, coding, taping, and sorting machine",
+      "model_asset_id": "asset/fbx/fbx_7e78658f",
+      "filename_stem": "034-semiconductor-integrated-inspection-coding-taping-and-sorting-machine",
+      "runtime_glb_url": "/runtime-models/glb/034-semiconductor-integrated-inspection-coding-taping-and-sorting-machine.glb",
+      "files": [
+        "source-models/034-semiconductor-integrated-inspection-coding-taping-and-sorting-machine.fbx",
+        "runtime-models/glb/034-semiconductor-integrated-inspection-coding-taping-and-sorting-machine.glb"
+      ]
+    },
+    {
+      "number": "035",
+      "name": "Semiconductor circuit-board loading and unloading equipment",
+      "model_asset_id": "asset/fbx/fbx_1292a3bb",
+      "filename_stem": "035-semiconductor-circuit-board-loading-and-unloading-equipment",
+      "runtime_glb_url": "/runtime-models/glb/035-semiconductor-circuit-board-loading-and-unloading-equipment.glb?v=20260803-baked-orientation-2",
+      "files": [
+        "runtime-models/glb/035-semiconductor-circuit-board-loading-and-unloading-equipment.glb",
+        "runtime-models/glb/035-semiconductor-circuit-board-loading-and-unloading-equipment-before-vertex-bake-20260803.glb"
+      ]
+    },
+    {
+      "number": "036",
+      "name": "Semiconductor integrated-equipment model",
+      "model_asset_id": "asset/fbx/fbx_cd880c0d",
+      "filename_stem": "036-semiconductor-integrated-equipment-model",
+      "runtime_glb_url": "/runtime-models/glb/036-semiconductor-integrated-equipment-model.glb",
+      "files": [
+        "source-models/036-semiconductor-integrated-equipment-model.fbx",
+        "runtime-models/glb/036-semiconductor-integrated-equipment-model.glb"
+      ]
+    },
+    {
+      "number": "037",
+      "name": "Four-tank wafer cleaning and etching machine",
+      "model_asset_id": "asset/fbx/fbx_3ed136d0",
+      "filename_stem": "037-four-tank-wafer-cleaning-and-etching-machine",
+      "runtime_glb_url": "/runtime-models/glb/037-four-tank-wafer-cleaning-and-etching-machine.glb",
+      "files": [
+        "runtime-models/glb/037-four-tank-wafer-cleaning-and-etching-machine.glb"
+      ]
+    },
+    {
+      "number": "038",
+      "name": "Disc vacuum packaging machine",
+      "model_asset_id": "asset/fbx/fbx_097ef6b2",
+      "filename_stem": "038-disc-vacuum-packaging-machine",
+      "runtime_glb_url": "/runtime-models/glb/038-disc-vacuum-packaging-machine.glb",
+      "files": [
+        "source-models/038-disc-vacuum-packaging-machine.fbx",
+        "runtime-models/glb/038-disc-vacuum-packaging-machine.glb"
+      ]
+    },
+    {
+      "number": "039",
+      "name": "Expansion machine",
+      "model_asset_id": "asset/fbx/fbx_3c6fae07",
+      "filename_stem": "039-expansion-machine",
+      "runtime_glb_url": "/runtime-models/glb/039-expansion-machine.glb",
+      "files": [
+        "runtime-models/glb/039-expansion-machine.glb"
+      ]
+    },
+    {
+      "number": "040",
+      "name": "Automatic die-attach forming assembly",
+      "model_asset_id": "asset/fbx/fbx_37331baa",
+      "filename_stem": "040-automatic-die-attach-forming-assembly",
+      "runtime_glb_url": "/runtime-models/glb/040-automatic-die-attach-forming-assembly.glb?v=20260803-baked-orientation-2",
+      "files": [
+        "runtime-models/glb/040-automatic-die-attach-forming-assembly.glb",
+        "runtime-models/glb/040-automatic-die-attach-forming-assembly-before-orientation-fix-20260803.glb",
+        "runtime-models/glb/040-automatic-die-attach-forming-assembly-before-vertex-bake-20260803.glb"
+      ]
+    },
+    {
+      "number": "041",
+      "name": "Industrial factory showroom scene 015",
+      "model_asset_id": "asset/max/industrial_factory_showroom_machine_015",
+      "filename_stem": "041-industrial-factory-showroom-scene-015",
+      "runtime_glb_url": "/runtime-models/glb/041-industrial-factory-showroom-scene-015.glb",
+      "files": [
+        "source-models/041-industrial-factory-showroom-scene-015.fbx",
+        "runtime-models/glb/041-industrial-factory-showroom-scene-015.glb"
+      ]
+    },
+    {
+      "number": "043",
+      "name": "Four-column hydraulic press",
+      "model_asset_id": "asset/fbx/fbx_9707ae30",
+      "filename_stem": "043-four-column-hydraulic-press",
+      "runtime_glb_url": "/runtime-models/glb/043-four-column-hydraulic-press.glb",
+      "files": [
+        "source-models/043-four-column-hydraulic-press.fbx",
+        "runtime-models/glb/043-four-column-hydraulic-press.glb"
+      ]
+    },
+    {
+      "number": "044",
+      "name": "Fixture workbench",
+      "model_asset_id": "asset/fbx/fbx_7716b9f7",
+      "filename_stem": "044-fixture-workbench",
+      "runtime_glb_url": "/runtime-models/glb/044-fixture-workbench.glb",
+      "files": [
+        "runtime-models/glb/044-fixture-workbench.glb",
+        "runtime-models/glb/044-fixture-workbench-raw.glb"
+      ]
+    },
+    {
+      "number": "045",
+      "name": "Installation platform",
+      "model_asset_id": "asset/fbx/fbx_9dca0e84",
+      "filename_stem": "045-installation-platform",
+      "runtime_glb_url": "/runtime-models/glb/045-installation-platform.glb",
+      "files": [
+        "source-models/045-installation-platform.fbx",
+        "runtime-models/glb/045-installation-platform.glb"
+      ]
+    },
+    {
+      "number": "046",
+      "name": "Tool cabinet",
+      "model_asset_id": "asset/fbx/fbx_1a80889c",
+      "filename_stem": "046-tool-cabinet",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/046-tool-cabinet.glb",
+      "files": [
+        "runtime-models/glb/calibrated/046-tool-cabinet.glb",
+        "unity_models/046-tool-cabinet.fbx"
+      ]
+    },
+    {
+      "number": "047",
+      "name": "Robot linear-slide workstation",
+      "model_asset_id": "asset/fbx/fbx_88e820ac",
+      "filename_stem": "047-robot-linear-slide-workstation",
+      "runtime_glb_url": "/runtime-models/glb/047-robot-linear-slide-workstation.glb",
+      "files": [
+        "source-models/047-robot-linear-slide-workstation.fbx",
+        "runtime-models/glb/047-robot-linear-slide-workstation.glb"
+      ]
+    },
+    {
+      "number": "048",
+      "name": "Equipment enclosure",
+      "model_asset_id": "asset/fbx/fbx_ebfc71a6",
+      "filename_stem": "048-equipment-enclosure",
+      "runtime_glb_url": "/runtime-models/glb/048-equipment-enclosure.glb",
+      "files": [
+        "source-models/048-equipment-enclosure.fbx",
+        "runtime-models/glb/048-equipment-enclosure.glb"
+      ]
+    },
+    {
+      "number": "049",
+      "name": "Hydraulic power unit",
+      "model_asset_id": "asset/fbx/fbx_177626cb",
+      "filename_stem": "049-hydraulic-power-unit",
+      "runtime_glb_url": "/runtime-models/glb/049-hydraulic-power-unit.glb",
+      "files": [
+        "source-models/049-hydraulic-power-unit.fbx",
+        "runtime-models/glb/049-hydraulic-power-unit.glb"
+      ]
+    },
+    {
+      "number": "050",
+      "name": "EDM forming machine",
+      "model_asset_id": "asset/fbx/fbx_c87c6aaa",
+      "filename_stem": "050-edm-forming-machine",
+      "runtime_glb_url": "/runtime-models/glb/050-edm-forming-machine.glb",
+      "files": [
+        "source-models/050-edm-forming-machine.fbx",
+        "runtime-models/glb/050-edm-forming-machine.glb"
+      ]
+    },
+    {
+      "number": "051",
+      "name": "EDM drilling machine",
+      "model_asset_id": "asset/fbx/fbx_313d8039",
+      "filename_stem": "051-edm-drilling-machine",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/051-edm-drilling-machine.glb",
+      "files": [
+        "runtime-models/glb/calibrated/051-edm-drilling-machine.glb",
+        "unity_models/051-edm-drilling-machine.fbx"
+      ]
+    },
+    {
+      "number": "052",
+      "name": "Pipe cutting and beveling machine",
+      "model_asset_id": "asset/fbx/fbx_8251e44c",
+      "filename_stem": "052-pipe-cutting-and-beveling-machine",
+      "runtime_glb_url": "/runtime-models/glb/052-pipe-cutting-and-beveling-machine.glb",
+      "files": [
+        "source-models/052-pipe-cutting-and-beveling-machine.fbx",
+        "runtime-models/glb/052-pipe-cutting-and-beveling-machine.glb"
+      ]
+    },
+    {
+      "number": "053",
+      "name": "Rolling machine",
+      "model_asset_id": "asset/fbx/fbx_4d43d987",
+      "filename_stem": "053-rolling-machine",
+      "runtime_glb_url": "/runtime-models/glb/053-rolling-machine.glb",
+      "files": [
+        "source-models/053-rolling-machine.fbx",
+        "runtime-models/glb/053-rolling-machine.glb"
+      ]
+    },
+    {
+      "number": "054",
+      "name": "Conical hopper",
+      "model_asset_id": "asset/fbx/fbx_c36a1e83",
+      "filename_stem": "054-conical-hopper",
+      "runtime_glb_url": "/runtime-models/glb/054-conical-hopper.glb",
+      "files": [
+        "source-models/054-conical-hopper.fbx",
+        "runtime-models/glb/054-conical-hopper.glb"
+      ]
+    },
+    {
+      "number": "055",
+      "name": "Five-unit integrated server-cabinet group",
+      "model_asset_id": "asset/fbx/5",
+      "filename_stem": "055-five-unit-integrated-server-cabinet-group",
+      "runtime_glb_url": "/runtime-models/glb/055-five-unit-integrated-server-cabinet-group.glb",
+      "files": [
+        "runtime-models/glb/055-five-unit-integrated-server-cabinet-group.glb"
+      ]
+    },
+    {
+      "number": "056",
+      "name": "Single server cabinet",
+      "model_asset_id": "asset/fbx/fbx_be827a77",
+      "filename_stem": "056-single-server-cabinet",
+      "runtime_glb_url": "/runtime-models/glb/056-single-server-cabinet.glb",
+      "files": [
+        "runtime-models/glb/056-single-server-cabinet.glb"
+      ]
+    },
+    {
+      "number": "057",
+      "name": "CNC machining center",
+      "model_asset_id": "asset/fbx/fbx_84d31057",
+      "filename_stem": "057-cnc-machining-center",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/057-cnc-machining-center.glb",
+      "files": [
+        "runtime-models/glb/calibrated/057-cnc-machining-center.glb",
+        "runtime-models/glb/057-cnc-machining-center.glb",
+        "unity_models/057-cnc-machining-center.fbx"
+      ]
+    },
+    {
+      "number": "058",
+      "name": "Six-axis CNC machining center for plastic oil-bottle machining",
+      "model_asset_id": "asset/fbx/fbx_465611ff",
+      "filename_stem": "058-six-axis-cnc-machining-center-for-plastic-oil-bottle-machining",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/058-six-axis-cnc-machining-center-for-plastic-oil-bottle-machining.glb",
+      "files": [
+        "runtime-models/glb/calibrated/058-six-axis-cnc-machining-center-for-plastic-oil-bottle-machining.glb",
+        "runtime-models/glb/058-six-axis-cnc-machining-center-for-plastic-oil-bottle-machining.glb"
+      ]
+    },
+    {
+      "number": "059",
+      "name": "Horizontal milling machine",
+      "model_asset_id": "asset/fbx/fbx_17fcd2ed",
+      "filename_stem": "059-horizontal-milling-machine",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/059-horizontal-milling-machine.glb",
+      "files": [
+        "runtime-models/glb/calibrated/059-horizontal-milling-machine.glb"
+      ]
+    },
+    {
+      "number": "060",
+      "name": "Haas CNC machining center",
+      "model_asset_id": "asset/fbx/fbx_52f1abc3",
+      "filename_stem": "060-haas-cnc-machining-center",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/060-haas-cnc-machining-center.glb",
+      "files": [
+        "runtime-models/glb/calibrated/060-haas-cnc-machining-center.glb",
+        "runtime-models/glb/060-haas-cnc-machining-center.glb"
+      ]
+    },
+    {
+      "number": "061",
+      "name": "Micro machining center",
+      "model_asset_id": "asset/fbx/fbx_c6a19eec",
+      "filename_stem": "061-micro-machining-center",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/061-micro-machining-center.glb",
+      "files": [
+        "runtime-models/glb/calibrated/061-micro-machining-center.glb",
+        "runtime-models/glb/061-micro-machining-center.glb"
+      ]
+    },
+    {
+      "number": "062",
+      "name": "Radial drilling machine",
+      "model_asset_id": "asset/fbx/fbx_a3e1a9c2",
+      "filename_stem": "062-radial-drilling-machine",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/062-radial-drilling-machine.glb",
+      "files": [
+        "runtime-models/glb/calibrated/062-radial-drilling-machine.glb",
+        "runtime-models/glb/062-radial-drilling-machine.glb",
+        "runtime-models/glb/062-radial-drilling-machine-raw.glb",
+        "unity_models/062-radial-drilling-machine.fbx"
+      ]
+    },
+    {
+      "number": "063",
+      "name": "Enclosed CNC machine",
+      "model_asset_id": "asset/fbx/fbx_8261b7e0",
+      "filename_stem": "063-enclosed-cnc-machine",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/063-enclosed-cnc-machine.glb",
+      "files": [
+        "runtime-models/glb/calibrated/063-enclosed-cnc-machine.glb"
+      ]
+    },
+    {
+      "number": "064",
+      "name": "Turn-mill machining center",
+      "model_asset_id": "asset/fbx/fbx_6901bdd8",
+      "filename_stem": "064-turn-mill-machining-center",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/064-turn-mill-machining-center.glb",
+      "files": [
+        "runtime-models/glb/calibrated/064-turn-mill-machining-center.glb",
+        "runtime-models/glb/064-turn-mill-machining-center.glb",
+        "unity_models/064-turn-mill-machining-center.fbx"
+      ]
+    },
+    {
+      "number": "065",
+      "name": "Vertical machining center 1100 x 900",
+      "model_asset_id": "asset/fbx/fbx_fb04a2ee",
+      "filename_stem": "065-vertical-machining-center-1100-x-900",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/065-vertical-machining-center-1100-x-900.glb",
+      "files": [
+        "runtime-models/glb/calibrated/065-vertical-machining-center-1100-x-900.glb",
+        "runtime-models/glb/065-vertical-machining-center-1100-x-900.glb",
+        "unity_models/065-vertical-machining-center-1100-x-900.fbx"
+      ]
+    },
+    {
+      "number": "066",
+      "name": "Vertical machining center GA-V918C",
+      "model_asset_id": "asset/fbx/fbx_abd43f9f",
+      "filename_stem": "066-vertical-machining-center-ga-v918c",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/066-vertical-machining-center-ga-v918c.glb",
+      "files": [
+        "runtime-models/glb/calibrated/066-vertical-machining-center-ga-v918c.glb",
+        "runtime-models/glb/066-vertical-machining-center-ga-v918c.glb"
+      ]
+    },
+    {
+      "number": "067",
+      "name": "Bare vertical machining-center model",
+      "model_asset_id": "asset/fbx/fbx_f4980f8b",
+      "filename_stem": "067-bare-vertical-machining-center-model",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/067-bare-vertical-machining-center-model.glb",
+      "files": [
+        "runtime-models/glb/calibrated/067-bare-vertical-machining-center-model.glb",
+        "runtime-models/glb/067-bare-vertical-machining-center-model.glb"
+      ]
+    },
+    {
+      "number": "068",
+      "name": "Vertical four-axis CNC milling machine",
+      "model_asset_id": "asset/fbx/fbx_f2db5dfe",
+      "filename_stem": "068-vertical-four-axis-cnc-milling-machine",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/068-vertical-four-axis-cnc-milling-machine.glb",
+      "files": [
+        "runtime-models/glb/calibrated/068-vertical-four-axis-cnc-milling-machine.glb",
+        "runtime-models/glb/068-vertical-four-axis-cnc-milling-machine.glb"
+      ]
+    },
+    {
+      "number": "069",
+      "name": "High-speed vertical turn-mill machining center",
+      "model_asset_id": "asset/fbx/fbx_d8f6cfdf",
+      "filename_stem": "069-high-speed-vertical-turn-mill-machining-center",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/069-high-speed-vertical-turn-mill-machining-center.glb",
+      "files": [
+        "runtime-models/glb/calibrated/069-high-speed-vertical-turn-mill-machining-center.glb",
+        "runtime-models/glb/069-high-speed-vertical-turn-mill-machining-center.glb"
+      ]
+    },
+    {
+      "number": "070",
+      "name": "Gantry CNC cutting machine",
+      "model_asset_id": "asset/fbx/fbx_3b1181c9",
+      "filename_stem": "070-gantry-cnc-cutting-machine",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/070-gantry-cnc-cutting-machine.glb",
+      "files": [
+        "runtime-models/glb/calibrated/070-gantry-cnc-cutting-machine.glb",
+        "runtime-models/glb/070-gantry-cnc-cutting-machine.glb",
+        "runtime-models/glb/070-gantry-cnc-cutting-machine-raw.glb"
+      ]
+    },
+    {
+      "number": "071",
+      "name": "Gantry milling machine",
+      "model_asset_id": "asset/fbx/fbx_51f787e0",
+      "filename_stem": "071-gantry-milling-machine",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/071-gantry-milling-machine.glb",
+      "files": [
+        "runtime-models/glb/calibrated/071-gantry-milling-machine.glb"
+      ]
+    },
+    {
+      "number": "072",
+      "name": "Automated guided vehicle",
+      "model_asset_id": "asset/glb/m072_agv",
+      "filename_stem": "072-automated-guided-vehicle",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/072-automated-guided-vehicle.glb",
+      "files": [
+        "runtime-models/glb/calibrated/072-automated-guided-vehicle.glb",
+        "runtime-models/glb/source_raw/072-automated-guided-vehicle-source.glb",
+        "unity_models/072-automated-guided-vehicle.fbx"
+      ]
+    },
+    {
+      "number": "073",
+      "name": "Energy monitoring gateway",
+      "model_asset_id": "asset/glb/m073_energy_monitoring_gateway",
+      "filename_stem": "073-energy-monitoring-gateway",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/073-energy-monitoring-gateway-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/073-energy-monitoring-gateway-source.glb"
+      ]
+    },
+    {
+      "number": "074",
+      "name": "Communications service monitor",
+      "model_asset_id": "asset/glb/m074_communications_service_monitor",
+      "filename_stem": "074-communications-service-monitor",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/074-communications-service-monitor-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/074-communications-service-monitor-source.glb"
+      ]
+    },
+    {
+      "number": "075",
+      "name": "Keyboard-video-mouse switch",
+      "model_asset_id": "asset/glb/m075_keyboard_video_mouse_switch",
+      "filename_stem": "075-keyboard-video-mouse-switch",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/075-keyboard-video-mouse-switch-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/075-keyboard-video-mouse-switch-source.glb"
+      ]
+    },
+    {
+      "number": "076",
+      "name": "UHF tunable filter",
+      "model_asset_id": "asset/glb/m076_uhf_tunable_filter",
+      "filename_stem": "076-uhf-tunable-filter",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/076-uhf-tunable-filter-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/076-uhf-tunable-filter-source.glb"
+      ]
+    },
+    {
+      "number": "077",
+      "name": "VHF tunable filter",
+      "model_asset_id": "asset/glb/m077_vhf_tunable_filter",
+      "filename_stem": "077-vhf-tunable-filter",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/077-vhf-tunable-filter-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/077-vhf-tunable-filter-source.glb"
+      ]
+    },
+    {
+      "number": "078",
+      "name": "Tool conveyor-line component",
+      "model_asset_id": "asset/glb/m078_tool_conveyor_line",
+      "filename_stem": "078-tool-conveyor-line-component",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/078-tool-conveyor-line-component-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/078-tool-conveyor-line-component-source.glb"
+      ]
+    },
+    {
+      "number": "079",
+      "name": "Conveyor 2",
+      "model_asset_id": "asset/glb/m079_conveyor_2",
+      "filename_stem": "079-conveyor-2",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/079-conveyor-2.glb",
+      "files": [
+        "runtime-models/glb/calibrated/079-conveyor-2.glb",
+        "runtime-models/glb/source_raw/079-conveyor-2-source.glb"
+      ]
+    },
+    {
+      "number": "080",
+      "name": "Floor surface",
+      "model_asset_id": "asset/glb/m080_floor_surface",
+      "filename_stem": "080-floor-surface",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/080-floor-surface-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/080-floor-surface-source.glb"
+      ]
+    },
+    {
+      "number": "081",
+      "name": "Electronics workshop scene",
+      "model_asset_id": "asset/glb/m081_electronics_workshop_scene",
+      "filename_stem": "081-electronics-workshop-scene",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/081-electronics-workshop-scene-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/081-electronics-workshop-scene-source.glb"
+      ]
+    },
+    {
+      "number": "082",
+      "name": "Large temperature chamber",
+      "model_asset_id": "asset/glb/m082_large_temperature_chamber",
+      "filename_stem": "082-large-temperature-chamber",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/082-large-temperature-chamber-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/082-large-temperature-chamber-source.glb"
+      ]
+    },
+    {
+      "number": "083",
+      "name": "Worker figure 1",
+      "model_asset_id": "asset/glb/m083_worker_figure_1",
+      "filename_stem": "083-worker-figure-1",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/083-worker-figure-1-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/083-worker-figure-1-source.glb"
+      ]
+    },
+    {
+      "number": "084",
+      "name": "Worker figure 2",
+      "model_asset_id": "asset/glb/m084_worker_figure_2",
+      "filename_stem": "084-worker-figure-2",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/084-worker-figure-2-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/084-worker-figure-2-source.glb"
+      ]
+    },
+    {
+      "number": "085",
+      "name": "Temporary-storage visual scene",
+      "model_asset_id": "asset/glb/m085_temporary_storage_visual_scene",
+      "filename_stem": "085-temporary-storage-visual-scene",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/085-temporary-storage-visual-scene-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/085-temporary-storage-visual-scene-source.glb"
+      ]
+    },
+    {
+      "number": "086",
+      "name": "Flexible test workstation",
+      "model_asset_id": "asset/glb/m086_flexible_test_workstation",
+      "filename_stem": "086-flexible-test-workstation",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/086-flexible-test-workstation.glb",
+      "files": [
+        "runtime-models/glb/calibrated/086-flexible-test-workstation.glb",
+        "runtime-models/glb/source_raw/086-flexible-test-workstation-source.glb",
+        "unity_models/086-flexible-test-workstation.fbx"
+      ]
+    },
+    {
+      "number": "087",
+      "name": "Table",
+      "model_asset_id": "asset/glb/m087_table",
+      "filename_stem": "087-table",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/087-table-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/087-table-source.glb"
+      ]
+    },
+    {
+      "number": "088",
+      "name": "Small temperature chamber",
+      "model_asset_id": "asset/glb/m088_small_temperature_chamber",
+      "filename_stem": "088-small-temperature-chamber",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/088-small-temperature-chamber.glb",
+      "files": [
+        "runtime-models/glb/calibrated/088-small-temperature-chamber.glb",
+        "runtime-models/glb/source_raw/088-small-temperature-chamber-source.glb",
+        "unity_models/088-small-temperature-chamber.fbx"
+      ]
+    },
+    {
+      "number": "089",
+      "name": "Laser marking station",
+      "model_asset_id": "asset/glb/m089_laser_marking_station",
+      "filename_stem": "089-laser-marking-station",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/089-laser-marking-station.glb",
+      "files": [
+        "runtime-models/glb/calibrated/089-laser-marking-station.glb",
+        "runtime-models/glb/source_raw/089-laser-marking-station-source.glb",
+        "unity_models/089-laser-marking-station.fbx"
+      ]
+    },
+    {
+      "number": "090",
+      "name": "Material model",
+      "model_asset_id": "asset/glb/m090_material_model",
+      "filename_stem": "090-material-model",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/090-material-model-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/090-material-model-source.glb"
+      ]
+    },
+    {
+      "number": "091",
+      "name": "Belt conveyor",
+      "model_asset_id": "asset/glb/m091_belt_conveyor",
+      "filename_stem": "091-belt-conveyor",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/091-belt-conveyor-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/091-belt-conveyor-source.glb"
+      ]
+    },
+    {
+      "number": "092",
+      "name": "Line-side storage unit",
+      "model_asset_id": "asset/glb/m092_line_side_storage_unit",
+      "filename_stem": "092-line-side-storage-unit",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/092-line-side-storage-unit.glb",
+      "files": [
+        "runtime-models/glb/calibrated/092-line-side-storage-unit.glb",
+        "runtime-models/glb/source_raw/092-line-side-storage-unit-source.glb",
+        "unity_models/092-line-side-storage-unit.fbx"
+      ]
+    },
+    {
+      "number": "093",
+      "name": "Fixture workstation",
+      "model_asset_id": "asset/glb/m093_fixture_workstation",
+      "filename_stem": "093-fixture-workstation",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/093-fixture-workstation.glb",
+      "files": [
+        "runtime-models/glb/calibrated/093-fixture-workstation.glb",
+        "runtime-models/glb/source_raw/093-fixture-workstation-source.glb",
+        "unity_models/093-fixture-workstation.fbx"
+      ]
+    },
+    {
+      "number": "094",
+      "name": "Touchscreen",
+      "model_asset_id": "asset/glb/m094_touchscreen",
+      "filename_stem": "094-touchscreen",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/094-touchscreen-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/094-touchscreen-source.glb"
+      ]
+    },
+    {
+      "number": "095",
+      "name": "Unspecified equipment model",
+      "model_asset_id": "asset/glb/m095_unspecified_equipment",
+      "filename_stem": "095-unspecified-equipment-model",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/095-unspecified-equipment-model-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/095-unspecified-equipment-model-source.glb"
+      ]
+    },
+    {
+      "number": "096",
+      "name": "Multi-object rack scene",
+      "model_asset_id": "asset/glb/m096_multi_object_rack_scene",
+      "filename_stem": "096-multi-object-rack-scene",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/096-multi-object-rack-scene-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/096-multi-object-rack-scene-source.glb"
+      ]
+    },
+    {
+      "number": "097",
+      "name": "Ultrasonic welding machine",
+      "model_asset_id": "asset/glb/m097_ultrasonic_welding_machine",
+      "filename_stem": "097-ultrasonic-welding-machine",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/097-ultrasonic-welding-machine-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/097-ultrasonic-welding-machine-source.glb"
+      ]
+    },
+    {
+      "number": "098",
+      "name": "Conveyor line",
+      "model_asset_id": "asset/glb/m098_conveyor_line",
+      "filename_stem": "098-conveyor-line",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/098-conveyor-line.glb",
+      "files": [
+        "runtime-models/glb/calibrated/098-conveyor-line.glb",
+        "runtime-models/glb/source_raw/098-conveyor-line-source.glb",
+        "unity_models/098-conveyor-line.fbx"
+      ]
+    },
+    {
+      "number": "099",
+      "name": "Conveyor line 2",
+      "model_asset_id": "asset/glb/m099_conveyor_line_2",
+      "filename_stem": "099-conveyor-line-2",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/099-conveyor-line-2-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/099-conveyor-line-2-source.glb"
+      ]
+    },
+    {
+      "number": "100",
+      "name": "Conveyor line 3",
+      "model_asset_id": "asset/glb/m100_conveyor_line_3",
+      "filename_stem": "100-conveyor-line-3",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/100-conveyor-line-3-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/100-conveyor-line-3-source.glb"
+      ]
+    },
+    {
+      "number": "101",
+      "name": "Aluminum-profile support",
+      "model_asset_id": "asset/glb/m101_aluminum_profile_support",
+      "filename_stem": "101-aluminum-profile-support",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/101-aluminum-profile-support-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/101-aluminum-profile-support-source.glb"
+      ]
+    },
+    {
+      "number": "102",
+      "name": "Worktable subunit",
+      "model_asset_id": "asset/stl/m102_worktable_child",
+      "filename_stem": "102-worktable-subunit",
+      "runtime_glb_url": "/runtime-models/glb/source_raw/102-worktable-subunit-source.glb",
+      "files": [
+        "runtime-models/glb/source_raw/102-worktable-subunit-source.glb"
+      ]
+    },
+    {
+      "number": "103",
+      "name": "Work table",
+      "model_asset_id": "asset/stl/m103_work_table",
+      "filename_stem": "103-work-table",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/103-work-table.glb",
+      "files": [
+        "runtime-models/glb/calibrated/103-work-table.glb",
+        "runtime-models/glb/source_raw/103-work-table-source.glb",
+        "unity_models/103-work-table.fbx"
+      ]
+    },
+    {
+      "number": "104",
+      "name": "Storage rack",
+      "model_asset_id": "asset/stl/m104_storage_rack",
+      "filename_stem": "104-storage-rack",
+      "runtime_glb_url": "/runtime-models/glb/calibrated/104-storage-rack.glb",
+      "files": [
+        "runtime-models/glb/calibrated/104-storage-rack.glb",
+        "runtime-models/glb/source_raw/104-storage-rack-source.glb",
+        "unity_models/104-storage-rack.fbx"
+      ]
+    },
+    {
+      "number": "106",
+      "name": "PCB placing-machine assembly scene",
+      "model_asset_id": "asset/fbx/pcb_placing_machine_assembly",
+      "filename_stem": "106-pcb-placing-machine-assembly-scene",
+      "runtime_glb_url": "/runtime-models/glb/106-pcb-placing-machine-assembly-scene.glb",
+      "files": [
+        "source-models/106-pcb-placing-machine-assembly-scene.fbx",
+        "runtime-models/glb/106-pcb-placing-machine-assembly-scene.glb"
+      ]
+    },
+    {
+      "number": "107",
+      "name": "Assembly model ASM1",
+      "model_asset_id": "asset/stl/asm1",
+      "filename_stem": "107-assembly-model-asm1",
+      "runtime_glb_url": "/runtime-models/glb/107-assembly-model-asm1.glb",
+      "files": [
+        "source-models/107-assembly-model-asm1.stl",
+        "runtime-models/glb/107-assembly-model-asm1.glb"
+      ]
+    },
+    {
+      "number": "108",
+      "name": "Rotary assembly line",
+      "model_asset_id": "asset/fbx/fbx_a71ceea9",
+      "filename_stem": "108-rotary-assembly-line",
+      "runtime_glb_url": "/runtime-models/glb/108-rotary-assembly-line.glb",
+      "files": [
+        "source-models/108-rotary-assembly-line.fbx",
+        "runtime-models/glb/108-rotary-assembly-line.glb"
+      ]
+    },
+    {
+      "number": "110",
+      "name": "Steel-platform production-line layout scene",
+      "model_asset_id": "asset/fbx/fbx_08edb467",
+      "filename_stem": "110-steel-platform-production-line-layout-scene",
+      "runtime_glb_url": "/runtime-models/glb/110-steel-platform-production-line-layout-scene.glb",
+      "files": [
+        "source-models/110-steel-platform-production-line-layout-scene.fbx",
+        "runtime-models/glb/110-steel-platform-production-line-layout-scene.glb"
+      ]
+    }
+  ]
+}

@@ -1151,7 +1151,7 @@
         "retained_catalog_clearance_sources": [
           {
             "model_asset_id": "asset/fbx/fbx_fb04a2ee",
-            "asset_name": "Vertical machining center 1100 x 900 (立式加工中心1100X900)",
+            "asset_name": "Vertical machining center 1100 x 900",
             "clearance_sources": [
               {
                 "field_path": "planning_fields.maintenance_clearance_m",
@@ -1163,7 +1163,7 @@
           },
           {
             "model_asset_id": "asset/fbx/fbx_6901bdd8",
-            "asset_name": "Turn-mill machining center (新型车铣复合加工中心)",
+            "asset_name": "Turn-mill machining center",
             "clearance_sources": [
               {
                 "field_path": "planning_fields.maintenance_clearance_m",
@@ -1181,7 +1181,7 @@
           },
           {
             "model_asset_id": "asset/fbx/fbx_a3e1a9c2",
-            "asset_name": "Radial drilling machine (摇臂钻床)",
+            "asset_name": "Radial drilling machine",
             "clearance_sources": [
               {
                 "field_path": "planning_fields.maintenance_clearance_m",
@@ -1193,7 +1193,7 @@
           },
           {
             "model_asset_id": "asset/fbx/fbx_313d8039",
-            "asset_name": "EDM drilling machine (电火花穿孔机)",
+            "asset_name": "EDM drilling machine",
             "clearance_sources": [
               {
                 "field_path": "planning_fields.maintenance_clearance_m",
@@ -2272,7 +2272,7 @@
         "retained_catalog_clearance_sources": [
           {
             "model_asset_id": "asset/fbx/fbx_313d8039",
-            "asset_name": "EDM drilling machine (电火花穿孔机)",
+            "asset_name": "EDM drilling machine",
             "clearance_sources": [
               {
                 "field_path": "planning_fields.maintenance_clearance_m",
@@ -2284,7 +2284,7 @@
           },
           {
             "model_asset_id": "asset/fbx/fbx_6901bdd8",
-            "asset_name": "Turn-mill machining center (新型车铣复合加工中心)",
+            "asset_name": "Turn-mill machining center",
             "clearance_sources": [
               {
                 "field_path": "planning_fields.maintenance_clearance_m",
@@ -2302,7 +2302,7 @@
           },
           {
             "model_asset_id": "asset/fbx/fbx_a3e1a9c2",
-            "asset_name": "Radial drilling machine (摇臂钻床)",
+            "asset_name": "Radial drilling machine",
             "clearance_sources": [
               {
                 "field_path": "planning_fields.maintenance_clearance_m",
@@ -2314,7 +2314,7 @@
           },
           {
             "model_asset_id": "asset/fbx/fbx_fb04a2ee",
-            "asset_name": "Vertical machining center 1100 x 900 (立式加工中心1100X900)",
+            "asset_name": "Vertical machining center 1100 x 900",
             "clearance_sources": [
               {
                 "field_path": "planning_fields.maintenance_clearance_m",

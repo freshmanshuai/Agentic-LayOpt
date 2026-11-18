@@ -3,14 +3,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/0_5m",
     "asset_scope": "equipment",
-    "asset_name": "0.5M transfer station (0.5M接驳台)",
+    "asset_name": "0.5M transfer station",
     "asset_description": "The filename identifies a 0.5M transfer-station model; it does not establish a physical dimension or operating capability. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "material_handling",
     "equipment_type": "transfer_station",
     "aliases": [
-      "0.5M接驳台",
       "0.5M transfer station",
       "transfer_station"
     ],
@@ -292,14 +291,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/5",
     "asset_scope": "composite_scene",
-    "asset_name": "Five-unit integrated server-cabinet group (中国移动服务器一体化机柜（5台）)",
+    "asset_name": "Five-unit integrated server-cabinet group",
     "asset_description": "The filename identifies an integrated group of five server cabinets, not a single standalone cabinet. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "data_center_scene",
     "equipment_type": "server_cabinet_group_scene",
     "aliases": [
-      "中国移动服务器一体化机柜（5台）",
       "Five-unit integrated server-cabinet group",
       "server_cabinet_group_scene"
     ],
@@ -780,15 +778,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_00",
     "asset_scope": "equipment",
-    "asset_name": "卧式离心泵机组",
+    "asset_name": "Horizontal centrifugal pump set",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 卧式离心泵 + 电机/驱动端的成套机组.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "horizontal_centrifugal_pump_set",
     "aliases": [
+      "Horizontal centrifugal pump set",
       "Factory_Unit_00",
-      "卧式离心泵机组",
       "horizontal_centrifugal_pump_set"
     ],
     "model_files": [
@@ -1028,15 +1026,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_01",
     "asset_scope": "equipment",
-    "asset_name": "防爆接线盒",
+    "asset_name": "Explosion-proof junction box",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 防爆接线盒/端子箱，带电缆管和安装支架.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "explosion_proof_junction_box",
     "aliases": [
+      "Explosion-proof junction box",
       "Factory_Unit_01",
-      "防爆接线盒",
       "explosion_proof_junction_box"
     ],
     "model_files": [
@@ -1260,15 +1258,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_02",
     "asset_scope": "equipment",
-    "asset_name": "油浸式电力变压器",
+    "asset_name": "Oil-immersed power transformer",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 带高压套管、散热片和油管的电力变压器.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "oil_immersed_power_transformer",
     "aliases": [
+      "Oil-immersed power transformer",
       "Factory_Unit_02",
-      "油浸式电力变压器",
       "oil_immersed_power_transformer"
     ],
     "model_files": [
@@ -1494,15 +1492,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_03",
     "asset_scope": "equipment",
-    "asset_name": "高压电气机组",
+    "asset_name": "High-voltage electrical unit",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 高压电气/发电机/变压整流类综合机组，视觉上是电气动力设备.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "high_voltage_electrical_unit",
     "aliases": [
+      "High-voltage electrical unit",
       "Factory_Unit_03",
-      "高压电气机组",
       "high_voltage_electrical_unit"
     ],
     "model_files": [
@@ -1728,15 +1726,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_04",
     "asset_scope": "equipment",
-    "asset_name": "电气控制柜",
+    "asset_name": "Electrical control cabinet",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 落地/支架式电气柜，带门和警示标识.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "electrical_control_cabinet",
     "aliases": [
+      "Electrical control cabinet",
       "Factory_Unit_04",
-      "电气控制柜",
       "electrical_control_cabinet"
     ],
     "model_files": [
@@ -1970,15 +1968,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_05",
     "asset_scope": "equipment",
-    "asset_name": "离心鼓风机机组",
+    "asset_name": "Centrifugal blower unit",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 大型卧式鼓风机/离心风机，带进出口管和底座.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "centrifugal_blower_unit",
     "aliases": [
+      "Centrifugal blower unit",
       "Factory_Unit_05",
-      "离心鼓风机机组",
       "centrifugal_blower_unit"
     ],
     "model_files": [
@@ -2202,15 +2200,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_06",
     "asset_scope": "equipment",
-    "asset_name": "立式感应炉",
+    "asset_name": "Vertical induction furnace",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 立式圆筒线圈设备，像感应炉/电磁加热反应器.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "vertical_induction_furnace",
     "aliases": [
+      "Vertical induction furnace",
       "Factory_Unit_06",
-      "立式感应炉",
       "vertical_induction_furnace"
     ],
     "model_files": [
@@ -2436,15 +2434,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_07",
     "asset_scope": "equipment",
-    "asset_name": "带平台立式分离塔",
+    "asset_name": "Platform-mounted vertical separator tower",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 立式容器、管道、平台、梯子组合，像洗涤塔/旋风分离塔.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "platformed_vertical_separator_tower",
     "aliases": [
+      "Platform-mounted vertical separator tower",
       "Factory_Unit_07",
-      "带平台立式分离塔",
       "platformed_vertical_separator_tower"
     ],
     "model_files": [
@@ -2670,15 +2668,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_08",
     "asset_scope": "equipment",
-    "asset_name": "工业卷扬机",
+    "asset_name": "Industrial winch unit",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 电机、减速器、卷筒和控制附件组成的卷扬设备.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "industrial_winch_unit",
     "aliases": [
+      "Industrial winch unit",
       "Factory_Unit_08",
-      "工业卷扬机",
       "industrial_winch_unit"
     ],
     "model_files": [
@@ -2913,15 +2911,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_09",
     "asset_scope": "equipment",
-    "asset_name": "移动式料斗泵",
+    "asset_name": "Mobile hopper-pump unit",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 带料斗、轮架、发动机/泵体的小型移动设备.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "mobile_hopper_pump_unit",
     "aliases": [
+      "Mobile hopper-pump unit",
       "Factory_Unit_09",
-      "移动式料斗泵",
       "mobile_hopper_pump_unit"
     ],
     "model_files": [
@@ -3146,15 +3144,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_10",
     "asset_scope": "equipment",
-    "asset_name": "双料斗螺旋给料机",
+    "asset_name": "Dual-hopper screw feeder",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 双锥形料斗，下方连接螺旋输送/给料装置.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "dual_hopper_screw_feeder",
     "aliases": [
+      "Dual-hopper screw feeder",
       "Factory_Unit_10",
-      "双料斗螺旋给料机",
       "dual_hopper_screw_feeder"
     ],
     "model_files": [
@@ -3380,15 +3378,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_11",
     "asset_scope": "equipment",
-    "asset_name": "双联压缩机撬装机组",
+    "asset_name": "Dual-compressor skid",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 框架内的双联旋转机械，类似双压缩机/双泵撬装设备.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "dual_compressor_skid",
     "aliases": [
+      "Dual-compressor skid",
       "Factory_Unit_11",
-      "双联压缩机撬装机组",
       "dual_compressor_skid"
     ],
     "model_files": [
@@ -3614,15 +3612,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_12",
     "asset_scope": "equipment",
-    "asset_name": "工业设备门架",
+    "asset_name": "Industrial equipment gantry",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 大型箱式门架/设备框架，带面板和维修口，偏科幻工业模块.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "industrial_equipment_gantry_module",
     "aliases": [
+      "Industrial equipment gantry",
       "Factory_Unit_12",
-      "工业设备门架",
       "industrial_equipment_gantry_module"
     ],
     "model_files": [
@@ -3856,15 +3854,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_13",
     "asset_scope": "equipment",
-    "asset_name": "普通车床",
+    "asset_name": "Engine lathe",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 典型金属加工车床.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "engine_lathe",
     "aliases": [
+      "Engine lathe",
       "Factory_Unit_13",
-      "普通车床",
       "engine_lathe"
     ],
     "model_files": [
@@ -4088,15 +4086,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_14",
     "asset_scope": "equipment",
-    "asset_name": "大型电动执行机构",
+    "asset_name": "Large motorized actuator",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 带手轮、齿轮箱、立柱和执行端的阀门/机构执行装置.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "large_motorized_actuator",
     "aliases": [
+      "Large motorized actuator",
       "Factory_Unit_14",
-      "大型电动执行机构",
       "large_motorized_actuator"
     ],
     "model_files": [
@@ -4322,15 +4320,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_15",
     "asset_scope": "equipment",
-    "asset_name": "双层卧式压力罐",
+    "asset_name": "Stacked horizontal pressure vessels",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 上下两只卧式压力罐，带管道、阀门和底座.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "stacked_horizontal_pressure_vessels",
     "aliases": [
+      "Stacked horizontal pressure vessels",
       "Factory_Unit_15",
-      "双层卧式压力罐",
       "stacked_horizontal_pressure_vessels"
     ],
     "model_files": [
@@ -4556,15 +4554,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_16",
     "asset_scope": "equipment",
-    "asset_name": "框架式卧式储罐",
+    "asset_name": "Framed horizontal storage tank",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 框架式卧式储罐，带护栏、爬梯和顶部检修平台.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "framed_horizontal_storage_tank",
     "aliases": [
+      "Framed horizontal storage tank",
       "Factory_Unit_16",
-      "框架式卧式储罐",
       "framed_horizontal_storage_tank"
     ],
     "model_files": [
@@ -4804,15 +4802,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_17",
     "asset_scope": "equipment",
-    "asset_name": "箱式设备控制台",
+    "asset_name": "Box-type equipment console",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 箱式工业设备/控制台，顶部有打开的检修盖.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "box_type_equipment_console",
     "aliases": [
+      "Box-type equipment console",
       "Factory_Unit_17",
-      "箱式设备控制台",
       "box_type_equipment_console"
     ],
     "model_files": [
@@ -5031,15 +5029,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_18",
     "asset_scope": "equipment",
-    "asset_name": "C型压力测试机",
+    "asset_name": "C-frame pressure tester",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: C 形机架、立柱、压头/测试头，类似压力机或硬度测试机.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "c_frame_press_tester",
     "aliases": [
+      "C-frame pressure tester",
       "Factory_Unit_18",
-      "C型压力测试机",
       "c_frame_press_tester"
     ],
     "model_files": [
@@ -5265,15 +5263,15 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/factory_unit_19",
     "asset_scope": "equipment",
-    "asset_name": "塔式起重机",
+    "asset_name": "Tower crane",
     "asset_description": "Factory unit FBX model named from the reference visual-identification table: 塔身、起重臂、钢索、操作室结构明显.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "factory_unit",
     "equipment_type": "tower_crane",
     "aliases": [
+      "Tower crane",
       "Factory_Unit_19",
-      "塔式起重机",
       "tower_crane"
     ],
     "model_files": [
@@ -5506,21 +5504,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_08edb467",
     "asset_scope": "composite_scene",
-    "asset_name": "Steel-platform production-line layout scene (钢平台上生产线整体布局)",
+    "asset_name": "Steel-platform production-line layout scene",
     "asset_description": "The filename identifies a full production-line layout on a steel platform, not a single layoutable machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "production_line_scene",
     "equipment_type": "steel_platform_production_line_layout_scene",
     "aliases": [
-      "钢平台上生产线整体布局",
       "Steel-platform production-line layout scene",
       "steel_platform_production_line_layout_scene"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_08edb467/source/1",
-        "file_uri": "产线模型库/钢平台上生产线布局/钢平台上生产线整体布局.fbx",
+        "file_uri": "models/source-models/110-steel-platform-production-line-layout-scene.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -5804,21 +5801,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_097ef6b2",
     "asset_scope": "equipment",
-    "asset_name": "Disc vacuum packaging machine (圆盘抽真空包装机)",
+    "asset_name": "Disc vacuum packaging machine",
     "asset_description": "The filename identifies a disc vacuum packaging-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "packaging_equipment",
     "equipment_type": "disc_vacuum_packaging_machine",
     "aliases": [
-      "圆盘抽真空包装机",
       "Disc vacuum packaging machine",
       "disc_vacuum_packaging_machine"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_097ef6b2/source/1",
-        "file_uri": "产线模型库/半导体工厂/圆盘抽真空包装机.fbx",
+        "file_uri": "models/source-models/038-disc-vacuum-packaging-machine.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -6085,14 +6081,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_1292a3bb",
     "asset_scope": "equipment",
-    "asset_name": "Semiconductor circuit-board loading and unloading equipment (半导体线路板上下料设备)",
+    "asset_name": "Semiconductor circuit-board loading and unloading equipment",
     "asset_description": "The filename identifies semiconductor circuit-board loading and unloading equipment. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "semiconductor_material_handling",
     "equipment_type": "semiconductor_circuit_board_loading_unloading_equipment",
     "aliases": [
-      "半导体线路板上下料设备",
       "Semiconductor circuit-board loading and unloading equipment",
       "semiconductor_circuit_board_loading_unloading_equipment"
     ],
@@ -6375,21 +6370,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_177626cb",
     "asset_scope": "equipment",
-    "asset_name": "Hydraulic power unit (液压动力单元)",
+    "asset_name": "Hydraulic power unit",
     "asset_description": "The filename identifies a hydraulic power-unit model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "hydraulic_equipment",
     "equipment_type": "hydraulic_power_unit",
     "aliases": [
-      "液压动力单元",
       "Hydraulic power unit",
       "hydraulic_power_unit"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_177626cb/source/1",
-        "file_uri": "产线模型库/工厂工业设备/液压动力单元.fbx",
+        "file_uri": "models/source-models/049-hydraulic-power-unit.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -6664,14 +6658,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_17fcd2ed",
     "asset_scope": "equipment",
-    "asset_name": "Horizontal milling machine (卧式铣床)",
+    "asset_name": "Horizontal milling machine",
     "asset_description": "The filename identifies a horizontal milling-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "horizontal_milling_machine",
     "aliases": [
-      "卧式铣床",
       "Horizontal milling machine",
       "horizontal_milling_machine"
     ],
@@ -7224,14 +7217,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_1a80889c",
     "asset_scope": "equipment",
-    "asset_name": "Tool cabinet (工具柜)",
+    "asset_name": "Tool cabinet",
     "asset_description": "The filename identifies a tool-cabinet model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "storage",
     "equipment_type": "tool_cabinet",
     "aliases": [
-      "工具柜",
       "Tool cabinet",
       "tool_cabinet"
     ],
@@ -7643,14 +7635,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_313d8039",
     "asset_scope": "equipment",
-    "asset_name": "EDM drilling machine (电火花穿孔机)",
+    "asset_name": "EDM drilling machine",
     "asset_description": "The filename identifies an electrical-discharge machining drilling-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "edm_drilling_machine",
     "aliases": [
-      "电火花穿孔机",
       "EDM drilling machine",
       "edm_drilling_machine"
     ],
@@ -8069,14 +8060,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_37331baa",
     "asset_scope": "production_line",
-    "asset_name": "Automatic die-attach forming assembly (自动贴片成型总装)",
+    "asset_name": "Automatic die-attach forming assembly",
     "asset_description": "The filename identifies an automatic die-attach forming assembly; it is retained as an assembly-level model rather than a verified standalone station. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "semiconductor_assembly_line",
     "equipment_type": "automatic_die_attach_forming_assembly",
     "aliases": [
-      "自动贴片成型总装",
       "Automatic die-attach forming assembly",
       "automatic_die_attach_forming_assembly"
     ],
@@ -8359,14 +8349,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_37ff826e",
     "asset_scope": "equipment",
-    "asset_name": "Semiconductor automatic taping machine (半导体全自动编带机)",
+    "asset_name": "Semiconductor automatic taping machine",
     "asset_description": "The filename identifies a semiconductor automatic taping-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "semiconductor_packaging_equipment",
     "equipment_type": "semiconductor_automatic_taping_machine",
     "aliases": [
-      "半导体全自动编带机",
       "Semiconductor automatic taping machine",
       "semiconductor_automatic_taping_machine"
     ],
@@ -8656,14 +8645,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_3b1181c9",
     "asset_scope": "equipment",
-    "asset_name": "Gantry CNC cutting machine (龙门式数控切割机)",
+    "asset_name": "Gantry CNC cutting machine",
     "asset_description": "The filename identifies a gantry CNC cutting-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "gantry_cnc_cutting_machine",
     "aliases": [
-      "龙门式数控切割机",
       "Gantry CNC cutting machine",
       "gantry_cnc_cutting_machine"
     ],
@@ -9200,14 +9188,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_3c6fae07",
     "asset_scope": "equipment",
-    "asset_name": "Expansion machine (扩张机)",
+    "asset_name": "Expansion machine",
     "asset_description": "The filename identifies an expansion-machine model; the particular expansion process is not specified. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "industrial_equipment",
     "equipment_type": "expansion_machine",
     "aliases": [
-      "扩张机",
       "Expansion machine",
       "expansion_machine"
     ],
@@ -9490,14 +9477,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_3ed136d0",
     "asset_scope": "equipment",
-    "asset_name": "Four-tank wafer cleaning and etching machine (四槽硅片清洗刻蚀机)",
+    "asset_name": "Four-tank wafer cleaning and etching machine",
     "asset_description": "The filename identifies a four-tank wafer cleaning and etching-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "semiconductor_process_equipment",
     "equipment_type": "four_tank_wafer_cleaning_etching_machine",
     "aliases": [
-      "四槽硅片清洗刻蚀机",
       "Four-tank wafer cleaning and etching machine",
       "four_tank_wafer_cleaning_etching_machine"
     ],
@@ -9780,21 +9766,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_4d43d987",
     "asset_scope": "equipment",
-    "asset_name": "Rolling machine (辊压机)",
+    "asset_name": "Rolling machine",
     "asset_description": "The filename identifies a rolling-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "forming_equipment",
     "equipment_type": "rolling_machine",
     "aliases": [
-      "辊压机",
       "Rolling machine",
       "rolling_machine"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_4d43d987/source/1",
-        "file_uri": "产线模型库/工厂工业设备/辊压机.fbx",
+        "file_uri": "models/source-models/053-rolling-machine.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -10061,14 +10046,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_51f787e0",
     "asset_scope": "equipment",
-    "asset_name": "Gantry milling machine (龙门铣床)",
+    "asset_name": "Gantry milling machine",
     "asset_description": "The filename identifies a gantry milling-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "gantry_milling_machine",
     "aliases": [
-      "龙门铣床",
       "Gantry milling machine",
       "gantry_milling_machine"
     ],
@@ -10613,14 +10597,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_7716b9f7",
     "asset_scope": "equipment",
-    "asset_name": "Fixture workbench (夹具工作台)",
+    "asset_name": "Fixture workbench",
     "asset_description": "The filename identifies a fixture-workbench model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "integration_workstation",
     "equipment_type": "fixture_workbench",
     "aliases": [
-      "夹具工作台",
       "Fixture workbench",
       "fixture_workbench"
     ],
@@ -10894,21 +10877,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_7e78658f",
     "asset_scope": "equipment",
-    "asset_name": "Semiconductor integrated inspection, coding, taping, and sorting machine (半导体的全自动电感检测喷码编带分选一体机)",
+    "asset_name": "Semiconductor integrated inspection, coding, taping, and sorting machine",
     "asset_description": "The filename identifies an integrated semiconductor inductance-inspection, inkjet-coding, taping, and sorting machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "semiconductor_test_sorting_equipment",
     "equipment_type": "semiconductor_integrated_inspection_coding_taping_sorting_machine",
     "aliases": [
-      "半导体的全自动电感检测喷码编带分选一体机",
       "Semiconductor integrated inspection, coding, taping, and sorting machine",
       "semiconductor_integrated_inspection_coding_taping_sorting_machine"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_7e78658f/source/1",
-        "file_uri": "产线模型库/半导体工厂/半导体的全自动电感检测喷码编带分选一体机.fbx",
+        "file_uri": "models/source-models/034-semiconductor-integrated-inspection-coding-taping-and-sorting-machine.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -11184,21 +11166,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_8251e44c",
     "asset_scope": "equipment",
-    "asset_name": "Pipe cutting and beveling machine (管材切割坡口机)",
+    "asset_name": "Pipe cutting and beveling machine",
     "asset_description": "The filename identifies a pipe cutting and beveling-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "fabrication_equipment",
     "equipment_type": "pipe_cutting_beveling_machine",
     "aliases": [
-      "管材切割坡口机",
       "Pipe cutting and beveling machine",
       "pipe_cutting_beveling_machine"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_8251e44c/source/1",
-        "file_uri": "产线模型库/工厂工业设备/管材切割坡口机.fbx",
+        "file_uri": "models/source-models/052-pipe-cutting-and-beveling-machine.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -11473,14 +11454,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_8261b7e0",
     "asset_scope": "equipment",
-    "asset_name": "Enclosed CNC machine (数控机床)",
+    "asset_name": "Enclosed CNC machine",
     "asset_description": "The generic CNC filename and audited preview identify an enclosed CNC-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "enclosed_cnc_machine",
     "aliases": [
-      "数控机床",
       "Enclosed CNC machine",
       "enclosed_cnc_machine"
     ],
@@ -11993,21 +11973,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_8811b0b9",
     "asset_scope": "equipment",
-    "asset_name": "Semiconductor wafer automatic labeling machine (半导体晶圆自动贴标机)",
+    "asset_name": "Semiconductor wafer automatic labeling machine",
     "asset_description": "The filename identifies a semiconductor wafer automatic labeling-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "semiconductor_packaging_equipment",
     "equipment_type": "semiconductor_wafer_labeling_machine",
     "aliases": [
-      "半导体晶圆自动贴标机",
       "Semiconductor wafer automatic labeling machine",
       "semiconductor_wafer_labeling_machine"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_8811b0b9/source/1",
-        "file_uri": "产线模型库/半导体工厂/半导体晶圆自动贴标机.fbx",
+        "file_uri": "models/source-models/032-semiconductor-wafer-automatic-labeling-machine.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -12283,21 +12262,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_88e820ac",
     "asset_scope": "equipment",
-    "asset_name": "Robot linear-slide workstation (机器人线性滑台工作站)",
+    "asset_name": "Robot linear-slide workstation",
     "asset_description": "The filename identifies a robot linear-slide workstation model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "robotic_workstation",
     "equipment_type": "robot_linear_slide_workstation",
     "aliases": [
-      "机器人线性滑台工作站",
       "Robot linear-slide workstation",
       "robot_linear_slide_workstation"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_88e820ac/source/1",
-        "file_uri": "产线模型库/工厂工业设备/机器人线性滑台工作站.fbx",
+        "file_uri": "models/source-models/047-robot-linear-slide-workstation.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -12572,21 +12550,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_9707ae30",
     "asset_scope": "equipment",
-    "asset_name": "Four-column hydraulic press (四柱液压压力机)",
+    "asset_name": "Four-column hydraulic press",
     "asset_description": "The filename identifies a four-column hydraulic press model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "forming_equipment",
     "equipment_type": "four_column_hydraulic_press",
     "aliases": [
-      "四柱液压压力机",
       "Four-column hydraulic press",
       "four_column_hydraulic_press"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_9707ae30/source/1",
-        "file_uri": "产线模型库/工厂工业设备/四柱液压压力机.fbx",
+        "file_uri": "models/source-models/043-four-column-hydraulic-press.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -12869,21 +12846,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_9dca0e84",
     "asset_scope": "equipment",
-    "asset_name": "Installation platform (安装平台)",
+    "asset_name": "Installation platform",
     "asset_description": "The filename identifies an installation-platform model; its process capability is not specified. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "work_surface",
     "equipment_type": "installation_platform",
     "aliases": [
-      "安装平台",
       "Installation platform",
       "installation_platform"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_9dca0e84/source/1",
-        "file_uri": "产线模型库/工厂工业设备/安装平台.fbx",
+        "file_uri": "models/source-models/045-installation-platform.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -13151,14 +13127,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_a3e1a9c2",
     "asset_scope": "equipment",
-    "asset_name": "Radial drilling machine (摇臂钻床)",
+    "asset_name": "Radial drilling machine",
     "asset_description": "The filename identifies a radial drilling-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "radial_drilling_machine",
     "aliases": [
-      "摇臂钻床",
       "Radial drilling machine",
       "radial_drilling_machine"
     ],
@@ -13662,21 +13637,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_a71ceea9",
     "asset_scope": "production_line",
-    "asset_name": "Rotary assembly line (转盘式组装线)",
+    "asset_name": "Rotary assembly line",
     "asset_description": "The filename identifies a rotary assembly-line model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "assembly_line",
     "equipment_type": "rotary_assembly_line",
     "aliases": [
-      "转盘式组装线",
       "Rotary assembly line",
       "rotary_assembly_line"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_a71ceea9/source/1",
-        "file_uri": "产线模型库/转盘式组装线/转盘式组装线.fbx",
+        "file_uri": "models/source-models/108-rotary-assembly-line.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -13952,21 +13926,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_b90dd1f1",
     "asset_scope": "equipment",
-    "asset_name": "Semiconductor cooling and thermal platform (半导体制冷／热平台)",
+    "asset_name": "Semiconductor cooling and thermal platform",
     "asset_description": "The filename identifies a semiconductor cooling and thermal-platform model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "semiconductor_process_equipment",
     "equipment_type": "semiconductor_thermal_platform",
     "aliases": [
-      "半导体制冷／热平台",
       "Semiconductor cooling and thermal platform",
       "semiconductor_thermal_platform"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_b90dd1f1/source/1",
-        "file_uri": "产线模型库/半导体工厂/半导体制冷／热平台.fbx",
+        "file_uri": "models/source-models/029-semiconductor-cooling-and-thermal-platform.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -14233,14 +14206,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_be827a77",
     "asset_scope": "equipment",
-    "asset_name": "Single server cabinet (单机柜)",
+    "asset_name": "Single server cabinet",
     "asset_description": "The filename identifies a single server-cabinet model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "data_center_equipment",
     "equipment_type": "server_cabinet",
     "aliases": [
-      "单机柜",
       "Single server cabinet",
       "server_cabinet"
     ],
@@ -14522,21 +14494,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_c36a1e83",
     "asset_scope": "equipment",
-    "asset_name": "Conical hopper (锥形料斗)",
+    "asset_name": "Conical hopper",
     "asset_description": "The filename identifies a conical hopper model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "material_handling",
     "equipment_type": "conical_hopper",
     "aliases": [
-      "锥形料斗",
       "Conical hopper",
       "conical_hopper"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_c36a1e83/source/1",
-        "file_uri": "产线模型库/工厂工业设备/锥形料斗.fbx",
+        "file_uri": "models/source-models/054-conical-hopper.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -14811,21 +14782,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_c87c6aaa",
     "asset_scope": "equipment",
-    "asset_name": "EDM forming machine (电火花成型机)",
+    "asset_name": "EDM forming machine",
     "asset_description": "The filename identifies an electrical-discharge machining forming-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "edm_forming_machine",
     "aliases": [
-      "电火花成型机",
       "EDM forming machine",
       "edm_forming_machine"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_c87c6aaa/source/1",
-        "file_uri": "产线模型库/工厂工业设备/电火花成型机.fbx",
+        "file_uri": "models/source-models/050-edm-forming-machine.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -15093,21 +15063,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_cd880c0d",
     "asset_scope": "equipment",
-    "asset_name": "Semiconductor integrated-equipment model (半导体行业一体机设备)",
+    "asset_name": "Semiconductor integrated-equipment model",
     "asset_description": "The filename identifies a semiconductor integrated-equipment model; its specific process function is not verified. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "semiconductor_equipment",
     "equipment_type": "semiconductor_integrated_equipment_model",
     "aliases": [
-      "半导体行业一体机设备",
       "Semiconductor integrated-equipment model",
       "semiconductor_integrated_equipment_model"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_cd880c0d/source/1",
-        "file_uri": "产线模型库/半导体工厂/半导体行业一体机设备.fbx",
+        "file_uri": "models/source-models/036-semiconductor-integrated-equipment-model.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -15383,14 +15352,13 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_db886347",
     "asset_scope": "equipment",
-    "asset_name": "Semiconductor component pad-printing and packaging machine (半导体器件移印包装机)",
+    "asset_name": "Semiconductor component pad-printing and packaging machine",
     "asset_description": "The filename identifies a semiconductor component pad-printing and packaging-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "semiconductor_packaging_equipment",
     "equipment_type": "semiconductor_pad_printing_packaging_machine",
     "aliases": [
-      "半导体器件移印包装机",
       "Semiconductor component pad-printing and packaging machine",
       "semiconductor_pad_printing_packaging_machine"
     ],
@@ -15681,21 +15649,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_ebfc71a6",
     "asset_scope": "equipment",
-    "asset_name": "Equipment enclosure (机箱)",
+    "asset_name": "Equipment enclosure",
     "asset_description": "The filename identifies an equipment enclosure or cabinet model, not a verified production station. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "industrial_enclosure",
     "equipment_type": "equipment_enclosure",
     "aliases": [
-      "机箱",
       "Equipment enclosure",
       "equipment_enclosure"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_ebfc71a6/source/1",
-        "file_uri": "产线模型库/工厂工业设备/机箱.fbx",
+        "file_uri": "models/source-models/048-equipment-enclosure.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -15962,21 +15929,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_f179523c",
     "asset_scope": "equipment",
-    "asset_name": "Semiconductor heat-sink fastening machine (半导体晶体锁散热片机)",
+    "asset_name": "Semiconductor heat-sink fastening machine",
     "asset_description": "The filename identifies a semiconductor heat-sink fastening-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "semiconductor_assembly_equipment",
     "equipment_type": "semiconductor_heat_sink_fastening_machine",
     "aliases": [
-      "半导体晶体锁散热片机",
       "Semiconductor heat-sink fastening machine",
       "semiconductor_heat_sink_fastening_machine"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_f179523c/source/1",
-        "file_uri": "产线模型库/半导体工厂/半导体晶体锁散热片机.fbx",
+        "file_uri": "models/source-models/031-semiconductor-heat-sink-fastening-machine.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -16252,21 +16218,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_f60888d2",
     "asset_scope": "equipment",
-    "asset_name": "Semiconductor inspection equipment (半导体检测设备)",
+    "asset_name": "Semiconductor inspection equipment",
     "asset_description": "The filename identifies semiconductor inspection equipment; the inspection method is not specified. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "semiconductor_inspection_equipment",
     "equipment_type": "semiconductor_inspection_equipment",
     "aliases": [
-      "半导体检测设备",
       "Semiconductor inspection equipment",
       "semiconductor_inspection_equipment"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/fbx_f60888d2/source/1",
-        "file_uri": "产线模型库/半导体工厂/半导体检测设备.fbx",
+        "file_uri": "models/source-models/033-semiconductor-inspection-equipment.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -16534,21 +16499,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/h5",
     "asset_scope": "production_line",
-    "asset_name": "H5 chain automatic assembly line (H5链式自动流水线)",
+    "asset_name": "H5 chain automatic assembly line",
     "asset_description": "The filename identifies an H5 chain-type automatic assembly-line model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "assembly_line",
     "equipment_type": "h5_chain_automatic_assembly_line",
     "aliases": [
-      "H5链式自动流水线",
       "H5 chain automatic assembly line",
       "h5_chain_automatic_assembly_line"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/h5/source/1",
-        "file_uri": "产线模型库/H5链式自动流水线/H5链式自动流水线.fbx",
+        "file_uri": "models/source-models/025-h5-chain-automatic-assembly-line.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -16823,22 +16787,22 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/industrial_kitbash",
     "asset_scope": "composite_scene",
-    "asset_name": "Industrial kitbash scene (Industrial Kitbash(.fbx))",
+    "asset_name": "Industrial kitbash scene",
     "asset_description": "The source filename identifies an industrial kitbash scene, not a verified standalone machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "scene_assembly",
     "equipment_type": "industrial_kitbash_scene",
     "aliases": [
+      "Industrial kitbash scene",
       "industrial_kitbash",
       "Industrial Kitbash(.fbx)",
-      "Industrial kitbash scene",
       "industrial_kitbash_scene"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/industrial_kitbash/source/1",
-        "file_uri": "产线模型库/Fbx-Industrial Kitbash/Industrial Kitbash(.fbx).fbx",
+        "file_uri": "models/source-models/023-industrial-kitbash-scene.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -17305,21 +17269,21 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/mixmaster",
     "asset_scope": "composite_scene",
-    "asset_name": "Mixmaster model (mixmaster)",
+    "asset_name": "Mixmaster model",
     "asset_description": "The source filename is Mixmaster; its industrial function is not verified. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "unknown",
     "equipment_type": "mixmaster_model",
     "aliases": [
-      "mixmaster",
       "Mixmaster model",
+      "mixmaster",
       "mixmaster_model"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/mixmaster/source/1",
-        "file_uri": "产线模型库/mixmaster.fbx",
+        "file_uri": "models/source-models/026-mixmaster-model.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -17623,21 +17587,21 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/pcb_placing_machine_assembly",
     "asset_scope": "composite_scene",
-    "asset_name": "PCB placing-machine assembly scene (PCB PLACING MACHINE ASSEMBLY)",
+    "asset_name": "PCB placing-machine assembly scene",
     "asset_description": "The source file calls this a PCB placing-machine assembly; it is retained as an assembly-level model rather than a verified standalone production station. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "electronics_assembly_scene",
     "equipment_type": "pcb_placing_machine_assembly_scene",
     "aliases": [
-      "PCB PLACING MACHINE ASSEMBLY",
       "PCB placing-machine assembly scene",
+      "PCB PLACING MACHINE ASSEMBLY",
       "pcb_placing_machine_assembly_scene"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/pcb_placing_machine_assembly/source/1",
-        "file_uri": "产线模型库/自动PCB上下料点胶测试自动线/PCB PLACING MACHINE ASSEMBLY.fbx",
+        "file_uri": "models/source-models/106-pcb-placing-machine-assembly-scene.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -17904,21 +17868,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/smd",
     "asset_scope": "equipment",
-    "asset_name": "SMD component test-and-sorting machine (SMD元件测试分选一体机)",
+    "asset_name": "SMD component test-and-sorting machine",
     "asset_description": "The filename identifies an integrated SMD component testing-and-sorting machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "electronics_test_equipment",
     "equipment_type": "smd_component_test_sorting_machine",
     "aliases": [
-      "SMD元件测试分选一体机",
       "SMD component test-and-sorting machine",
       "smd_component_test_sorting_machine"
     ],
     "model_files": [
       {
         "source_file_id": "asset/fbx/smd/source/1",
-        "file_uri": "产线模型库/半导体工厂/SMD元件测试分选一体机.fbx",
+        "file_uri": "models/source-models/027-smd-component-test-and-sorting-machine.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -18193,22 +18156,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/max/industrial_factory_showroom_machine_015",
     "asset_scope": "composite_scene",
-    "asset_name": "Industrial factory showroom scene 015 (5工厂展厅)",
+    "asset_name": "Industrial factory showroom scene 015",
     "asset_description": "The filename identifies an industrial factory showroom scene, not a single layoutable machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "workshop_scene",
     "equipment_type": "industrial_factory_showroom_scene",
     "aliases": [
-      "工业风工厂 展厅 机床3d模型015",
-      "5工厂展厅",
       "Industrial factory showroom scene 015",
       "industrial_factory_showroom_scene"
     ],
     "model_files": [
       {
         "source_file_id": "asset/max/industrial_factory_showroom_machine_015/source/1",
-        "file_uri": "产线模型库/工业风工厂 展厅 机床3d模型015/5工厂展厅.fbx",
+        "file_uri": "models/source-models/041-industrial-factory-showroom-scene-015.fbx",
         "asset_format": "fbx",
         "native_extension": ".fbx",
         "file_role": "source_model",
@@ -18695,20 +18656,20 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/stl/asm1",
     "asset_scope": "production_line",
-    "asset_name": "Asm1",
+    "asset_name": "Assembly model ASM1",
     "asset_description": "Single STL model asset extracted as a production-line model.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "production_line",
     "equipment_type": "rotary_assembly_line",
     "aliases": [
-      "Asm1",
-      "转盘式组装线"
+      "Assembly model ASM1",
+      "Asm1"
     ],
     "model_files": [
       {
         "source_file_id": "asset/stl/asm1/source/1",
-        "file_uri": "source-models/Asm1.STL",
+        "file_uri": "models/source-models/107-assembly-model-asm1.stl",
         "asset_format": "stl",
         "native_extension": ".stl",
         "file_role": "source_model",
@@ -18939,19 +18900,17 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_84d31057",
     "asset_scope": "equipment",
-    "asset_name": "CNC machining center (CNC数控加工中心)",
+    "asset_name": "CNC machining center",
     "asset_description": "The filename identifies a CNC machining-center model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "cnc_machining_center",
     "aliases": [
-      "CNC数控加工中心",
-      "机床设备",
+      "CNC machining center",
       "machine tool",
       "CNC",
       "machining center",
-      "CNC machining center",
       "cnc_machining_center"
     ],
     "model_files": [
@@ -18981,7 +18940,7 @@
         "file_size_bytes": 15552636
       },
       {
-        "file_uri": "/runtime-models/glb/fbx_84d31057.glb",
+        "file_uri": "/runtime-models/glb/057-cnc-machining-center.glb",
         "asset_format": "glb",
         "file_role": "three_viewport_runtime_model",
         "file_status": "available",
@@ -19363,7 +19322,7 @@
       {
         "field_path": "derived_files",
         "source_type": "runtime_conversion",
-        "source_id": "/runtime-models/glb/fbx_84d31057.glb",
+        "source_id": "/runtime-models/glb/057-cnc-machining-center.glb",
         "source_field": "glb_url",
         "confidence": 0.9,
         "note": "Compressed GLB generated for Three.js viewport."
@@ -19476,19 +19435,17 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_465611ff",
     "asset_scope": "equipment",
-    "asset_name": "Six-axis CNC machining center for plastic oil-bottle machining (六轴CNC加工中心：塑料油瓶加工机)",
+    "asset_name": "Six-axis CNC machining center for plastic oil-bottle machining",
     "asset_description": "The filename identifies a six-axis CNC machining-center model for plastic oil-bottle machining. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "six_axis_cnc_machining_center",
     "aliases": [
-      "六轴CNC加工中心：塑料油瓶加工机",
-      "机床设备",
+      "Six-axis CNC machining center for plastic oil-bottle machining",
       "machine tool",
       "CNC",
       "machining center",
-      "Six-axis CNC machining center for plastic oil-bottle machining",
       "six_axis_cnc_machining_center"
     ],
     "model_files": [
@@ -19518,7 +19475,7 @@
         "file_size_bytes": 310769586
       },
       {
-        "file_uri": "/runtime-models/glb/fbx_465611ff.glb",
+        "file_uri": "/runtime-models/glb/058-six-axis-cnc-machining-center-for-plastic-oil-bottle-machining.glb",
         "asset_format": "glb",
         "file_role": "three_viewport_runtime_model",
         "file_status": "available",
@@ -19900,7 +19857,7 @@
       {
         "field_path": "derived_files",
         "source_type": "runtime_conversion",
-        "source_id": "/runtime-models/glb/fbx_465611ff.glb",
+        "source_id": "/runtime-models/glb/058-six-axis-cnc-machining-center-for-plastic-oil-bottle-machining.glb",
         "source_field": "glb_url",
         "confidence": 0.9,
         "note": "Compressed GLB generated for Three.js viewport."
@@ -20029,19 +19986,17 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_52f1abc3",
     "asset_scope": "equipment",
-    "asset_name": "Haas CNC machining center (哈斯数控加工中心)",
+    "asset_name": "Haas CNC machining center",
     "asset_description": "The filename identifies a Haas CNC machining-center model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "haas_cnc_machining_center",
     "aliases": [
-      "哈斯数控加工中心",
-      "机床设备",
+      "Haas CNC machining center",
       "machine tool",
       "CNC",
       "machining center",
-      "Haas CNC machining center",
       "haas_cnc_machining_center"
     ],
     "model_files": [
@@ -20071,7 +20026,7 @@
         "file_size_bytes": 4633987
       },
       {
-        "file_uri": "/runtime-models/glb/fbx_52f1abc3.glb",
+        "file_uri": "/runtime-models/glb/060-haas-cnc-machining-center.glb",
         "asset_format": "glb",
         "file_role": "three_viewport_runtime_model",
         "file_status": "available",
@@ -20453,7 +20408,7 @@
       {
         "field_path": "derived_files",
         "source_type": "runtime_conversion",
-        "source_id": "/runtime-models/glb/fbx_52f1abc3.glb",
+        "source_id": "/runtime-models/glb/060-haas-cnc-machining-center.glb",
         "source_field": "glb_url",
         "confidence": 0.9,
         "note": "Compressed GLB generated for Three.js viewport."
@@ -20574,19 +20529,17 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_c6a19eec",
     "asset_scope": "equipment",
-    "asset_name": "Micro machining center (微型加工中心)",
+    "asset_name": "Micro machining center",
     "asset_description": "The filename identifies a micro machining-center model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "micro_machining_center",
     "aliases": [
-      "微型加工中心",
-      "机床设备",
+      "Micro machining center",
       "machine tool",
       "CNC",
       "machining center",
-      "Micro machining center",
       "micro_machining_center"
     ],
     "model_files": [
@@ -20616,7 +20569,7 @@
         "file_size_bytes": 148438273
       },
       {
-        "file_uri": "/runtime-models/glb/fbx_c6a19eec.glb",
+        "file_uri": "/runtime-models/glb/061-micro-machining-center.glb",
         "asset_format": "glb",
         "file_role": "three_viewport_runtime_model",
         "file_status": "available",
@@ -20998,7 +20951,7 @@
       {
         "field_path": "derived_files",
         "source_type": "runtime_conversion",
-        "source_id": "/runtime-models/glb/fbx_c6a19eec.glb",
+        "source_id": "/runtime-models/glb/061-micro-machining-center.glb",
         "source_field": "glb_url",
         "confidence": 0.9,
         "note": "Compressed GLB generated for Three.js viewport."
@@ -21127,19 +21080,17 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_6901bdd8",
     "asset_scope": "equipment",
-    "asset_name": "Turn-mill machining center (新型车铣复合加工中心)",
+    "asset_name": "Turn-mill machining center",
     "asset_description": "The filename identifies a turn-mill machining-center model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "turn_mill_machining_center",
     "aliases": [
-      "新型车铣复合加工中心",
-      "机床设备",
+      "Turn-mill machining center",
       "machine tool",
       "CNC",
       "machining center",
-      "Turn-mill machining center",
       "turn_mill_machining_center"
     ],
     "model_files": [
@@ -21169,7 +21120,7 @@
         "file_size_bytes": 399082803
       },
       {
-        "file_uri": "/runtime-models/glb/fbx_6901bdd8.glb",
+        "file_uri": "/runtime-models/glb/064-turn-mill-machining-center.glb",
         "asset_format": "glb",
         "file_role": "three_viewport_runtime_model",
         "file_status": "available",
@@ -21551,7 +21502,7 @@
       {
         "field_path": "derived_files",
         "source_type": "runtime_conversion",
-        "source_id": "/runtime-models/glb/fbx_6901bdd8.glb",
+        "source_id": "/runtime-models/glb/064-turn-mill-machining-center.glb",
         "source_field": "glb_url",
         "confidence": 0.9,
         "note": "Compressed GLB generated for Three.js viewport."
@@ -21640,19 +21591,17 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_fb04a2ee",
     "asset_scope": "equipment",
-    "asset_name": "Vertical machining center 1100 x 900 (立式加工中心1100X900)",
+    "asset_name": "Vertical machining center 1100 x 900",
     "asset_description": "The filename identifies a vertical machining center labeled 1100 x 900. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "vertical_machining_center",
     "aliases": [
-      "立式加工中心1100X900",
-      "机床设备",
+      "Vertical machining center 1100 x 900",
       "machine tool",
       "CNC",
       "machining center",
-      "Vertical machining center 1100 x 900",
       "vertical_machining_center"
     ],
     "model_files": [
@@ -21682,7 +21631,7 @@
         "file_size_bytes": 82987235
       },
       {
-        "file_uri": "/runtime-models/glb/fbx_fb04a2ee.glb",
+        "file_uri": "/runtime-models/glb/065-vertical-machining-center-1100-x-900.glb",
         "asset_format": "glb",
         "file_role": "three_viewport_runtime_model",
         "file_status": "available",
@@ -22064,7 +22013,7 @@
       {
         "field_path": "derived_files",
         "source_type": "runtime_conversion",
-        "source_id": "/runtime-models/glb/fbx_fb04a2ee.glb",
+        "source_id": "/runtime-models/glb/065-vertical-machining-center-1100-x-900.glb",
         "source_field": "glb_url",
         "confidence": 0.9,
         "note": "Compressed GLB generated for Three.js viewport."
@@ -22145,19 +22094,17 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_abd43f9f",
     "asset_scope": "equipment",
-    "asset_name": "Vertical machining center GA-V918C (立式加工中心GA-V918C)",
+    "asset_name": "Vertical machining center GA-V918C",
     "asset_description": "The filename identifies a vertical machining center labeled GA-V918C. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "vertical_machining_center",
     "aliases": [
-      "立式加工中心GA-V918C",
-      "机床设备",
+      "Vertical machining center GA-V918C",
       "machine tool",
       "CNC",
       "machining center",
-      "Vertical machining center GA-V918C",
       "vertical_machining_center"
     ],
     "model_files": [
@@ -22187,7 +22134,7 @@
         "file_size_bytes": 304280352
       },
       {
-        "file_uri": "/runtime-models/glb/fbx_abd43f9f.glb",
+        "file_uri": "/runtime-models/glb/066-vertical-machining-center-ga-v918c.glb",
         "asset_format": "glb",
         "file_role": "three_viewport_runtime_model",
         "file_status": "available",
@@ -22569,7 +22516,7 @@
       {
         "field_path": "derived_files",
         "source_type": "runtime_conversion",
-        "source_id": "/runtime-models/glb/fbx_abd43f9f.glb",
+        "source_id": "/runtime-models/glb/066-vertical-machining-center-ga-v918c.glb",
         "source_field": "glb_url",
         "confidence": 0.9,
         "note": "Compressed GLB generated for Three.js viewport."
@@ -22698,19 +22645,17 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_f4980f8b",
     "asset_scope": "equipment",
-    "asset_name": "Bare vertical machining-center model (立式加工中心光机模型)",
+    "asset_name": "Bare vertical machining-center model",
     "asset_description": "The filename identifies a bare-machine model of a vertical machining center. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "vertical_machining_center_bare_model",
     "aliases": [
-      "立式加工中心光机模型",
-      "机床设备",
+      "Bare vertical machining-center model",
       "machine tool",
       "CNC",
       "machining center",
-      "Bare vertical machining-center model",
       "vertical_machining_center_bare_model"
     ],
     "model_files": [
@@ -22740,7 +22685,7 @@
         "file_size_bytes": 6531700
       },
       {
-        "file_uri": "/runtime-models/glb/fbx_f4980f8b.glb",
+        "file_uri": "/runtime-models/glb/067-bare-vertical-machining-center-model.glb",
         "asset_format": "glb",
         "file_role": "three_viewport_runtime_model",
         "file_status": "available",
@@ -23122,7 +23067,7 @@
       {
         "field_path": "derived_files",
         "source_type": "runtime_conversion",
-        "source_id": "/runtime-models/glb/fbx_f4980f8b.glb",
+        "source_id": "/runtime-models/glb/067-bare-vertical-machining-center-model.glb",
         "source_field": "glb_url",
         "confidence": 0.9,
         "note": "Compressed GLB generated for Three.js viewport."
@@ -23251,19 +23196,17 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_f2db5dfe",
     "asset_scope": "equipment",
-    "asset_name": "Vertical four-axis CNC milling machine (立式四轴数控铣床)",
+    "asset_name": "Vertical four-axis CNC milling machine",
     "asset_description": "The filename identifies a vertical four-axis CNC milling-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "vertical_four_axis_cnc_milling_machine",
     "aliases": [
-      "立式四轴数控铣床",
-      "机床设备",
+      "Vertical four-axis CNC milling machine",
       "machine tool",
       "CNC",
       "machining center",
-      "Vertical four-axis CNC milling machine",
       "vertical_four_axis_cnc_milling_machine"
     ],
     "model_files": [
@@ -23293,7 +23236,7 @@
         "file_size_bytes": 206369536
       },
       {
-        "file_uri": "/runtime-models/glb/fbx_f2db5dfe.glb",
+        "file_uri": "/runtime-models/glb/068-vertical-four-axis-cnc-milling-machine.glb",
         "asset_format": "glb",
         "file_role": "three_viewport_runtime_model",
         "file_status": "available",
@@ -23675,7 +23618,7 @@
       {
         "field_path": "derived_files",
         "source_type": "runtime_conversion",
-        "source_id": "/runtime-models/glb/fbx_f2db5dfe.glb",
+        "source_id": "/runtime-models/glb/068-vertical-four-axis-cnc-milling-machine.glb",
         "source_field": "glb_url",
         "confidence": 0.9,
         "note": "Compressed GLB generated for Three.js viewport."
@@ -23796,19 +23739,17 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/fbx/fbx_d8f6cfdf",
     "asset_scope": "equipment",
-    "asset_name": "High-speed vertical turn-mill machining center (高速立式车铣加工中心)",
+    "asset_name": "High-speed vertical turn-mill machining center",
     "asset_description": "The filename identifies a high-speed vertical turn-mill machining-center model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
     "category": "machining_equipment",
     "equipment_type": "high_speed_vertical_turn_mill_machining_center",
     "aliases": [
-      "高速立式车铣加工中心",
-      "机床设备",
+      "High-speed vertical turn-mill machining center",
       "machine tool",
       "CNC",
       "machining center",
-      "High-speed vertical turn-mill machining center",
       "high_speed_vertical_turn_mill_machining_center"
     ],
     "model_files": [
@@ -23838,7 +23779,7 @@
         "file_size_bytes": 446505825
       },
       {
-        "file_uri": "/runtime-models/glb/fbx_d8f6cfdf.glb",
+        "file_uri": "/runtime-models/glb/069-high-speed-vertical-turn-mill-machining-center.glb",
         "asset_format": "glb",
         "file_role": "three_viewport_runtime_model",
         "file_status": "available",
@@ -24220,7 +24161,7 @@
       {
         "field_path": "derived_files",
         "source_type": "runtime_conversion",
-        "source_id": "/runtime-models/glb/fbx_d8f6cfdf.glb",
+        "source_id": "/runtime-models/glb/069-high-speed-vertical-turn-mill-machining-center.glb",
         "source_field": "glb_url",
         "confidence": 0.9,
         "note": "Compressed GLB generated for Three.js viewport."
@@ -24341,7 +24282,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m072_agv",
     "asset_scope": "equipment",
-    "asset_name": "Automated guided vehicle (agv)",
+    "asset_name": "Automated guided vehicle",
     "asset_description": "The filename identifies an automated guided vehicle (AGV) model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -24752,7 +24693,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m073_energy_monitoring_gateway",
     "asset_scope": "equipment",
-    "asset_name": "Energy monitoring gateway (29-能耗监测网关)",
+    "asset_name": "Energy monitoring gateway",
     "asset_description": "The filename identifies an energy-monitoring gateway device. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -24760,7 +24701,6 @@
     "equipment_type": "energy_monitoring_gateway",
     "aliases": [
       "Energy monitoring gateway",
-      "29-能耗监测网关",
       "equipment",
       "electrical_monitoring",
       "energy_monitoring_gateway"
@@ -25026,7 +24966,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m074_communications_service_monitor",
     "asset_scope": "equipment",
-    "asset_name": "Communications service monitor (IRF2948B_communications_service_monitor)",
+    "asset_name": "Communications service monitor",
     "asset_description": "The filename identifies a communications service-monitor device. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -25300,7 +25240,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m075_keyboard_video_mouse_switch",
     "asset_scope": "composite_scene",
-    "asset_name": "Keyboard-video-mouse switch (Keyboard-Video-Mouse Switch)",
+    "asset_name": "Keyboard-video-mouse switch",
     "asset_description": "The filename identifies a keyboard-video-mouse switch component, not a production machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -25574,7 +25514,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m076_uhf_tunable_filter",
     "asset_scope": "composite_scene",
-    "asset_name": "UHF tunable filter (UHF电调滤波器)",
+    "asset_name": "UHF tunable filter",
     "asset_description": "The filename identifies a UHF tunable-filter component, not a production machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -25582,7 +25522,6 @@
     "equipment_type": "uhf_tunable_filter",
     "aliases": [
       "UHF tunable filter",
-      "UHF电调滤波器",
       "composite_scene",
       "electronics_component",
       "uhf_tunable_filter"
@@ -25848,7 +25787,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m077_vhf_tunable_filter",
     "asset_scope": "composite_scene",
-    "asset_name": "VHF tunable filter (VHF电调滤波器)",
+    "asset_name": "VHF tunable filter",
     "asset_description": "The filename identifies a VHF tunable-filter component, not a production machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -25856,7 +25795,6 @@
     "equipment_type": "vhf_tunable_filter",
     "aliases": [
       "VHF tunable filter",
-      "VHF电调滤波器",
       "composite_scene",
       "electronics_component",
       "vhf_tunable_filter"
@@ -26122,7 +26060,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m078_tool_conveyor_line",
     "asset_scope": "production_line",
-    "asset_name": "Tool conveyor-line component (tool_流水线)",
+    "asset_name": "Tool conveyor-line component",
     "asset_description": "The filename identifies a tool conveyor-line component; standalone machine function is not verified. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -26130,7 +26068,6 @@
     "equipment_type": "tool_conveyor_line_component",
     "aliases": [
       "Tool conveyor-line component",
-      "tool_流水线",
       "production_line",
       "line_component",
       "tool_conveyor_line_component"
@@ -26396,7 +26333,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m079_conveyor_2",
     "asset_scope": "production_line",
-    "asset_name": "Conveyor 2 (传送带2)",
+    "asset_name": "Conveyor 2",
     "asset_description": "The filename identifies a conveyor-line segment. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -26404,7 +26341,6 @@
     "equipment_type": "conveyor_line_segment",
     "aliases": [
       "Conveyor 2",
-      "传送带2",
       "production_line",
       "conveyor",
       "conveyor_line_segment"
@@ -26807,7 +26743,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m080_floor_surface",
     "asset_scope": "site",
-    "asset_name": "Floor surface (地面)",
+    "asset_name": "Floor surface",
     "asset_description": "The filename identifies a floor-surface model, not a machine or an authoritative site boundary. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -26815,7 +26751,6 @@
     "equipment_type": "floor_surface",
     "aliases": [
       "Floor surface",
-      "地面",
       "site",
       "site_component",
       "floor_surface"
@@ -27081,7 +27016,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m081_electronics_workshop_scene",
     "asset_scope": "composite_scene",
-    "asset_name": "Electronics workshop scene (场景一搭建工程)",
+    "asset_name": "Electronics workshop scene",
     "asset_description": "The filename identifies an assembled electronics-workshop scene, not a single layoutable machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -27089,7 +27024,6 @@
     "equipment_type": "electronics_workshop_scene",
     "aliases": [
       "Electronics workshop scene",
-      "场景一搭建工程",
       "composite_scene",
       "scene_assembly",
       "electronics_workshop_scene"
@@ -27355,7 +27289,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m082_large_temperature_chamber",
     "asset_scope": "equipment",
-    "asset_name": "Large temperature chamber (大温箱)",
+    "asset_name": "Large temperature chamber",
     "asset_description": "The filename identifies a large temperature-chamber model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -27363,7 +27297,6 @@
     "equipment_type": "large_temperature_chamber",
     "aliases": [
       "Large temperature chamber",
-      "大温箱",
       "equipment",
       "test_environment",
       "large_temperature_chamber"
@@ -27629,7 +27562,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m083_worker_figure_1",
     "asset_scope": "composite_scene",
-    "asset_name": "Worker figure 1 (工人1)",
+    "asset_name": "Worker figure 1",
     "asset_description": "The filename identifies a human worker figure, not a machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -27637,7 +27570,6 @@
     "equipment_type": "worker_figure",
     "aliases": [
       "Worker figure 1",
-      "工人1",
       "composite_scene",
       "human_figure",
       "worker_figure"
@@ -27903,7 +27835,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m084_worker_figure_2",
     "asset_scope": "composite_scene",
-    "asset_name": "Worker figure 2 (工人2)",
+    "asset_name": "Worker figure 2",
     "asset_description": "The filename identifies a human worker figure, not a machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -27911,7 +27843,6 @@
     "equipment_type": "worker_figure",
     "aliases": [
       "Worker figure 2",
-      "工人2",
       "composite_scene",
       "human_figure",
       "worker_figure"
@@ -28177,7 +28108,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m085_temporary_storage_visual_scene",
     "asset_scope": "composite_scene",
-    "asset_name": "Temporary-storage visual scene (暂存架)",
+    "asset_name": "Temporary-storage visual scene",
     "asset_description": "The filename says temporary storage rack, but the visual audit shows a robot or transfer mechanism; it is retained as a composite scene rather than a verified standalone rack or machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -28185,7 +28116,6 @@
     "equipment_type": "visual_transfer_mechanism_scene",
     "aliases": [
       "Temporary-storage visual scene",
-      "暂存架",
       "composite_scene",
       "semantic_mismatch",
       "visual_transfer_mechanism_scene"
@@ -28451,7 +28381,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m086_flexible_test_workstation",
     "asset_scope": "equipment",
-    "asset_name": "Flexible test workstation (柔性测试工作站)",
+    "asset_name": "Flexible test workstation",
     "asset_description": "The filename identifies a flexible test-workstation model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -28459,7 +28389,6 @@
     "equipment_type": "flexible_test_workstation",
     "aliases": [
       "Flexible test workstation",
-      "柔性测试工作站",
       "equipment",
       "test_station",
       "flexible_test_workstation"
@@ -28862,7 +28791,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m087_table",
     "asset_scope": "equipment",
-    "asset_name": "Table (桌子)",
+    "asset_name": "Table",
     "asset_description": "The filename identifies a table or work-surface model; machining or test capability is not verified. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -28870,7 +28799,6 @@
     "equipment_type": "table",
     "aliases": [
       "Table",
-      "桌子",
       "equipment",
       "work_surface",
       "table"
@@ -29136,7 +29064,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m088_small_temperature_chamber",
     "asset_scope": "equipment",
-    "asset_name": "Small temperature chamber (温箱小)",
+    "asset_name": "Small temperature chamber",
     "asset_description": "The filename identifies a small temperature-chamber model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -29144,7 +29072,6 @@
     "equipment_type": "small_temperature_chamber",
     "aliases": [
       "Small temperature chamber",
-      "温箱小",
       "equipment",
       "test_environment",
       "small_temperature_chamber"
@@ -29547,7 +29474,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m089_laser_marking_station",
     "asset_scope": "equipment",
-    "asset_name": "Laser marking station (激光打标标准机台)",
+    "asset_name": "Laser marking station",
     "asset_description": "The filename identifies a laser-marking station model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -29555,7 +29482,6 @@
     "equipment_type": "laser_marking_station",
     "aliases": [
       "Laser marking station",
-      "激光打标标准机台",
       "equipment",
       "marking_station",
       "laser_marking_station"
@@ -29958,7 +29884,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m090_material_model",
     "asset_scope": "composite_scene",
-    "asset_name": "Material model (物料)",
+    "asset_name": "Material model",
     "asset_description": "The filename identifies a material model, not processing equipment. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -29966,7 +29892,6 @@
     "equipment_type": "material_model",
     "aliases": [
       "Material model",
-      "物料",
       "composite_scene",
       "material_component",
       "material_model"
@@ -30232,7 +30157,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m091_belt_conveyor",
     "asset_scope": "production_line",
-    "asset_name": "Belt conveyor (皮带线)",
+    "asset_name": "Belt conveyor",
     "asset_description": "The filename identifies a belt-conveyor line component. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -30240,7 +30165,6 @@
     "equipment_type": "belt_conveyor_line",
     "aliases": [
       "Belt conveyor",
-      "皮带线",
       "production_line",
       "conveyor",
       "belt_conveyor_line"
@@ -30506,7 +30430,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m092_line_side_storage_unit",
     "asset_scope": "equipment",
-    "asset_name": "Line-side storage unit (线边库)",
+    "asset_name": "Line-side storage unit",
     "asset_description": "The filename identifies a line-side storage-unit model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -30514,7 +30438,6 @@
     "equipment_type": "line_side_storage_unit",
     "aliases": [
       "Line-side storage unit",
-      "线边库",
       "equipment",
       "storage",
       "line_side_storage_unit"
@@ -30917,7 +30840,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m093_fixture_workstation",
     "asset_scope": "equipment",
-    "asset_name": "Fixture workstation (装夹台)",
+    "asset_name": "Fixture workstation",
     "asset_description": "The filename identifies a fixture-workstation model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -30925,7 +30848,6 @@
     "equipment_type": "fixture_workstation",
     "aliases": [
       "Fixture workstation",
-      "装夹台",
       "equipment",
       "integration_workstation",
       "fixture_workstation"
@@ -31328,7 +31250,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m094_touchscreen",
     "asset_scope": "composite_scene",
-    "asset_name": "Touchscreen (触摸屏)",
+    "asset_name": "Touchscreen",
     "asset_description": "The filename identifies a touchscreen component, not a standalone production machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -31336,7 +31258,6 @@
     "equipment_type": "touchscreen",
     "aliases": [
       "Touchscreen",
-      "触摸屏",
       "composite_scene",
       "electronics_component",
       "touchscreen"
@@ -31602,7 +31523,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m095_unspecified_equipment",
     "asset_scope": "composite_scene",
-    "asset_name": "Unspecified equipment model (设备1)",
+    "asset_name": "Unspecified equipment model",
     "asset_description": "The source filename is only 'equipment 1'; a machine function is not identified. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -31610,7 +31531,6 @@
     "equipment_type": "unspecified_equipment_model",
     "aliases": [
       "Unspecified equipment model",
-      "设备1",
       "composite_scene",
       "unknown",
       "unspecified_equipment_model"
@@ -31876,7 +31796,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m096_multi_object_rack_scene",
     "asset_scope": "composite_scene",
-    "asset_name": "Multi-object rack scene (货架)",
+    "asset_name": "Multi-object rack scene",
     "asset_description": "The filename says rack, but the visual audit shows a multi-object rack scene; it is not exposed as a verified standalone storage-rack choice. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -31884,7 +31804,6 @@
     "equipment_type": "multi_object_rack_scene",
     "aliases": [
       "Multi-object rack scene",
-      "货架",
       "composite_scene",
       "semantic_mismatch",
       "multi_object_rack_scene"
@@ -32150,7 +32069,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m097_ultrasonic_welding_machine",
     "asset_scope": "equipment",
-    "asset_name": "Ultrasonic welding machine (超声波焊接机)",
+    "asset_name": "Ultrasonic welding machine",
     "asset_description": "The filename identifies an ultrasonic welding-machine model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -32158,7 +32077,6 @@
     "equipment_type": "ultrasonic_welding_machine",
     "aliases": [
       "Ultrasonic welding machine",
-      "超声波焊接机",
       "equipment",
       "joining_equipment",
       "ultrasonic_welding_machine"
@@ -32424,7 +32342,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m098_conveyor_line",
     "asset_scope": "production_line",
-    "asset_name": "Conveyor line (输送线)",
+    "asset_name": "Conveyor line",
     "asset_description": "The filename identifies a conveyor-line component. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance. Visual inspection identifies an open carrier-rail conveyor with drive assemblies. Its effective meter-scale dimensions are a user-confirmed case calibration, not manufacturer specifications. Transfers are operator-assisted.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -32432,7 +32350,6 @@
     "equipment_type": "conveyor_line",
     "aliases": [
       "Conveyor line",
-      "输送线",
       "production_line",
       "conveyor",
       "conveyor_line",
@@ -32818,7 +32735,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m099_conveyor_line_2",
     "asset_scope": "production_line",
-    "asset_name": "Conveyor line 2 (输送线2)",
+    "asset_name": "Conveyor line 2",
     "asset_description": "The filename identifies a second conveyor-line component. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -32826,7 +32743,6 @@
     "equipment_type": "conveyor_line",
     "aliases": [
       "Conveyor line 2",
-      "输送线2",
       "production_line",
       "conveyor",
       "conveyor_line"
@@ -33092,7 +33008,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m100_conveyor_line_3",
     "asset_scope": "production_line",
-    "asset_name": "Conveyor line 3 (输送线3)",
+    "asset_name": "Conveyor line 3",
     "asset_description": "The filename identifies a third conveyor-line component. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -33100,7 +33016,6 @@
     "equipment_type": "conveyor_line",
     "aliases": [
       "Conveyor line 3",
-      "输送线3",
       "production_line",
       "conveyor",
       "conveyor_line"
@@ -33366,7 +33281,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/glb/m101_aluminum_profile_support",
     "asset_scope": "composite_scene",
-    "asset_name": "Aluminum-profile support (铝型材支架)",
+    "asset_name": "Aluminum-profile support",
     "asset_description": "The filename identifies an aluminum-profile support structure, not a machine. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -33374,7 +33289,6 @@
     "equipment_type": "aluminum_profile_support",
     "aliases": [
       "Aluminum-profile support",
-      "铝型材支架",
       "composite_scene",
       "support_structure",
       "aluminum_profile_support"
@@ -33640,7 +33554,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/stl/m102_worktable_child",
     "asset_scope": "equipment",
-    "asset_name": "Worktable subunit (工作台子)",
+    "asset_name": "Worktable subunit",
     "asset_description": "The filename identifies a worktable subunit; machining or test capability is not verified. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -33648,7 +33562,6 @@
     "equipment_type": "worktable_subunit",
     "aliases": [
       "Worktable subunit",
-      "工作台子",
       "equipment",
       "work_surface",
       "worktable_subunit"
@@ -33914,7 +33827,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/stl/m103_work_table",
     "asset_scope": "equipment",
-    "asset_name": "Work table (普通工作台)",
+    "asset_name": "Work table",
     "asset_description": "The filename identifies a work-table model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -33922,7 +33835,6 @@
     "equipment_type": "work_table",
     "aliases": [
       "Work table",
-      "普通工作台",
       "equipment",
       "work_surface",
       "work_table"
@@ -34325,7 +34237,7 @@
     "schema_version": "0.2",
     "model_asset_id": "asset/stl/m104_storage_rack",
     "asset_scope": "equipment",
-    "asset_name": "Storage rack (置物架)",
+    "asset_name": "Storage rack",
     "asset_description": "The filename identifies a storage-rack model. This is an identity-level source-name and visual-audit description only; the source does not verify capacity, tolerance, throughput, payload, or safety performance.",
     "library_id": "library/production_model_library",
     "site_id": null,
@@ -34333,7 +34245,6 @@
     "equipment_type": "storage_rack",
     "aliases": [
       "Storage rack",
-      "置物架",
       "equipment",
       "storage",
       "storage_rack"

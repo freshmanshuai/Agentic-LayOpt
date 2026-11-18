@@ -29,7 +29,7 @@
     "bytes": 2941004,
     "path": "source-models/产线模型库/0.5米接驳台/0.5M接驳台.fbx",
     "rag_id": "asset/fbx/0_5m",
-    "rag_name": "0.5M接驳台",
+    "rag_name": "0.5M transfer station",
     "rag_dims": {
       "width_m": 6.799553,
       "depth_m": 5.0,
@@ -51,7 +51,7 @@
         "z_m": 9.16726
       }
     },
-    "runtime_path": "models/runtime-models/glb/0_5m.glb",
+    "runtime_path": "models/runtime-models/glb/002-0-5m-transfer-station.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -65,7 +65,7 @@
     "bytes": 2176976,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_00.fbx",
     "rag_id": "asset/fbx/factory_unit_00",
-    "rag_name": "卧式离心泵机组",
+    "rag_name": "Horizontal centrifugal pump set",
     "rag_dims": {
       "width_m": 3.980317,
       "depth_m": 3.250133,
@@ -87,7 +87,7 @@
         "z_m": 2.428748
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_00.glb",
+    "runtime_path": "models/runtime-models/glb/003-horizontal-centrifugal-pump-set.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -101,7 +101,7 @@
     "bytes": 636304,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_01.fbx",
     "rag_id": "asset/fbx/factory_unit_01",
-    "rag_name": "防爆接线盒",
+    "rag_name": "Explosion-proof junction box",
     "rag_dims": {
       "width_m": 0.610114,
       "depth_m": 0.70979,
@@ -123,7 +123,7 @@
         "z_m": 1.392332
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_01.glb",
+    "runtime_path": "models/runtime-models/glb/004-explosion-proof-junction-box.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -137,7 +137,7 @@
     "bytes": 913360,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_02.fbx",
     "rag_id": "asset/fbx/factory_unit_02",
-    "rag_name": "油浸式电力变压器",
+    "rag_name": "Oil-immersed power transformer",
     "rag_dims": {
       "width_m": 0.852548,
       "depth_m": 1.627591,
@@ -159,7 +159,7 @@
         "z_m": 1.488084
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_02.glb",
+    "runtime_path": "models/runtime-models/glb/005-oil-immersed-power-transformer.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -173,7 +173,7 @@
     "bytes": 2613472,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_03.fbx",
     "rag_id": "asset/fbx/factory_unit_03",
-    "rag_name": "高压电气机组",
+    "rag_name": "High-voltage electrical unit",
     "rag_dims": {
       "width_m": 8.045646,
       "depth_m": 6.13901,
@@ -195,7 +195,7 @@
         "z_m": 3.504609
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_03.glb",
+    "runtime_path": "models/runtime-models/glb/006-high-voltage-electrical-unit.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -209,7 +209,7 @@
     "bytes": 200960,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_04.fbx",
     "rag_id": "asset/fbx/factory_unit_04",
-    "rag_name": "电气控制柜",
+    "rag_name": "Electrical control cabinet",
     "rag_dims": {
       "width_m": 0.423,
       "depth_m": 0.342042,
@@ -231,7 +231,7 @@
         "z_m": 1.453314
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_04.glb",
+    "runtime_path": "models/runtime-models/glb/007-electrical-control-cabinet.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -245,7 +245,7 @@
     "bytes": 1244944,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_05.fbx",
     "rag_id": "asset/fbx/factory_unit_05",
-    "rag_name": "离心鼓风机机组",
+    "rag_name": "Centrifugal blower unit",
     "rag_dims": {
       "width_m": 5.163741,
       "depth_m": 2.620931,
@@ -267,7 +267,7 @@
         "z_m": 2.982761
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_05.glb",
+    "runtime_path": "models/runtime-models/glb/008-centrifugal-blower-unit.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -281,7 +281,7 @@
     "bytes": 1007520,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_06.fbx",
     "rag_id": "asset/fbx/factory_unit_06",
-    "rag_name": "立式感应炉",
+    "rag_name": "Vertical induction furnace",
     "rag_dims": {
       "width_m": 1.363841,
       "depth_m": 1.363841,
@@ -303,7 +303,7 @@
         "z_m": 1.440185
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_06.glb",
+    "runtime_path": "models/runtime-models/glb/009-vertical-induction-furnace.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -317,7 +317,7 @@
     "bytes": 2756640,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_07.fbx",
     "rag_id": "asset/fbx/factory_unit_07",
-    "rag_name": "带平台立式分离塔",
+    "rag_name": "Platform-mounted vertical separator tower",
     "rag_dims": {
       "width_m": 7.203302,
       "depth_m": 8.230464,
@@ -339,7 +339,7 @@
         "z_m": 9.911501
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_07.glb",
+    "runtime_path": "models/runtime-models/glb/010-platform-mounted-vertical-separator-tower.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -353,7 +353,7 @@
     "bytes": 4150432,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_08.fbx",
     "rag_id": "asset/fbx/factory_unit_08",
-    "rag_name": "工业卷扬机",
+    "rag_name": "Industrial winch unit",
     "rag_dims": {
       "width_m": 3.819036,
       "depth_m": 1.911271,
@@ -375,7 +375,7 @@
         "z_m": 2.165074
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_08.glb",
+    "runtime_path": "models/runtime-models/glb/011-industrial-winch-unit.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -389,7 +389,7 @@
     "bytes": 3303056,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_09.fbx",
     "rag_id": "asset/fbx/factory_unit_09",
-    "rag_name": "移动式料斗泵",
+    "rag_name": "Mobile hopper-pump unit",
     "rag_dims": {
       "width_m": 1.641789,
       "depth_m": 0.903519,
@@ -411,7 +411,7 @@
         "z_m": 1.611223
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_09.glb",
+    "runtime_path": "models/runtime-models/glb/012-mobile-hopper-pump-unit.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -425,7 +425,7 @@
     "bytes": 3537664,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_10.fbx",
     "rag_id": "asset/fbx/factory_unit_10",
-    "rag_name": "双料斗螺旋给料机",
+    "rag_name": "Dual-hopper screw feeder",
     "rag_dims": {
       "width_m": 4.494342,
       "depth_m": 2.125185,
@@ -447,7 +447,7 @@
         "z_m": 4.778951
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_10.glb",
+    "runtime_path": "models/runtime-models/glb/013-dual-hopper-screw-feeder.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -461,7 +461,7 @@
     "bytes": 2365184,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_11.fbx",
     "rag_id": "asset/fbx/factory_unit_11",
-    "rag_name": "双联压缩机撬装机组",
+    "rag_name": "Dual-compressor skid",
     "rag_dims": {
       "width_m": 7.741043,
       "depth_m": 2.203508,
@@ -483,7 +483,7 @@
         "z_m": 2.041809
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_11.glb",
+    "runtime_path": "models/runtime-models/glb/014-dual-compressor-skid.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -497,7 +497,7 @@
     "bytes": 5230720,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_12.fbx",
     "rag_id": "asset/fbx/factory_unit_12",
-    "rag_name": "工业设备门架",
+    "rag_name": "Industrial equipment gantry",
     "rag_dims": {
       "width_m": 6.349714,
       "depth_m": 2.610606,
@@ -519,7 +519,7 @@
         "z_m": 5.053968
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_12.glb",
+    "runtime_path": "models/runtime-models/glb/015-industrial-equipment-gantry.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -533,7 +533,7 @@
     "bytes": 1552352,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_13.fbx",
     "rag_id": "asset/fbx/factory_unit_13",
-    "rag_name": "普通车床",
+    "rag_name": "Engine lathe",
     "rag_dims": {
       "width_m": 3.535591,
       "depth_m": 1.388538,
@@ -555,7 +555,7 @@
         "z_m": 2.088506
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_13.glb",
+    "runtime_path": "models/runtime-models/glb/016-engine-lathe.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -569,7 +569,7 @@
     "bytes": 1194288,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_14.fbx",
     "rag_id": "asset/fbx/factory_unit_14",
-    "rag_name": "大型电动执行机构",
+    "rag_name": "Large motorized actuator",
     "rag_dims": {
       "width_m": 2.299456,
       "depth_m": 2.686896,
@@ -591,7 +591,7 @@
         "z_m": 3.398329
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_14.glb",
+    "runtime_path": "models/runtime-models/glb/017-large-motorized-actuator.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -605,7 +605,7 @@
     "bytes": 2427232,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_15.fbx",
     "rag_id": "asset/fbx/factory_unit_15",
-    "rag_name": "双层卧式压力罐",
+    "rag_name": "Stacked horizontal pressure vessels",
     "rag_dims": {
       "width_m": 3.901664,
       "depth_m": 3.214925,
@@ -627,7 +627,7 @@
         "z_m": 4.637505
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_15.glb",
+    "runtime_path": "models/runtime-models/glb/018-stacked-horizontal-pressure-vessels.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -641,7 +641,7 @@
     "bytes": 550016,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_16.fbx",
     "rag_id": "asset/fbx/factory_unit_16",
-    "rag_name": "框架式卧式储罐",
+    "rag_name": "Framed horizontal storage tank",
     "rag_dims": {
       "width_m": 6.816206,
       "depth_m": 3.176892,
@@ -663,7 +663,7 @@
         "z_m": 4.235937
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_16.glb",
+    "runtime_path": "models/runtime-models/glb/019-framed-horizontal-storage-tank.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -677,7 +677,7 @@
     "bytes": 331984,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_17.fbx",
     "rag_id": "asset/fbx/factory_unit_17",
-    "rag_name": "箱式设备控制台",
+    "rag_name": "Box-type equipment console",
     "rag_dims": {
       "width_m": 1.2,
       "depth_m": 0.518354,
@@ -699,7 +699,7 @@
         "z_m": 1.92597
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_17.glb",
+    "runtime_path": "models/runtime-models/glb/020-box-type-equipment-console.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -713,7 +713,7 @@
     "bytes": 1262672,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_18.fbx",
     "rag_id": "asset/fbx/factory_unit_18",
-    "rag_name": "C型压力测试机",
+    "rag_name": "C-frame pressure tester",
     "rag_dims": {
       "width_m": 2.843533,
       "depth_m": 2.768405,
@@ -735,7 +735,7 @@
         "z_m": 5.470853
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_18.glb",
+    "runtime_path": "models/runtime-models/glb/021-c-frame-pressure-tester.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -749,7 +749,7 @@
     "bytes": 2476336,
     "path": "source-models/产线模型库/Factory_Units/Factory_Unit_19.fbx",
     "rag_id": "asset/fbx/factory_unit_19",
-    "rag_name": "塔式起重机",
+    "rag_name": "Tower crane",
     "rag_dims": {
       "width_m": 18.314236,
       "depth_m": 2.737798,
@@ -771,7 +771,7 @@
         "z_m": 24.732209
       }
     },
-    "runtime_path": "models/runtime-models/glb/factory_unit_19.glb",
+    "runtime_path": "models/runtime-models/glb/022-tower-crane.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -785,7 +785,7 @@
     "bytes": 38547532,
     "path": "source-models/产线模型库/Fbx-Industrial Kitbash/Industrial Kitbash(.fbx).fbx",
     "rag_id": "asset/fbx/industrial_kitbash",
-    "rag_name": "Industrial Kitbash(.fbx)",
+    "rag_name": "Industrial kitbash scene",
     "rag_dims": {
       "width_m": 21.200731,
       "depth_m": 31.345624,
@@ -842,7 +842,7 @@
     "bytes": 7022220,
     "path": "source-models/产线模型库/H5链式自动流水线/H5链式自动流水线.fbx",
     "rag_id": "asset/fbx/h5",
-    "rag_name": "H5链式自动流水线",
+    "rag_name": "H5 chain automatic assembly line",
     "rag_dims": {
       "width_m": 7.965893,
       "depth_m": 7.622303,
@@ -878,7 +878,7 @@
     "bytes": 158968320,
     "path": "source-models/产线模型库/mixmaster.fbx",
     "rag_id": "asset/fbx/mixmaster",
-    "rag_name": "mixmaster",
+    "rag_name": "Mixmaster model",
     "rag_dims": {
       "width_m": 0.206726,
       "depth_m": 0.2911,
@@ -914,7 +914,7 @@
     "bytes": 66956188,
     "path": "source-models/产线模型库/半导体工厂/SMD元件测试分选一体机.fbx",
     "rag_id": "asset/fbx/smd",
-    "rag_name": "SMD元件测试分选一体机",
+    "rag_name": "SMD component test-and-sorting machine",
     "rag_dims": {
       "width_m": 6.65,
       "depth_m": 8.179727,
@@ -950,7 +950,7 @@
     "bytes": 20593596,
     "path": "source-models/产线模型库/半导体工厂/半导体全自动编带机.fbx",
     "rag_id": "asset/fbx/fbx_37ff826e",
-    "rag_name": "半导体全自动编带机",
+    "rag_name": "Semiconductor automatic taping machine",
     "rag_dims": {
       "width_m": 25.114433,
       "depth_m": 16.681485,
@@ -972,7 +972,7 @@
         "z_m": 10.674843
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_37ff826e.glb",
+    "runtime_path": "models/runtime-models/glb/028-semiconductor-automatic-taping-machine.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -986,7 +986,7 @@
     "bytes": 2847708,
     "path": "source-models/产线模型库/半导体工厂/半导体制冷／热平台.fbx",
     "rag_id": "asset/fbx/fbx_b90dd1f1",
-    "rag_name": "半导体制冷／热平台",
+    "rag_name": "Semiconductor cooling and thermal platform",
     "rag_dims": {
       "width_m": 5.553421,
       "depth_m": 3.18335,
@@ -1022,7 +1022,7 @@
     "bytes": 22573804,
     "path": "source-models/产线模型库/半导体工厂/半导体器件移印包装机.fbx",
     "rag_id": "asset/fbx/fbx_db886347",
-    "rag_name": "半导体器件移印包装机",
+    "rag_name": "Semiconductor component pad-printing and packaging machine",
     "rag_dims": {
       "width_m": 6.0,
       "depth_m": 4.62975,
@@ -1058,7 +1058,7 @@
     "bytes": 42619340,
     "path": "source-models/产线模型库/半导体工厂/半导体晶体锁散热片机.fbx",
     "rag_id": "asset/fbx/fbx_f179523c",
-    "rag_name": "半导体晶体锁散热片机",
+    "rag_name": "Semiconductor heat-sink fastening machine",
     "rag_dims": {
       "width_m": 15.085848,
       "depth_m": 13.6045,
@@ -1094,7 +1094,7 @@
     "bytes": 16008220,
     "path": "source-models/产线模型库/半导体工厂/半导体晶圆自动贴标机.fbx",
     "rag_id": "asset/fbx/fbx_8811b0b9",
-    "rag_name": "半导体晶圆自动贴标机",
+    "rag_name": "Semiconductor wafer automatic labeling machine",
     "rag_dims": {
       "width_m": 15.080001,
       "depth_m": 17.69,
@@ -1130,7 +1130,7 @@
     "bytes": 16398108,
     "path": "source-models/产线模型库/半导体工厂/半导体检测设备.fbx",
     "rag_id": "asset/fbx/fbx_f60888d2",
-    "rag_name": "半导体检测设备",
+    "rag_name": "Semiconductor inspection equipment",
     "rag_dims": {
       "width_m": 12.322503,
       "depth_m": 23.704202,
@@ -1166,7 +1166,7 @@
     "bytes": 218134972,
     "path": "source-models/产线模型库/半导体工厂/半导体的全自动电感检测喷码编带分选一体机.fbx",
     "rag_id": "asset/fbx/fbx_7e78658f",
-    "rag_name": "半导体的全自动电感检测喷码编带分选一体机",
+    "rag_name": "Semiconductor integrated inspection, coding, taping, and sorting machine",
     "rag_dims": {
       "width_m": 15.50674,
       "depth_m": 8.758618,
@@ -1202,7 +1202,7 @@
     "bytes": 4422700,
     "path": "source-models/产线模型库/半导体工厂/半导体线路板上下料设备.fbx",
     "rag_id": "asset/fbx/fbx_1292a3bb",
-    "rag_name": "半导体线路板上下料设备",
+    "rag_name": "Semiconductor circuit-board loading and unloading equipment",
     "rag_dims": {
       "width_m": 7.26402,
       "depth_m": 13.65,
@@ -1238,7 +1238,7 @@
     "bytes": 54869132,
     "path": "source-models/产线模型库/半导体工厂/半导体行业一体机设备.fbx",
     "rag_id": "asset/fbx/fbx_cd880c0d",
-    "rag_name": "半导体行业一体机设备",
+    "rag_name": "Semiconductor integrated-equipment model",
     "rag_dims": {
       "width_m": 22.507511,
       "depth_m": 47.632312,
@@ -1274,7 +1274,7 @@
     "bytes": 4020364,
     "path": "source-models/产线模型库/半导体工厂/四槽硅片清洗刻蚀机.fbx",
     "rag_id": "asset/fbx/fbx_3ed136d0",
-    "rag_name": "四槽硅片清洗刻蚀机",
+    "rag_name": "Four-tank wafer cleaning and etching machine",
     "rag_dims": {
       "width_m": 14.1,
       "depth_m": 12.030219,
@@ -1296,7 +1296,7 @@
         "z_m": 18.884756
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_3ed136d0.glb",
+    "runtime_path": "models/runtime-models/glb/037-four-tank-wafer-cleaning-and-etching-machine.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -1310,7 +1310,7 @@
     "bytes": 87804956,
     "path": "source-models/产线模型库/半导体工厂/圆盘抽真空包装机.fbx",
     "rag_id": "asset/fbx/fbx_097ef6b2",
-    "rag_name": "圆盘抽真空包装机",
+    "rag_name": "Disc vacuum packaging machine",
     "rag_dims": {
       "width_m": 35.951766,
       "depth_m": 16.912999,
@@ -1346,7 +1346,7 @@
     "bytes": 1056748,
     "path": "source-models/产线模型库/半导体工厂/扩张机.fbx",
     "rag_id": "asset/fbx/fbx_3c6fae07",
-    "rag_name": "扩张机",
+    "rag_name": "Expansion machine",
     "rag_dims": {
       "width_m": 3.280003,
       "depth_m": 2.615,
@@ -1368,7 +1368,7 @@
         "z_m": 8.32373
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_3c6fae07.glb",
+    "runtime_path": "models/runtime-models/glb/039-expansion-machine.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -1382,7 +1382,7 @@
     "bytes": 18995196,
     "path": "source-models/产线模型库/半导体工厂/自动贴片成型总装.fbx",
     "rag_id": "asset/fbx/fbx_37331baa",
-    "rag_name": "自动贴片成型总装",
+    "rag_name": "Automatic die-attach forming assembly",
     "rag_dims": {
       "width_m": 12.445169,
       "depth_m": 11.751212,
@@ -1418,7 +1418,7 @@
     "bytes": 466913808,
     "path": "source-models/产线模型库/工业风工厂 展厅 机床3d模型015/5工厂展厅.fbx",
     "rag_id": "asset/max/industrial_factory_showroom_machine_015",
-    "rag_name": "工业风工厂 展厅 机床3d模型015",
+    "rag_name": "Industrial factory showroom scene 015",
     "rag_dims": {
       "width_m": 0.755857,
       "depth_m": 0.851179,
@@ -1454,7 +1454,7 @@
     "bytes": 139432700,
     "path": "source-models/产线模型库/工业风工厂 展厅 机床3d模型015/5工厂展厅.max",
     "rag_id": "asset/max/industrial_factory_showroom_machine_015",
-    "rag_name": "工业风工厂 展厅 机床3d模型015",
+    "rag_name": "Industrial factory showroom scene 015",
     "rag_dims": {
       "width_m": 0.755857,
       "depth_m": 0.851179,
@@ -1490,7 +1490,7 @@
     "bytes": 837772,
     "path": "source-models/产线模型库/工厂工业设备/四柱液压压力机.fbx",
     "rag_id": "asset/fbx/fbx_9707ae30",
-    "rag_name": "四柱液压压力机",
+    "rag_name": "Four-column hydraulic press",
     "rag_dims": {
       "width_m": 0.136046,
       "depth_m": 0.093495,
@@ -1526,7 +1526,7 @@
     "bytes": 1471596,
     "path": "source-models/产线模型库/工厂工业设备/夹具工作台.fbx",
     "rag_id": "asset/fbx/fbx_7716b9f7",
-    "rag_name": "夹具工作台",
+    "rag_name": "Fixture workbench",
     "rag_dims": {
       "width_m": 0.270965,
       "depth_m": 0.198041,
@@ -1548,7 +1548,7 @@
         "z_m": 0.187749
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_7716b9f7.glb",
+    "runtime_path": "models/runtime-models/glb/044-fixture-workbench.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -1562,7 +1562,7 @@
     "bytes": 25708,
     "path": "source-models/产线模型库/工厂工业设备/安装平台.fbx",
     "rag_id": "asset/fbx/fbx_9dca0e84",
-    "rag_name": "安装平台",
+    "rag_name": "Installation platform",
     "rag_dims": {
       "width_m": 0.2,
       "depth_m": 0.2,
@@ -1598,7 +1598,7 @@
     "bytes": 16612812,
     "path": "source-models/产线模型库/工厂工业设备/工具柜.fbx",
     "rag_id": "asset/fbx/fbx_1a80889c",
-    "rag_name": "工具柜",
+    "rag_name": "Tool cabinet",
     "rag_dims": {
       "width_m": 0.070562,
       "depth_m": 0.004572,
@@ -1634,7 +1634,7 @@
     "bytes": 2010380,
     "path": "source-models/产线模型库/工厂工业设备/机器人线性滑台工作站.fbx",
     "rag_id": "asset/fbx/fbx_88e820ac",
-    "rag_name": "机器人线性滑台工作站",
+    "rag_name": "Robot linear-slide workstation",
     "rag_dims": {
       "width_m": 0.736447,
       "depth_m": 0.333419,
@@ -1670,7 +1670,7 @@
     "bytes": 83276,
     "path": "source-models/产线模型库/工厂工业设备/机箱.fbx",
     "rag_id": "asset/fbx/fbx_ebfc71a6",
-    "rag_name": "机箱",
+    "rag_name": "Equipment enclosure",
     "rag_dims": {
       "width_m": 0.08652,
       "depth_m": 0.080442,
@@ -1706,7 +1706,7 @@
     "bytes": 8332140,
     "path": "source-models/产线模型库/工厂工业设备/液压动力单元.fbx",
     "rag_id": "asset/fbx/fbx_177626cb",
-    "rag_name": "液压动力单元",
+    "rag_name": "Hydraulic power unit",
     "rag_dims": {
       "width_m": 0.186416,
       "depth_m": 0.132825,
@@ -1742,7 +1742,7 @@
     "bytes": 4975564,
     "path": "source-models/产线模型库/工厂工业设备/电火花成型机.fbx",
     "rag_id": "asset/fbx/fbx_c87c6aaa",
-    "rag_name": "电火花成型机",
+    "rag_name": "EDM forming machine",
     "rag_dims": {
       "width_m": 0.257221,
       "depth_m": 0.107757,
@@ -1778,7 +1778,7 @@
     "bytes": 586844,
     "path": "source-models/产线模型库/工厂工业设备/电火花穿孔机.fbx",
     "rag_id": "asset/fbx/fbx_313d8039",
-    "rag_name": "电火花穿孔机",
+    "rag_name": "EDM drilling machine",
     "rag_dims": {
       "width_m": 0.170655,
       "depth_m": 0.097725,
@@ -1814,7 +1814,7 @@
     "bytes": 5372300,
     "path": "source-models/产线模型库/工厂工业设备/管材切割坡口机.fbx",
     "rag_id": "asset/fbx/fbx_8251e44c",
-    "rag_name": "管材切割坡口机",
+    "rag_name": "Pipe cutting and beveling machine",
     "rag_dims": {
       "width_m": 0.257627,
       "depth_m": 0.134142,
@@ -1850,7 +1850,7 @@
     "bytes": 4803020,
     "path": "source-models/产线模型库/工厂工业设备/辊压机.fbx",
     "rag_id": "asset/fbx/fbx_4d43d987",
-    "rag_name": "辊压机",
+    "rag_name": "Rolling machine",
     "rag_dims": {
       "width_m": 0.13454,
       "depth_m": 0.221446,
@@ -1886,7 +1886,7 @@
     "bytes": 1119340,
     "path": "source-models/产线模型库/工厂工业设备/锥形料斗.fbx",
     "rag_id": "asset/fbx/fbx_c36a1e83",
-    "rag_name": "锥形料斗",
+    "rag_name": "Conical hopper",
     "rag_dims": {
       "width_m": 0.149673,
       "depth_m": 0.149673,
@@ -1922,7 +1922,7 @@
     "bytes": 263524512,
     "path": "source-models/产线模型库/数据中心/中国移动服务器一体化机柜（5台）.fbx",
     "rag_id": "asset/fbx/5",
-    "rag_name": "中国移动服务器一体化机柜（5台）",
+    "rag_name": "Five-unit integrated server-cabinet group",
     "rag_dims": {
       "width_m": 8.893698,
       "depth_m": 0.123638,
@@ -1944,7 +1944,7 @@
         "z_m": 0.97
       }
     },
-    "runtime_path": "models/runtime-models/glb/5.glb",
+    "runtime_path": "models/runtime-models/glb/055-five-unit-integrated-server-cabinet-group.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -1958,7 +1958,7 @@
     "bytes": 95299308,
     "path": "source-models/产线模型库/数据中心/单机柜.fbx",
     "rag_id": "asset/fbx/fbx_be827a77",
-    "rag_name": "单机柜",
+    "rag_name": "Single server cabinet",
     "rag_dims": {
       "width_m": 6.402,
       "depth_m": 22.459748,
@@ -1980,7 +1980,7 @@
         "z_m": 18.878201
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_be827a77.glb",
+    "runtime_path": "models/runtime-models/glb/056-single-server-cabinet.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -1994,7 +1994,7 @@
     "bytes": 882348,
     "path": "source-models/产线模型库/机床设备/CNC数控加工中心.fbx",
     "rag_id": "asset/fbx/fbx_84d31057",
-    "rag_name": "CNC数控加工中心",
+    "rag_name": "CNC machining center",
     "rag_dims": {
       "width_m": 25.036847,
       "depth_m": 22.783805,
@@ -2016,7 +2016,7 @@
         "z_m": 1.0
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_84d31057.glb",
+    "runtime_path": "models/runtime-models/glb/057-cnc-machining-center.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -2030,7 +2030,7 @@
     "bytes": 34134588,
     "path": "source-models/产线模型库/机床设备/六轴CNC加工中心：塑料油瓶加工机.fbx",
     "rag_id": "asset/fbx/fbx_465611ff",
-    "rag_name": "六轴CNC加工中心：塑料油瓶加工机",
+    "rag_name": "Six-axis CNC machining center for plastic oil-bottle machining",
     "rag_dims": {
       "width_m": 18.699,
       "depth_m": 19.978831,
@@ -2052,7 +2052,7 @@
         "z_m": 1.0
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_465611ff.glb",
+    "runtime_path": "models/runtime-models/glb/058-six-axis-cnc-machining-center-for-plastic-oil-bottle-machining.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -2066,7 +2066,7 @@
     "bytes": 1583084,
     "path": "source-models/产线模型库/机床设备/卧式铣床.fbx",
     "rag_id": "asset/fbx/fbx_17fcd2ed",
-    "rag_name": "卧式铣床",
+    "rag_name": "Horizontal milling machine",
     "rag_dims": {
       "width_m": 0.189026,
       "depth_m": 0.118016,
@@ -2102,7 +2102,7 @@
     "bytes": 264540,
     "path": "source-models/产线模型库/机床设备/哈斯数控加工中心.fbx",
     "rag_id": "asset/fbx/fbx_52f1abc3",
-    "rag_name": "哈斯数控加工中心",
+    "rag_name": "Haas CNC machining center",
     "rag_dims": {
       "width_m": 23.45583,
       "depth_m": 36.372336,
@@ -2124,7 +2124,7 @@
         "z_m": 1.0
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_52f1abc3.glb",
+    "runtime_path": "models/runtime-models/glb/060-haas-cnc-machining-center.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -2138,7 +2138,7 @@
     "bytes": 8810556,
     "path": "source-models/产线模型库/机床设备/微型加工中心.fbx",
     "rag_id": "asset/fbx/fbx_c6a19eec",
-    "rag_name": "微型加工中心",
+    "rag_name": "Micro machining center",
     "rag_dims": {
       "width_m": 4.17,
       "depth_m": 4.400001,
@@ -2160,7 +2160,7 @@
         "z_m": 1.0
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_c6a19eec.glb",
+    "runtime_path": "models/runtime-models/glb/061-micro-machining-center.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -2174,7 +2174,7 @@
     "bytes": 759980,
     "path": "source-models/产线模型库/机床设备/摇臂钻床.fbx",
     "rag_id": "asset/fbx/fbx_a3e1a9c2",
-    "rag_name": "摇臂钻床",
+    "rag_name": "Radial drilling machine",
     "rag_dims": {
       "width_m": 0.1234,
       "depth_m": 0.068343,
@@ -2196,7 +2196,7 @@
         "z_m": 0.202601
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_a3e1a9c2.glb",
+    "runtime_path": "models/runtime-models/glb/062-radial-drilling-machine.glb",
     "manual_review": true,
     "rag_match_mode": "same_filename_old_path_needs_confirmation",
     "preview_skip": false
@@ -2210,7 +2210,7 @@
     "bytes": 2134540,
     "path": "source-models/产线模型库/机床设备/数控机床.fbx",
     "rag_id": "asset/fbx/fbx_8261b7e0",
-    "rag_name": "数控机床",
+    "rag_name": "Enclosed CNC machine",
     "rag_dims": {
       "width_m": 0.258991,
       "depth_m": 0.190181,
@@ -2246,7 +2246,7 @@
     "bytes": 18815260,
     "path": "source-models/产线模型库/机床设备/新型车铣复合加工中心.fbx",
     "rag_id": "asset/fbx/fbx_6901bdd8",
-    "rag_name": "新型车铣复合加工中心",
+    "rag_name": "Turn-mill machining center",
     "rag_dims": {
       "width_m": 70.35521,
       "depth_m": 41.976381,
@@ -2268,7 +2268,7 @@
         "z_m": 1.0
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_6901bdd8.glb",
+    "runtime_path": "models/runtime-models/glb/064-turn-mill-machining-center.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -2282,7 +2282,7 @@
     "bytes": 4367964,
     "path": "source-models/产线模型库/机床设备/立式加工中心1100X900.fbx",
     "rag_id": "asset/fbx/fbx_fb04a2ee",
-    "rag_name": "立式加工中心1100X900",
+    "rag_name": "Vertical machining center 1100 x 900",
     "rag_dims": {
       "width_m": 23.91741,
       "depth_m": 26.603004,
@@ -2304,7 +2304,7 @@
         "z_m": 1.0
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_fb04a2ee.glb",
+    "runtime_path": "models/runtime-models/glb/065-vertical-machining-center-1100-x-900.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -2318,7 +2318,7 @@
     "bytes": 25598764,
     "path": "source-models/产线模型库/机床设备/立式加工中心GA-V918C.fbx",
     "rag_id": "asset/fbx/fbx_abd43f9f",
-    "rag_name": "立式加工中心GA-V918C",
+    "rag_name": "Vertical machining center GA-V918C",
     "rag_dims": {
       "width_m": 64.424005,
       "depth_m": 33.467135,
@@ -2340,7 +2340,7 @@
         "z_m": 1.0
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_abd43f9f.glb",
+    "runtime_path": "models/runtime-models/glb/066-vertical-machining-center-ga-v918c.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -2354,7 +2354,7 @@
     "bytes": 305308,
     "path": "source-models/产线模型库/机床设备/立式加工中心光机模型.fbx",
     "rag_id": "asset/fbx/fbx_f4980f8b",
-    "rag_name": "立式加工中心光机模型",
+    "rag_name": "Bare vertical machining-center model",
     "rag_dims": {
       "width_m": 10.8,
       "depth_m": 18.540899,
@@ -2376,7 +2376,7 @@
         "z_m": 1.0
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_f4980f8b.glb",
+    "runtime_path": "models/runtime-models/glb/067-bare-vertical-machining-center-model.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -2390,7 +2390,7 @@
     "bytes": 9636156,
     "path": "source-models/产线模型库/机床设备/立式四轴数控铣床.fbx",
     "rag_id": "asset/fbx/fbx_f2db5dfe",
-    "rag_name": "立式四轴数控铣床",
+    "rag_name": "Vertical four-axis CNC milling machine",
     "rag_dims": {
       "width_m": 8.539999,
       "depth_m": 10.256001,
@@ -2412,7 +2412,7 @@
         "z_m": 1.0
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_f2db5dfe.glb",
+    "runtime_path": "models/runtime-models/glb/068-vertical-four-axis-cnc-milling-machine.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -2426,7 +2426,7 @@
     "bytes": 25236476,
     "path": "source-models/产线模型库/机床设备/高速立式车铣加工中心.fbx",
     "rag_id": "asset/fbx/fbx_d8f6cfdf",
-    "rag_name": "高速立式车铣加工中心",
+    "rag_name": "High-speed vertical turn-mill machining center",
     "rag_dims": {
       "width_m": 25.655,
       "depth_m": 38.703321,
@@ -2448,7 +2448,7 @@
         "z_m": 1.0
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_d8f6cfdf.glb",
+    "runtime_path": "models/runtime-models/glb/069-high-speed-vertical-turn-mill-machining-center.glb",
     "manual_review": true,
     "rag_match_mode": "exact_relative_path",
     "preview_skip": false
@@ -2462,7 +2462,7 @@
     "bytes": 16681836,
     "path": "source-models/产线模型库/机床设备/龙门式数控切割机.fbx",
     "rag_id": "asset/fbx/fbx_3b1181c9",
-    "rag_name": "龙门式数控切割机",
+    "rag_name": "Gantry CNC cutting machine",
     "rag_dims": {
       "width_m": 0.371563,
       "depth_m": 0.526742,
@@ -2484,7 +2484,7 @@
         "z_m": 0.447096
       }
     },
-    "runtime_path": "models/runtime-models/glb/fbx_3b1181c9.glb",
+    "runtime_path": "models/runtime-models/glb/070-gantry-cnc-cutting-machine.glb",
     "manual_review": true,
     "rag_match_mode": "same_filename_old_path_needs_confirmation",
     "preview_skip": false
@@ -2498,7 +2498,7 @@
     "bytes": 5287052,
     "path": "source-models/产线模型库/机床设备/龙门铣床.fbx",
     "rag_id": "asset/fbx/fbx_51f787e0",
-    "rag_name": "龙门铣床",
+    "rag_name": "Gantry milling machine",
     "rag_dims": {
       "width_m": 0.41861,
       "depth_m": 0.480547,
@@ -2534,7 +2534,7 @@
     "bytes": 11039440,
     "path": "source-models/产线模型库/电子装备/AGV小车/agv.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Automated guided vehicle",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2555,7 +2555,7 @@
     "bytes": 1140720,
     "path": "source-models/产线模型库/电子装备/models/29-能耗监测网关.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Energy monitoring gateway",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2576,7 +2576,7 @@
     "bytes": 1412732,
     "path": "source-models/产线模型库/电子装备/models/IRF2948B_communications_service_monitor.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Communications service monitor",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2597,7 +2597,7 @@
     "bytes": 873336,
     "path": "source-models/产线模型库/电子装备/models/Keyboard-Video-Mouse Switch.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Keyboard-video-mouse switch",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2618,7 +2618,7 @@
     "bytes": 902396,
     "path": "source-models/产线模型库/电子装备/models/UHF电调滤波器.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "UHF tunable filter",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2639,7 +2639,7 @@
     "bytes": 902368,
     "path": "source-models/产线模型库/电子装备/models/VHF电调滤波器.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "VHF tunable filter",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2660,7 +2660,7 @@
     "bytes": 13680568,
     "path": "source-models/产线模型库/电子装备/models/tool_流水线.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Tool conveyor-line component",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2681,7 +2681,7 @@
     "bytes": 7137788,
     "path": "source-models/产线模型库/电子装备/models/传送带2.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Conveyor 2",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2702,7 +2702,7 @@
     "bytes": 416164,
     "path": "source-models/产线模型库/电子装备/models/地面.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Floor surface",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2723,7 +2723,7 @@
     "bytes": 324257484,
     "path": "source-models/产线模型库/电子装备/models/场景一搭建工程.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Electronics workshop scene",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2744,7 +2744,7 @@
     "bytes": 601780,
     "path": "source-models/产线模型库/电子装备/models/大温箱.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Large temperature chamber",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2765,7 +2765,7 @@
     "bytes": 2375400,
     "path": "source-models/产线模型库/电子装备/models/工人1.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Worker figure 1",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2786,7 +2786,7 @@
     "bytes": 4839744,
     "path": "source-models/产线模型库/电子装备/models/工人2.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Worker figure 2",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2807,7 +2807,7 @@
     "bytes": 88863896,
     "path": "source-models/产线模型库/电子装备/models/暂存架.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Temporary-storage visual scene",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2828,7 +2828,7 @@
     "bytes": 26221756,
     "path": "source-models/产线模型库/电子装备/models/柔性测试工作站.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Flexible test workstation",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2849,7 +2849,7 @@
     "bytes": 184864,
     "path": "source-models/产线模型库/电子装备/models/桌子.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Table",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2870,7 +2870,7 @@
     "bytes": 607804,
     "path": "source-models/产线模型库/电子装备/models/温箱小.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Small temperature chamber",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2891,7 +2891,7 @@
     "bytes": 589608,
     "path": "source-models/产线模型库/电子装备/models/激光打标标准机台.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Laser marking station",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2912,7 +2912,7 @@
     "bytes": 12675928,
     "path": "source-models/产线模型库/电子装备/models/物料.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Material model",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2933,7 +2933,7 @@
     "bytes": 6494012,
     "path": "source-models/产线模型库/电子装备/models/皮带线.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Belt conveyor",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2954,7 +2954,7 @@
     "bytes": 46409916,
     "path": "source-models/产线模型库/电子装备/models/线边库.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Line-side storage unit",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2975,7 +2975,7 @@
     "bytes": 25445048,
     "path": "source-models/产线模型库/电子装备/models/装夹台.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Fixture workstation",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -2996,7 +2996,7 @@
     "bytes": 94228,
     "path": "source-models/产线模型库/电子装备/models/触摸屏.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Touchscreen",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3017,7 +3017,7 @@
     "bytes": 180115184,
     "path": "source-models/产线模型库/电子装备/models/设备1.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Unspecified equipment model",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3038,7 +3038,7 @@
     "bytes": 73684100,
     "path": "source-models/产线模型库/电子装备/models/货架.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Multi-object rack scene",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3059,7 +3059,7 @@
     "bytes": 6825728,
     "path": "source-models/产线模型库/电子装备/models/超声波焊接机.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Ultrasonic welding machine",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3080,7 +3080,7 @@
     "bytes": 29811288,
     "path": "source-models/产线模型库/电子装备/models/输送线.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Conveyor line",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3101,7 +3101,7 @@
     "bytes": 15419616,
     "path": "source-models/产线模型库/电子装备/models/输送线2.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Conveyor line 2",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3122,7 +3122,7 @@
     "bytes": 413884492,
     "path": "source-models/产线模型库/电子装备/models/输送线3.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Conveyor line 3",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3143,7 +3143,7 @@
     "bytes": 5143100,
     "path": "source-models/产线模型库/电子装备/models/铝型材支架.glb",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Aluminum-profile support",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3164,7 +3164,7 @@
     "bytes": 697284,
     "path": "source-models/产线模型库/电子装备/工作台/工作台子.STL",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Worktable subunit",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3185,7 +3185,7 @@
     "bytes": 170584,
     "path": "source-models/产线模型库/电子装备/工作台/普通工作台.STL",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Work table",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3206,7 +3206,7 @@
     "bytes": 2095884,
     "path": "source-models/产线模型库/电子装备/置物架（buffer）/置物架.STL",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Storage rack",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3248,7 +3248,7 @@
     "bytes": 121734412,
     "path": "source-models/产线模型库/自动PCB上下料点胶测试自动线/PCB PLACING MACHINE ASSEMBLY.fbx",
     "rag_id": "asset/fbx/pcb_placing_machine_assembly",
-    "rag_name": "PCB PLACING MACHINE ASSEMBLY",
+    "rag_name": "PCB placing-machine assembly scene",
     "rag_dims": {
       "width_m": 12.354235,
       "depth_m": 22.425001,
@@ -3284,7 +3284,7 @@
     "bytes": 63471984,
     "path": "source-models/产线模型库/转盘式组装线/Asm1.STL",
     "rag_id": null,
-    "rag_name": null,
+    "rag_name": "Assembly model ASM1",
     "rag_dims": {},
     "source_unit": null,
     "unit_scale_to_m": null,
@@ -3306,7 +3306,7 @@
     "bytes": 22269212,
     "path": "source-models/产线模型库/转盘式组装线/转盘式组装线.fbx",
     "rag_id": "asset/fbx/fbx_a71ceea9",
-    "rag_name": "转盘式组装线",
+    "rag_name": "Rotary assembly line",
     "rag_dims": {
       "width_m": 78.733682,
       "depth_m": 19.413253,
@@ -3363,7 +3363,7 @@
     "bytes": 111691756,
     "path": "source-models/产线模型库/钢平台上生产线布局/钢平台上生产线整体布局.fbx",
     "rag_id": "asset/fbx/fbx_08edb467",
-    "rag_name": "钢平台上生产线整体布局",
+    "rag_name": "Steel-platform production-line layout scene",
     "rag_dims": {
       "width_m": 91.800002,
       "depth_m": 81.834997,

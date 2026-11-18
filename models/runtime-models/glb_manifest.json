@@ -6,9 +6,9 @@
   "assets": [
     {
       "model_asset_id": "asset/fbx/0_5m",
-      "asset_name": "0.5M接驳台",
+      "asset_name": "0.5M transfer station",
       "equipment_type": "fbx_scene",
-      "glb_url": "/runtime-models/glb/0_5m.glb",
+      "glb_url": "/runtime-models/glb/002-0-5m-transfer-station.glb",
       "glb_bytes": 7943300,
       "source_obj_url": "/runtime-models/obj/0d5637f3_0_5M/0_5M.obj",
       "source_obj_bytes": 9949621,
@@ -29,9 +29,9 @@
     },
     {
       "model_asset_id": "asset/fbx/5",
-      "asset_name": "中国移动服务器一体化机柜（5台）",
+      "asset_name": "Five-unit integrated server-cabinet group",
       "equipment_type": "fbx_scene",
-      "glb_url": "/runtime-models/glb/5.glb",
+      "glb_url": "/runtime-models/glb/055-five-unit-integrated-server-cabinet-group.glb",
       "glb_bytes": 21096,
       "glb_sha256": "594306c0e0526723b5df74216cd72ddc70daea01b5589c7112afdbcd39f8d3ee",
       "rendering_role": "project_low_poly_proxy",
@@ -49,9 +49,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_00",
-      "asset_name": "卧式离心泵机组",
+      "asset_name": "Horizontal centrifugal pump set",
       "equipment_type": "horizontal_centrifugal_pump_set",
-      "glb_url": "/runtime-models/glb/factory_unit_00.glb",
+      "glb_url": "/runtime-models/glb/003-horizontal-centrifugal-pump-set.glb",
       "glb_bytes": 1212212,
       "source_obj_url": "/runtime-models/obj/6240a35b_Factory_Unit_00/Factory_Unit_00.obj",
       "source_obj_bytes": 5169588,
@@ -72,9 +72,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_01",
-      "asset_name": "防爆接线盒",
+      "asset_name": "Explosion-proof junction box",
       "equipment_type": "explosion_proof_junction_box",
-      "glb_url": "/runtime-models/glb/factory_unit_01.glb",
+      "glb_url": "/runtime-models/glb/004-explosion-proof-junction-box.glb",
       "glb_bytes": 268592,
       "source_obj_url": "/runtime-models/obj/b064f86e_Factory_Unit_01/Factory_Unit_01.obj",
       "source_obj_bytes": 1165104,
@@ -95,9 +95,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_02",
-      "asset_name": "油浸式电力变压器",
+      "asset_name": "Oil-immersed power transformer",
       "equipment_type": "oil_immersed_power_transformer",
-      "glb_url": "/runtime-models/glb/factory_unit_02.glb",
+      "glb_url": "/runtime-models/glb/005-oil-immersed-power-transformer.glb",
       "glb_bytes": 532228,
       "source_obj_url": "/runtime-models/obj/2a5cd5d7_Factory_Unit_02/Factory_Unit_02.obj",
       "source_obj_bytes": 1999797,
@@ -118,9 +118,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_03",
-      "asset_name": "高压电气机组",
+      "asset_name": "High-voltage electrical unit",
       "equipment_type": "high_voltage_electrical_unit",
-      "glb_url": "/runtime-models/glb/factory_unit_03.glb",
+      "glb_url": "/runtime-models/glb/006-high-voltage-electrical-unit.glb",
       "glb_bytes": 1134632,
       "source_obj_url": "/runtime-models/obj/7721a32e_Factory_Unit_03/Factory_Unit_03.obj",
       "source_obj_bytes": 5494457,
@@ -141,9 +141,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_04",
-      "asset_name": "电气控制柜",
+      "asset_name": "Electrical control cabinet",
       "equipment_type": "electrical_control_cabinet",
-      "glb_url": "/runtime-models/glb/factory_unit_04.glb",
+      "glb_url": "/runtime-models/glb/007-electrical-control-cabinet.glb",
       "glb_bytes": 81156,
       "source_obj_url": "/runtime-models/obj/d16d137c_Factory_Unit_04/Factory_Unit_04.obj",
       "source_obj_bytes": 299330,
@@ -164,9 +164,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_05",
-      "asset_name": "离心鼓风机机组",
+      "asset_name": "Centrifugal blower unit",
       "equipment_type": "centrifugal_blower_unit",
-      "glb_url": "/runtime-models/glb/factory_unit_05.glb",
+      "glb_url": "/runtime-models/glb/008-centrifugal-blower-unit.glb",
       "glb_bytes": 894452,
       "source_obj_url": "/runtime-models/obj/08293660_Factory_Unit_05/Factory_Unit_05.obj",
       "source_obj_bytes": 2808221,
@@ -187,9 +187,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_06",
-      "asset_name": "立式感应炉",
+      "asset_name": "Vertical induction furnace",
       "equipment_type": "vertical_induction_furnace",
-      "glb_url": "/runtime-models/glb/factory_unit_06.glb",
+      "glb_url": "/runtime-models/glb/009-vertical-induction-furnace.glb",
       "glb_bytes": 573736,
       "source_obj_url": "/runtime-models/obj/5574d2c7_Factory_Unit_06/Factory_Unit_06.obj",
       "source_obj_bytes": 2244566,
@@ -210,9 +210,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_07",
-      "asset_name": "带平台立式分离塔",
+      "asset_name": "Platform-mounted vertical separator tower",
       "equipment_type": "platformed_vertical_separator_tower",
-      "glb_url": "/runtime-models/glb/factory_unit_07.glb",
+      "glb_url": "/runtime-models/glb/010-platform-mounted-vertical-separator-tower.glb",
       "glb_bytes": 2014604,
       "source_obj_url": "/runtime-models/obj/74bd2827_Factory_Unit_07/Factory_Unit_07.obj",
       "source_obj_bytes": 6602900,
@@ -233,9 +233,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_08",
-      "asset_name": "工业卷扬机",
+      "asset_name": "Industrial winch unit",
       "equipment_type": "industrial_winch_unit",
-      "glb_url": "/runtime-models/glb/factory_unit_08.glb",
+      "glb_url": "/runtime-models/glb/011-industrial-winch-unit.glb",
       "glb_bytes": 1686648,
       "source_obj_url": "/runtime-models/obj/2968cde6_Factory_Unit_08/Factory_Unit_08.obj",
       "source_obj_bytes": 9951637,
@@ -256,9 +256,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_09",
-      "asset_name": "移动式料斗泵",
+      "asset_name": "Mobile hopper-pump unit",
       "equipment_type": "mobile_hopper_pump_unit",
-      "glb_url": "/runtime-models/glb/factory_unit_09.glb",
+      "glb_url": "/runtime-models/glb/012-mobile-hopper-pump-unit.glb",
       "glb_bytes": 1216876,
       "source_obj_url": "/runtime-models/obj/3737f291_Factory_Unit_09/Factory_Unit_09.obj",
       "source_obj_bytes": 5719887,
@@ -279,9 +279,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_10",
-      "asset_name": "双料斗螺旋给料机",
+      "asset_name": "Dual-hopper screw feeder",
       "equipment_type": "dual_hopper_screw_feeder",
-      "glb_url": "/runtime-models/glb/factory_unit_10.glb",
+      "glb_url": "/runtime-models/glb/013-dual-hopper-screw-feeder.glb",
       "glb_bytes": 1885116,
       "source_obj_url": "/runtime-models/obj/178ef188_Factory_Unit_10/Factory_Unit_10.obj",
       "source_obj_bytes": 8854487,
@@ -302,9 +302,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_11",
-      "asset_name": "双联压缩机撬装机组",
+      "asset_name": "Dual-compressor skid",
       "equipment_type": "dual_compressor_skid",
-      "glb_url": "/runtime-models/glb/factory_unit_11.glb",
+      "glb_url": "/runtime-models/glb/014-dual-compressor-skid.glb",
       "glb_bytes": 1074060,
       "source_obj_url": "/runtime-models/obj/31f748e9_Factory_Unit_11/Factory_Unit_11.obj",
       "source_obj_bytes": 5492085,
@@ -325,9 +325,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_12",
-      "asset_name": "工业设备门架",
+      "asset_name": "Industrial equipment gantry",
       "equipment_type": "industrial_equipment_gantry_module",
-      "glb_url": "/runtime-models/glb/factory_unit_12.glb",
+      "glb_url": "/runtime-models/glb/015-industrial-equipment-gantry.glb",
       "glb_bytes": 2115280,
       "source_obj_url": "/runtime-models/obj/570dc9c5_Factory_Unit_12/Factory_Unit_12.obj",
       "source_obj_bytes": 10251066,
@@ -348,9 +348,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_13",
-      "asset_name": "普通车床",
+      "asset_name": "Engine lathe",
       "equipment_type": "engine_lathe",
-      "glb_url": "/runtime-models/glb/factory_unit_13.glb",
+      "glb_url": "/runtime-models/glb/016-engine-lathe.glb",
       "glb_bytes": 540540,
       "source_obj_url": "/runtime-models/obj/e290846f_Factory_Unit_13/Factory_Unit_13.obj",
       "source_obj_bytes": 2554752,
@@ -371,9 +371,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_14",
-      "asset_name": "大型电动执行机构",
+      "asset_name": "Large motorized actuator",
       "equipment_type": "large_motorized_actuator",
-      "glb_url": "/runtime-models/glb/factory_unit_14.glb",
+      "glb_url": "/runtime-models/glb/017-large-motorized-actuator.glb",
       "glb_bytes": 642232,
       "source_obj_url": "/runtime-models/obj/7e59d3fd_Factory_Unit_14/Factory_Unit_14.obj",
       "source_obj_bytes": 2984106,
@@ -394,9 +394,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_15",
-      "asset_name": "双层卧式压力罐",
+      "asset_name": "Stacked horizontal pressure vessels",
       "equipment_type": "stacked_horizontal_pressure_vessels",
-      "glb_url": "/runtime-models/glb/factory_unit_15.glb",
+      "glb_url": "/runtime-models/glb/018-stacked-horizontal-pressure-vessels.glb",
       "glb_bytes": 1744052,
       "source_obj_url": "/runtime-models/obj/e4d3038a_Factory_Unit_15/Factory_Unit_15.obj",
       "source_obj_bytes": 5724477,
@@ -417,9 +417,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_16",
-      "asset_name": "框架式卧式储罐",
+      "asset_name": "Framed horizontal storage tank",
       "equipment_type": "framed_horizontal_storage_tank",
-      "glb_url": "/runtime-models/glb/factory_unit_16.glb",
+      "glb_url": "/runtime-models/glb/019-framed-horizontal-storage-tank.glb",
       "glb_bytes": 252616,
       "source_obj_url": "/runtime-models/obj/b1e375ce_Factory_Unit_16/Factory_Unit_16.obj",
       "source_obj_bytes": 1270411,
@@ -440,9 +440,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_17",
-      "asset_name": "箱式设备控制台",
+      "asset_name": "Box-type equipment console",
       "equipment_type": "box_type_equipment_console",
-      "glb_url": "/runtime-models/glb/factory_unit_17.glb",
+      "glb_url": "/runtime-models/glb/020-box-type-equipment-console.glb",
       "glb_bytes": 157852,
       "source_obj_url": "/runtime-models/obj/afc0b69f_Factory_Unit_17/Factory_Unit_17.obj",
       "source_obj_bytes": 780100,
@@ -463,9 +463,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_18",
-      "asset_name": "C型压力测试机",
+      "asset_name": "C-frame pressure tester",
       "equipment_type": "c_frame_press_tester",
-      "glb_url": "/runtime-models/glb/factory_unit_18.glb",
+      "glb_url": "/runtime-models/glb/021-c-frame-pressure-tester.glb",
       "glb_bytes": 516268,
       "source_obj_url": "/runtime-models/obj/39c3bbfc_Factory_Unit_18/Factory_Unit_18.obj",
       "source_obj_bytes": 2216372,
@@ -486,9 +486,9 @@
     },
     {
       "model_asset_id": "asset/fbx/factory_unit_19",
-      "asset_name": "塔式起重机",
+      "asset_name": "Tower crane",
       "equipment_type": "tower_crane",
-      "glb_url": "/runtime-models/glb/factory_unit_19.glb",
+      "glb_url": "/runtime-models/glb/022-tower-crane.glb",
       "glb_bytes": 1104108,
       "source_obj_url": "/runtime-models/obj/8e1514dd_Factory_Unit_19/Factory_Unit_19.obj",
       "source_obj_bytes": 5427437,
@@ -509,9 +509,9 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_1292a3bb",
-      "asset_name": "半导体线路板上下料设备",
+      "asset_name": "Semiconductor circuit-board loading and unloading equipment",
       "equipment_type": "fbx_scene",
-      "glb_url": "/runtime-models/glb/fbx_1292a3bb.glb?v=20260803-baked-orientation-2",
+      "glb_url": "/runtime-models/glb/035-semiconductor-circuit-board-loading-and-unloading-equipment.glb?v=20260803-baked-orientation-2",
       "glb_bytes": 2892772,
       "source_obj_url": "/runtime-models/obj/c78de1ed_model/model.obj",
       "source_obj_bytes": 17876020,
@@ -532,10 +532,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_17fcd2ed",
-      "asset_name": "卧式铣床",
+      "asset_name": "Horizontal milling machine",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M059.glb",
-      "runtime_relative_path": "glb/calibrated/M059.glb",
+      "glb_url": "/runtime-models/glb/calibrated/059-horizontal-milling-machine.glb",
+      "runtime_relative_path": "glb/calibrated/059-horizontal-milling-machine.glb",
       "glb_bytes": 4550536,
       "bounds": [
         [
@@ -579,8 +579,8 @@
       "model_asset_id": "asset/fbx/fbx_1a80889c",
       "asset_name": "Tool cabinet",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M046.glb",
-      "runtime_relative_path": "glb/calibrated/M046.glb",
+      "glb_url": "/runtime-models/glb/calibrated/046-tool-cabinet.glb",
+      "runtime_relative_path": "glb/calibrated/046-tool-cabinet.glb",
       "glb_bytes": 51346724,
       "bounds": [
         [
@@ -624,8 +624,8 @@
       "model_asset_id": "asset/fbx/fbx_313d8039",
       "asset_name": "EDM drilling machine",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M051.glb",
-      "runtime_relative_path": "glb/calibrated/M051.glb",
+      "glb_url": "/runtime-models/glb/calibrated/051-edm-drilling-machine.glb",
+      "runtime_relative_path": "glb/calibrated/051-edm-drilling-machine.glb",
       "glb_bytes": 1976844,
       "bounds": [
         [
@@ -667,9 +667,9 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_37331baa",
-      "asset_name": "自动贴片成型总装",
+      "asset_name": "Automatic die-attach forming assembly",
       "equipment_type": "fbx_scene",
-      "glb_url": "/runtime-models/glb/fbx_37331baa.glb?v=20260803-baked-orientation-2",
+      "glb_url": "/runtime-models/glb/040-automatic-die-attach-forming-assembly.glb?v=20260803-baked-orientation-2",
       "glb_bytes": 9715692,
       "source_obj_url": "/runtime-models/obj/3d3ae8ad_model/model.obj",
       "source_obj_bytes": 66713981,
@@ -690,9 +690,9 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_37ff826e",
-      "asset_name": "半导体全自动编带机",
+      "asset_name": "Semiconductor automatic taping machine",
       "equipment_type": "fbx_scene",
-      "glb_url": "/runtime-models/glb/fbx_37ff826e.glb",
+      "glb_url": "/runtime-models/glb/028-semiconductor-automatic-taping-machine.glb",
       "glb_bytes": 10333188,
       "source_obj_url": "/runtime-models/obj/1b8d6dae_model/model.obj",
       "source_obj_bytes": 80188014,
@@ -713,10 +713,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_3b1181c9",
-      "asset_name": "龙门式数控切割机",
+      "asset_name": "Gantry CNC cutting machine",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M070.glb",
-      "runtime_relative_path": "glb/calibrated/M070.glb",
+      "glb_url": "/runtime-models/glb/calibrated/070-gantry-cnc-cutting-machine.glb",
+      "runtime_relative_path": "glb/calibrated/070-gantry-cnc-cutting-machine.glb",
       "glb_bytes": 62585956,
       "bounds": [
         [
@@ -758,9 +758,9 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_3c6fae07",
-      "asset_name": "扩张机",
+      "asset_name": "Expansion machine",
       "equipment_type": "fbx_scene",
-      "glb_url": "/runtime-models/glb/fbx_3c6fae07.glb",
+      "glb_url": "/runtime-models/glb/039-expansion-machine.glb",
       "glb_bytes": 594128,
       "source_obj_url": "/runtime-models/obj/5e09ec13_model/model.obj",
       "source_obj_bytes": 3203095,
@@ -781,9 +781,9 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_3ed136d0",
-      "asset_name": "四槽硅片清洗刻蚀机",
+      "asset_name": "Four-tank wafer cleaning and etching machine",
       "equipment_type": "fbx_scene",
-      "glb_url": "/runtime-models/glb/fbx_3ed136d0.glb",
+      "glb_url": "/runtime-models/glb/037-four-tank-wafer-cleaning-and-etching-machine.glb",
       "glb_bytes": 2286504,
       "source_obj_url": "/runtime-models/obj/9abd6fd7_model/model.obj",
       "source_obj_bytes": 14983181,
@@ -804,10 +804,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_465611ff",
-      "asset_name": "六轴CNC加工中心：塑料油瓶加工机",
+      "asset_name": "Six-axis CNC machining center for plastic oil-bottle machining",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M058.glb",
-      "runtime_relative_path": "glb/calibrated/M058.glb",
+      "glb_url": "/runtime-models/glb/calibrated/058-six-axis-cnc-machining-center-for-plastic-oil-bottle-machining.glb",
+      "runtime_relative_path": "glb/calibrated/058-six-axis-cnc-machining-center-for-plastic-oil-bottle-machining.glb",
       "glb_bytes": 111853928,
       "bounds": [
         [
@@ -849,10 +849,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_51f787e0",
-      "asset_name": "龙门铣床",
+      "asset_name": "Gantry milling machine",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M071.glb",
-      "runtime_relative_path": "glb/calibrated/M071.glb",
+      "glb_url": "/runtime-models/glb/calibrated/071-gantry-milling-machine.glb",
+      "runtime_relative_path": "glb/calibrated/071-gantry-milling-machine.glb",
       "glb_bytes": 19400740,
       "bounds": [
         [
@@ -894,10 +894,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_52f1abc3",
-      "asset_name": "哈斯数控加工中心",
+      "asset_name": "Haas CNC machining center",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M060.glb",
-      "runtime_relative_path": "glb/calibrated/M060.glb",
+      "glb_url": "/runtime-models/glb/calibrated/060-haas-cnc-machining-center.glb",
+      "runtime_relative_path": "glb/calibrated/060-haas-cnc-machining-center.glb",
       "glb_bytes": 873040,
       "bounds": [
         [
@@ -939,10 +939,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_6901bdd8",
-      "asset_name": "新型车铣复合加工中心",
+      "asset_name": "Turn-mill machining center",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M064.glb",
-      "runtime_relative_path": "glb/calibrated/M064.glb",
+      "glb_url": "/runtime-models/glb/calibrated/064-turn-mill-machining-center.glb",
+      "runtime_relative_path": "glb/calibrated/064-turn-mill-machining-center.glb",
       "glb_bytes": 71440168,
       "bounds": [
         [
@@ -984,9 +984,9 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_7716b9f7",
-      "asset_name": "夹具工作台",
+      "asset_name": "Fixture workbench",
       "equipment_type": "fbx_scene",
-      "glb_url": "/runtime-models/glb/fbx_7716b9f7.glb",
+      "glb_url": "/runtime-models/glb/044-fixture-workbench.glb",
       "glb_bytes": 3631472,
       "source_obj_url": "/runtime-models/obj/8a6e7899_model/model.obj",
       "source_obj_bytes": 5324126,
@@ -1007,10 +1007,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_8261b7e0",
-      "asset_name": "数控机床",
+      "asset_name": "Enclosed CNC machine",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M063.glb",
-      "runtime_relative_path": "glb/calibrated/M063.glb",
+      "glb_url": "/runtime-models/glb/calibrated/063-enclosed-cnc-machine.glb",
+      "runtime_relative_path": "glb/calibrated/063-enclosed-cnc-machine.glb",
       "glb_bytes": 8027892,
       "bounds": [
         [
@@ -1052,10 +1052,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_84d31057",
-      "asset_name": "CNC数控加工中心",
+      "asset_name": "CNC machining center",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M057.glb",
-      "runtime_relative_path": "glb/calibrated/M057.glb",
+      "glb_url": "/runtime-models/glb/calibrated/057-cnc-machining-center.glb",
+      "runtime_relative_path": "glb/calibrated/057-cnc-machining-center.glb",
       "glb_bytes": 3033632,
       "bounds": [
         [
@@ -1097,10 +1097,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_a3e1a9c2",
-      "asset_name": "摇臂钻床",
+      "asset_name": "Radial drilling machine",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M062.glb",
-      "runtime_relative_path": "glb/calibrated/M062.glb",
+      "glb_url": "/runtime-models/glb/calibrated/062-radial-drilling-machine.glb",
+      "runtime_relative_path": "glb/calibrated/062-radial-drilling-machine.glb",
       "glb_bytes": 2395264,
       "bounds": [
         [
@@ -1142,10 +1142,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_abd43f9f",
-      "asset_name": "立式加工中心GA-V918C",
+      "asset_name": "Vertical machining center GA-V918C",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M066.glb",
-      "runtime_relative_path": "glb/calibrated/M066.glb",
+      "glb_url": "/runtime-models/glb/calibrated/066-vertical-machining-center-ga-v918c.glb",
+      "runtime_relative_path": "glb/calibrated/066-vertical-machining-center-ga-v918c.glb",
       "glb_bytes": 112987904,
       "bounds": [
         [
@@ -1187,9 +1187,9 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_be827a77",
-      "asset_name": "单机柜",
+      "asset_name": "Single server cabinet",
       "equipment_type": "fbx_scene",
-      "glb_url": "/runtime-models/glb/fbx_be827a77.glb",
+      "glb_url": "/runtime-models/glb/056-single-server-cabinet.glb",
       "glb_bytes": 6612,
       "glb_sha256": "e36a6ff19f9c3efebf3f298de1d06d5902e5559cb4f99e2bdbbef286d2e3be88",
       "rendering_role": "project_low_poly_proxy",
@@ -1207,10 +1207,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_c6a19eec",
-      "asset_name": "微型加工中心",
+      "asset_name": "Micro machining center",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M061.glb",
-      "runtime_relative_path": "glb/calibrated/M061.glb",
+      "glb_url": "/runtime-models/glb/calibrated/061-micro-machining-center.glb",
+      "runtime_relative_path": "glb/calibrated/061-micro-machining-center.glb",
       "glb_bytes": 26589320,
       "bounds": [
         [
@@ -1252,10 +1252,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_d8f6cfdf",
-      "asset_name": "高速立式车铣加工中心",
+      "asset_name": "High-speed vertical turn-mill machining center",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M069.glb",
-      "runtime_relative_path": "glb/calibrated/M069.glb",
+      "glb_url": "/runtime-models/glb/calibrated/069-high-speed-vertical-turn-mill-machining-center.glb",
+      "runtime_relative_path": "glb/calibrated/069-high-speed-vertical-turn-mill-machining-center.glb",
       "glb_bytes": 79337648,
       "bounds": [
         [
@@ -1297,9 +1297,9 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_db886347",
-      "asset_name": "半导体器件移印包装机",
+      "asset_name": "Semiconductor component pad-printing and packaging machine",
       "equipment_type": "fbx_scene",
-      "glb_url": "/runtime-models/glb/fbx_db886347.glb?v=20260803-baked-orientation-2",
+      "glb_url": "/runtime-models/glb/030-semiconductor-component-pad-printing-and-packaging-machine.glb?v=20260803-baked-orientation-2",
       "glb_bytes": 13883088,
       "source_obj_url": "/runtime-models/obj/7c694520_model/model.obj",
       "source_obj_bytes": 100050753,
@@ -1320,10 +1320,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_f2db5dfe",
-      "asset_name": "立式四轴数控铣床",
+      "asset_name": "Vertical four-axis CNC milling machine",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M068.glb",
-      "runtime_relative_path": "glb/calibrated/M068.glb",
+      "glb_url": "/runtime-models/glb/calibrated/068-vertical-four-axis-cnc-milling-machine.glb",
+      "runtime_relative_path": "glb/calibrated/068-vertical-four-axis-cnc-milling-machine.glb",
       "glb_bytes": 37242976,
       "bounds": [
         [
@@ -1365,10 +1365,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_f4980f8b",
-      "asset_name": "立式加工中心光机模型",
+      "asset_name": "Bare vertical machining-center model",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M067.glb",
-      "runtime_relative_path": "glb/calibrated/M067.glb",
+      "glb_url": "/runtime-models/glb/calibrated/067-bare-vertical-machining-center-model.glb",
+      "runtime_relative_path": "glb/calibrated/067-bare-vertical-machining-center-model.glb",
       "glb_bytes": 1285972,
       "bounds": [
         [
@@ -1410,10 +1410,10 @@
     },
     {
       "model_asset_id": "asset/fbx/fbx_fb04a2ee",
-      "asset_name": "立式加工中心1100X900",
+      "asset_name": "Vertical machining center 1100 x 900",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M065.glb",
-      "runtime_relative_path": "glb/calibrated/M065.glb",
+      "glb_url": "/runtime-models/glb/calibrated/065-vertical-machining-center-1100-x-900.glb",
+      "runtime_relative_path": "glb/calibrated/065-vertical-machining-center-1100-x-900.glb",
       "glb_bytes": 15388368,
       "bounds": [
         [
@@ -1455,10 +1455,10 @@
     },
     {
       "model_asset_id": "asset/glb/m072_agv",
-      "asset_name": "AGV",
+      "asset_name": "Automated guided vehicle",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M072.glb",
-      "runtime_relative_path": "glb/calibrated/M072.glb",
+      "glb_url": "/runtime-models/glb/calibrated/072-automated-guided-vehicle.glb",
+      "runtime_relative_path": "glb/calibrated/072-automated-guided-vehicle.glb",
       "glb_bytes": 11033448,
       "bounds": [
         [
@@ -1496,14 +1496,14 @@
       },
       "compression": "not_applied_preparation",
       "source_kind": "reviewed_role_calibration",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M072.glb"
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/072-automated-guided-vehicle-source.glb"
     },
     {
       "model_asset_id": "asset/glb/m073_energy_monitoring_gateway",
-      "asset_name": "29-能耗监测网关",
+      "asset_name": "Energy monitoring gateway",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M073.glb",
-      "runtime_relative_path": "glb/source_raw/M073.glb",
+      "glb_url": "/runtime-models/glb/source_raw/073-energy-monitoring-gateway-source.glb",
+      "runtime_relative_path": "glb/source_raw/073-energy-monitoring-gateway-source.glb",
       "glb_bytes": 1140720,
       "source_relative": "电子装备/models/29-能耗监测网关.glb",
       "source_format": ".glb",
@@ -1519,10 +1519,10 @@
     },
     {
       "model_asset_id": "asset/glb/m074_communications_service_monitor",
-      "asset_name": "IRF2948B_communications_service_monitor",
+      "asset_name": "Communications service monitor",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M074.glb",
-      "runtime_relative_path": "glb/source_raw/M074.glb",
+      "glb_url": "/runtime-models/glb/source_raw/074-communications-service-monitor-source.glb",
+      "runtime_relative_path": "glb/source_raw/074-communications-service-monitor-source.glb",
       "glb_bytes": 1412732,
       "source_relative": "电子装备/models/IRF2948B_communications_service_monitor.glb",
       "source_format": ".glb",
@@ -1538,10 +1538,10 @@
     },
     {
       "model_asset_id": "asset/glb/m075_keyboard_video_mouse_switch",
-      "asset_name": "Keyboard-Video-Mouse Switch",
+      "asset_name": "Keyboard-video-mouse switch",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M075.glb",
-      "runtime_relative_path": "glb/source_raw/M075.glb",
+      "glb_url": "/runtime-models/glb/source_raw/075-keyboard-video-mouse-switch-source.glb",
+      "runtime_relative_path": "glb/source_raw/075-keyboard-video-mouse-switch-source.glb",
       "glb_bytes": 873336,
       "source_relative": "电子装备/models/Keyboard-Video-Mouse Switch.glb",
       "source_format": ".glb",
@@ -1557,10 +1557,10 @@
     },
     {
       "model_asset_id": "asset/glb/m076_uhf_tunable_filter",
-      "asset_name": "UHF电调滤波器",
+      "asset_name": "UHF tunable filter",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M076.glb",
-      "runtime_relative_path": "glb/source_raw/M076.glb",
+      "glb_url": "/runtime-models/glb/source_raw/076-uhf-tunable-filter-source.glb",
+      "runtime_relative_path": "glb/source_raw/076-uhf-tunable-filter-source.glb",
       "glb_bytes": 902396,
       "source_relative": "电子装备/models/UHF电调滤波器.glb",
       "source_format": ".glb",
@@ -1576,10 +1576,10 @@
     },
     {
       "model_asset_id": "asset/glb/m077_vhf_tunable_filter",
-      "asset_name": "VHF电调滤波器",
+      "asset_name": "VHF tunable filter",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M077.glb",
-      "runtime_relative_path": "glb/source_raw/M077.glb",
+      "glb_url": "/runtime-models/glb/source_raw/077-vhf-tunable-filter-source.glb",
+      "runtime_relative_path": "glb/source_raw/077-vhf-tunable-filter-source.glb",
       "glb_bytes": 902368,
       "source_relative": "电子装备/models/VHF电调滤波器.glb",
       "source_format": ".glb",
@@ -1595,10 +1595,10 @@
     },
     {
       "model_asset_id": "asset/glb/m078_tool_conveyor_line",
-      "asset_name": "tool_流水线",
+      "asset_name": "Tool conveyor-line component",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M078.glb",
-      "runtime_relative_path": "glb/source_raw/M078.glb",
+      "glb_url": "/runtime-models/glb/source_raw/078-tool-conveyor-line-component-source.glb",
+      "runtime_relative_path": "glb/source_raw/078-tool-conveyor-line-component-source.glb",
       "glb_bytes": 13680568,
       "source_relative": "电子装备/models/tool_流水线.glb",
       "source_format": ".glb",
@@ -1614,10 +1614,10 @@
     },
     {
       "model_asset_id": "asset/glb/m079_conveyor_2",
-      "asset_name": "Short conveyor",
+      "asset_name": "Conveyor 2",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M079.glb",
-      "runtime_relative_path": "glb/calibrated/M079.glb",
+      "glb_url": "/runtime-models/glb/calibrated/079-conveyor-2.glb",
+      "runtime_relative_path": "glb/calibrated/079-conveyor-2.glb",
       "glb_bytes": 7190076,
       "bounds": [
         [
@@ -1655,14 +1655,14 @@
       },
       "compression": "not_applied_preparation",
       "source_kind": "reviewed_role_calibration",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M079.glb"
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/079-conveyor-2-source.glb"
     },
     {
       "model_asset_id": "asset/glb/m080_floor_surface",
-      "asset_name": "地面",
+      "asset_name": "Floor surface",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M080.glb",
-      "runtime_relative_path": "glb/source_raw/M080.glb",
+      "glb_url": "/runtime-models/glb/source_raw/080-floor-surface-source.glb",
+      "runtime_relative_path": "glb/source_raw/080-floor-surface-source.glb",
       "glb_bytes": 416164,
       "source_relative": "电子装备/models/地面.glb",
       "source_format": ".glb",
@@ -1678,10 +1678,10 @@
     },
     {
       "model_asset_id": "asset/glb/m081_electronics_workshop_scene",
-      "asset_name": "场景一搭建工程",
+      "asset_name": "Electronics workshop scene",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M081.glb",
-      "runtime_relative_path": "glb/source_raw/M081.glb",
+      "glb_url": "/runtime-models/glb/source_raw/081-electronics-workshop-scene-source.glb",
+      "runtime_relative_path": "glb/source_raw/081-electronics-workshop-scene-source.glb",
       "glb_bytes": 324257484,
       "source_relative": "电子装备/models/场景一搭建工程.glb",
       "source_format": ".glb",
@@ -1697,10 +1697,10 @@
     },
     {
       "model_asset_id": "asset/glb/m082_large_temperature_chamber",
-      "asset_name": "大温箱",
+      "asset_name": "Large temperature chamber",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M082.glb",
-      "runtime_relative_path": "glb/source_raw/M082.glb",
+      "glb_url": "/runtime-models/glb/source_raw/082-large-temperature-chamber-source.glb",
+      "runtime_relative_path": "glb/source_raw/082-large-temperature-chamber-source.glb",
       "glb_bytes": 601780,
       "source_relative": "电子装备/models/大温箱.glb",
       "source_format": ".glb",
@@ -1716,10 +1716,10 @@
     },
     {
       "model_asset_id": "asset/glb/m083_worker_figure_1",
-      "asset_name": "工人1",
+      "asset_name": "Worker figure 1",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M083.glb",
-      "runtime_relative_path": "glb/source_raw/M083.glb",
+      "glb_url": "/runtime-models/glb/source_raw/083-worker-figure-1-source.glb",
+      "runtime_relative_path": "glb/source_raw/083-worker-figure-1-source.glb",
       "glb_bytes": 2375400,
       "source_relative": "电子装备/models/工人1.glb",
       "source_format": ".glb",
@@ -1735,10 +1735,10 @@
     },
     {
       "model_asset_id": "asset/glb/m084_worker_figure_2",
-      "asset_name": "工人2",
+      "asset_name": "Worker figure 2",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M084.glb",
-      "runtime_relative_path": "glb/source_raw/M084.glb",
+      "glb_url": "/runtime-models/glb/source_raw/084-worker-figure-2-source.glb",
+      "runtime_relative_path": "glb/source_raw/084-worker-figure-2-source.glb",
       "glb_bytes": 4839744,
       "source_relative": "电子装备/models/工人2.glb",
       "source_format": ".glb",
@@ -1754,10 +1754,10 @@
     },
     {
       "model_asset_id": "asset/glb/m085_temporary_storage_visual_scene",
-      "asset_name": "暂存架",
+      "asset_name": "Temporary-storage visual scene",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M085.glb",
-      "runtime_relative_path": "glb/source_raw/M085.glb",
+      "glb_url": "/runtime-models/glb/source_raw/085-temporary-storage-visual-scene-source.glb",
+      "runtime_relative_path": "glb/source_raw/085-temporary-storage-visual-scene-source.glb",
       "glb_bytes": 88863896,
       "source_relative": "电子装备/models/暂存架.glb",
       "source_format": ".glb",
@@ -1775,8 +1775,8 @@
       "model_asset_id": "asset/glb/m086_flexible_test_workstation",
       "asset_name": "Flexible test workstation",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M086.glb",
-      "runtime_relative_path": "glb/calibrated/M086.glb",
+      "glb_url": "/runtime-models/glb/calibrated/086-flexible-test-workstation.glb",
+      "runtime_relative_path": "glb/calibrated/086-flexible-test-workstation.glb",
       "glb_bytes": 26219004,
       "bounds": [
         [
@@ -1814,14 +1814,14 @@
       },
       "compression": "not_applied_preparation",
       "source_kind": "reviewed_role_calibration",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M086.glb"
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/086-flexible-test-workstation-source.glb"
     },
     {
       "model_asset_id": "asset/glb/m087_table",
-      "asset_name": "桌子",
+      "asset_name": "Table",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M087.glb",
-      "runtime_relative_path": "glb/source_raw/M087.glb",
+      "glb_url": "/runtime-models/glb/source_raw/087-table-source.glb",
+      "runtime_relative_path": "glb/source_raw/087-table-source.glb",
       "glb_bytes": 184864,
       "source_relative": "电子装备/models/桌子.glb",
       "source_format": ".glb",
@@ -1837,10 +1837,10 @@
     },
     {
       "model_asset_id": "asset/glb/m088_small_temperature_chamber",
-      "asset_name": "Temperature chamber",
+      "asset_name": "Small temperature chamber",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M088.glb",
-      "runtime_relative_path": "glb/calibrated/M088.glb",
+      "glb_url": "/runtime-models/glb/calibrated/088-small-temperature-chamber.glb",
+      "runtime_relative_path": "glb/calibrated/088-small-temperature-chamber.glb",
       "glb_bytes": 706208,
       "bounds": [
         [
@@ -1878,14 +1878,14 @@
       },
       "compression": "not_applied_preparation",
       "source_kind": "reviewed_role_calibration",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M088.glb"
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/088-small-temperature-chamber-source.glb"
     },
     {
       "model_asset_id": "asset/glb/m089_laser_marking_station",
       "asset_name": "Laser marking station",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M089.glb",
-      "runtime_relative_path": "glb/calibrated/M089.glb",
+      "glb_url": "/runtime-models/glb/calibrated/089-laser-marking-station.glb",
+      "runtime_relative_path": "glb/calibrated/089-laser-marking-station.glb",
       "glb_bytes": 590156,
       "bounds": [
         [
@@ -1923,14 +1923,14 @@
       },
       "compression": "not_applied_preparation",
       "source_kind": "reviewed_role_calibration",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M089.glb"
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/089-laser-marking-station-source.glb"
     },
     {
       "model_asset_id": "asset/glb/m090_material_model",
-      "asset_name": "物料",
+      "asset_name": "Material model",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M090.glb",
-      "runtime_relative_path": "glb/source_raw/M090.glb",
+      "glb_url": "/runtime-models/glb/source_raw/090-material-model-source.glb",
+      "runtime_relative_path": "glb/source_raw/090-material-model-source.glb",
       "glb_bytes": 12675928,
       "source_relative": "电子装备/models/物料.glb",
       "source_format": ".glb",
@@ -1946,10 +1946,10 @@
     },
     {
       "model_asset_id": "asset/glb/m091_belt_conveyor",
-      "asset_name": "皮带线",
+      "asset_name": "Belt conveyor",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M091.glb",
-      "runtime_relative_path": "glb/source_raw/M091.glb",
+      "glb_url": "/runtime-models/glb/source_raw/091-belt-conveyor-source.glb",
+      "runtime_relative_path": "glb/source_raw/091-belt-conveyor-source.glb",
       "glb_bytes": 6494012,
       "source_relative": "电子装备/models/皮带线.glb",
       "source_format": ".glb",
@@ -1967,8 +1967,8 @@
       "model_asset_id": "asset/glb/m092_line_side_storage_unit",
       "asset_name": "Line-side storage unit",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M092.glb",
-      "runtime_relative_path": "glb/calibrated/M092.glb",
+      "glb_url": "/runtime-models/glb/calibrated/092-line-side-storage-unit.glb",
+      "runtime_relative_path": "glb/calibrated/092-line-side-storage-unit.glb",
       "glb_bytes": 46394772,
       "bounds": [
         [
@@ -2006,14 +2006,14 @@
       },
       "compression": "not_applied_preparation",
       "source_kind": "reviewed_role_calibration",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M092.glb"
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/092-line-side-storage-unit-source.glb"
     },
     {
       "model_asset_id": "asset/glb/m093_fixture_workstation",
-      "asset_name": "Fixture and integration workstation",
+      "asset_name": "Fixture workstation",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M093.glb",
-      "runtime_relative_path": "glb/calibrated/M093.glb",
+      "glb_url": "/runtime-models/glb/calibrated/093-fixture-workstation.glb",
+      "runtime_relative_path": "glb/calibrated/093-fixture-workstation.glb",
       "glb_bytes": 25466212,
       "bounds": [
         [
@@ -2051,14 +2051,14 @@
       },
       "compression": "not_applied_preparation",
       "source_kind": "reviewed_role_calibration",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M093.glb"
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/093-fixture-workstation-source.glb"
     },
     {
       "model_asset_id": "asset/glb/m094_touchscreen",
-      "asset_name": "触摸屏",
+      "asset_name": "Touchscreen",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M094.glb",
-      "runtime_relative_path": "glb/source_raw/M094.glb",
+      "glb_url": "/runtime-models/glb/source_raw/094-touchscreen-source.glb",
+      "runtime_relative_path": "glb/source_raw/094-touchscreen-source.glb",
       "glb_bytes": 94228,
       "source_relative": "电子装备/models/触摸屏.glb",
       "source_format": ".glb",
@@ -2074,10 +2074,10 @@
     },
     {
       "model_asset_id": "asset/glb/m095_unspecified_equipment",
-      "asset_name": "设备1",
+      "asset_name": "Unspecified equipment model",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M095.glb",
-      "runtime_relative_path": "glb/source_raw/M095.glb",
+      "glb_url": "/runtime-models/glb/source_raw/095-unspecified-equipment-model-source.glb",
+      "runtime_relative_path": "glb/source_raw/095-unspecified-equipment-model-source.glb",
       "glb_bytes": 180115184,
       "source_relative": "电子装备/models/设备1.glb",
       "source_format": ".glb",
@@ -2093,10 +2093,10 @@
     },
     {
       "model_asset_id": "asset/glb/m096_multi_object_rack_scene",
-      "asset_name": "货架",
+      "asset_name": "Multi-object rack scene",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M096.glb",
-      "runtime_relative_path": "glb/source_raw/M096.glb",
+      "glb_url": "/runtime-models/glb/source_raw/096-multi-object-rack-scene-source.glb",
+      "runtime_relative_path": "glb/source_raw/096-multi-object-rack-scene-source.glb",
       "glb_bytes": 73684100,
       "source_relative": "电子装备/models/货架.glb",
       "source_format": ".glb",
@@ -2112,10 +2112,10 @@
     },
     {
       "model_asset_id": "asset/glb/m097_ultrasonic_welding_machine",
-      "asset_name": "超声波焊接机",
+      "asset_name": "Ultrasonic welding machine",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M097.glb",
-      "runtime_relative_path": "glb/source_raw/M097.glb",
+      "glb_url": "/runtime-models/glb/source_raw/097-ultrasonic-welding-machine-source.glb",
+      "runtime_relative_path": "glb/source_raw/097-ultrasonic-welding-machine-source.glb",
       "glb_bytes": 6825728,
       "source_relative": "电子装备/models/超声波焊接机.glb",
       "source_format": ".glb",
@@ -2131,10 +2131,10 @@
     },
     {
       "model_asset_id": "asset/glb/m098_conveyor_line",
-      "asset_name": "Conveyor line (输送线)",
+      "asset_name": "Conveyor line",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M098.glb",
-      "runtime_relative_path": "glb/source_raw/M098.glb",
+      "glb_url": "/runtime-models/glb/calibrated/098-conveyor-line.glb",
+      "runtime_relative_path": "glb/source_raw/098-conveyor-line-source.glb",
       "glb_bytes": 30387908,
       "source_relative": "电子装备/models/输送线.glb",
       "source_format": ".glb",
@@ -2169,10 +2169,10 @@
     },
     {
       "model_asset_id": "asset/glb/m099_conveyor_line_2",
-      "asset_name": "输送线2",
+      "asset_name": "Conveyor line 2",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M099.glb",
-      "runtime_relative_path": "glb/source_raw/M099.glb",
+      "glb_url": "/runtime-models/glb/source_raw/099-conveyor-line-2-source.glb",
+      "runtime_relative_path": "glb/source_raw/099-conveyor-line-2-source.glb",
       "glb_bytes": 15419616,
       "source_relative": "电子装备/models/输送线2.glb",
       "source_format": ".glb",
@@ -2188,10 +2188,10 @@
     },
     {
       "model_asset_id": "asset/glb/m100_conveyor_line_3",
-      "asset_name": "输送线3",
+      "asset_name": "Conveyor line 3",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M100.glb",
-      "runtime_relative_path": "glb/source_raw/M100.glb",
+      "glb_url": "/runtime-models/glb/source_raw/100-conveyor-line-3-source.glb",
+      "runtime_relative_path": "glb/source_raw/100-conveyor-line-3-source.glb",
       "glb_bytes": 413884492,
       "source_relative": "电子装备/models/输送线3.glb",
       "source_format": ".glb",
@@ -2207,10 +2207,10 @@
     },
     {
       "model_asset_id": "asset/glb/m101_aluminum_profile_support",
-      "asset_name": "铝型材支架",
+      "asset_name": "Aluminum-profile support",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M101.glb",
-      "runtime_relative_path": "glb/source_raw/M101.glb",
+      "glb_url": "/runtime-models/glb/source_raw/101-aluminum-profile-support-source.glb",
+      "runtime_relative_path": "glb/source_raw/101-aluminum-profile-support-source.glb",
       "glb_bytes": 5143100,
       "source_relative": "电子装备/models/铝型材支架.glb",
       "source_format": ".glb",
@@ -2226,10 +2226,10 @@
     },
     {
       "model_asset_id": "asset/stl/m102_worktable_child",
-      "asset_name": "工作台子",
+      "asset_name": "Worktable subunit",
       "equipment_type": "source_geometry_candidate",
-      "glb_url": "/runtime-models/glb/source_raw/M102.glb",
-      "runtime_relative_path": "glb/source_raw/M102.glb",
+      "glb_url": "/runtime-models/glb/source_raw/102-worktable-subunit-source.glb",
+      "runtime_relative_path": "glb/source_raw/102-worktable-subunit-source.glb",
       "glb_bytes": 1172348,
       "source_relative": "电子装备/工作台/工作台子.STL",
       "source_format": ".stl",
@@ -2247,8 +2247,8 @@
       "model_asset_id": "asset/stl/m103_work_table",
       "asset_name": "Work table",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M103.glb",
-      "runtime_relative_path": "glb/calibrated/M103.glb",
+      "glb_url": "/runtime-models/glb/calibrated/103-work-table.glb",
+      "runtime_relative_path": "glb/calibrated/103-work-table.glb",
       "glb_bytes": 246740,
       "bounds": [
         [
@@ -2286,14 +2286,14 @@
       },
       "compression": "not_applied_preparation",
       "source_kind": "reviewed_role_calibration",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M103.glb"
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/103-work-table-source.glb"
     },
     {
       "model_asset_id": "asset/stl/m104_storage_rack",
       "asset_name": "Storage rack",
       "equipment_type": "case_calibrated_candidate",
-      "glb_url": "/runtime-models/glb/calibrated/M104.glb",
-      "runtime_relative_path": "glb/calibrated/M104.glb",
+      "glb_url": "/runtime-models/glb/calibrated/104-storage-rack.glb",
+      "runtime_relative_path": "glb/calibrated/104-storage-rack.glb",
       "glb_bytes": 3019200,
       "bounds": [
         [
@@ -2331,7 +2331,782 @@
       },
       "compression": "not_applied_preparation",
       "source_kind": "reviewed_role_calibration",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M104.glb"
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/104-storage-rack-source.glb"
+    },
+    {
+      "model_asset_id": "asset/fbx/industrial_kitbash",
+      "asset_name": "Industrial kitbash scene",
+      "equipment_type": "industrial_kitbash_scene",
+      "glb_url": "/runtime-models/glb/023-industrial-kitbash-scene.glb",
+      "runtime_relative_path": "glb/023-industrial-kitbash-scene.glb",
+      "glb_bytes": 57524196,
+      "bounds": [
+        [
+          -72.50240727621748,
+          -0.22980455307133862,
+          -66.78390002012044
+        ],
+        [
+          109.342693919906,
+          12.744390123630376,
+          14.605033154605747
+        ]
+      ],
+      "triangles": 1529996,
+      "vertices": 1456232,
+      "mesh_count": 688,
+      "image_count": 0,
+      "source_native_file": "models/source-models/023-industrial-kitbash-scene.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/h5",
+      "asset_name": "H5 chain automatic assembly line",
+      "equipment_type": "h5_chain_automatic_assembly_line",
+      "glb_url": "/runtime-models/glb/025-h5-chain-automatic-assembly-line.glb",
+      "runtime_relative_path": "glb/025-h5-chain-automatic-assembly-line.glb",
+      "glb_bytes": 19765320,
+      "bounds": [
+        [
+          114.89334869384766,
+          -9.998135467207108e-05,
+          -768.664774737077
+        ],
+        [
+          911.4826049804688,
+          999.9998930532793,
+          -6.434341081133743
+        ]
+      ],
+      "triangles": 330030,
+      "vertices": 658500,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/025-h5-chain-automatic-assembly-line.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/mixmaster",
+      "asset_name": "Mixmaster model",
+      "equipment_type": "mixmaster_model",
+      "glb_url": "/runtime-models/glb/026-mixmaster-model.glb",
+      "runtime_relative_path": "glb/026-mixmaster-model.glb",
+      "glb_bytes": 229423184,
+      "bounds": [
+        [
+          -0.2046937449583227,
+          -0.0011080151052221493,
+          -0.08272027907598994
+        ],
+        [
+          0.20639366306532436,
+          0.28999201664133517,
+          0.12559998509551637
+        ]
+      ],
+      "triangles": 5522715,
+      "vertices": 5107768,
+      "mesh_count": 10,
+      "image_count": 0,
+      "source_native_file": "models/source-models/026-mixmaster-model.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/smd",
+      "asset_name": "SMD component test-and-sorting machine",
+      "equipment_type": "smd_component_test_sorting_machine",
+      "glb_url": "/runtime-models/glb/027-smd-component-test-and-sorting-machine.glb",
+      "runtime_relative_path": "glb/027-smd-component-test-and-sorting-machine.glb",
+      "glb_bytes": 155280500,
+      "bounds": [
+        [
+          773.4354248046875,
+          3.07893355761691,
+          -823.342445779916
+        ],
+        [
+          1438.4354248046875,
+          996.4206160609428,
+          -5.36973344469716
+        ]
+      ],
+      "triangles": 2570864,
+      "vertices": 5184547,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/027-smd-component-test-and-sorting-machine.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_b90dd1f1",
+      "asset_name": "Semiconductor cooling and thermal platform",
+      "equipment_type": "semiconductor_thermal_platform",
+      "glb_url": "/runtime-models/glb/029-semiconductor-cooling-and-thermal-platform.glb",
+      "runtime_relative_path": "glb/029-semiconductor-cooling-and-thermal-platform.glb",
+      "glb_bytes": 7984840,
+      "bounds": [
+        [
+          2.803431987762451,
+          0.7999967634073203,
+          -318.34758688913377
+        ],
+        [
+          558.1455078125,
+          165.80000052862178,
+          -0.0125502366081641
+        ]
+      ],
+      "triangles": 144583,
+      "vertices": 260369,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/029-semiconductor-cooling-and-thermal-platform.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_f179523c",
+      "asset_name": "Semiconductor heat-sink fastening machine",
+      "equipment_type": "semiconductor_heat_sink_fastening_machine",
+      "glb_url": "/runtime-models/glb/031-semiconductor-heat-sink-fastening-machine.glb",
+      "runtime_relative_path": "glb/031-semiconductor-heat-sink-fastening-machine.glb",
+      "glb_bytes": 124556788,
+      "bounds": [
+        [
+          50.669376373291016,
+          128.2682807997832,
+          -1737.1628268977565
+        ],
+        [
+          1559.254150390625,
+          1029.3121160693574,
+          -6.762799548477845
+        ]
+      ],
+      "triangles": 2324552,
+      "vertices": 4027548,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/031-semiconductor-heat-sink-fastening-machine.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_8811b0b9",
+      "asset_name": "Semiconductor wafer automatic labeling machine",
+      "equipment_type": "semiconductor_wafer_labeling_machine",
+      "glb_url": "/runtime-models/glb/032-semiconductor-wafer-automatic-labeling-machine.glb",
+      "runtime_relative_path": "glb/032-semiconductor-wafer-automatic-labeling-machine.glb",
+      "glb_bytes": 49953024,
+      "bounds": [
+        [
+          6.774234294891357,
+          8.08970652228165,
+          -1777.165301585088
+        ],
+        [
+          1514.7742919921875,
+          912.0869113598816,
+          -8.165216128856118
+        ]
+      ],
+      "triangles": 908144,
+      "vertices": 1627262,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/032-semiconductor-wafer-automatic-labeling-machine.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_f60888d2",
+      "asset_name": "Semiconductor inspection equipment",
+      "equipment_type": "semiconductor_inspection_equipment",
+      "glb_url": "/runtime-models/glb/033-semiconductor-inspection-equipment.glb",
+      "runtime_relative_path": "glb/033-semiconductor-inspection-equipment.glb",
+      "glb_bytes": 51204888,
+      "bounds": [
+        [
+          8.336275100708008,
+          6.331919687499605,
+          -2388.1436341166223
+        ],
+        [
+          1240.5865478515625,
+          1339.5319258646662,
+          -17.723333866266834
+        ]
+      ],
+      "triangles": 980899,
+      "vertices": 1643047,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/033-semiconductor-inspection-equipment.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_7e78658f",
+      "asset_name": "Semiconductor integrated inspection, coding, taping, and sorting machine",
+      "equipment_type": "semiconductor_integrated_inspection_coding_taping_sorting_machine",
+      "glb_url": "/runtime-models/glb/034-semiconductor-integrated-inspection-coding-taping-and-sorting-machine.glb",
+      "runtime_relative_path": "glb/034-semiconductor-integrated-inspection-coding-taping-and-sorting-machine.glb",
+      "glb_bytes": 581246420,
+      "bounds": [
+        [
+          11.059537887573242,
+          6.616155525907815,
+          -1563.7527111728514
+        ],
+        [
+          1891.0595703125,
+          1944.6225959451644,
+          -8.75254391998114
+        ]
+      ],
+      "triangles": 9860019,
+      "vertices": 19288544,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/034-semiconductor-integrated-inspection-coding-taping-and-sorting-machine.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_cd880c0d",
+      "asset_name": "Semiconductor integrated-equipment model",
+      "equipment_type": "semiconductor_integrated_equipment_model",
+      "glb_url": "/runtime-models/glb/036-semiconductor-integrated-equipment-model.glb",
+      "runtime_relative_path": "glb/036-semiconductor-integrated-equipment-model.glb",
+      "glb_bytes": 146196720,
+      "bounds": [
+        [
+          9.268428802490234,
+          321.43267210730085,
+          -4803.329366120173
+        ],
+        [
+          2734.394287109375,
+          2826.849461015705,
+          -40.0979374998933
+        ]
+      ],
+      "triangles": 2535944,
+      "vertices": 4823516,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/036-semiconductor-integrated-equipment-model.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_097ef6b2",
+      "asset_name": "Disc vacuum packaging machine",
+      "equipment_type": "disc_vacuum_packaging_machine",
+      "glb_url": "/runtime-models/glb/038-disc-vacuum-packaging-machine.glb",
+      "runtime_relative_path": "glb/038-disc-vacuum-packaging-machine.glb",
+      "glb_bytes": 278535180,
+      "bounds": [
+        [
+          18.056550979614258,
+          1083.259569835959,
+          -1697.2942711256405
+        ],
+        [
+          3613.233154296875,
+          3147.393847179709,
+          -5.994267121751105
+        ]
+      ],
+      "triangles": 4974639,
+      "vertices": 9118272,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/038-disc-vacuum-packaging-machine.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/max/industrial_factory_showroom_machine_015",
+      "asset_name": "Industrial factory showroom scene 015",
+      "equipment_type": "industrial_factory_showroom_scene",
+      "glb_url": "/runtime-models/glb/041-industrial-factory-showroom-scene-015.glb",
+      "runtime_relative_path": "glb/041-industrial-factory-showroom-scene-015.glb",
+      "glb_bytes": 449712564,
+      "bounds": [
+        [
+          -22.110163408631102,
+          -0.8074635759268544,
+          -6.916012483948531
+        ],
+        [
+          31.70487949980037,
+          4.346619236088789,
+          7.720673757905388
+        ]
+      ],
+      "triangles": 14882406,
+      "vertices": 12820924,
+      "mesh_count": 4967,
+      "image_count": 0,
+      "source_native_file": "models/source-models/041-industrial-factory-showroom-scene-015.fbx",
+      "source_format": "fbx",
+      "source_unit": "unknown",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_9707ae30",
+      "asset_name": "Four-column hydraulic press",
+      "equipment_type": "four_column_hydraulic_press",
+      "glb_url": "/runtime-models/glb/043-four-column-hydraulic-press.glb",
+      "runtime_relative_path": "glb/043-four-column-hydraulic-press.glb",
+      "glb_bytes": 2692948,
+      "bounds": [
+        [
+          13.98536205291748,
+          -1.9437937353272526e-06,
+          12.67109719531248
+        ],
+        [
+          27.590009689331055,
+          20.854283275591772,
+          22.020571179647323
+        ]
+      ],
+      "triangles": 61588,
+      "vertices": 81372,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/043-four-column-hydraulic-press.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_9dca0e84",
+      "asset_name": "Installation platform",
+      "equipment_type": "installation_platform",
+      "glb_url": "/runtime-models/glb/045-installation-platform.glb",
+      "runtime_relative_path": "glb/045-installation-platform.glb",
+      "glb_bytes": 43004,
+      "bounds": [
+        [
+          -89.72452545166016,
+          -1.321594711362953,
+          155.87545700146714
+        ],
+        [
+          -69.72453308105469,
+          6.647123228230698,
+          175.87545797899088
+        ]
+      ],
+      "triangles": 968,
+      "vertices": 1512,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/045-installation-platform.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_88e820ac",
+      "asset_name": "Robot linear-slide workstation",
+      "equipment_type": "robot_linear_slide_workstation",
+      "glb_url": "/runtime-models/glb/047-robot-linear-slide-workstation.glb",
+      "runtime_relative_path": "glb/047-robot-linear-slide-workstation.glb",
+      "glb_bytes": 5303716,
+      "bounds": [
+        [
+          -47.12351989746094,
+          -0.008046177293272588,
+          55.42450260535517
+        ],
+        [
+          26.52113151550293,
+          30.318889335012933,
+          88.76635742186902
+        ]
+      ],
+      "triangles": 102021,
+      "vertices": 169936,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/047-robot-linear-slide-workstation.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_ebfc71a6",
+      "asset_name": "Equipment enclosure",
+      "equipment_type": "equipment_enclosure",
+      "glb_url": "/runtime-models/glb/048-equipment-enclosure.glb",
+      "runtime_relative_path": "glb/048-equipment-enclosure.glb",
+      "glb_bytes": 135252,
+      "bounds": [
+        [
+          37.0463752746582,
+          0.03849107617547454,
+          12.892206588535636
+        ],
+        [
+          45.69837951660156,
+          15.129659037932429,
+          20.93643646562663
+        ]
+      ],
+      "triangles": 2958,
+      "vertices": 4859,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/048-equipment-enclosure.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_177626cb",
+      "asset_name": "Hydraulic power unit",
+      "equipment_type": "hydraulic_power_unit",
+      "glb_url": "/runtime-models/glb/049-hydraulic-power-unit.glb",
+      "runtime_relative_path": "glb/049-hydraulic-power-unit.glb",
+      "glb_bytes": 20561636,
+      "bounds": [
+        [
+          -41.47541427612305,
+          1.2845420396488951,
+          159.77198727668426
+        ],
+        [
+          -22.833812713623047,
+          16.743446721678442,
+          173.0544888059448
+        ]
+      ],
+      "triangles": 374188,
+      "vertices": 669601,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/049-hydraulic-power-unit.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_c87c6aaa",
+      "asset_name": "EDM forming machine",
+      "equipment_type": "edm_forming_machine",
+      "glb_url": "/runtime-models/glb/050-edm-forming-machine.glb",
+      "runtime_relative_path": "glb/050-edm-forming-machine.glb",
+      "glb_bytes": 11160252,
+      "bounds": [
+        [
+          -72.07769012451172,
+          -0.08465181531674104,
+          12.299427567544065
+        ],
+        [
+          -43.170780181884766,
+          22.631056682010488,
+          23.075168518887857
+        ]
+      ],
+      "triangles": 201099,
+      "vertices": 364421,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/050-edm-forming-machine.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_8251e44c",
+      "asset_name": "Pipe cutting and beveling machine",
+      "equipment_type": "pipe_cutting_beveling_machine",
+      "glb_url": "/runtime-models/glb/052-pipe-cutting-and-beveling-machine.glb",
+      "runtime_relative_path": "glb/052-pipe-cutting-and-beveling-machine.glb",
+      "glb_bytes": 14533660,
+      "bounds": [
+        [
+          29.776342391967773,
+          4.461911944242954,
+          160.65254110750536
+        ],
+        [
+          55.53904342651367,
+          17.336594337719525,
+          174.06676992211064
+        ]
+      ],
+      "triangles": 238244,
+      "vertices": 486407,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/052-pipe-cutting-and-beveling-machine.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_4d43d987",
+      "asset_name": "Rolling machine",
+      "equipment_type": "rolling_machine",
+      "glb_url": "/runtime-models/glb/053-rolling-machine.glb",
+      "runtime_relative_path": "glb/053-rolling-machine.glb",
+      "glb_bytes": 12470156,
+      "bounds": [
+        [
+          -134.33033752441406,
+          -0.025271268780217356,
+          8.882105355487901
+        ],
+        [
+          -120.87635803222656,
+          21.47094271072141,
+          31.02670211320073
+        ]
+      ],
+      "triangles": 221937,
+      "vertices": 408583,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/053-rolling-machine.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_c36a1e83",
+      "asset_name": "Conical hopper",
+      "equipment_type": "conical_hopper",
+      "glb_url": "/runtime-models/glb/054-conical-hopper.glb",
+      "runtime_relative_path": "glb/054-conical-hopper.glb",
+      "glb_bytes": 2160420,
+      "bounds": [
+        [
+          -174.34716796875,
+          -0.01454336965566457,
+          8.843945238227386
+        ],
+        [
+          -159.37985229492188,
+          19.884738916865,
+          23.811247797706287
+        ]
+      ],
+      "triangles": 46034,
+      "vertices": 66962,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/054-conical-hopper.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/pcb_placing_machine_assembly",
+      "asset_name": "PCB placing-machine assembly scene",
+      "equipment_type": "pcb_placing_machine_assembly_scene",
+      "glb_url": "/runtime-models/glb/106-pcb-placing-machine-assembly-scene.glb",
+      "runtime_relative_path": "glb/106-pcb-placing-machine-assembly-scene.glb",
+      "glb_bytes": 384323816,
+      "bounds": [
+        [
+          0.1052547717410004,
+          0.05688804403609318,
+          0.24794297843698845
+        ],
+        [
+          12.459489467602452,
+          22.48188725697229,
+          44.582425084147786
+        ]
+      ],
+      "triangles": 6730703,
+      "vertices": 12648096,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/106-pcb-placing-machine-assembly-scene.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/stl/asm1",
+      "asset_name": "Assembly model ASM1",
+      "equipment_type": "rotary_assembly_line",
+      "glb_url": "/runtime-models/glb/107-assembly-model-asm1.glb",
+      "runtime_relative_path": "glb/107-assembly-model-asm1.glb",
+      "glb_bytes": 95533468,
+      "bounds": [
+        [
+          0.4666455299769723,
+          0.029051200339208494,
+          -1.9457317818704212
+        ],
+        [
+          8.340014068004393,
+          7.029410001847793,
+          -0.004406432837925911
+        ]
+      ],
+      "triangles": 1264977,
+      "vertices": 3348031,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/107-assembly-model-asm1.stl",
+      "source_format": "stl",
+      "source_unit": "mm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_a71ceea9",
+      "asset_name": "Rotary assembly line",
+      "equipment_type": "rotary_assembly_line",
+      "glb_url": "/runtime-models/glb/108-rotary-assembly-line.glb",
+      "runtime_relative_path": "glb/108-rotary-assembly-line.glb",
+      "glb_bytes": 70294216,
+      "bounds": [
+        [
+          4.666454973821601,
+          0.044068758715219765,
+          0.29051195823215953
+        ],
+        [
+          83.40013485461168,
+          19.457318638911826,
+          70.29409434050103
+        ]
+      ],
+      "triangles": 1264977,
+      "vertices": 2296395,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/108-rotary-assembly-line.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
+    },
+    {
+      "model_asset_id": "asset/fbx/fbx_08edb467",
+      "asset_name": "Steel-platform production-line layout scene",
+      "equipment_type": "steel_platform_production_line_layout_scene",
+      "glb_url": "/runtime-models/glb/110-steel-platform-production-line-layout-scene.glb",
+      "runtime_relative_path": "glb/110-steel-platform-production-line-layout-scene.glb",
+      "glb_bytes": 364404020,
+      "bounds": [
+        [
+          8.400162696838379,
+          1214.474282401839,
+          -8230.734174015704
+        ],
+        [
+          9188.400390625,
+          4793.962247822732,
+          -47.23445769523669
+        ]
+      ],
+      "triangles": 6425477,
+      "vertices": 11970720,
+      "mesh_count": 1,
+      "image_count": 0,
+      "source_native_file": "models/source-models/110-steel-platform-production-line-layout-scene.fbx",
+      "source_format": "fbx",
+      "source_unit": "cm",
+      "rendering_role": "original_source_geometry",
+      "coordinate_normalization": "Blender import of native axes and declared units; glTF Y-up export",
+      "geometry_status": "source_geometry_preserved",
+      "dimension_claim_scope": "Source geometry export; existing planning annotations retained."
     }
   ],
   "failures": [],

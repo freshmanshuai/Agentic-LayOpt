@@ -4,7 +4,7 @@
       "audit_id": "M046",
       "model_asset_id": "asset/fbx/fbx_1a80889c",
       "source_relative": "工厂工业设备/工具柜.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M046.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/046-tool-cabinet.glb",
       "raw_source_glb_url": null,
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
@@ -13,7 +13,7 @@
       "audit_id": "M051",
       "model_asset_id": "asset/fbx/fbx_313d8039",
       "source_relative": "工厂工业设备/电火花穿孔机.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M051.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/051-edm-drilling-machine.glb",
       "raw_source_glb_url": null,
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
@@ -22,7 +22,7 @@
       "audit_id": "M057",
       "model_asset_id": "asset/fbx/fbx_84d31057",
       "source_relative": "机床设备/CNC数控加工中心.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M057.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/057-cnc-machining-center.glb",
       "raw_source_glb_url": null,
       "geometry_status": "case_calibration_using_approved_batch_scale",
       "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion"
@@ -31,7 +31,7 @@
       "audit_id": "M058",
       "model_asset_id": "asset/fbx/fbx_465611ff",
       "source_relative": "机床设备/六轴CNC加工中心：塑料油瓶加工机.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M058.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/058-six-axis-cnc-machining-center-for-plastic-oil-bottle-machining.glb",
       "raw_source_glb_url": null,
       "geometry_status": "case_calibration_using_approved_batch_scale",
       "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion"
@@ -40,7 +40,7 @@
       "audit_id": "M059",
       "model_asset_id": "asset/fbx/fbx_17fcd2ed",
       "source_relative": "机床设备/卧式铣床.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M059.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/059-horizontal-milling-machine.glb",
       "raw_source_glb_url": null,
       "geometry_status": "case_calibration_using_approved_batch_scale",
       "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion"
@@ -49,7 +49,7 @@
       "audit_id": "M060",
       "model_asset_id": "asset/fbx/fbx_52f1abc3",
       "source_relative": "机床设备/哈斯数控加工中心.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M060.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/060-haas-cnc-machining-center.glb",
       "raw_source_glb_url": null,
       "geometry_status": "case_calibration_using_approved_batch_scale",
       "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion"
@@ -58,7 +58,7 @@
       "audit_id": "M061",
       "model_asset_id": "asset/fbx/fbx_c6a19eec",
       "source_relative": "机床设备/微型加工中心.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M061.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/061-micro-machining-center.glb",
       "raw_source_glb_url": null,
       "geometry_status": "case_calibration_using_approved_batch_scale",
       "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion"
@@ -67,7 +67,7 @@
       "audit_id": "M062",
       "model_asset_id": "asset/fbx/fbx_a3e1a9c2",
       "source_relative": "机床设备/摇臂钻床.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M062.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/062-radial-drilling-machine.glb",
       "raw_source_glb_url": null,
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
@@ -76,7 +76,7 @@
       "audit_id": "M063",
       "model_asset_id": "asset/fbx/fbx_8261b7e0",
       "source_relative": "机床设备/数控机床.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M063.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/063-enclosed-cnc-machine.glb",
       "raw_source_glb_url": null,
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
@@ -85,7 +85,7 @@
       "audit_id": "M064",
       "model_asset_id": "asset/fbx/fbx_6901bdd8",
       "source_relative": "机床设备/新型车铣复合加工中心.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M064.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/064-turn-mill-machining-center.glb",
       "raw_source_glb_url": null,
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
@@ -94,7 +94,7 @@
       "audit_id": "M065",
       "model_asset_id": "asset/fbx/fbx_fb04a2ee",
       "source_relative": "机床设备/立式加工中心1100X900.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M065.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/065-vertical-machining-center-1100-x-900.glb",
       "raw_source_glb_url": null,
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
@@ -103,7 +103,7 @@
       "audit_id": "M066",
       "model_asset_id": "asset/fbx/fbx_abd43f9f",
       "source_relative": "机床设备/立式加工中心GA-V918C.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M066.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/066-vertical-machining-center-ga-v918c.glb",
       "raw_source_glb_url": null,
       "geometry_status": "case_calibration_using_approved_batch_scale",
       "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion"
@@ -112,7 +112,7 @@
       "audit_id": "M067",
       "model_asset_id": "asset/fbx/fbx_f4980f8b",
       "source_relative": "机床设备/立式加工中心光机模型.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M067.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/067-bare-vertical-machining-center-model.glb",
       "raw_source_glb_url": null,
       "geometry_status": "case_calibration_using_approved_batch_scale",
       "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion"
@@ -121,7 +121,7 @@
       "audit_id": "M068",
       "model_asset_id": "asset/fbx/fbx_f2db5dfe",
       "source_relative": "机床设备/立式四轴数控铣床.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M068.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/068-vertical-four-axis-cnc-milling-machine.glb",
       "raw_source_glb_url": null,
       "geometry_status": "case_calibration_using_approved_batch_scale",
       "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion"
@@ -130,7 +130,7 @@
       "audit_id": "M069",
       "model_asset_id": "asset/fbx/fbx_d8f6cfdf",
       "source_relative": "机床设备/高速立式车铣加工中心.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M069.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/069-high-speed-vertical-turn-mill-machining-center.glb",
       "raw_source_glb_url": null,
       "geometry_status": "case_calibration_using_approved_batch_scale",
       "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion"
@@ -139,7 +139,7 @@
       "audit_id": "M070",
       "model_asset_id": "asset/fbx/fbx_3b1181c9",
       "source_relative": "机床设备/龙门式数控切割机.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M070.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/070-gantry-cnc-cutting-machine.glb",
       "raw_source_glb_url": null,
       "geometry_status": "case_calibration_using_approved_batch_scale",
       "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion"
@@ -148,7 +148,7 @@
       "audit_id": "M071",
       "model_asset_id": "asset/fbx/fbx_51f787e0",
       "source_relative": "机床设备/龙门铣床.fbx",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M071.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/071-gantry-milling-machine.glb",
       "raw_source_glb_url": null,
       "geometry_status": "case_calibration_using_approved_batch_scale",
       "calibration_confirmation_scope": "extrapolated_same_batch_uniform_conversion"
@@ -157,8 +157,8 @@
       "audit_id": "M072",
       "model_asset_id": "asset/glb/m072_agv",
       "source_relative": "电子装备/AGV小车/agv.glb",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M072.glb",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M072.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/072-automated-guided-vehicle.glb",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/072-automated-guided-vehicle-source.glb",
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
     },
@@ -166,8 +166,8 @@
       "audit_id": "M079",
       "model_asset_id": "asset/glb/m079_conveyor_2",
       "source_relative": "电子装备/models/传送带2.glb",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M079.glb",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M079.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/079-conveyor-2.glb",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/079-conveyor-2-source.glb",
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
     },
@@ -175,8 +175,8 @@
       "audit_id": "M086",
       "model_asset_id": "asset/glb/m086_flexible_test_workstation",
       "source_relative": "电子装备/models/柔性测试工作站.glb",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M086.glb",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M086.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/086-flexible-test-workstation.glb",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/086-flexible-test-workstation-source.glb",
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
     },
@@ -184,8 +184,8 @@
       "audit_id": "M088",
       "model_asset_id": "asset/glb/m088_small_temperature_chamber",
       "source_relative": "电子装备/models/温箱小.glb",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M088.glb",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M088.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/088-small-temperature-chamber.glb",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/088-small-temperature-chamber-source.glb",
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
     },
@@ -193,8 +193,8 @@
       "audit_id": "M089",
       "model_asset_id": "asset/glb/m089_laser_marking_station",
       "source_relative": "电子装备/models/激光打标标准机台.glb",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M089.glb",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M089.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/089-laser-marking-station.glb",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/089-laser-marking-station-source.glb",
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
     },
@@ -202,8 +202,8 @@
       "audit_id": "M092",
       "model_asset_id": "asset/glb/m092_line_side_storage_unit",
       "source_relative": "电子装备/models/线边库.glb",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M092.glb",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M092.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/092-line-side-storage-unit.glb",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/092-line-side-storage-unit-source.glb",
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
     },
@@ -211,8 +211,8 @@
       "audit_id": "M093",
       "model_asset_id": "asset/glb/m093_fixture_workstation",
       "source_relative": "电子装备/models/装夹台.glb",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M093.glb",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M093.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/093-fixture-workstation.glb",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/093-fixture-workstation-source.glb",
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
     },
@@ -220,8 +220,8 @@
       "audit_id": "M103",
       "model_asset_id": "asset/stl/m103_work_table",
       "source_relative": "电子装备/工作台/普通工作台.STL",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M103.glb",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M103.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/103-work-table.glb",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/103-work-table-source.glb",
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
     },
@@ -229,8 +229,8 @@
       "audit_id": "M104",
       "model_asset_id": "asset/stl/m104_storage_rack",
       "source_relative": "电子装备/置物架（buffer）/置物架.STL",
-      "calibrated_glb_url": "/runtime-models/glb/calibrated/M104.glb",
-      "raw_source_glb_url": "/runtime-models/glb/source_raw/M104.glb",
+      "calibrated_glb_url": "/runtime-models/glb/calibrated/104-storage-rack.glb",
+      "raw_source_glb_url": "/runtime-models/glb/source_raw/104-storage-rack-source.glb",
       "geometry_status": "user_confirmed_case_calibration",
       "calibration_confirmation_scope": "individual_candidate_review"
     }
