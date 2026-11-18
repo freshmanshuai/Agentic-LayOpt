@@ -19,8 +19,6 @@ Use lowercase ASCII letters, digits, and hyphens in filenames. Keep model codes 
 
 The [CSV catalog](catalog.csv) and [JSON catalog](catalog.json) map each number and English name to its stable `model_asset_id` and distributed files. All 105 catalog records have a runtime GLB. File paths in these catalogs are relative to this directory. `runtime_glb_url` identifies the file selected by the workbench.
 
-`source-models/` contains the recovered native files for 25 models, using the same numbered English names. Their GLBs were exported from the original FBX or STL geometry with Blender 4.5.3. FBX axis and declared-unit conversion follows the importer; STL uses the catalog's declared unit scale. Geometry was retained without simplification, and image data is embedded in the GLB. Existing planning geometry and engineering annotations remain separate from source render geometry.
-
 Calibrated and source geometry occupy separate directories. The `-source`, `-raw`, and `-before-...` suffixes distinguish retained variants of the same model. Native FBX files share the model number and English name.
 
 The application and reference annotations continue to bind models by `model_asset_id`. Source-language CAD node labels and historical source references remain in the original model content and provenance records. Public filenames, display names, and retrieval aliases use English.
